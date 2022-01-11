@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+const dataset = "index";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ods-dataset-context
+        context={dataset}
+        index-domain="https://pivothub.youthfulcities.com/"
+        index-dataset="index-2020-full"
+        index-urlsync="true"
+      >
+        <ods-facets context="index">
+          <ods-facet name="city_cma" disjunctive="true"></ods-facet>
+        </ods-facets>
+
+        <ods-map context={dataset}></ods-map>
+        <ods-chart align-month="true">
+          <ods-chart-query
+            context={dataset}
+            field-x="city"
+            maxpoints="15"
+            sort="serie1-1"
+          >
+            <ods-chart-serie
+              expression-y="value"
+              label-y="value (averaged)"
+              chart-type="column"
+              function-y="AVG"
+              color="#4F66AF"
+              display-values="false"
+              display-stack-values="false"
+              scientific-display="true"
+              color-thresholds='[{"color":"#EE605B","value":100},{"color":"#884C41","value":50},{"color":"#F7BCB7","value":25},{"color":"#B8D98D","value":15},{"color":"#4F66AF","value":10},{"color":"#FBD166","value":1}]'
+            ></ods-chart-serie>
+          </ods-chart-query>
+        </ods-chart>
+        <button onClick={() => window.history.push("/")}>Reset</button>
+      </ods-dataset-context>
     </div>
   );
 }

@@ -1,10 +1,8 @@
 const dataset = "index";
 
-const Widgets = () => {
-  //TODO: Wrap in useEffect hook so that they will update
-  let url = window.location.href;
-  let query = window.location.search;
-  console.log(url);
+const Widgets = ({ url, setUrl }) => {
+  let { query } = url;
+
   return (
     <>
       <h1>
@@ -20,7 +18,15 @@ const Widgets = () => {
         index-dataset="index-2020-full"
         index-urlsync="true"
       >
-        <ods-facets context="index">
+        <ods-facets
+          context="index"
+          onClick={() =>
+            setUrl({
+              full: window.location.href,
+              query: window.location.search,
+            })
+          }
+        >
           <ods-facet name="city_cma" disjunctive="true"></ods-facet>
         </ods-facets>
 

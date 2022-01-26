@@ -20,35 +20,25 @@ const getData = async (query) => {
     // },
 
     /* (Optional) Allow you to intercept the response before it is returned */
-    interceptResponse: async (response) => {
-      const apiResponse = await response.json();
-      delete apiResponse["links"];
-      return apiResponse;
-    },
-  });
-
-  const response = await client.get(
-    `catalog/datasets/index-2020-full/records/${query}`
-  );
-  return response;
-};
-
-const getData2 = () => {
-  // Initialize the Client by indicating the domain to request.
-  const client = new ApiClient({
-    domain: "https://pivothub.youthfulcities.com/",
+    // interceptResponse: async (response) => {
+    //   const apiResponse = await response.json();
+    //   delete apiResponse["links"];
+    //   return apiResponse;
+    // },
   });
 
   // Create the query to run.
-  const query =
-    "catalog/datasets/index-2020-full/aggregates?select=avg(value) as y,city as x&group_by=city";
+  const fullQuery = `https://pivothub.youthfulcities.com/api/records/1.0/search/?dataset=index-2020-full&q=&rows=10&facet=topic_en&facet=indicator_en&facet=measurement_en&facet=city_cma&facet=city&${query}`;
+
+  // console.log(fullQuery);
   // Now, run the query.
-  client
-    .get(query)
-    .then((response) => console.log(response))
+  return client
+    .get(fullQuery)
+    .then((response) => response)
     .catch((error) => console.error(error));
 };
 
-getData();
+//example query:
+// "catalog/datasets/index-2020-full/aggregates?select=avg(value) as y,city as x&group_by=city"
 
 export default getData;

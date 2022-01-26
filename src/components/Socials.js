@@ -13,6 +13,7 @@ import {
   TwitterIcon,
   WhatsappIcon,
 } from "react-share";
+import CopyMe from "./CopyMe";
 
 const Socials = ({ url }) => {
   let { full } = url;
@@ -20,6 +21,7 @@ const Socials = ({ url }) => {
 
   return (
     <>
+      <CopyMe url={full} />
       <EmailShareButton url={full} subject={title}>
         <EmailIcon size={32} round={false} />
       </EmailShareButton>

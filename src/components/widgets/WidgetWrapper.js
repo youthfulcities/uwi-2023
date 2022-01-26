@@ -1,10 +1,5 @@
-import BarGraph from "./BarGraph";
-import Filter from "./Filter";
-import Map from "./Map.js";
-
-const WidgetWrapper = ({ url, children }) => {
+const WidgetWrapper = ({ children }) => {
   const dataset = "index-2020-full";
-  let { query } = url;
 
   return (
     <>

@@ -1,11 +1,24 @@
 import React from "react";
-import { Typography, Button, Container, Grid } from "@mui/material";
+import { Typography, Button, Container, Grid, Fab } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link } from "react-router-dom";
 
-const Home = () => {
+const Intro = () => {
+  const goBack = () => {
+    window.history.back();
+  };
+
   return (
     <>
       <Container maxWidth="xs">
+        <Fab
+          onClick={() => goBack()}
+          color="primary"
+          size="medium"
+          className="backButton"
+        >
+          <ArrowBackIcon fontSize="large" />
+        </Fab>
         <Grid
           sx={{ height: "90vh" }}
           container
@@ -16,33 +29,29 @@ const Home = () => {
         >
           <Grid item>
             <Typography color="#FFF" variant="h1" align="center">
-              Welcome!
+              Let's Find Your Best City
             </Typography>
           </Grid>
           <Grid item mt={1}>
             <Typography color="#FFF" variant="h4" align="center">
-              This app is to help refugees know where to settle and provide
-              resources for those cities.
+              We're going to ask you some questions to help determine which
+              cities will be best for you.
+              <br />
+              <br />
+              We will not be recording any personal information.
             </Typography>
           </Grid>
           <Grid item mt={5}>
             <Link to="/intro">
               <Button color="primary" variant="contained" size="large">
-                <Typography variant="h5">English</Typography>
+                <Typography variant="h5">Help Me Decide</Typography>
               </Button>
             </Link>
           </Grid>
           <Grid item mt={1}>
             <Link to="/intro">
-              <Button color="primary" variant="contained" size="large">
-                <Typography variant="h5">دری</Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid item mt={1}>
-            <Link to="/intro">
-              <Button color="primary" variant="contained" size="large">
-                <Typography variant="h5">پښتو</Typography>
+              <Button color="info" variant="outlined" size="large">
+                <Typography variant="h5">Explore All Cities</Typography>
               </Button>
             </Link>
           </Grid>
@@ -55,4 +64,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Intro;

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Button, Container, Grid } from "@mui/material";
+import { Typography, Button, Grid, Container } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Container maxWidth="xs">
         <Grid
-          sx={{ height: "90vh" }}
+          sx={{ minHeight: "90vh" }}
           container
           direction="column"
           justifyContent="center"

@@ -4,7 +4,7 @@ import { Container, Grid } from "@mui/material";
 const Footer = () => {
   return (
     <footer>
-      <Container maxWidth="xl">
+      <Container maxWidth="md">
         <Grid
           container
           direction="row"
@@ -12,7 +12,11 @@ const Footer = () => {
           alignItems="center"
         >
           <Grid item mt={1}>
-            <a href="https://youthfulcities.com/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://youthfulcities.com/"
+            >
               <img
                 src={"./assets/images/yc-logo.png"}
                 height="60vh"
@@ -21,7 +25,11 @@ const Footer = () => {
             </a>
           </Grid>
           <Grid item mt={1}>
-            <a href="https://www.therefugeecentre.org/">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.therefugeecentre.org/"
+            >
               <img
                 src={"./assets/images/trc-logo.png"}
                 height="60vh"

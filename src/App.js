@@ -5,9 +5,11 @@ import { createTheme, ThemeProvider, Grid } from "@mui/material";
 
 import Info from "./pages/Info";
 import Home from "./pages/Home.js";
+import ExploreAll from "./pages/ExploreAll";
 import Socials from "./components/Socials.js";
 import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
+import { Explore } from "@mui/icons-material";
 
 const theme = createTheme({
   palette: {
@@ -97,6 +99,7 @@ function App() {
             element={<Info url={url} setUrl={setUrl} />}
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
+          <Route path="/explore-all" element={<ExploreAll />}></Route>
         </Routes>
         {/* <Socials url={url} /> */}
         <Footer />

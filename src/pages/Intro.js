@@ -1,24 +1,13 @@
 import React from "react";
-import { Typography, Button, Container, Grid, Fab } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import { Typography, Button, Grid, Container } from "@mui/material";
 import { Link } from "react-router-dom";
+import Back from "../components/Back.js";
 
 const Intro = () => {
-  const goBack = () => {
-    window.history.back();
-  };
-
   return (
     <>
       <Container maxWidth="xs">
-        <Fab
-          onClick={() => goBack()}
-          color="primary"
-          size="medium"
-          className="backButton"
-        >
-          <ArrowBackIcon fontSize="large" />
-        </Fab>
+        <Back />
         <Grid
           sx={{ height: "90vh" }}
           container
@@ -49,7 +38,7 @@ const Intro = () => {
             </Link>
           </Grid>
           <Grid item mt={1}>
-            <Link to="/intro">
+            <Link to="/explore-all">
               <Button color="info" variant="outlined" size="large">
                 <Typography variant="h5">Explore All Cities</Typography>
               </Button>

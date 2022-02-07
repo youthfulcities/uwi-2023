@@ -4,6 +4,8 @@ import { Container, Grid, Typography } from "@mui/material";
 import PhotoButton from "../components/PhotoButton";
 import Back from "../components/Back";
 import getData from "../helpers/odsClientV2.js";
+import BasicContainer from "../components/BasicContainer";
+import Decoration from "../components/Decoration";
 
 const ExploreAll = () => {
   const [recs, setRecs] = useState([]);
@@ -19,40 +21,28 @@ const ExploreAll = () => {
     setCities();
   }, []);
 
-  console.log(recs);
-
   return (
     <>
-      <Container maxWidth="md">
-        <Grid
-          sx={{ minHeight: "90vh" }}
-          container
-          direction="column"
-          justifyContent="center"
-          alignItems="center"
-          py="14vh"
-          spacing={0}
-        >
-          <Grid mb={2} item>
-            <Typography align="center" variant="h1">
-              Explore All Cities
-            </Typography>
-          </Grid>
-          {recs.map((city) => (
-            <Grid mt={2} className="photoButtonContainer" item>
-              <PhotoButton
-                city={city.record.fields.city_name}
-                alt={city.record.fields.main_img_alt}
-                src={city.record.fields.main_img}
-              >
-                {city.record.fields.city_name}
-              </PhotoButton>
-            </Grid>
-          ))}
+      <BasicContainer width="md">
+        <Grid mb={2} item>
+          <Typography align="center" variant="h1">
+            Explore All Cities
+          </Typography>
         </Grid>
-        <Back />
-      </Container>
-      <div className="background"></div>
+        {recs.map((city, i) => (
+          <Grid key={i} mt={2} className="photoButtonContainer" item>
+            <PhotoButton
+              city={city.record.fields.city_name}
+              alt={city.record.fields.main_img_alt}
+              src={city.record.fields.main_img}
+              factoid={city.record.fields.population}
+            >
+              {city.record.fields.city_name}
+            </PhotoButton>
+          </Grid>
+        ))}
+      </BasicContainer>
+      <Decoration />
     </>
   );
 };

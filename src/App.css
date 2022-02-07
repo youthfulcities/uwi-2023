@@ -168,6 +168,7 @@ footer {
 }
 
 .photoButtonImg {
+  position: absolute;
   object-fit: cover;
   border-radius: 80px;
   height: 100px;
@@ -186,10 +187,12 @@ footer {
 }
 
 .photoButtonText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  z-index: 10;
+}
+
+.smallPhotoButtonText {
+  position: relative;
   z-index: 10;
 }
 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { createTheme, ThemeProvider, Grid } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 import Info from "./pages/Info";
 import Home from "./pages/Home.js";

@@ -156,7 +156,8 @@ footer {
    ========================================================================== */
 
 .backButton {
-  bottom: 15vh;
+  bottom: 4vh;
+  z-index: 100;
 }
 
 .photoButtonContainer {
@@ -201,5 +202,9 @@ footer {
 .photoButtonText:hover + .photoOverlay {
   background-color: var(--indigo);
   opacity: 100%;
+  cursor: pointer;
+}
+
+.photoButtonText:hover {
   cursor: pointer;
 }

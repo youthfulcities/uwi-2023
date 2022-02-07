@@ -74,7 +74,14 @@ const theme = createTheme({
     MuiFab: {
       styleOverrides: {
         root: {
-          position: "fixed",
+          position: "absolute",
+        },
+      },
+    },
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          position: "relative",
         },
       },
     },

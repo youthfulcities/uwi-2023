@@ -9,7 +9,7 @@ import ExploreAll from "./pages/ExploreAll";
 import Socials from "./components/Socials.js";
 import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
-import { Explore } from "@mui/icons-material";
+import CityTemplate from "./pages/CityTemplate.js";
 
 const theme = createTheme({
   palette: {
@@ -71,6 +71,16 @@ const theme = createTheme({
         },
       },
     },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          paddingLeft: "18px",
+          paddingTop: "5px",
+          paddingRight: "18px",
+          paddingBottom: "5px",
+        },
+      },
+    },
     MuiFab: {
       styleOverrides: {
         root: {
@@ -107,6 +117,7 @@ function App() {
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
           <Route path="/explore-all" element={<ExploreAll />}></Route>
+          <Route path="/about/:cityname" element={<CityTemplate />}></Route>
         </Routes>
         {/* <Socials url={url} /> */}
         <Footer />

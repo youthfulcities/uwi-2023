@@ -21,11 +21,11 @@ const getData = async (dataset, query) => {
     // },
 
     /* (Optional) Allow you to intercept the response before it is returned */
-    // interceptResponse: async (response) => {
-    //   const apiResponse = await response.json();
-    //   delete apiResponse["links"];
-    //   return apiResponse;
-    // },
+    interceptResponse: async (response) => {
+      const apiResponse = await response.json();
+      delete apiResponse["links"];
+      return apiResponse;
+    },
   });
 
   // Create the query to run.
@@ -36,7 +36,7 @@ const getData = async (dataset, query) => {
   return client
     .get(fullQuery)
     .then((response) => response)
-    .catch((error) => console.error(error));
+    .catch((error) => console.log(error));
 };
 
 //example queries:

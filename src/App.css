@@ -152,6 +152,38 @@ footer {
   z-index: -20;
 }
 
+.photoHeaderContainer {
+  height: 35vh;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.photoHeaderImg {
+  position: absolute;
+  object-fit: cover;
+  height: 35vh;
+  width: 100%;
+  z-index: -5;
+}
+
+.photoHeaderOverlay {
+  background-color: #000000;
+  opacity: 60%;
+  width: 100%;
+  height: 35vh;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.photoHeaderText {
+  position: relative;
+  z-index: 10;
+}
+
 /* Buttons
    ========================================================================== */
 

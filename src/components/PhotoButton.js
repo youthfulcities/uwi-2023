@@ -9,7 +9,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
 
   return (
     <>
-      <Link to={`/${city}`}>
+      <Link to={`/about/${city}`}>
         <div className="photoButtonContainer">
           <img className="photoButtonImg" src={src} alt={alt} />
           <Grid
@@ -38,6 +38,8 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
                 variant="h5"
               >
                 Population: {formattedNumber(factoid)}
+                <br />
+                Number of refugees: ???
               </Typography>
             </Grid>
           </Grid>

@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid, Typography } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 
 import PhotoButton from "../components/PhotoButton";
-import Back from "../components/Back";
 import getData from "../helpers/odsClientV2.js";
 import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";

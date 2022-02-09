@@ -3,6 +3,8 @@ import { Grid, Typography } from "@mui/material";
 
 import PhotoButton from "../components/PhotoButton";
 import getData from "../helpers/odsClientV2.js";
+
+import Socials from "../components/Socials";
 import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";
 

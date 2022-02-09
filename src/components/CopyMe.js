@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Button, Typography, FilledInput } from "@mui/material";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const CopyMe = ({ url }) => {
@@ -14,11 +15,24 @@ const CopyMe = ({ url }) => {
 
   return (
     <>
-      <input value={url} readOnly />
+      <FilledInput value={url} disableUnderline={true} readOnly />
       <CopyToClipboard text={url} onCopy={() => setCopied(true)}>
-        <button>Copy</button>
+        <Button
+          color="primary"
+          variant="contained"
+          size="small"
+          sx={{ minWidth: "100px" }}
+        >
+          <Typography color="#fff" variant="h5">
+            Copy
+          </Typography>
+        </Button>
       </CopyToClipboard>
-      {copied && <span>Copied!</span>}
+      {copied && (
+        <Typography color="#fff" variant="p">
+          Copied!
+        </Typography>
+      )}
     </>
   );
 };

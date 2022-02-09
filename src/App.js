@@ -10,6 +10,8 @@ import Socials from "./components/Socials.js";
 import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate.js";
+import { letterSpacing } from "@mui/system";
+import { withTheme } from "@emotion/react";
 
 const theme = createTheme({
   palette: {
@@ -74,10 +76,31 @@ const theme = createTheme({
     MuiAccordion: {
       styleOverrides: {
         root: {
-          paddingLeft: "18px",
-          paddingTop: "5px",
-          paddingRight: "18px",
-          paddingBottom: "5px",
+          paddingLeft: 0,
+          paddingTop: 5,
+          paddingRight: 0,
+          paddingBottom: 0,
+          backgrounColor: "inherit",
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          marginLeft: 10,
+          marginTop: 10,
+          marginRight: 10,
+          marginBottom: 10,
+        },
+      },
+    },
+    MuiAccordionDetails: {
+      styleOverrides: {
+        root: {
+          paddingLeft: 0,
+          paddingTop: 5,
+          paddingRight: 0,
+          paddingBottom: 0,
         },
       },
     },
@@ -92,6 +115,17 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           position: "relative",
+        },
+      },
+    },
+    MuiFilledInput: {
+      styleOverrides: {
+        input: {
+          padding: 10,
+          backgroundColor: "#fff",
+          borderRadius: 35,
+          minHeight: 28,
+          boxSizing: "border-box",
         },
       },
     },

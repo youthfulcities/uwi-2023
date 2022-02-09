@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
-import Back from "./Back.js";
+import Back from "./Back";
+import Socials from "./Socials";
 
 const BasicContainer = ({ children, width }) => {
   return (
@@ -19,6 +20,7 @@ const BasicContainer = ({ children, width }) => {
         >
           {children}
         </Grid>
+        <Socials />
       </Container>
     </>
   );

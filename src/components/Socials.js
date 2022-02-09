@@ -16,29 +16,27 @@ import {
 import CopyMe from "./CopyMe";
 
 const Socials = ({ url }) => {
-  let { full } = url;
+  // let { full } = url;
+  let full = document.location.href;
   let title = document.title;
 
   return (
     <>
       <CopyMe url={full} />
       <EmailShareButton url={full} subject={title}>
-        <EmailIcon size={32} round={false} />
+        <EmailIcon size={32} round={true} />
       </EmailShareButton>
       <FacebookShareButton url={full}>
-        <FacebookIcon size={32} round={false} />
+        <FacebookIcon size={32} round={true} />
       </FacebookShareButton>
-      <RedditShareButton url={full} title={title}>
-        <RedditIcon size={32} round={false} />
-      </RedditShareButton>
       <TelegramShareButton url={full} title={title}>
-        <TelegramIcon size={32} round={false} />
+        <TelegramIcon size={32} round={true} />
       </TelegramShareButton>
       <TwitterShareButton url={full} title={title}>
-        <TwitterIcon size={32} round={false} />
+        <TwitterIcon size={32} round={true} />
       </TwitterShareButton>
       <WhatsappShareButton url={full} title={title} separator="—">
-        <WhatsappIcon size={32} round={false} />
+        <WhatsappIcon size={32} round={true} />
       </WhatsappShareButton>
     </>
   );

@@ -28,6 +28,14 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
               >
                 {children}
               </Typography>
+              <Typography
+                pl={5}
+                color="#FFF"
+                className="photoButtonText"
+                variant="h4"
+              >
+                Province
+              </Typography>
             </Grid>
             <Grid item>
               <Typography
@@ -39,7 +47,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
               >
                 Population: {formattedNumber(factoid)}
                 <br />
-                Number of refugees: ???
+                Immigrant population: ???
               </Typography>
             </Grid>
           </Grid>

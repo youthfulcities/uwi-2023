@@ -99,12 +99,14 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: "Gotham Narrow Book", sans-serif;
 }
 
 footer {
   background-color: #000000;
   min-width: 100%;
   min-height: 10vh;
+  bottom: 0;
 }
 
 #root {
@@ -115,6 +117,12 @@ footer {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+}
+
+.smallText {
+  font-size: 1rem;
+  font-family: "Gotham Narrow Book", sans-serif;
+  line-height: 0;
 }
 
 /* Backgrounds & containers
@@ -188,20 +196,10 @@ footer {
   margin: 0 27px 27px 27px;
 }
 
-/* .css-5n21kb-MuiPaper-root-MuiAccordion-root.Mui-expanded {
-  background-color: var(--yellow);
-}
-
-.css-kgovbg-MuiPaper-root-MuiAccordion-root.Mui-expanded {
-  background-color: var(--green);
-}
-
-.css-13ofm2k-MuiPaper-root-MuiAccordion-root.Mui-expanded {
-  background-color: var(--green);
-} */
-
-.MuiPaper-root-MuiAccordion-root.Mui-expanded {
-  background-color: red;
+.textUnderlay {
+  border-radius: 35px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
 }
 
 /* Buttons
@@ -262,4 +260,13 @@ footer {
 
 .photoButtonText:hover {
   cursor: pointer;
+}
+
+/* 
+   ========================================================================== */
+
+.socials {
+  height: 10vh;
+  bottom: 0;
+  position: relative;
 }

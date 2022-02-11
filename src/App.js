@@ -73,6 +73,7 @@ const theme = createTheme({
         },
       },
     },
+
     MuiAccordion: {
       styleOverrides: {
         root: {
@@ -81,6 +82,9 @@ const theme = createTheme({
           paddingRight: 0,
           paddingBottom: 0,
           backgrounColor: "inherit",
+          "&.Mui-expanded": {
+            backgroundColor: "rgba(0, 0, 0, 0.05);",
+          },
         },
       },
     },
@@ -118,14 +122,42 @@ const theme = createTheme({
         },
       },
     },
+    MuiFormLabel: {
+      styleOverrides: {
+        root: {
+          fontSize: "1.75rem",
+        },
+      },
+    },
+    MuiOutlinedInput: {
+      styleOverrides: {
+        root: {
+          background: "#fff",
+          fontFamily: "Gotham Narrow Book",
+          fontSize: "1.75rem",
+        },
+      },
+    },
     MuiFilledInput: {
       styleOverrides: {
         input: {
           padding: 10,
           backgroundColor: "#fff",
           borderRadius: 35,
+          border: "2px",
+          borderStyle: "solid",
+          borderColor: "rgb(79, 102, 175)",
           minHeight: 28,
           boxSizing: "border-box",
+          position: "relative",
+        },
+        root: {
+          "&.Mui-focused": {
+            backgroundColor: "transparent",
+          },
+          "&:hover": {
+            backgroundColor: "transparent",
+          },
         },
       },
     },

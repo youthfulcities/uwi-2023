@@ -3,32 +3,40 @@ import Decoration from "../components/Decoration";
 import { useParams } from "react-router-dom";
 import {
   Container,
-  Card,
   Typography,
   Grid,
-  TextField,
-  InputAdornment,
   Accordion,
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import SearchIcon from "@mui/icons-material/Search";
 
 import getData from "../helpers/odsClientV2.js";
 
 import PhotoHeader from "../components/PhotoHeader";
 import Back from "../components/Back";
+import Socials from "../components/Socials";
+import CityInfo from "../components/CityInfo";
+import Search from "../components/Search";
 
 const CityTemplate = () => {
   let { cityname } = useParams();
   const [city, setCity] = useState(undefined);
+  const [resources, setResources] = useState(undefined);
+  const [subResources, setSubResources] = useState(undefined);
+  const [subResourceQuery, setSubResourceQuery] = useState("");
   const [searchString, setSearchString] = useState("");
   const [searchStringQuery, setSearchStringQuery] = useState("");
-  const [resources, setResources] = useState([]);
+  const [test, setTest] = useState(0);
 
   const cityQuery = `/records?refine=city_name:${cityname}`;
+  // let resourceQuery = `/records?limit=10`;
+  let resourceQuery = `/records?limit=10&select=indicator_en&group_by=indicator_en`;
+
+  const createSubResourceQuery = (indicator_en) => {
+    return `/records?limit=10&where=indicator_en="${indicator_en}"&group_by=measurement_en`;
+  };
 
   useEffect(() => {
     const retrievedInfo = getData("cities", cityQuery).then(
@@ -42,6 +50,38 @@ const CityTemplate = () => {
     setCities();
   }, [cityQuery]);
 
+  useEffect(() => {
+    const retrievedInfo = getData("tamarack-index", resourceQuery).then(
+      (res) => res.records
+    );
+
+    const setCities = async () => {
+      console.log(await retrievedInfo);
+      setResources(await retrievedInfo);
+    };
+
+    setCities();
+  }, [resourceQuery]);
+
+  useEffect(() => {
+    const sub = resources.map((resource) =>
+      createSubResourceQuery(resource.record.fields.indicator_en)
+    );
+
+    const retrievedInfo = Promise.all(
+      sub.map((query) =>
+        getData("tamarack-index", query).then((res) => res.records)
+      )
+    );
+
+    const setSubs = async () => {
+      console.log(await retrievedInfo);
+      setSubResources(await retrievedInfo);
+    };
+
+    setSubs();
+  }, [resources]);
+
   //for removing unnescessary words from search
   const cleanSearch = (s) => {
     var words = ["of", "the", "in", "on", "at", "to", "a", "is", "for"];
@@ -49,7 +89,6 @@ const CityTemplate = () => {
     return (s || "").replace(re, "").replace(/[ ]{2,}/, " ");
   };
 
-  console.log(cleanSearch("This is a string for you"));
   return (
     <>
       {city !== undefined ? (
@@ -71,31 +110,10 @@ const CityTemplate = () => {
               spacing={0}
             >
               <div>
-                <Accordion>
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1a-content"
-                    id="panel1a-header"
-                  >
-                    <Typography variant="h3">Info</Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <div className="accordianContainer">
-                      <Typography variant="p">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Suspendisse malesuada lacus ex, sit amet blandit leo
-                        lobortis eget.
-                      </Typography>
-                      <Card sx={{ marginTop: "20px" }}>
-                        <img
-                          src={city.record.fields.main_img}
-                          alt={city.record.fields.main_img_alt}
-                          width="100%"
-                        />
-                      </Card>
-                    </div>
-                  </AccordionDetails>
-                </Accordion>
+                <CityInfo
+                  src={city.record.fields.main_img}
+                  alt={city.record.fields.main_img_alt}
+                />
                 <Accordion>
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -105,64 +123,42 @@ const CityTemplate = () => {
                     <Typography variant="h3">Resources</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <div className="accordianContainer">
-                      <TextField
-                        InputProps={{
-                          startAdornment: (
-                            <InputAdornment position="start">
-                              <SearchIcon fontSize="large" />
-                            </InputAdornment>
-                          ),
-                        }}
-                        variant="outlined"
-                        fullWidth="true"
-                        onChange={(e) => setSearchString(e.target.value)}
-                        label="Search"
-                      ></TextField>
-                    </div>
+                    <Search
+                      setSearchString={setSearchString}
+                      searchString={searchString}
+                    />
                     <div>
-                      <Accordion square={true} disableGutters={true}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1a-content"
-                          id="panel1a-header"
-                        >
-                          <Typography variant="h5">Category 1</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <div className="accordianContainer">
-                            <Typography variant="p">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse malesuada lacus ex, sit amet
-                              blandit leo lobortis eget.
-                            </Typography>
-                          </div>
-                        </AccordionDetails>
-                      </Accordion>
-                      <Accordion disableGutters={true}>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel2a-content"
-                          id="panel2a-header"
-                        >
-                          <Typography variant="h5">Category 2</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <div className="accordianContainer">
-                            <Typography variant="p">
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit. Suspendisse malesuada lacus ex, sit amet
-                              blandit leo lobortis eget.
-                            </Typography>
-                          </div>
-                        </AccordionDetails>
-                      </Accordion>
+                      {resources !== undefined &&
+                        resources.map((resource, i) => {
+                          return (
+                            <>
+                              <Accordion
+                                square={
+                                  i === resources.length - 1 ? false : true
+                                }
+                                disableGutters={true}
+                              >
+                                <AccordionSummary
+                                  expandIcon={<ExpandMoreIcon />}
+                                  aria-controls={`panel-resources-${i}a-content`}
+                                  id={`panel-resources-${i}a-header`}
+                                >
+                                  <Typography variant="h5">
+                                    {resource.record.fields.indicator_en}
+                                  </Typography>
+                                </AccordionSummary>
+                                <AccordionDetails>{}</AccordionDetails>
+                              </Accordion>
+                            </>
+                          );
+                        })}
                     </div>
                   </AccordionDetails>
                 </Accordion>
               </div>
             </Grid>
             <Back />
+            <Socials />
           </Container>
           <Decoration />
         </>

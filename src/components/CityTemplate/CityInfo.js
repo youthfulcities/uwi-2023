@@ -15,7 +15,7 @@ const CityInfo = ({ alt, src }) => {
     <>
       <Accordion>
         <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
+          expandIcon={<ExpandMoreIcon fontSize="large" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >

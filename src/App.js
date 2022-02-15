@@ -81,10 +81,20 @@ const theme = createTheme({
           paddingTop: 5,
           paddingRight: 0,
           paddingBottom: 0,
-          backgrounColor: "inherit",
+          background: "#F5F5F5",
+          color: "#000",
           "&.Mui-expanded": {
-            backgroundColor: "rgba(0, 0, 0, 0.05);",
+            background: "#F7BCB7",
+            color: "#000",
           },
+        },
+      },
+    },
+    MuiCollapse: {
+      styleOverrides: {
+        wrapperInner: {
+          background: "#F5F5F5",
+          borderRadius: "inherit",
         },
       },
     },
@@ -102,7 +112,7 @@ const theme = createTheme({
       styleOverrides: {
         root: {
           paddingLeft: 0,
-          paddingTop: 5,
+          paddingTop: 0,
           paddingRight: 0,
           paddingBottom: 0,
         },

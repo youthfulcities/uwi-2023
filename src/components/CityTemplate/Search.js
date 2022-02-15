@@ -6,27 +6,35 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const Search = ({ setSearchString, searchString }) => {
+const Search = ({
+  setSearchString,
+  searchString,
+  createStringQuery,
+  setSearchStringQuery,
+}) => {
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      createStringQuery();
+    }
+  };
   return (
     <div className="accordianContainer">
       <Grid
         container
         direction="row"
-        justifyContent="space-between"
+        justifyContent="flex-end"
         alignItems="center"
         spacing={1}
       >
+        <Grid item>
+          <SearchIcon sx={{ fontSize: "30px" }} />
+        </Grid>
         <Grid item flexGrow="2">
           <TextField
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon fontSize="large" />
-                </InputAdornment>
-              ),
-            }}
+            value={searchString}
             variant="outlined"
             onChange={(e) => setSearchString(e.target.value)}
+            onKeyDown={(e) => handleKeyPress(e)}
             fullWidth={true}
             label="Search"
           ></TextField>
@@ -39,7 +47,10 @@ const Search = ({ setSearchString, searchString }) => {
                 className="roundButton"
                 variant="contained"
                 color="error"
-                onClick={() => setSearchString("")}
+                onClick={() => {
+                  setSearchString("");
+                  setSearchStringQuery("");
+                }}
               >
                 <CloseIcon fontSize="large" />
               </Button>
@@ -50,6 +61,7 @@ const Search = ({ setSearchString, searchString }) => {
                 className="roundButton"
                 variant="contained"
                 color="primary"
+                onClick={() => createStringQuery()}
               >
                 <ArrowForwardIcon fontSize="large" />
               </Button>

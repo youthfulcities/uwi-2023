@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Button, Grid, TextField, InputAdornment } from "@mui/material";
+import { Button, Grid, TextField } from "@mui/material";
 
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";

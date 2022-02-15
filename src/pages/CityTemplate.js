@@ -19,7 +19,7 @@ import Back from "../components/Back";
 import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
 import Search from "../components/CityTemplate/Search";
-import FactCard from "../components/CityTemplate/FactCard";
+import FactCard from "../components/FactCard";
 import Stories from "../components/CityTemplate/Stories";
 
 const CityTemplate = () => {
@@ -132,6 +132,7 @@ const CityTemplate = () => {
                   src={city.record.fields.main_img}
                   alt={city.record.fields.main_img_alt}
                 />
+                <Stories />
                 <Accordion
                   sx={{
                     "&.Mui-expanded": {
@@ -257,7 +258,6 @@ const CityTemplate = () => {
                     )}
                   </AccordionDetails>
                 </Accordion>
-                <Stories />
               </div>
             </Grid>
             <Back />

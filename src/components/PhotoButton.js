@@ -21,7 +21,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
           >
             <Grid item>
               <Typography
-                pl={5}
+                pl="35px"
                 color="#FFF"
                 className="photoButtonText"
                 variant="h2"
@@ -29,7 +29,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
                 {children}
               </Typography>
               <Typography
-                pl={5}
+                pl="35px"
                 color="#FFF"
                 className="photoButtonText"
                 variant="h4"
@@ -39,7 +39,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
             </Grid>
             <Grid item>
               <Typography
-                pr={5}
+                pr="35px"
                 align="right"
                 color="#FFF"
                 className="smallPhotoButtonText"

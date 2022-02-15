@@ -6,12 +6,10 @@ import { createTheme, ThemeProvider } from "@mui/material";
 import Info from "./pages/Info";
 import Home from "./pages/Home.js";
 import ExploreAll from "./pages/ExploreAll";
-import Socials from "./components/Socials.js";
 import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate.js";
-import { letterSpacing } from "@mui/system";
-import { withTheme } from "@emotion/react";
+import SuggestedCities from "./pages/SuggestedCities";
 
 const theme = createTheme({
   palette: {
@@ -196,9 +194,9 @@ function App() {
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
           <Route path="/explore-all" element={<ExploreAll />}></Route>
+          <Route path="/suggested-cities" element={<SuggestedCities />}></Route>
           <Route path="/about/:cityname" element={<CityTemplate />}></Route>
         </Routes>
-        {/* <Socials url={url} /> */}
         <Footer />
       </Router>
     </ThemeProvider>

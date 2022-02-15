@@ -20,6 +20,7 @@ import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
 import Search from "../components/CityTemplate/Search";
 import FactCard from "../components/CityTemplate/FactCard";
+import Stories from "../components/CityTemplate/Stories";
 
 const CityTemplate = () => {
   let { cityname } = useParams();
@@ -135,7 +136,6 @@ const CityTemplate = () => {
                   sx={{
                     "&.Mui-expanded": {
                       background: "#FBD166",
-                      borderRadius: "35px 35px 0 0",
                     },
                   }}
                 >
@@ -146,110 +146,118 @@ const CityTemplate = () => {
                   >
                     <Typography variant="h3">Resources</Typography>
                   </AccordionSummary>
-                  <AccordionDetails sx={{}}>
+                  <AccordionDetails>
                     <Search
                       setSearchString={setSearchString}
                       searchString={searchString}
                       createStringQuery={createStringQuery}
                       setSearchStringQuery={setSearchStringQuery}
                     />
-                    <div>
-                      {resources !== undefined &&
-                        resources.map((resource, i) => {
-                          return (
-                            <>
-                              {subResources &&
-                              subResources[i] !== undefined &&
-                              subResources[i].length > 0 ? (
-                                <Accordion
-                                  sx={{
-                                    "&:last-of-type": {
-                                      borderRadius: 0,
-                                    },
-                                    background: "#E8E8E8",
-                                    "&.Mui-expanded": {
-                                      background: "#4F66AF",
-                                      color: "#fff",
-                                      borderRadius: 0,
-                                    },
-                                  }}
-                                  square={
-                                    i === resources.length - 1 ? false : true
-                                  }
-                                  disableGutters={true}
-                                  key={`panel-resources-${i}a`}
-                                >
-                                  <AccordionSummary
-                                    expandIcon={
-                                      <ExpandMoreIcon fontSize="large" />
+                    {subResources && subResources.flat().length === 1 ? (
+                      <div className="accordianContainer">
+                        <Typography variant="p">
+                          No results found. Try searching something else.
+                        </Typography>
+                      </div>
+                    ) : (
+                      <div>
+                        {resources !== undefined &&
+                          resources.map((resource, i) => {
+                            return (
+                              <>
+                                {subResources &&
+                                subResources[i] !== undefined &&
+                                subResources[i].length > 0 ? (
+                                  <Accordion
+                                    sx={{
+                                      "&:last-of-type": {
+                                        borderRadius: 0,
+                                      },
+                                      background: "#E8E8E8",
+                                      "&.Mui-expanded": {
+                                        background: "#4F66AF",
+                                        color: "#fff",
+                                      },
+                                    }}
+                                    square={
+                                      i === resources.length - 1 ? false : true
                                     }
-                                    aria-controls={`panel-resources-${i}a-content`}
-                                    id={`panel-resources-${i}a-header`}
+                                    disableGutters={true}
+                                    key={`panel-resources-${i}a`}
                                   >
-                                    <Typography variant="h5">
-                                      {resource.record.fields.indicator_en}
-                                    </Typography>
-                                  </AccordionSummary>
-                                  <AccordionDetails>
-                                    {subResources &&
-                                      subResources[i].map(
-                                        (subResource, index) => (
-                                          <Accordion
-                                            sx={{
-                                              background: "#DCDCDC",
-                                              "&.Mui-expanded": {
-                                                background: "#B8D98D",
-                                              },
-                                            }}
-                                            square={
-                                              index === resources.length - 1
-                                                ? false
-                                                : true
-                                            }
-                                            disableGutters={true}
-                                            key={`panel-resources-${index}b`}
-                                          >
-                                            <AccordionSummary
+                                    <AccordionSummary
+                                      expandIcon={
+                                        <ExpandMoreIcon fontSize="large" />
+                                      }
+                                      aria-controls={`panel-resources-${i}a-content`}
+                                      id={`panel-resources-${i}a-header`}
+                                    >
+                                      <Typography variant="h5">
+                                        {resource.record.fields.indicator_en}
+                                      </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                      {subResources &&
+                                        subResources[i].map(
+                                          (subResource, index) => (
+                                            <Accordion
                                               sx={{
-                                                marginLeft: 5,
+                                                background: "#DCDCDC",
+                                                "&.Mui-expanded": {
+                                                  background: "#B8D98D",
+                                                },
                                               }}
-                                              expandIcon={
-                                                <ExpandMoreIcon fontSize="large" />
+                                              square={
+                                                index === resources.length - 1
+                                                  ? false
+                                                  : true
                                               }
-                                              aria-controls={`panel-resources-${index}b-content`}
-                                              id={`panel-resources-${index}b-header`}
+                                              disableGutters={true}
+                                              key={`panel-resources-${index}b`}
                                             >
-                                              <Typography variant="h5">
-                                                {
-                                                  subResource.record.fields
-                                                    .measurement_en
+                                              <AccordionSummary
+                                                sx={{
+                                                  marginLeft: 5,
+                                                }}
+                                                expandIcon={
+                                                  <ExpandMoreIcon fontSize="large" />
                                                 }
-                                              </Typography>
-                                            </AccordionSummary>
-                                            <AccordionDetails>
-                                              {
-                                                <div className="accordianContainer">
-                                                  <FactCard>
-                                                    {
-                                                      subResource.record.fields
-                                                        .value
-                                                    }
-                                                  </FactCard>
-                                                </div>
-                                              }
-                                            </AccordionDetails>
-                                          </Accordion>
-                                        )
-                                      )}
-                                  </AccordionDetails>
-                                </Accordion>
-                              ) : null}
-                            </>
-                          );
-                        })}
-                    </div>
+                                                aria-controls={`panel-resources-${index}b-content`}
+                                                id={`panel-resources-${index}b-header`}
+                                              >
+                                                <Typography variant="h5">
+                                                  {
+                                                    subResource.record.fields
+                                                      .measurement_en
+                                                  }
+                                                </Typography>
+                                              </AccordionSummary>
+                                              <AccordionDetails>
+                                                {
+                                                  <div className="accordianContainer">
+                                                    <FactCard>
+                                                      {
+                                                        subResource.record
+                                                          .fields.value
+                                                      }
+                                                    </FactCard>
+                                                  </div>
+                                                }
+                                              </AccordionDetails>
+                                            </Accordion>
+                                          )
+                                        )}
+                                    </AccordionDetails>
+                                  </Accordion>
+                                ) : null}
+                              </>
+                            );
+                          })}
+                      </div>
+                    )}
                   </AccordionDetails>
                 </Accordion>
+                <Stories />
               </div>
             </Grid>
             <Back />

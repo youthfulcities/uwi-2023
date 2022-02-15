@@ -92,9 +92,12 @@ const theme = createTheme({
     },
     MuiCollapse: {
       styleOverrides: {
-        wrapperInner: {
+        root: {
           background: "#F5F5F5",
-          borderRadius: "inherit",
+          borderTopLeftRadius: 0,
+          borderTopRightRadius: 0,
+          borderBottomRightRadius: "inherit",
+          borderBottomLeftRadius: "inherit",
         },
       },
     },

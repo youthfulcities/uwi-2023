@@ -2,10 +2,10 @@
   /*YOUTHFUL CITIES COLOURS*/
   --yellow: rgb(251, 209, 102);
   --pink: rgb(247, 188, 183);
-  --mint: rgb(187, 233, 203);
   --green: rgb(184, 217, 141);
   --indigo: rgb(79, 102, 175);
   --red: rgb(238, 96, 91);
+  --chestnuts: #884c41;
 
   --font_heading: font(normal normal normal 45px/1.4em arial + black);
 }
@@ -193,7 +193,7 @@ footer {
 }
 
 .accordianContainer {
-  margin: 27px 27px 27px 27px;
+  margin: 27px;
 }
 
 .textUnderlay {

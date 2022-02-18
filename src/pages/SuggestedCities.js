@@ -5,10 +5,10 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Link,
   Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { Link } from "react-router-dom";
 
 import getData from "../helpers/odsClientV2";
 
@@ -128,31 +128,40 @@ const SuggestedCities = () => {
                     <Typography variant="h3">Quick Facts</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    {resources[i].map((resource) => (
-                      <Grid item sx={{ width: "100%" }} flexGrow="5">
-                        <div className="accordianContainer">
-                          <FactCard>
-                            <Typography
-                              variant="h5"
-                              color="#000"
-                              align="center"
-                            >
-                              {resource.record.fields.measurement_en}
+                    {resources &&
+                      resources[i].map((resource) => (
+                        <Grid item sx={{ width: "100%" }} flexGrow="5">
+                          <div className="accordianContainer">
+                            <FactCard>
+                              <Typography
+                                variant="h5"
+                                color="#000"
+                                align="center"
+                              >
+                                {resource.record.fields.measurement_en}
+                              </Typography>
+                              {resource.record.fields.value}
+                            </FactCard>
+                          </div>
+                        </Grid>
+                      ))}
+                    <div className="accordianContainer">
+                      <Grid mt={1} item flexGrow="1">
+                        <Link to={`/about/${city.record.fields.city_name}`}>
+                          <Button
+                            variant="contained"
+                            size="large"
+                            fullWidth={true}
+                          >
+                            <Typography variant="h5">
+                              Learn More & See Resources
                             </Typography>
-                            {resource.record.fields.value}
-                          </FactCard>
-                        </div>
+                          </Button>
+                        </Link>
                       </Grid>
-                    ))}
+                    </div>
                   </AccordionDetails>
                 </Accordion>
-                {/* <Grid mt={1} item flexGrow="1">
-                  <Link to={`/about/${city.record.fields.city_name}`}>
-                    <Button variant="contained" size="large" fullWidth={true}>
-                      <Typography variant="h5">Explore City</Typography>
-                    </Button>
-                  </Link>
-                </Grid> */}
               </Grid>
             </>
           ))

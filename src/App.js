@@ -10,6 +10,7 @@ import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate.js";
 import SuggestedCities from "./pages/SuggestedCities";
+import CreateProfile from "./pages/CreateProfile";
 
 const theme = createTheme({
   palette: {
@@ -194,6 +195,7 @@ function App() {
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
           <Route path="/explore-all" element={<ExploreAll />}></Route>
+          <Route path="create-profile" element={<CreateProfile />}></Route>
           <Route path="/suggested-cities" element={<SuggestedCities />}></Route>
           <Route path="/about/:cityname" element={<CityTemplate />}></Route>
         </Routes>

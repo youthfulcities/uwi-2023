@@ -24,7 +24,7 @@ const Intro = () => {
           </Typography>
         </Grid>
         <Grid item mt={5}>
-          <Link to="/suggested-cities">
+          <Link to="/create-profile">
             <Button color="primary" variant="contained" size="large">
               <Typography variant="h5">Help Me Decide</Typography>
             </Button>

@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Grid } from "@mui/material";
 import Back from "./Back";
 import Socials from "./Socials";
-import Footer from "./Footer";
 
 const BasicContainer = ({ children, width }) => {
   return (

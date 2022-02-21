@@ -143,6 +143,9 @@ const theme = createTheme({
     },
     MuiOutlinedInput: {
       styleOverrides: {
+        input: {
+          paddingLeft: 20,
+        },
         root: {
           background: "#fff",
           fontFamily: "Gotham Narrow Book",

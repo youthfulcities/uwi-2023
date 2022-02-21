@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import FormContainer from "../components/Form/FormContainer";
+import FamilyMembers from "../components/Form/FamilyMembers";
 
 const CreateProfile = () => {
   const [form, setForm] = useState({
@@ -49,10 +50,28 @@ const CreateProfile = () => {
     setForm({ ...form, family: family });
   };
 
+  console.log(form);
+
+  const displaySection = (step) => {
+    switch (step) {
+      case 1:
+        return (
+          <FamilyMembers
+            addFamilyMembers={addFamilyMembers}
+            handleFamilyMemberChange={handleFamilyMemberChange}
+            form={form}
+            setForm={setForm}
+          />
+        );
+      default:
+        return <h1>Loading...</h1>;
+    }
+  };
+
   return (
     <>
-      <FormContainer prevStep={prevStep} nextStep={nextStep} width="md">
-        Hello world
+      <FormContainer prevStep={prevStep} nextStep={nextStep} width="sm">
+        {displaySection(form.step)}
       </FormContainer>
     </>
   );

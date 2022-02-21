@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Grid, Fab } from "@mui/material";
+import { Container, Grid, Fab, Typography, Paper } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import Socials from "../Socials";
+import PhotoBackground from "../PhotoBackground";
+import Decoration from "../Decoration";
 
 const FormContainer = ({ children, width, prevStep, nextStep }) => {
   return (
@@ -17,18 +19,25 @@ const FormContainer = ({ children, width, prevStep, nextStep }) => {
           alignItems="center"
           spacing={0}
         >
-          <Grid
-            sx={{ minHeight: "80vh", minWidth: "100%" }}
-            container
-            item
-            direction="column"
-            justifyContent="center"
-            alignItems="center"
-            pt="14vh"
-            pb="10vh"
-            spacing={0}
-          >
-            {children}
+          <Grid item my="14vh">
+            <Paper>
+              <Grid
+                sx={{ minWidth: "100%" }}
+                container
+                item
+                direction="column"
+                justifyContent="center"
+                alignItems="center"
+                py="14vh"
+                px={5}
+                spacing={0}
+              >
+                <Typography variant="h1" align="center">
+                  Create Profile
+                </Typography>
+                {children}
+              </Grid>
+            </Paper>
           </Grid>
           <Grid item pb={3} sx={{ maxHeight: "10vh" }}>
             <Socials />
@@ -57,6 +66,8 @@ const FormContainer = ({ children, width, prevStep, nextStep }) => {
           </Grid>
         </Grid>
       </Container>
+      <PhotoBackground />
+      <Decoration />
     </>
   );
 };

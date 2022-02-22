@@ -4,10 +4,10 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import Socials from "../Socials";
-import PhotoBackground from "../PhotoBackground";
 import Decoration from "../Decoration";
+import Back from "../Back";
 
-const FormContainer = ({ children, width, prevStep, nextStep }) => {
+const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
   return (
     <>
       <Container maxWidth={width === undefined ? "xs" : width}>
@@ -19,7 +19,7 @@ const FormContainer = ({ children, width, prevStep, nextStep }) => {
           alignItems="center"
           spacing={0}
         >
-          <Grid item my="14vh">
+          <Grid item mt="17vh" mb="7vh">
             <Paper>
               <Grid
                 sx={{ minWidth: "100%" }}
@@ -28,23 +28,21 @@ const FormContainer = ({ children, width, prevStep, nextStep }) => {
                 direction="column"
                 justifyContent="center"
                 alignItems="center"
-                py="14vh"
+                py="7vh"
                 px={5}
                 spacing={0}
               >
-                <Typography variant="h1" align="center">
+                <Typography variant="h1" align="center" mb={4}>
                   Create Profile
                 </Typography>
                 {children}
               </Grid>
             </Paper>
           </Grid>
-          <Grid item pb={3} sx={{ maxHeight: "10vh" }}>
+          <Grid item mb={2} sx={{ maxHeight: "10vh" }}>
             <Socials />
           </Grid>
-        </Grid>
-        <Grid container direction="row" justifyContent="space-between">
-          <Grid item>
+          {step > 1 ? (
             <Fab
               onClick={() => prevStep()}
               color="primary"
@@ -53,20 +51,19 @@ const FormContainer = ({ children, width, prevStep, nextStep }) => {
             >
               <ArrowBackIcon fontSize="large" />
             </Fab>
-          </Grid>
-          <Grid item>
-            <Fab
-              onClick={() => nextStep()}
-              color="primary"
-              size="medium"
-              className="backButton"
-            >
-              <ArrowForwardIcon fontSize="large" />
-            </Fab>
-          </Grid>
+          ) : (
+            <Back />
+          )}
+          <Fab
+            onClick={() => nextStep()}
+            color="primary"
+            size="medium"
+            className="forwardButton"
+          >
+            <ArrowForwardIcon fontSize="large" />
+          </Fab>
         </Grid>
       </Container>
-      <PhotoBackground />
       <Decoration />
     </>
   );

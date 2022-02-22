@@ -8,15 +8,16 @@ const BasicContainer = ({ children, width }) => {
     <>
       <Container maxWidth={width === undefined ? "xs" : width}>
         <Grid
-          sx={{ minHeight: "90vh", minWidth: "100%" }}
+          sx={{ minHeight: "88vh", minWidth: "100%" }}
           container
           direction="column"
           justifyContent="space-between"
           alignItems="center"
           spacing={0}
+          mb="2vh"
         >
           <Grid
-            sx={{ minHeight: "80vh", minWidth: "100%" }}
+            sx={{ minHeight: "78vh", minWidth: "100%" }}
             container
             item
             direction="column"

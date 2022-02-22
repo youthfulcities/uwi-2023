@@ -21,38 +21,40 @@ const Socials = ({ url }) => {
 
   return (
     <>
-      <CopyMe url={full} />
-      <Grid
-        container
-        justifyContent="center"
-        alignItems="center"
-        direction="row"
-        spacing={1}
-      >
-        <Grid item>
-          <EmailShareButton url={full} subject={title}>
-            <EmailIcon size={32} round={true} />
-          </EmailShareButton>
-        </Grid>
-        <Grid item>
-          <FacebookShareButton url={full}>
-            <FacebookIcon size={32} round={true} />
-          </FacebookShareButton>
-        </Grid>
-        <Grid item>
-          <TelegramShareButton url={full} title={title}>
-            <TelegramIcon size={32} round={true} />
-          </TelegramShareButton>
-        </Grid>
-        <Grid item>
-          <TwitterShareButton url={full} title={title}>
-            <TwitterIcon size={32} round={true} />
-          </TwitterShareButton>
-        </Grid>
-        <Grid item>
-          <WhatsappShareButton url={full} title={title} separator="—">
-            <WhatsappIcon size={32} round={true} />
-          </WhatsappShareButton>
+      <Grid container>
+        <CopyMe url={full} />
+        <Grid
+          container
+          justifyContent="center"
+          alignItems="center"
+          direction="row"
+          spacing={1}
+        >
+          <Grid item>
+            <EmailShareButton url={full} subject={title}>
+              <EmailIcon size={32} round={true} />
+            </EmailShareButton>
+          </Grid>
+          <Grid item>
+            <FacebookShareButton url={full}>
+              <FacebookIcon size={32} round={true} />
+            </FacebookShareButton>
+          </Grid>
+          <Grid item>
+            <TelegramShareButton url={full} title={title}>
+              <TelegramIcon size={32} round={true} />
+            </TelegramShareButton>
+          </Grid>
+          <Grid item>
+            <TwitterShareButton url={full} title={title}>
+              <TwitterIcon size={32} round={true} />
+            </TwitterShareButton>
+          </Grid>
+          <Grid item>
+            <WhatsappShareButton url={full} title={title} separator="—">
+              <WhatsappIcon size={32} round={true} />
+            </WhatsappShareButton>
+          </Grid>
         </Grid>
       </Grid>
     </>

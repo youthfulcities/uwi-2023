@@ -100,6 +100,11 @@ body {
   padding: 0;
   overflow-x: hidden;
   font-family: "Gotham Narrow Book", sans-serif;
+  z-index: -100;
+}
+
+body {
+  background-color: #424242;
 }
 
 footer {
@@ -142,8 +147,8 @@ footer {
 .photoBackgroundOverlay {
   background-color: #000000;
   opacity: 70%;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   z-index: -15;
@@ -153,8 +158,8 @@ footer {
   background-image: url("/public/assets/images/canada.jpg");
   background-size: cover;
   background-position: center;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   z-index: -20;
@@ -207,6 +212,13 @@ footer {
 
 .backButton {
   bottom: 4vh;
+  left: 0;
+  z-index: 100;
+}
+
+.forwardButton {
+  bottom: 4vh;
+  right: 0;
   z-index: 100;
 }
 

@@ -124,7 +124,7 @@ const CityTemplate = () => {
               direction="column"
               justifyContent="center"
               alignItems="center"
-              py="14vh"
+              py="7vh"
               spacing={0}
             >
               <div>
@@ -261,7 +261,9 @@ const CityTemplate = () => {
               </div>
             </Grid>
             <Back />
-            <Socials />
+            <Grid item mb={2} sx={{ maxHeight: "10vh" }}>
+              <Socials />
+            </Grid>
           </Container>
           <Decoration />
         </>

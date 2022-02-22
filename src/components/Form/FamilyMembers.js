@@ -1,57 +1,102 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { Typography, TextField, InputLabel, Grid, Button } from "@mui/material";
 
 const FamilyMembers = ({
   handleFamilyMemberChange,
+  handleChange,
   addFamilyMembers,
   form,
   setForm,
 }) => {
+  const { family, numberOfPeople } = form;
+
   return (
     <>
-      <Typography variant="h4">
+      <Typography variant="h4" mt={2}>
         Tell us a bit about your family so we can help find the best city for
         you.
       </Typography>
-      <Grid
-        container
-        item
-        direction="row"
-        mt={2}
-        spacing={1}
-        justifyContent="space-between"
-        alignItems="flex-end"
-      >
-        <Grid item flexGrow="2">
-          <InputLabel shrink htmlFor="family-num">
-            Number of people in your family
-          </InputLabel>
-          <TextField
-            id="family-num"
-            fullWidth={true}
-            variant="outlined"
-            label=""
-            type="number"
-            InputProps={{
-              inputProps: {
-                max: 20,
-                min: 0,
-              },
-            }}
-          ></TextField>
+      <Grid container direction="column" spacing={2}>
+        <Grid
+          container
+          item
+          direction="row"
+          my={2}
+          spacing={1}
+          justifyContent="space-between"
+          alignItems="flex-end"
+        >
+          <Grid item flexGrow="2">
+            <InputLabel id="family-num-label" shrink htmlFor="family-num">
+              Number of people in your family
+            </InputLabel>
+            <TextField
+              id="family-num"
+              name="numberOfPeople"
+              aria-describedby="family-num-label"
+              fullWidth={true}
+              variant="outlined"
+              label=""
+              type="number"
+              onChange={(e) => handleChange(e.target.name, e.target.value)}
+              InputProps={{
+                inputProps: {
+                  max: 20,
+                  min: 0,
+                },
+              }}
+            />
+          </Grid>
+          <Grid item>
+            <Button
+              sx={{ minWidth: 0 }}
+              className="textRoundButton"
+              variant="contained"
+              color="primary"
+              onClick={() => addFamilyMembers(numberOfPeople)}
+            >
+              <Typography variant="h5">Confirm</Typography>
+            </Button>
+          </Grid>
         </Grid>
-        <Grid item>
-          <Button
-            sx={{ minWidth: 0 }}
-            className="textRoundButton"
-            variant="contained"
-            color="primary"
-            onClick={(e) => addFamilyMembers(e.target.value)}
-          >
-            <Typography variant="h5">Confirm</Typography>
-          </Button>
-        </Grid>
+        {family.length > 0 &&
+          family.map((member, i) => (
+            <>
+              <Grid item key={i}>
+                <Grid item mb={1}>
+                  <Typography variant="h3">Family member {i + 1}</Typography>
+                </Grid>
+                <Grid item>
+                  <InputLabel
+                    id={`family-age-label-${i}`}
+                    shrink
+                    htmlFor={`family-age-${i}`}
+                  >
+                    Age of family member
+                  </InputLabel>
+                  <TextField
+                    id={`family-age-${i}`}
+                    name="age"
+                    aria-describedby={`family-age-label-${i}`}
+                    fullWidth={true}
+                    variant="outlined"
+                    label=""
+                    type="number"
+                    onChange={(e) =>
+                      handleFamilyMemberChange(e.target.name, e.target.value, i)
+                    }
+                    InputProps={{
+                      inputProps: {
+                        max: 20,
+                        min: 0,
+                      },
+                    }}
+                  />
+                </Grid>
+              </Grid>
+            </>
+          ))}
       </Grid>
     </>
   );

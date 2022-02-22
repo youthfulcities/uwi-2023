@@ -25,15 +25,15 @@ const CreateProfile = () => {
     setForm({ ...form, step: form.step - 1 });
   };
 
-  const handleChange = (input, e) => {
-    setForm({ ...form, [input]: e.target.value });
+  const handleChange = (input, value) => {
+    setForm({ ...form, [input]: value });
   };
 
-  const handleFamilyMemberChange = (input, e, i) => {
-    const { family } = form;
-    const newFamily = [...family];
-    newFamily[i] = { ...newFamily[i], [input]: e.target.value };
-    setForm({ ...form, newFamily });
+  const handleFamilyMemberChange = (input, value, i) => {
+    const oldFamily = form.family;
+    const family = [...oldFamily];
+    family[i] = { ...family[i], [input]: value };
+    setForm({ ...form, family });
   };
 
   const addFamilyMembers = (n) => {
@@ -59,6 +59,7 @@ const CreateProfile = () => {
           <FamilyMembers
             addFamilyMembers={addFamilyMembers}
             handleFamilyMemberChange={handleFamilyMemberChange}
+            handleChange={handleChange}
             form={form}
             setForm={setForm}
           />
@@ -70,7 +71,12 @@ const CreateProfile = () => {
 
   return (
     <>
-      <FormContainer prevStep={prevStep} nextStep={nextStep} width="sm">
+      <FormContainer
+        prevStep={prevStep}
+        nextStep={nextStep}
+        width="sm"
+        step={form.step}
+      >
         {displaySection(form.step)}
       </FormContainer>
     </>

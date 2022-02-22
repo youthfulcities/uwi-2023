@@ -104,7 +104,7 @@ body {
 }
 
 body {
-  background-color: #424242;
+  background-color: #f5f5f5;
 }
 
 footer {
@@ -212,13 +212,13 @@ footer {
 
 .backButton {
   bottom: 4vh;
-  left: 0;
+  left: 20px;
   z-index: 100;
 }
 
 .forwardButton {
   bottom: 4vh;
-  right: 0;
+  right: 20px;
   z-index: 100;
 }
 

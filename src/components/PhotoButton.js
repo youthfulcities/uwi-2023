@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid } from "@mui/material";
+import { Typography, Grid, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 
 const PhotoButton = ({ city, src, alt, factoid, children }) => {
@@ -10,7 +10,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
   return (
     <>
       <Link to={`/about/${city}`}>
-        <div className="photoButtonContainer">
+        <Box className="photoButtonContainer" sx={{ boxShadow: 2 }}>
           <img className="photoButtonImg" src={src} alt={alt} />
           <Grid
             container
@@ -52,7 +52,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
             </Grid>
           </Grid>
           <div className="photoOverlay"></div>
-        </div>
+        </Box>
       </Link>
     </>
   );

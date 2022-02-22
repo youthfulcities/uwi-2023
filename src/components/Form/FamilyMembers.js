@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Typography, TextField, InputLabel, Grid, Button } from "@mui/material";
 
@@ -7,7 +7,6 @@ const FamilyMembers = ({
   handleChange,
   addFamilyMembers,
   form,
-  setForm,
 }) => {
   const { family, numberOfPeople } = form;
 

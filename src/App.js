@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
@@ -80,7 +80,7 @@ const theme = createTheme({
           paddingTop: 5,
           paddingRight: 0,
           paddingBottom: 0,
-          background: "#F5F5F5",
+          background: "#FAFAFA",
           color: "#000",
           "&.Mui-expanded": {
             background: "#F7BCB7",
@@ -92,7 +92,7 @@ const theme = createTheme({
     MuiCollapse: {
       styleOverrides: {
         root: {
-          background: "#F5F5F5",
+          background: "#FAFAFA",
           borderTopLeftRadius: 0,
           borderTopRightRadius: 0,
           borderBottomRightRadius: "inherit",
@@ -187,11 +187,49 @@ function App() {
     query: window.location.search,
   });
 
+  const [currentLangCode, setCurrentLangCode] = useState(
+    window.localStorage.i18nextLng || "en"
+  );
+
+  const languages = [
+    {
+      code: "en",
+      language: "English",
+      dir: "ltr",
+    },
+    {
+      code: "fa",
+      language: "دری",
+      dir: "rtl",
+    },
+    {
+      code: "ps",
+      language: "پښتو",
+      dir: "rtl",
+    },
+  ];
+
+  const currentLanguage = languages.find((l) => l.code === currentLangCode);
+
+  useEffect(() => {
+    document
+      .getElementsByTagName("html")[0]
+      .setAttribute("dir", currentLanguage.dir);
+  }, [currentLanguage]);
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route
+            path="/"
+            element={
+              <Home
+                languages={languages}
+                setCurrentLangCode={setCurrentLangCode}
+              />
+            }
+          ></Route>
           <Route
             path="/info/"
             element={<Info url={url} setUrl={setUrl} />}

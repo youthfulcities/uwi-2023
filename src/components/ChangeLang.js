@@ -8,8 +8,9 @@ import {
   Typography,
 } from "@mui/material";
 import TranslateIcon from "@mui/icons-material/Translate";
+import i18next from "i18next";
 
-const ChangeLang = () => {
+const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -27,7 +28,7 @@ const ChangeLang = () => {
           <Box
             sx={{ display: "flex", alignItems: "center", textAlign: "center" }}
           >
-            <Tooltip title="Language settings">
+            <Tooltip title="Language settings.">
               <Button
                 sx={{ minWidth: 0, boxShadow: 6 }}
                 variant="contained"
@@ -43,9 +44,31 @@ const ChangeLang = () => {
             </Tooltip>
             {open && (
               <Paper className="langMenu" id="language-menu" elevation={6}>
-                <Typography variant="h5" className="langMenuItem">
-                  Profile
-                </Typography>
+                {languages.map(({ code, language }) => (
+                  <Box
+                    key={code}
+                    onClick={() => {
+                      i18next.changeLanguage(code);
+                      setCurrentLangCode(code);
+                    }}
+                    className={
+                      currentLangCode === code
+                        ? "langMenuItemWrapperDisabled"
+                        : "langMenuItemWrapper"
+                    }
+                  >
+                    <Typography
+                      variant="h5"
+                      className={
+                        currentLangCode === code
+                          ? "langMenuItemDisabled"
+                          : "langMenuItem"
+                      }
+                    >
+                      {language}
+                    </Typography>
+                  </Box>
+                ))}
               </Paper>
             )}
           </Box>

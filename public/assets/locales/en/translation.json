@@ -2,5 +2,11 @@
   "welcome": "Welcome!",
   "welcomeMessage":
     "This app is to help refugees know where to settle provide resources for those cities.",
-    "copy": "Copy"
+    "copy": "Copy",
+    "copied": "Copied!",
+    "introHeading":"Let's Find Your Best City",
+    "introPar1": " We're going to ask you some questions to help determine which cities will be best for you.",
+    "introPar2": "We will not be recording any personal information.",
+    "toProfile":"Help Me Decide",
+    "toExplore":"Explore All Cities"
 }

@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate.js";
 import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
+import ChangeLang from "./components/ChangeLang";
 
 const theme = createTheme({
   palette: {
@@ -240,6 +241,7 @@ function App() {
           <Route path="/suggested-cities" element={<SuggestedCities />}></Route>
           <Route path="/about/:cityname" element={<CityTemplate />}></Route>
         </Routes>
+        <ChangeLang />
         <Footer />
       </Router>
     </ThemeProvider>

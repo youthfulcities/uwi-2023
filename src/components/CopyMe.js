@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Button, Typography, FilledInput, Grid } from "@mui/material";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import { useTranslation } from "react-i18next";
 
 const CopyMe = ({ url }) => {
   const [copied, setCopied] = useState(false);
@@ -12,6 +13,8 @@ const CopyMe = ({ url }) => {
     }, 1000);
     return () => clearTimeout(timer);
   }, [copied]);
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -35,7 +38,7 @@ const CopyMe = ({ url }) => {
               sx={{ minWidth: "100px" }}
             >
               <Typography color="#fff" variant="h5">
-                Copy
+                {t("copy")}
               </Typography>
             </Button>
           </CopyToClipboard>
@@ -43,7 +46,7 @@ const CopyMe = ({ url }) => {
         {copied && (
           <Grid item>
             <Typography className="textUnderlay" color="#fff" variant="p">
-              Copied!
+              {t("copied")}
             </Typography>
           </Grid>
         )}

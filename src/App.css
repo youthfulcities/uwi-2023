@@ -96,6 +96,7 @@ a:hover {
 html,
 body {
   min-height: 100%;
+  min-width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -212,13 +213,13 @@ footer {
 
 .backButton {
   bottom: 4vh;
-  left: 20px;
+  left: 24px;
   z-index: 100;
 }
 
 .forwardButton {
   bottom: 4vh;
-  right: 20px;
+  right: 24px;
   z-index: 100;
 }
 
@@ -283,13 +284,37 @@ footer {
   cursor: pointer;
 }
 
-/* 
+.changeLang {
+  position: fixed;
+  right: 40px;
+  top: 5vh;
+  z-index: 100;
+}
+
+/* Other
    ========================================================================== */
 
 .socials {
   height: 10vh;
   bottom: 0;
   position: relative;
+}
+
+.langMenu {
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  padding: 24px;
+}
+
+.langMenuItem {
+  width: 100%;
+  height: 100%;
+}
+
+.langMenuItem:hover {
+  color: var(--indigo);
+  cursor: pointer;
 }
 
 /* Material UI overrides where I couldn't figure out a better way to do it

@@ -19,7 +19,7 @@ const Home = ({ languages, setCurrentLangCode }) => {
             {t("welcome")}
           </Typography>
         </Grid>
-        <Grid item mt={1}>
+        <Grid item mt={1} mb={5}>
           <Typography color="#FFF" variant="h4" align="center">
             {t("welcomeMessage")}
           </Typography>

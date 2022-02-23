@@ -3,12 +3,11 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
-import Info from "./pages/Info";
-import Home from "./pages/Home.js";
+import Home from "./pages/Home";
 import ExploreAll from "./pages/ExploreAll";
 import Intro from "./pages/Intro";
 import Footer from "./components/Footer";
-import CityTemplate from "./pages/CityTemplate.js";
+import CityTemplate from "./pages/CityTemplate";
 import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
 import ChangeLang from "./components/ChangeLang";
@@ -16,10 +15,10 @@ import ChangeLang from "./components/ChangeLang";
 function App() {
   //because ODS controls the search params via angular we can't use react-router-dom to do so
   //instead we'll just keep track of the url statefully
-  const [url, setUrl] = useState({
-    full: window.location.href,
-    query: window.location.search,
-  });
+  // const [url, setUrl] = useState({
+  //   full: window.location.href,
+  //   query: window.location.search,
+  // });
 
   const [currentLangCode, setCurrentLangCode] = useState(
     window.localStorage.i18nextLng || "en"
@@ -233,10 +232,6 @@ function App() {
                 setCurrentLangCode={setCurrentLangCode}
               />
             }
-          ></Route>
-          <Route
-            path="/info/"
-            element={<Info url={url} setUrl={setUrl} />}
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
           <Route path="/explore-all" element={<ExploreAll />}></Route>

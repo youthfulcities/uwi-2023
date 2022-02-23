@@ -45,7 +45,7 @@ const CopyMe = ({ url }) => {
         </Grid>
         {copied && (
           <Grid item>
-            <Typography className="textUnderlay" color="#fff" variant="p">
+            <Typography className="textUnderlay" color="#fff" variant="body1">
               {t("copied")}
             </Typography>
           </Grid>

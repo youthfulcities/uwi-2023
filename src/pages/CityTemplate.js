@@ -4,8 +4,6 @@ import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
 
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
 import getData from "../helpers/odsClientV2.js";
 
 import Decoration from "../components/Decoration";

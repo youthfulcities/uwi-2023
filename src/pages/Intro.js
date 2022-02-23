@@ -5,7 +5,6 @@ import Decoration from "../components/Decoration";
 import PhotoBackground from "../components/PhotoBackground";
 import BasicContainer from "../components/BasicContainer";
 import { useTranslation } from "react-i18next";
-import ChangeLang from "../components/ChangeLang";
 
 const Intro = () => {
   const { t } = useTranslation();

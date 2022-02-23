@@ -6,6 +6,7 @@ import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
+  Grid,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -114,10 +115,20 @@ const Resources = ({
                                 <AccordionDetails>
                                   {
                                     <div className="accordianContainer">
-                                      <FactCard>
-                                        {subResource.record.fields.value}
-                                      </FactCard>
-                                      <ResourceCard />
+                                      <Grid
+                                        container
+                                        spacing={2}
+                                        direction="column"
+                                      >
+                                        <Grid item>
+                                          <FactCard>
+                                            {subResource.record.fields.value}
+                                          </FactCard>
+                                        </Grid>
+                                        <Grid item>
+                                          <ResourceCard />
+                                        </Grid>
+                                      </Grid>
                                     </div>
                                   }
                                 </AccordionDetails>

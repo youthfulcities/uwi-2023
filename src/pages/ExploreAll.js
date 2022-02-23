@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
 import { Grid, Typography } from "@mui/material";
 
 import PhotoButton from "../components/PhotoButton";
@@ -8,6 +10,7 @@ import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";
 
 const ExploreAll = () => {
+  const { t } = useTranslation();
   const [recs, setRecs] = useState([]);
   const query = "/records?limit=10&offset=0";
 
@@ -26,7 +29,7 @@ const ExploreAll = () => {
       <BasicContainer width="md">
         <Grid mb={2} item>
           <Typography align="center" variant="h1">
-            Explore All Cities
+            {t("exploreHeading")}
           </Typography>
         </Grid>
         {recs.map((city, i) => (

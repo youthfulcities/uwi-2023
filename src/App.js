@@ -248,6 +248,8 @@ function App() {
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
         />
         <Footer />
       </Router>

@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import { Container, Grid, Fab, Typography, Paper } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -8,6 +10,7 @@ import Decoration from "../Decoration";
 import Back from "../Back";
 
 const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
+  const { t } = useTranslation();
   return (
     <>
       <Container maxWidth={width === undefined ? "xs" : width}>
@@ -33,7 +36,7 @@ const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
                 spacing={0}
               >
                 <Typography variant="h1" align="center" mb={4}>
-                  Create Profile
+                  {t("createProfileHeading")}
                 </Typography>
                 {children}
               </Grid>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import {
   Typography,
   Grid,
@@ -25,6 +26,7 @@ const SuggestedCities = () => {
   //   { id: 3, state: false },
   // ]);
 
+  const { t } = useTranslation();
   const [cityNames, setCityNames] = useState([
     "Calgary",
     "Saskatoon",
@@ -94,7 +96,7 @@ const SuggestedCities = () => {
       <BasicContainer width="md">
         <Grid mb={2} item>
           <Typography align="center" variant="h1">
-            Here are your suggested cities:
+            {t("suggestedCitiesHeading")}
           </Typography>
         </Grid>
         {cityData ? (
@@ -125,7 +127,7 @@ const SuggestedCities = () => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                   >
-                    <Typography variant="h3">Quick Facts</Typography>
+                    <Typography variant="h3">{t("facts")}</Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     {resources &&
@@ -153,9 +155,7 @@ const SuggestedCities = () => {
                             size="large"
                             fullWidth={true}
                           >
-                            <Typography variant="h5">
-                              Learn More & See Resources
-                            </Typography>
+                            <Typography variant="h5">{t("more")}</Typography>
                           </Button>
                         </Link>
                       </Grid>

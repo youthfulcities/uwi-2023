@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 import {
   Box,
   Tooltip,
@@ -6,12 +8,21 @@ import {
   ClickAwayListener,
   Paper,
   Typography,
+  Fab,
 } from "@mui/material";
 import TranslateIcon from "@mui/icons-material/Translate";
-import i18next from "i18next";
+import AddIcon from "@mui/icons-material/Add";
+import RemoveIcon from "@mui/icons-material/Remove";
 
-const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
+const ChangeLang = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleClick = () => {
     setOpen((prev) => !prev);
@@ -28,7 +39,7 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
           <Box
             sx={{ display: "flex", alignItems: "center", textAlign: "center" }}
           >
-            <Tooltip title="Language settings.">
+            <Tooltip title={t("languageTooltip")}>
               <Button
                 sx={{ minWidth: 0, boxShadow: 6 }}
                 variant="contained"
@@ -43,33 +54,53 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
               </Button>
             </Tooltip>
             {open && (
-              <Paper className="langMenu" id="language-menu" elevation={6}>
-                {languages.map(({ code, language }) => (
-                  <Box
-                    key={code}
-                    onClick={() => {
-                      i18next.changeLanguage(code);
-                      setCurrentLangCode(code);
-                    }}
-                    className={
-                      currentLangCode === code
-                        ? "langMenuItemWrapperDisabled"
-                        : "langMenuItemWrapper"
-                    }
-                  >
-                    <Typography
-                      variant="h5"
+              <>
+                <Paper className="langMenu" id="language-menu" elevation={6}>
+                  {languages.map(({ code, language }) => (
+                    <Box
+                      key={code}
+                      onClick={() => {
+                        i18next.changeLanguage(code);
+                        setCurrentLangCode(code);
+                      }}
                       className={
                         currentLangCode === code
-                          ? "langMenuItemDisabled"
-                          : "langMenuItem"
+                          ? "langMenuItemWrapperDisabled"
+                          : "langMenuItemWrapper"
                       }
                     >
-                      {language}
-                    </Typography>
-                  </Box>
-                ))}
-              </Paper>
+                      <Typography
+                        variant="h5"
+                        className={
+                          currentLangCode === code
+                            ? "langMenuItemDisabled"
+                            : "langMenuItem"
+                        }
+                      >
+                        {language}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Paper>
+                <Fab
+                  color="primary"
+                  size="medium"
+                  className="textSizeButtonDecrease"
+                  onClick={() => setTextSize(textSize - 1)}
+                  disabled={textSize === 0}
+                >
+                  <RemoveIcon fontSize="large" />
+                </Fab>
+                <Fab
+                  color="primary"
+                  size="medium"
+                  className="textSizeButtonIncrease"
+                  onClick={() => setTextSize(textSize + 1)}
+                  disabled={textSize === 5}
+                >
+                  <AddIcon fontSize="large" />
+                </Fab>
+              </>
             )}
           </Box>
         </ClickAwayListener>

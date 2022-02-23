@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { Typography, TextField, InputLabel, Grid, Button } from "@mui/material";
 
@@ -9,6 +10,8 @@ const FamilyMembers = ({
   form,
 }) => {
   const { family, numberOfPeople } = form;
+
+  const { t } = useTranslation();
 
   return (
     <>
@@ -55,7 +58,7 @@ const FamilyMembers = ({
               color="primary"
               onClick={() => addFamilyMembers(numberOfPeople)}
             >
-              <Typography variant="h5">Confirm</Typography>
+              <Typography variant="h5">{t("confirm")}</Typography>
             </Button>
           </Grid>
         </Grid>

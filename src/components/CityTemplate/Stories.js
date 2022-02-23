@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import {
   Typography,
@@ -10,6 +11,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Stories = () => {
+  const { t } = useTranslation();
   return (
     <>
       <Accordion
@@ -29,7 +31,7 @@ const Stories = () => {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography variant="h3">Success Stories</Typography>
+          <Typography variant="h3">{t("stories")}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className="accordianContainer">

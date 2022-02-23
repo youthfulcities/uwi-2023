@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import FormContainer from "../components/Form/FormContainer";
 import FamilyMembers from "../components/Form/FamilyMembers";
 
 const CreateProfile = () => {
+  const { t } = useTranslation();
+
   const [form, setForm] = useState({
     step: 1,
     name: "",
@@ -65,7 +68,7 @@ const CreateProfile = () => {
           />
         );
       default:
-        return <h1>Loading...</h1>;
+        return <h1>{t("loading")}</h1>;
     }
   };
 

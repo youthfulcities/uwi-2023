@@ -1,7 +1,7 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 import { Button, Grid, TextField } from "@mui/material";
-
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -12,6 +12,7 @@ const Search = ({
   createStringQuery,
   setSearchStringQuery,
 }) => {
+  const { t } = useTranslation();
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       createStringQuery();
@@ -36,7 +37,7 @@ const Search = ({
             onChange={(e) => setSearchString(e.target.value)}
             onKeyDown={(e) => handleKeyPress(e)}
             fullWidth={true}
-            label="Search"
+            label={t("search")}
           ></TextField>
         </Grid>
         {searchString.length > 0 && (

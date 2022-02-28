@@ -96,7 +96,9 @@ const ChangeLang = ({
                   size="medium"
                   className="textSizeButtonIncrease"
                   onClick={() => setTextSize(textSize + 1)}
-                  disabled={textSize === 5}
+                  disabled={
+                    currentLangCode === "en" ? textSize === 3 : textSize === 4
+                  }
                 >
                   <AddIcon fontSize="large" />
                 </Fab>

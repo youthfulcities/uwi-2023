@@ -230,6 +230,7 @@ function App() {
               <Home
                 languages={languages}
                 setCurrentLangCode={setCurrentLangCode}
+                currentLangCode={currentLangCode}
               />
             }
           ></Route>

@@ -79,60 +79,27 @@ const Resources = ({
                           id={`panel-resources-${i}a-header`}
                         >
                           <Typography variant="h5">
-                            {resource.record.fields.indicator_en}
+                            {resource.record.fields.measurement}
                           </Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                           {subResources &&
                             subResources[i].map((subResource, index) => (
-                              <Accordion
-                                sx={{
-                                  background: "#DCDCDC",
-                                  "&.Mui-expanded": {
-                                    background: "#B8D98D",
-                                  },
-                                }}
-                                square={
-                                  index === resources.length - 1 ? false : true
-                                }
-                                disableGutters={true}
-                                key={`panel-resources-${index}b`}
-                              >
-                                <AccordionSummary
-                                  sx={{
-                                    marginLeft: 5,
-                                  }}
-                                  expandIcon={
-                                    <ExpandMoreIcon fontSize="large" />
-                                  }
-                                  aria-controls={`panel-resources-${index}b-content`}
-                                  id={`panel-resources-${index}b-header`}
-                                >
-                                  <Typography variant="h5">
-                                    {subResource.record.fields.measurement_en}
-                                  </Typography>
-                                </AccordionSummary>
-                                <AccordionDetails>
-                                  {
-                                    <div className="accordianContainer">
-                                      <Grid
-                                        container
-                                        spacing={2}
-                                        direction="column"
-                                      >
-                                        <Grid item>
-                                          <FactCard>
-                                            {subResource.record.fields.value}
-                                          </FactCard>
-                                        </Grid>
-                                        <Grid item>
-                                          <ResourceCard />
-                                        </Grid>
-                                      </Grid>
-                                    </div>
-                                  }
-                                </AccordionDetails>
-                              </Accordion>
+                              <div className="accordianContainer">
+                                <Grid container spacing={2} direction="column">
+                                  <Grid item>
+                                    <ResourceCard
+                                      phone={subResource.record.fields.phone}
+                                      address={
+                                        subResource.record.fields.address
+                                      }
+                                      name={subResource.record.fields.name}
+                                      email={subResource.record.fields.email}
+                                      url={subResource.record.fields.url}
+                                    />
+                                  </Grid>
+                                </Grid>
+                              </div>
                             ))}
                         </AccordionDetails>
                       </Accordion>
@@ -146,5 +113,57 @@ const Resources = ({
     </Accordion>
   );
 };
+
+//nested accordian
+{
+  /* <Accordion
+sx={{
+  background: "#DCDCDC",
+  "&.Mui-expanded": {
+    background: "#B8D98D",
+  },
+}}
+square={
+  index === resources.length - 1 ? false : true
+}
+disableGutters={true}
+key={`panel-resources-${index}b`}
+>
+<AccordionSummary
+  sx={{
+    marginLeft: 5,
+  }}
+  expandIcon={
+    <ExpandMoreIcon fontSize="large" />
+  }
+  aria-controls={`panel-resources-${index}b-content`}
+  id={`panel-resources-${index}b-header`}
+>
+  <Typography variant="h5">
+    {subResource.record.fields.measurement_en}
+  </Typography>
+</AccordionSummary>
+<AccordionDetails>
+  {
+    <div className="accordianContainer">
+      <Grid
+        container
+        spacing={2}
+        direction="column"
+      >
+        <Grid item>
+          <FactCard>
+            {subResource.record.fields.value}
+          </FactCard>
+        </Grid>
+        <Grid item>
+          <ResourceCard />
+        </Grid>
+      </Grid>
+    </div>
+  }
+</AccordionDetails>
+</Accordion> */
+}
 
 export default Resources;

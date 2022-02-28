@@ -8,19 +8,34 @@ import PhotoBackground from "../components/PhotoBackground";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-const Home = ({ languages, setCurrentLangCode }) => {
+const Home = ({ languages, setCurrentLangCode, currentLangCode }) => {
   const { t } = useTranslation();
 
   return (
     <>
       <BasicContainer width="xs">
-        <Grid item>
-          <Typography color="#FFF" variant="h1" align="center">
+        <Grid
+          item
+          container
+          direction="row"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <img
+            alt="Home icon with a group of four houses"
+            src="/assets/images/home-white.png"
+          />
+          <Typography color="#FFF" variant="h1" align="center" mx={2}>
             {t("welcome")}
           </Typography>
         </Grid>
-        <Grid item mt={1} mb={5}>
+        <Grid item mt={2} mb={5}>
           <Typography color="#FFF" variant="h4" align="center">
+            کلبه • کور • Home
+          </Typography>
+        </Grid>
+        <Grid item mt={2} mb={5}>
+          <Typography color="#FFF" variant="h5" align="center">
             {t("welcomeMessage")}
           </Typography>
         </Grid>

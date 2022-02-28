@@ -24,7 +24,7 @@ const CityTemplate = () => {
   const [searchStringQuery, setSearchStringQuery] = useState("");
 
   const cityQuery = `/records?refine=city_name:${cityname}`;
-  let resourceQuery = `/records?refine=city:${cityname}&limit=10&select=indicator_en&group_by=indicator_en`;
+  let resourceQuery = `/records?refine=city:${cityname}&limit=10&select=measurement&group_by=measurement`;
 
   useEffect(() => {
     const retrievedInfo = getData("cities", cityQuery).then(
@@ -40,7 +40,7 @@ const CityTemplate = () => {
 
   //get main categories
   useEffect(() => {
-    const retrievedInfo = getData("index-2020-full", resourceQuery).then(
+    const retrievedInfo = getData("refugee-test-data", resourceQuery).then(
       (res) => res.records
     );
 
@@ -52,21 +52,48 @@ const CityTemplate = () => {
   }, [resourceQuery]);
 
   //get sub categories within resources
+  // useEffect(() => {
+  //   const createSubResourceQuery = (indicator_en) => {
+  //     return `/records?refine=city:${cityname}&limit=10&select=avg(value) as value,measurement_en,indicator_en,noteen&where=indicator_en="${indicator_en}"${
+  //       searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
+  //     }&group_by=measurement_en,indicator_en,noteen`;
+  //   };
+
+  //   if (resources !== undefined) {
+  //     const sub = resources.map((resource) =>
+  //       createSubResourceQuery(resource.record.fields.indicator_en)
+  //     );
+
+  //     const retrievedInfo = Promise.all(
+  //       sub.map((query) =>
+  //         getData("index-2020-full", query).then((res) => res.records)
+  //       )
+  //     );
+
+  //     const setSubs = async () => {
+  //       setSubResources(await retrievedInfo);
+  //     };
+
+  //     setSubs();
+  //   }
+  // }, [resources, cityname, searchStringQuery]);
+
+  //get resource data
   useEffect(() => {
-    const createSubResourceQuery = (indicator_en) => {
-      return `/records?refine=city:${cityname}&limit=10&select=avg(value) as value,measurement_en,indicator_en,noteen&where=indicator_en="${indicator_en}"${
+    const createSubResourceQuery = (measurement) => {
+      return `/records?refine=city:${cityname}&limit=10&select=address_number_street_city_province_postal_code as address,name_of_recreation_centre as name,url_source as url,email,phone&where=measurement="${measurement}"${
         searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
-      }&group_by=measurement_en,indicator_en,noteen`;
+      }`;
     };
 
     if (resources !== undefined) {
       const sub = resources.map((resource) =>
-        createSubResourceQuery(resource.record.fields.indicator_en)
+        createSubResourceQuery(resource.record.fields.measurement)
       );
 
       const retrievedInfo = Promise.all(
         sub.map((query) =>
-          getData("index-2020-full", query).then((res) => res.records)
+          getData("refugee-test-data", query).then((res) => res.records)
         )
       );
 

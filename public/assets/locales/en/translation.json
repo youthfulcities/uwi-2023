@@ -23,5 +23,9 @@
     "noneFound": "No results found. Try searching something else.",
     "suggestedCitiesHeading": "Here are your suggested cities:",
     "more": "Learn More & See Resources",
-    "facts": "Quick Facts"
+    "facts": "Quick Facts",
+    "website": "Website",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address"
 }

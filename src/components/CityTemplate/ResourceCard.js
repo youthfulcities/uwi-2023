@@ -1,4 +1,6 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import {
   Card,
   Typography,
@@ -13,8 +15,12 @@ import {
 import PhoneIcon from "@mui/icons-material/Phone";
 import WebIcon from "@mui/icons-material/Web";
 import MailIcon from "@mui/icons-material/Mail";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 const ResourceCard = ({ phone, address, name, email, url }) => {
+  const { t } = useTranslation();
+
+  //makes links input without http:// at the beginning usable
   const createLink = (url) => {
     if (url.includes("http")) {
       return url;
@@ -23,27 +29,43 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
     }
   };
 
+  //removes everything but the base url to make the url fit on the cards
+  const createReadableUrl = (url) => {
+    if (url.includes("http") || url.includes("www")) {
+      let newUrl = url.split(/http(?:s:\/\/(?:www\.)?|:\/\/)|www\.|\//);
+      return newUrl[1];
+    }
+    let newUrl = url.split("/");
+    return newUrl[0];
+  };
+
+  //use google map api to link to address. remove # as it's a special character and breaks the query
+  const createQuery = (name, address) => {
+    let q = name.replace("#", "").replace("&", "and");
+    let newAddress = address.replace("#", "").replace("&", "and");
+
+    return `https://maps.google.com/?q=${q}+${newAddress}`;
+  };
+
   return (
     <Card sx={{ minHeight: 100 }} m="auto">
       <Grid
         p={4}
         container
         sx={{ minHeight: 100 }}
-        justifyContent="center"
+        justifyContent="flex-start"
         alignItems="center"
       >
         <Grid item>
-          <Typography align="left" variant="h4">
-            {name}
-          </Typography>
-          <Typography variant="p">
+          <Typography variant="h4">{name}</Typography>
+          <Typography variant="body1">
             This is a description of this resource
           </Typography>
           <Grid item my="12px">
             <Divider />
           </Grid>
           <Grid item>
-            <List>
+            <List sx={{ maxWidth: "sm" }}>
               {phone !== "N/A" && (
                 <ListItem disablePadding>
                   <ListItemButton component="a" href={`tel:${phone}`}>
@@ -51,8 +73,12 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                       <PhoneIcon fontSize="large" />
                     </ListItemIcon>
                     <ListItemText
-                      primary={<Typography variant="h5">Phone</Typography>}
-                      secondary={<Typography variant="p">{phone}</Typography>}
+                      primary={
+                        <Typography variant="h5">{t("phone")}</Typography>
+                      }
+                      secondary={
+                        <Typography variant="body1">{phone}</Typography>
+                      }
                     />
                   </ListItemButton>
                 </ListItem>
@@ -68,8 +94,14 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                       <WebIcon fontSize="large" />
                     </ListItemIcon>
                     <ListItemText
-                      primary={<Typography variant="h5">Website</Typography>}
-                      secondary={<Typography variant="p">{url}</Typography>}
+                      primary={
+                        <Typography variant="h5">{t("website")}</Typography>
+                      }
+                      secondary={
+                        <Typography variant="body1">
+                          {createReadableUrl(url)}
+                        </Typography>
+                      }
                     />
                   </ListItemButton>
                 </ListItem>
@@ -81,8 +113,12 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                       <MailIcon fontSize="large" />
                     </ListItemIcon>
                     <ListItemText
-                      primary={<Typography variant="h5">Email</Typography>}
-                      secondary={<Typography variant="p">{email}</Typography>}
+                      primary={
+                        <Typography variant="h5">{t("email")}</Typography>
+                      }
+                      secondary={
+                        <Typography variant="body1">{email}</Typography>
+                      }
                     />
                   </ListItemButton>
                 </ListItem>
@@ -92,14 +128,18 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                   <ListItemButton
                     component="a"
                     target="_blank"
-                    href={`https://maps.google.com/?q=:${address}`}
+                    href={createQuery(name, address)}
                   >
                     <ListItemIcon>
-                      <MailIcon fontSize="large" />
+                      <LocationOnIcon fontSize="large" />
                     </ListItemIcon>
                     <ListItemText
-                      primary={<Typography variant="h5">Address</Typography>}
-                      secondary={<Typography variant="p">{address}</Typography>}
+                      primary={
+                        <Typography variant="h5">{t("address")}</Typography>
+                      }
+                      secondary={
+                        <Typography variant="body1">{address}</Typography>
+                      }
                     />
                   </ListItemButton>
                 </ListItem>

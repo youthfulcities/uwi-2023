@@ -32,7 +32,7 @@ const Footer = () => {
                 </a>
               </Grid>
               {/* <Grid item sx={{ maxWidth: "50%" }}>
-                <Typography color="#fff" variant="p" className="smallText">
+                <Typography color="#fff" variant="body1" className="smallText">
                   Youthful Cities is a not-for-profit determined to make cities
                   better places to work, live, and play for everyone.
                 </Typography>

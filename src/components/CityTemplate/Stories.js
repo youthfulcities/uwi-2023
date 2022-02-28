@@ -35,7 +35,7 @@ const Stories = () => {
         </AccordionSummary>
         <AccordionDetails>
           <div className="accordianContainer">
-            <Typography variant="p">
+            <Typography variant="body1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
               eget.

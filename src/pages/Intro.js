@@ -17,8 +17,8 @@ const Intro = () => {
             {t("introHeading")}
           </Typography>
         </Grid>
-        <Grid item mt={1}>
-          <Typography color="#FFF" variant="h4" align="center">
+        <Grid item mt={5}>
+          <Typography color="#FFF" variant="h5" align="center">
             {t("introPar1")}
             <br />
             <br />

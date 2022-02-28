@@ -47,7 +47,7 @@ const Resources = ({
         />
         {subResources && subResources.flat().length === 1 ? (
           <div className="accordianContainer">
-            <Typography variant="p">{t("noneFound")}</Typography>
+            <Typography variant="body1">{t("noneFound")}</Typography>
           </div>
         ) : (
           <div>

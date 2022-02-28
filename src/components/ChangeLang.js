@@ -62,6 +62,7 @@ const ChangeLang = ({
                       onClick={() => {
                         i18next.changeLanguage(code);
                         setCurrentLangCode(code);
+                        setTextSize(0);
                       }}
                       className={
                         currentLangCode === code
@@ -97,7 +98,7 @@ const ChangeLang = ({
                   className="textSizeButtonIncrease"
                   onClick={() => setTextSize(textSize + 1)}
                   disabled={
-                    currentLangCode === "en" ? textSize === 3 : textSize === 4
+                    currentLangCode === "en" ? textSize === 2 : textSize === 4
                   }
                 >
                   <AddIcon fontSize="large" />

@@ -20,13 +20,14 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
             direction="row"
             justifyContent="space-between"
             alignItems="center"
+            flexWrap="none"
           >
             <Grid item>
               <Typography
                 px="35px"
                 color="#FFF"
                 className="photoButtonText"
-                variant="h2"
+                variant="h3"
               >
                 {children}
               </Typography>
@@ -45,7 +46,7 @@ const PhotoButton = ({ city, src, alt, factoid, children }) => {
                 align="right"
                 color="#FFF"
                 className="smallPhotoButtonText"
-                variant="h5"
+                variant="body1"
               >
                 {t("population")}: {formattedNumber(factoid)}
                 <br />

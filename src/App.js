@@ -101,6 +101,14 @@ function App() {
       h5: {
         fontFamily: "Gotham Narrow Medium",
       },
+      body1: {
+        fontFamily: "Gotham Narrow Book",
+        fontSize: 14 + textSize,
+      },
+      body2: {
+        fontFamily: "Gotham Narrow Book",
+        fontSize: 10 + textSize,
+      },
     },
     shape: {
       borderRadius: 35,

@@ -9,7 +9,7 @@ import getData from "../helpers/odsClientV2.js";
 import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";
 
-const ExploreAll = () => {
+const ExploreAll = ({ currentLangCode }) => {
   const { t } = useTranslation();
   const [recs, setRecs] = useState([]);
   const query = "/records?limit=10&offset=0";
@@ -39,6 +39,7 @@ const ExploreAll = () => {
               alt={city.record.fields.main_img_alt}
               src={city.record.fields.main_img}
               factoid={city.record.fields.population}
+              currentLangCode={currentLangCode}
             >
               {city.record.fields.city_name}
             </PhotoButton>

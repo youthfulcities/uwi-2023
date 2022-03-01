@@ -17,6 +17,8 @@ import WebIcon from "@mui/icons-material/Web";
 import MailIcon from "@mui/icons-material/Mail";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
+import engToPersian from "../../helpers/persianNum";
+
 const ResourceCard = ({ phone, address, name, email, url }) => {
   const { t } = useTranslation();
 
@@ -77,7 +79,9 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                         <Typography variant="h5">{t("phone")}</Typography>
                       }
                       secondary={
-                        <Typography variant="body1">{phone}</Typography>
+                        <Typography variant="body1">
+                          {engToPersian(phone)}
+                        </Typography>
                       }
                     />
                   </ListItemButton>
@@ -138,7 +142,9 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                         <Typography variant="h5">{t("address")}</Typography>
                       }
                       secondary={
-                        <Typography variant="body1">{address}</Typography>
+                        <Typography variant="body1">
+                          {engToPersian(address)}
+                        </Typography>
                       }
                     />
                   </ListItemButton>

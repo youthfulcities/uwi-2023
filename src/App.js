@@ -129,6 +129,8 @@ function App() {
             paddingTop: 5,
             paddingRight: 0,
             paddingBottom: 0,
+            borderBottomRightRadius: "inherit",
+            borderBottomLeftRadius: "inherit",
             background: "#FAFAFA",
             color: "#000",
             "&.Mui-expanded": {
@@ -243,10 +245,22 @@ function App() {
             }
           ></Route>
           <Route path="/intro" element={<Intro />}></Route>
-          <Route path="/explore-all" element={<ExploreAll />}></Route>
-          <Route path="create-profile" element={<CreateProfile />}></Route>
-          <Route path="/suggested-cities" element={<SuggestedCities />}></Route>
-          <Route path="/about/:cityname" element={<CityTemplate />}></Route>
+          <Route
+            path="/explore-all"
+            element={<ExploreAll currentLangCode={currentLangCode} />}
+          ></Route>
+          <Route
+            path="create-profile"
+            element={<CreateProfile currentLangCode={currentLangCode} />}
+          ></Route>
+          <Route
+            path="/suggested-cities"
+            element={<SuggestedCities currentLangCode={currentLangCode} />}
+          ></Route>
+          <Route
+            path="/about/:cityname"
+            element={<CityTemplate currentLangCode={currentLangCode} />}
+          ></Route>
         </Routes>
         <ChangeLang
           languages={languages}

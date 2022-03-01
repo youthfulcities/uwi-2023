@@ -3,9 +3,23 @@ import { useTranslation } from "react-i18next";
 import { Typography, Grid, Box } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const PhotoButton = ({ city, src, alt, factoid, children }) => {
+import persianNum from "../helpers/persianNum.js";
+
+const PhotoButton = ({
+  city,
+  src,
+  alt,
+  factoid,
+  currentLangCode,
+  children,
+}) => {
   const { t } = useTranslation();
+
   const formattedNumber = (number) => {
+    if (currentLangCode === "fa" || currentLangCode === "ps") {
+      const newNum = persianNum(number.toLocaleString());
+      return newNum;
+    }
     return number.toLocaleString();
   };
 

@@ -19,7 +19,14 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 import engToPersian from "../../helpers/persianNum";
 
-const ResourceCard = ({ phone, address, name, email, url }) => {
+const ResourceCard = ({
+  phone,
+  address,
+  name,
+  email,
+  url,
+  currentLangCode,
+}) => {
   const { t } = useTranslation();
 
   //makes links input without http:// at the beginning usable
@@ -80,7 +87,9 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                       }
                       secondary={
                         <Typography variant="body1">
-                          {engToPersian(phone)}
+                          {currentLangCode === "fa" || currentLangCode === "ps"
+                            ? engToPersian(phone)
+                            : phone}
                         </Typography>
                       }
                     />
@@ -143,7 +152,9 @@ const ResourceCard = ({ phone, address, name, email, url }) => {
                       }
                       secondary={
                         <Typography variant="body1">
-                          {engToPersian(address)}
+                          {currentLangCode === "fa" || currentLangCode === "ps"
+                            ? engToPersian(address)
+                            : address}
                         </Typography>
                       }
                     />

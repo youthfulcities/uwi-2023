@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Button, Grid, TextField } from "@mui/material";
@@ -6,18 +6,36 @@ import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-const Search = ({
-  setSearchString,
-  searchString,
-  createStringQuery,
-  setSearchStringQuery,
-}) => {
+const cleanSearch = (s) => {
+  var words = ["of", "the", "in", "on", "at", "to", "a", "is", "for"];
+  var re = new RegExp("\\b(" + words.join("|") + ")\\b", "g");
+  return (s || "").replace(re, "").replace(/[ ]{2,}/, " ");
+};
+
+const Search = ({ setSearchStringQuery }) => {
   const { t } = useTranslation();
+  const [searchString, setSearchString] = useState("");
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       createStringQuery();
     }
   };
+
+  const createStringQuery = () => {
+    if (searchString === "") {
+      setSearchStringQuery("");
+    } else {
+      let words = cleanSearch(searchString)
+        .replace(/\s+/g, " ") //remove extra spaces
+        .trim()
+        .split(" ") //split at spaces
+        .join("*' AND '") //add wildcard to each query word
+        .concat("*");
+
+      setSearchStringQuery(words);
+    }
+  };
+
   return (
     <div className="accordianContainer">
       <Grid

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 
 import { useParams } from "react-router-dom";
@@ -13,7 +13,7 @@ import Stories from "../components/CityTemplate/Stories";
 import Resources from "../components/CityTemplate/Resources";
 import getData from "../helpers/odsClientV2.js";
 
-const CityTemplate = () => {
+const CityTemplate = ({ currentLangCode }) => {
   const { t } = useTranslation();
   const { cityname } = useParams();
   const [city, setCity] = useState(undefined);
@@ -22,7 +22,7 @@ const CityTemplate = () => {
   const cityQuery = `/records?refine=city_name:${cityname}`;
   const resourceQuery = `/records?refine=city:${cityname}&limit=10&select=measurement&group_by=measurement`;
 
-  useEffect(() => {
+  const getCityData = useCallback(() => {
     const retrievedInfo = getData("cities", cityQuery).then(
       (res) => res.records[0]
     );
@@ -34,8 +34,7 @@ const CityTemplate = () => {
     setCities();
   }, [cityQuery]);
 
-  //get main categories
-  useEffect(() => {
+  const getCategories = useCallback(() => {
     const retrievedInfo = getData("refugee-test-data", resourceQuery).then(
       (res) => res.records
     );
@@ -46,6 +45,16 @@ const CityTemplate = () => {
 
     setCities();
   }, [resourceQuery]);
+
+  //get initial city info
+  useEffect(() => {
+    getCityData();
+  }, [getCityData]);
+
+  //get main categories
+  useEffect(() => {
+    getCategories();
+  }, [getCategories]);
 
   return (
     <>
@@ -73,7 +82,11 @@ const CityTemplate = () => {
                   alt={city.record.fields.main_img_alt}
                 />
                 <Stories />
-                <Resources resources={resources} cityname={cityname} />
+                <Resources
+                  resources={resources}
+                  cityname={cityname}
+                  currentLangCode={currentLangCode}
+                />
               </div>
             </Grid>
             <Back />

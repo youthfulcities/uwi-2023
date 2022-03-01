@@ -73,7 +73,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
   console.log("I have rerendered");
   const { t } = useTranslation();
 
-  const [subResources, setSubResources] = useState(undefined);
+  const [subResources, setSubResources] = useState([]);
   const [searchStringQuery, setSearchStringQuery] = useState("");
 
   // get sub categories within resources
@@ -134,6 +134,21 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
     getResources();
   }, [getResources]);
 
+  //determine which array of resources is the last one with actual entries so that we can format the rounded corners properly
+  const getLastIndex = () => {
+    const lastIndex = subResources
+      .map((resource) => resource.length > 0)
+      .lastIndexOf(true);
+    return lastIndex;
+  };
+
+  const checkIfSquare = (i) => {
+    if (i === getLastIndex()) {
+      return false;
+    }
+    return true;
+  };
+
   return (
     <Accordion
       sx={{
@@ -171,8 +186,12 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
                             background: "#4F66AF",
                             color: "#fff",
                           },
+                          "&:first-of-type": {
+                            borderTopLeftRadius: 0,
+                            borderTopRightRadius: 0,
+                          },
                         }}
-                        square={i === resources.length - 1 ? false : true}
+                        square={checkIfSquare(i)}
                         disableGutters={true}
                         key={`panel-resources-${i}a`}
                       >

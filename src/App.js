@@ -26,6 +26,13 @@ function App() {
 
   const [textSize, setTextSize] = useState(0);
 
+  const [form, setForm] = useState({
+    step: 1,
+    numberOfPeople: 1,
+    family: [],
+    priorities: [],
+  });
+
   const languages = [
     {
       code: "en",
@@ -251,7 +258,13 @@ function App() {
           ></Route>
           <Route
             path="create-profile"
-            element={<CreateProfile currentLangCode={currentLangCode} />}
+            element={
+              <CreateProfile
+                currentLangCode={currentLangCode}
+                form={form}
+                setForm={setForm}
+              />
+            }
           ></Route>
           <Route
             path="/suggested-cities"

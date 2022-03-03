@@ -67,6 +67,7 @@ const FamilyMembers = ({
               label=""
               autoComplete="off"
               type="number"
+              value={numberOfPeople}
               onChange={(e) => handleChange(e.target.name, e.target.value)}
               onKeyDown={(e) => handleKeyPress(e)}
               InputProps={{
@@ -126,6 +127,7 @@ const FamilyMembers = ({
                       row
                       aria-labelledby={`family-age-label-${i}`}
                       aria-describedby={`family-age-label-${i}`}
+                      value={family[i].age}
                       onChange={(e) =>
                         handleFamilyMemberChange(
                           e.target.name,

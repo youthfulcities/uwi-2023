@@ -74,7 +74,7 @@ const ResourceCard = ({
             <Divider />
           </Grid>
           <Grid item>
-            <List sx={{ maxWidth: "sm" }}>
+            <List>
               {phone !== "N/A" && (
                 <ListItem disablePadding>
                   <ListItemButton component="a" href={`tel:${phone}`}>

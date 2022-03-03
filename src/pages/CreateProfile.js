@@ -1,18 +1,12 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+import React from "react";
+// import { useTranslation } from "react-i18next";
 
 import FormContainer from "../components/Form/FormContainer";
 import FamilyMembers from "../components/Form/FamilyMembers";
 import Priorities from "../components/Form/Priorities";
 
-const CreateProfile = () => {
-  const { t } = useTranslation();
-
-  const [form, setForm] = useState({
-    step: 1,
-    numberOfPeople: 0,
-    family: [],
-  });
+const CreateProfile = ({ form, setForm }) => {
+  // const { t } = useTranslation();
 
   const nextStep = () => {
     setForm({ ...form, step: form.step + 1 });
@@ -28,6 +22,20 @@ const CreateProfile = () => {
 
   const handleChange = (input, value) => {
     setForm({ ...form, [input]: value });
+  };
+
+  const handlePriorityChange = (e) => {
+    if (e.target.checked) {
+      const priorities = form.priorities;
+      priorities.push(e.target.name);
+      setForm({ ...form, priorities });
+    } else {
+      const oldPriorites = form.priorities;
+      const priorities = oldPriorites.filter(
+        (priority) => priority !== e.target.name
+      );
+      setForm({ ...form, priorities });
+    }
   };
 
   const handleFamilyMemberChange = (input, value, i) => {
@@ -70,6 +78,7 @@ const CreateProfile = () => {
         return (
           <Priorities
             handleChange={handleChange}
+            handlePriorityChange={handlePriorityChange}
             form={form}
             setForm={setForm}
             resetStep={resetStep}

@@ -313,6 +313,17 @@ footer {
   z-index: 100;
 }
 
+.attributionLink {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.attributionLink > a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0 3px;
+}
+
 /* Menus
    ========================================================================== */
 

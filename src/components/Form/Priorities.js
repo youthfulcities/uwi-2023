@@ -8,11 +8,24 @@ import {
   FormControl,
   FormLabel,
   FormControlLabel,
-  FormHelperText,
   Checkbox,
 } from "@mui/material";
 
-const Priorities = ({ resetStep }) => {
+const Priorities = ({ handlePriorityChange, form }) => {
+  const topics = [
+    "Education + Training",
+    "Diversity + Inclusion + Accessibility",
+    "Financial Services",
+    "Transportation",
+    "Employment",
+    "Weather",
+    "Entrepreneurship",
+    "Health",
+    "Public Built Space",
+    "Law",
+  ];
+
+  const { priorities } = form;
   return (
     <>
       <Typography variant="h4" mt={2}>
@@ -40,84 +53,21 @@ const Priorities = ({ resetStep }) => {
                   spacing={2}
                   justifyContent="space-between"
                 >
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>{" "}
-                  <Grid item>
-                    <FormControlLabel
-                      control={<Checkbox name="gilad" size="large" />}
-                      label="Gilad Gray"
-                    />
-                  </Grid>
+                  {topics.map((topic, i) => (
+                    <Grid item xs={6} key={i}>
+                      <FormControlLabel
+                        control={
+                          <Checkbox
+                            checked={priorities.includes(topic)}
+                            onChange={(e) => handlePriorityChange(e)}
+                            name={topic}
+                            size="large"
+                          />
+                        }
+                        label={topic}
+                      />
+                    </Grid>
+                  ))}
                 </Grid>
               </FormGroup>
             </FormControl>
@@ -129,7 +79,6 @@ const Priorities = ({ resetStep }) => {
               variant="contained"
               size="large"
               color="primary"
-              onClick={() => resetStep()}
               fullWidth={true}
             >
               <Typography variant="h5">Confirm & Continue</Typography>

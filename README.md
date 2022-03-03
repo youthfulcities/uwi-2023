@@ -70,5 +70,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 ## Atrribution links
-
-<a target="_blank" href="https://icons8.com/icon/6EivusYGgM4h/home">Home</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>

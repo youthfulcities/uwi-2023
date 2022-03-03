@@ -31,3 +31,9 @@
 
 -weight resource based on whether they have or don't have yes/no
 -weigh each equally
+
+under 12
+-childcare costs
+
+What services are important for you in a city?
+Topic for questions (weather - employment - education - recreation)

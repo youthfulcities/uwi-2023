@@ -9,7 +9,7 @@ import Socials from "../Socials";
 import Decoration from "../Decoration";
 import Back from "../Back";
 
-const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
+const FormContainer = ({ children, width, prevStep, step }) => {
   const { t } = useTranslation();
   return (
     <>
@@ -29,8 +29,8 @@ const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
                 container
                 item
                 direction="column"
-                justifyContent="center"
-                alignItems="center"
+                justifyContent="flex-start"
+                alignItems="stretch"
                 py="7vh"
                 px={5}
                 spacing={0}
@@ -57,14 +57,14 @@ const FormContainer = ({ children, width, prevStep, nextStep, step }) => {
           ) : (
             <Back />
           )}
-          <Fab
+          {/* <Fab
             onClick={() => nextStep()}
             color="primary"
             size="medium"
             className="forwardButton"
           >
             <ArrowForwardIcon fontSize="large" />
-          </Fab>
+          </Fab> */}
         </Grid>
       </Container>
       <Decoration />

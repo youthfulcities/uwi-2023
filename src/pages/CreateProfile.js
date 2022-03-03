@@ -3,19 +3,13 @@ import { useTranslation } from "react-i18next";
 
 import FormContainer from "../components/Form/FormContainer";
 import FamilyMembers from "../components/Form/FamilyMembers";
+import Priorities from "../components/Form/Priorities";
 
 const CreateProfile = () => {
   const { t } = useTranslation();
 
   const [form, setForm] = useState({
     step: 1,
-    name: "",
-    gender: "",
-    inCanada: false,
-    job: "",
-    language: "",
-    englishProficiency: "",
-    currentCity: "",
     numberOfPeople: 0,
     family: [],
   });
@@ -26,6 +20,10 @@ const CreateProfile = () => {
 
   const prevStep = () => {
     setForm({ ...form, step: form.step - 1 });
+  };
+
+  const resetStep = () => {
+    setForm({ ...form, step: (form.step = 1) });
   };
 
   const handleChange = (input, value) => {
@@ -43,7 +41,7 @@ const CreateProfile = () => {
     const obj = {
       id: "",
       age: "",
-      gender: "",
+      name: "",
     };
 
     let index = 0;
@@ -65,10 +63,30 @@ const CreateProfile = () => {
             handleChange={handleChange}
             form={form}
             setForm={setForm}
+            nextStep={nextStep}
           />
         );
+      case 2:
+        return (
+          <Priorities
+            handleChange={handleChange}
+            form={form}
+            setForm={setForm}
+            resetStep={resetStep}
+          />
+        );
+
       default:
-        return <h1>{t("loading")}</h1>;
+        return (
+          <FamilyMembers
+            addFamilyMembers={addFamilyMembers}
+            handleFamilyMemberChange={handleFamilyMemberChange}
+            handleChange={handleChange}
+            form={form}
+            setForm={setForm}
+            nextStep={nextStep}
+          />
+        );
     }
   };
 

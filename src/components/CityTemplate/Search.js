@@ -15,6 +15,7 @@ const cleanSearch = (s) => {
 const Search = ({ setSearchStringQuery }) => {
   const { t } = useTranslation();
   const [searchString, setSearchString] = useState("");
+
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
       createStringQuery();

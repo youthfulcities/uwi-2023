@@ -55,9 +55,9 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        dark: "#3f518c",
-        main: "#4F66AF",
-        light: "#8493c7",
+        dark: "#1e316d",
+        main: "#253D88",
+        light: "#5164a0",
       },
       secondary: {
         light: "#fcdf94",
@@ -65,14 +65,14 @@ function App() {
         dark: "#c9a752",
       },
       error: {
-        light: "#f38f8c",
-        main: "#EE605B",
-        dark: "#be4c49",
+        dark: "#c2544a",
+        main: "#F2695D",
+        light: "#f5877d",
       },
       warning: {
-        light: "#f9d0cd",
-        main: "#F7BCB7",
-        dark: "#c69692",
+        light: "#fae8e7",
+        main: "#F6D9D7",
+        dark: "#ddc3c2",
       },
       success: {
         light: "#cde4af",

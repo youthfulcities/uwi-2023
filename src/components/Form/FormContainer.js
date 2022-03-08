@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 import { Container, Grid, Fab, Typography, Paper } from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import Socials from "../Socials";
 import Decoration from "../Decoration";
@@ -57,14 +56,6 @@ const FormContainer = ({ children, width, prevStep, step }) => {
           ) : (
             <Back />
           )}
-          {/* <Fab
-            onClick={() => nextStep()}
-            color="primary"
-            size="medium"
-            className="forwardButton"
-          >
-            <ArrowForwardIcon fontSize="large" />
-          </Fab> */}
         </Grid>
       </Container>
       <Decoration />

@@ -183,8 +183,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
                         sx={{
                           background: "#E8E8E8",
                           "&.Mui-expanded": {
-                            background: "#4F66AF",
-                            color: "#fff",
+                            background: "#B8D98D",
                           },
                           "&:first-of-type": {
                             borderTopLeftRadius: 0,

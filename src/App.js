@@ -11,6 +11,9 @@ import CityTemplate from "./pages/CityTemplate";
 import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
 import ChangeLang from "./components/ChangeLang";
+import calcCity from "./cityCalc/calcCity";
+
+calcCity();
 
 function App() {
   //because ODS controls the search params via angular we can't use react-router-dom to do so
@@ -141,7 +144,7 @@ function App() {
             background: "#FAFAFA",
             color: "#000",
             "&.Mui-expanded": {
-              background: "#F7BCB7",
+              background: "#F6D9D7",
               color: "#000",
             },
           },
@@ -219,12 +222,13 @@ function App() {
             borderRadius: 35,
             border: "2px",
             borderStyle: "solid",
-            borderColor: "rgb(79, 102, 175)",
+            borderColor: "#253D88",
             minHeight: 28,
             boxSizing: "border-box",
             position: "relative",
           },
           root: {
+            backgroundColor: "transparent",
             "&.Mui-focused": {
               backgroundColor: "transparent",
             },

@@ -17,14 +17,14 @@ const Stories = () => {
       <Accordion
         sx={{
           "&.Mui-expanded": {
-            background: "#884c41",
+            background: "#F2695D",
           },
         }}
       >
         <AccordionSummary
           sx={{
             "&.Mui-expanded": {
-              color: "#fff",
+              color: "#000",
             },
           }}
           expandIcon={<ExpandMoreIcon fontSize="large" />}

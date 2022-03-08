@@ -138,31 +138,41 @@ const FamilyMembers = ({
                       id={`family-age-${i}`}
                       name="age"
                     >
-                      <FormControlLabel
-                        value="<12"
-                        control={<Radio />}
-                        label="0 - 12 years"
-                      />
-                      <FormControlLabel
-                        value="13-18"
-                        control={<Radio />}
-                        label="13 - 18 years"
-                      />
-                      <FormControlLabel
-                        value="19-35"
-                        control={<Radio />}
-                        label="19 - 35 years"
-                      />
-                      <FormControlLabel
-                        value="36-65"
-                        control={<Radio />}
-                        label="36 - 65 years"
-                      />
-                      <FormControlLabel
-                        value=">65"
-                        control={<Radio />}
-                        label="65+ years"
-                      />
+                      <Grid item xs={4}>
+                        <FormControlLabel
+                          value="<12"
+                          control={<Radio size="large" />}
+                          label="0 - 12 years"
+                        />
+                      </Grid>
+                      <Grid item xs={4}>
+                        <FormControlLabel
+                          value="13-18"
+                          control={<Radio size="large" />}
+                          label="13 - 18 years"
+                        />
+                      </Grid>
+                      <Grid item xs={4}>
+                        <FormControlLabel
+                          value="19-35"
+                          control={<Radio size="large" />}
+                          label="19 - 35 years"
+                        />
+                      </Grid>
+                      <Grid item xs={4}>
+                        <FormControlLabel
+                          value="36-65"
+                          control={<Radio size="large" />}
+                          label="36 - 65 years"
+                        />
+                      </Grid>
+                      <Grid item xs={4}>
+                        <FormControlLabel
+                          value=">65"
+                          control={<Radio size="large" />}
+                          label="65+ years"
+                        />
+                      </Grid>
                     </RadioGroup>
                   </FormControl>
                 </Grid>

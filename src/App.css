@@ -61,18 +61,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Adelle";
-  src: url("../public/assets/theme_font/Adelle-SemiBold.eot");
-  src: url("../public/assets/theme_font/Adelle-SemiBold.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/theme_font/Adelle-SemiBold.woff2") format("woff2"),
-    url("../public/assets/theme_font/Adelle-SemiBold.woff") format("woff"),
-    url("../public/assets/theme_font/Adelle-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-
 /* Global Styles
    ========================================================================== */
 

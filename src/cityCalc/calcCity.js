@@ -50,25 +50,65 @@ const additionalInfo = [
 
 const calcCity = () => {
   //specify which measurement we're comparing
-  let measurement = "gasbuddy_gas";
+  let measurements = ["gasbuddy_gas", "planhub_phone_avg_plan"];
 
-  //filter out array to include only the current measurement
-  const measurementsByCity = costs.filter(
-    (item) => item.SuppName === measurement
-  );
+  //create array with all the applicable cities & scores
+  let flattenedScores = measurements.flatMap((measurement) => {
+    //filter out array to include only the current measurement
+    const measurementsByCity = costs.filter(
+      (item) => item.SuppName === measurement
+    );
 
-  //determine if current measurement is better if higher or lower by comparing to additional info array
-  const lowerIsBetter = additionalInfo.find(
-    (item) => (item.name = measurement)
-  ).lowerIsBetter;
+    //determine if current measurement is better if higher or lower by comparing to additional info array
+    const lowerIsBetter = additionalInfo.find(
+      (item) => (item.name = measurement)
+    ).lowerIsBetter;
 
-  if (lowerIsBetter) {
-    let arrayWithScores = measurementsByCity.reduce((preValue, city) => {
-      let score = getInvertedScore(measurementsByCity, city.value).toFixed(2);
-      return [...preValue, { ...city, score: score }];
-    }, []);
-    console.log(arrayWithScores);
-  }
+    //check if measurement is better if values are high or low
+    if (lowerIsBetter) {
+      //create array for measurements with cities & scores
+      let arrayWithScores = measurementsByCity.reduce((preValue, city) => {
+        //normalize values so we can get scores
+        let score = getInvertedScore(measurementsByCity, city.value);
+        //add city with normalized score to array
+        return [...preValue, { ...city, score: score }];
+      }, []);
+      return arrayWithScores;
+    } else if (!lowerIsBetter) {
+      let arrayWithScores = measurementsByCity.reduce((preValue, city) => {
+        let score = getScore(measurementsByCity, city.value);
+        return [...preValue, { ...city, score: score }];
+      }, []);
+      return arrayWithScores;
+    }
+
+    return null;
+  });
+
+  //reduce the array to just one instance of each city with a total score
+  let addedScores = flattenedScores.reduce((preValue, current, i) => {
+    //if this is the first instance of this city in the array, then use it to create a total score
+    if (
+      i === flattenedScores.findIndex((score) => score.city === current.city)
+    ) {
+      //filter array to get only the current city with scores
+      let currentCity = flattenedScores.filter(
+        (measurement) => measurement.city === current.city
+      );
+      //add all scores of the current city
+      let addedScore = currentCity.reduce(
+        (prevScore, current) => _.add(prevScore, current.score),
+        []
+      );
+      //add the current city with the total score to the array
+      return [...preValue, { city: current.city, score: addedScore }];
+    } else {
+      return preValue;
+    }
+  }, []);
+
+  let sorted = _.orderBy(addedScores, "score", "desc");
+  console.log(sorted);
 };
 
 //If a higher value is preferred, the formula (𝑥-𝑥_min)/(𝑥_max-𝑥_min) is applied
@@ -93,6 +133,7 @@ const getInvertedScore = (array, x) => {
   return 1 - (x - x_min) / (x_max - x_min);
 };
 
+//from My City widget
 // function cityCalc() {
 //   citiesWithScores.forEach((city) => {
 //     // for each city

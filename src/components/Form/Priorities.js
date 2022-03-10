@@ -11,7 +11,7 @@ import {
   Checkbox,
 } from "@mui/material";
 
-const Priorities = ({ handlePriorityChange, form }) => {
+const Priorities = ({ handlePriorityChange, form, handleChange }) => {
   const topics = [
     "Education + Training",
     "Diversity + Inclusion + Accessibility",
@@ -80,6 +80,7 @@ const Priorities = ({ handlePriorityChange, form }) => {
               size="large"
               color="primary"
               fullWidth={true}
+              onClick={() => handleChange("completed", true)}
             >
               <Typography variant="h5">Confirm & Continue</Typography>
             </Button>

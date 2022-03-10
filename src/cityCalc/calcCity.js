@@ -5,42 +5,64 @@ const additionalInfo = [
   {
     name: "gasbuddy_gas",
     lowerIsBetter: true,
+    demographic: "all",
   },
   {
     name: "planhub_internet",
     lowerIsBetter: true,
+    demographic: "all",
   },
   {
     name: "min_wage",
     lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
   },
   {
     name: "planhub_phone_basic_plan",
     lowerIsBetter: true,
+    demographic: "all",
   },
   {
     name: "planhub_phone_avg_plan",
     lowerIsBetter: true,
+    demographic: "all",
   },
   {
     name: "statscan_tuition",
     lowerIsBetter: true,
+    demographic: ["13-18", "19-35"],
   },
   {
     name: "rent_one_br",
     lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 1,
+      maxNumberOfPeople: 2,
+    },
   },
   {
     name: "rent_two_br",
     lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 3,
+      maxNumberOfPeople: 4,
+    },
   },
   {
     name: "rent_three_br",
     lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 5,
+      maxNumberOfPeople: 5,
+    },
   },
   {
     name: "rent_four_br",
     lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 6,
+      maxNumberOfPeople: 100,
+    },
   },
   {
     name: "rent_five_br",
@@ -48,9 +70,9 @@ const additionalInfo = [
   },
 ];
 
-const calcCity = () => {
+const calcCity = (measurements) => {
   //specify which measurement we're comparing
-  let measurements = ["gasbuddy_gas", "planhub_phone_avg_plan"];
+  // let measurements = ["gasbuddy_gas", "planhub_phone_avg_plan"];
 
   //create array with all the applicable cities & scores
   let flattenedScores = measurements.flatMap((measurement) => {
@@ -108,7 +130,7 @@ const calcCity = () => {
   }, []);
 
   let sorted = _.orderBy(addedScores, "score", "desc");
-  console.log(sorted);
+  return sorted;
 };
 
 //If a higher value is preferred, the formula (𝑥-𝑥_min)/(𝑥_max-𝑥_min) is applied

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+
 import { useTranslation } from "react-i18next";
+import _ from "lodash";
 import {
   Typography,
   Grid,
@@ -18,20 +20,110 @@ import PhotoButton from "../components/PhotoButton";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";
 
-const SuggestedCities = () => {
-  //for controlling open/close manually
-  // const [expand, setExpand] = useState([
-  //   { id: 1, state: false },
-  //   { id: 2, state: false },
-  //   { id: 3, state: false },
-  // ]);
+import calcCity from "../cityCalc/calcCity";
 
+const additionalInfo = [
+  {
+    name: "gasbuddy_gas",
+    lowerIsBetter: true,
+    demographic: "all",
+  },
+  {
+    name: "planhub_internet",
+    lowerIsBetter: true,
+    demographic: "all",
+  },
+  {
+    name: "min_wage",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "planhub_phone_basic_plan",
+    lowerIsBetter: true,
+    demographic: "all",
+  },
+  {
+    name: "planhub_phone_avg_plan",
+    lowerIsBetter: true,
+    demographic: "all",
+  },
+  {
+    name: "statscan_tuition",
+    lowerIsBetter: true,
+    demographic: ["13-18", "19-35"],
+  },
+  {
+    name: "rent_one_br",
+    lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 1,
+      maxNumberOfPeople: 2,
+    },
+  },
+  {
+    name: "rent_two_br",
+    lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 3,
+      maxNumberOfPeople: 4,
+    },
+  },
+  {
+    name: "rent_three_br",
+    lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 5,
+      maxNumberOfPeople: 5,
+    },
+  },
+  {
+    name: "rent_four_br",
+    lowerIsBetter: true,
+    demographic: {
+      minNumberOfPeople: 6,
+      maxNumberOfPeople: 100,
+    },
+  },
+  {
+    name: "rent_five_br",
+    lowerIsBetter: true,
+  },
+];
+
+const SuggestedCities = ({ form }) => {
   const { t } = useTranslation();
-  const [cityNames, setCityNames] = useState([
-    "Calgary",
-    "Saskatoon",
-    "Kelowna",
-  ]);
+
+  const getDemographicMeasurements = () => {
+    const { numberOfPeople, family } = form;
+    let ages = family.map((familyMember) => familyMember.age);
+
+    let ageMeasurements = additionalInfo.map((measurement) => {
+      if (Array.isArray(measurement.demographic)) {
+        if (_.intersection(measurement.demographic, ages).length > 0) {
+          return measurement.name;
+        }
+      } else if (measurement.demographic === "all") {
+        return measurement.name;
+      } else if (
+        typeof measurement.demographic === "object" &&
+        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
+        numberOfPeople <= measurement.demographic.maxNumberOfPeople
+      ) {
+        return measurement.name;
+      }
+      return undefined;
+    });
+    return ageMeasurements.filter((e) => e !== undefined);
+  };
+
+  const measurements = getDemographicMeasurements();
+  console.log(measurements);
+  const topThreeCities = calcCity(measurements)
+    .slice(0, 3)
+    .map((e) => e.city);
+
+  const [cityNames, setCityNames] = useState(topThreeCities);
   const [cityData, setCityData] = useState(undefined);
   const [resources, setResources] = useState(undefined);
 
@@ -88,8 +180,6 @@ const SuggestedCities = () => {
   //   expand[i].state = !expanded;
   //   setExpand(newStates);
   // };
-
-  console.log(resources);
 
   return (
     <>

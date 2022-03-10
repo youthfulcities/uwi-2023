@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { createTheme, ThemeProvider } from "@mui/material";
 
 import Home from "./pages/Home";
@@ -11,9 +16,6 @@ import CityTemplate from "./pages/CityTemplate";
 import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
 import ChangeLang from "./components/ChangeLang";
-import calcCity from "./cityCalc/calcCity";
-
-calcCity();
 
 function App() {
   //because ODS controls the search params via angular we can't use react-router-dom to do so
@@ -34,6 +36,7 @@ function App() {
     numberOfPeople: 1,
     family: [],
     priorities: [],
+    completed: false,
   });
 
   const languages = [
@@ -254,12 +257,12 @@ function App() {
                 currentLangCode={currentLangCode}
               />
             }
-          ></Route>
+          />
           <Route path="/intro" element={<Intro />}></Route>
           <Route
             path="/explore-all"
             element={<ExploreAll currentLangCode={currentLangCode} />}
-          ></Route>
+          />
           <Route
             path="create-profile"
             element={
@@ -269,15 +272,24 @@ function App() {
                 setForm={setForm}
               />
             }
-          ></Route>
+          />
           <Route
             path="/suggested-cities"
-            element={<SuggestedCities currentLangCode={currentLangCode} />}
-          ></Route>
+            element={
+              form.completed ? (
+                <SuggestedCities
+                  form={form}
+                  currentLangCode={currentLangCode}
+                />
+              ) : (
+                <Navigate replace to="/create-profile" />
+              )
+            }
+          />
           <Route
             path="/about/:cityname"
             element={<CityTemplate currentLangCode={currentLangCode} />}
-          ></Route>
+          />
         </Routes>
         <ChangeLang
           languages={languages}

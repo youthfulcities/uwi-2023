@@ -141,35 +141,35 @@ const FamilyMembers = ({
                       <Grid item xs={4}>
                         <FormControlLabel
                           value="<12"
-                          control={<Radio size="large" />}
+                          control={<Radio size="medium" />}
                           label="0 - 12 years"
                         />
                       </Grid>
                       <Grid item xs={4}>
                         <FormControlLabel
                           value="13-18"
-                          control={<Radio size="large" />}
+                          control={<Radio size="medium" />}
                           label="13 - 18 years"
                         />
                       </Grid>
                       <Grid item xs={4}>
                         <FormControlLabel
                           value="19-35"
-                          control={<Radio size="large" />}
+                          control={<Radio size="medium" />}
                           label="19 - 35 years"
                         />
                       </Grid>
                       <Grid item xs={4}>
                         <FormControlLabel
                           value="36-65"
-                          control={<Radio size="large" />}
+                          control={<Radio size="medium" />}
                           label="36 - 65 years"
                         />
                       </Grid>
                       <Grid item xs={4}>
                         <FormControlLabel
                           value=">65"
-                          control={<Radio size="large" />}
+                          control={<Radio size="medium" />}
                           label="65+ years"
                         />
                       </Grid>
@@ -182,7 +182,7 @@ const FamilyMembers = ({
         <Grid item mt={2}>
           <Button
             variant="contained"
-            size="large"
+            size="medium"
             color="primary"
             disabled={!allFieldsFilled()}
             onClick={() => nextStep()}

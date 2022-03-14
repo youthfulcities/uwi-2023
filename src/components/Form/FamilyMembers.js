@@ -20,6 +20,7 @@ const FamilyMembers = ({
   addFamilyMembers,
   form,
   nextStep,
+  setPriorities,
 }) => {
   const { family, numberOfPeople } = form;
 
@@ -185,7 +186,10 @@ const FamilyMembers = ({
             size="medium"
             color="primary"
             disabled={!allFieldsFilled()}
-            onClick={() => nextStep()}
+            onClick={() => {
+              nextStep();
+              // setPriorities();
+            }}
             fullWidth={true}
           >
             <Typography variant="h5">Confirm & Continue</Typography>

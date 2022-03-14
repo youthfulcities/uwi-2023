@@ -1,9 +1,12 @@
 import React from "react";
+import _ from "lodash";
 // import { useTranslation } from "react-i18next";
 
 import FormContainer from "../components/Form/FormContainer";
 import FamilyMembers from "../components/Form/FamilyMembers";
 import Priorities from "../components/Form/Priorities";
+
+import additionalInfo from "../cityCalc/additionalInfo";
 
 const CreateProfile = ({ form, setForm }) => {
   // const { t } = useTranslation();
@@ -27,16 +30,53 @@ const CreateProfile = ({ form, setForm }) => {
   const handlePriorityChange = (e) => {
     if (e.target.checked) {
       const priorities = form.priorities;
-      priorities.push(e.target.name);
+      priorities.push(
+        additionalInfo.find(
+          (priority) => priority.measurement === e.target.name
+        )
+      );
       setForm({ ...form, priorities });
     } else {
       const oldPriorites = form.priorities;
       const priorities = oldPriorites.filter(
-        (priority) => priority !== e.target.name
+        (priority) => priority.measurement !== e.target.name
       );
       setForm({ ...form, priorities });
     }
   };
+
+  const getDemographicMeasurements = () => {
+    const { numberOfPeople, family } = form;
+
+    let ages = family.map((familyMember) => familyMember.age);
+
+    let ageMeasurements = additionalInfo.map((measurement) => {
+      if (Array.isArray(measurement.demographic)) {
+        if (_.intersection(measurement.demographic, ages).length > 0) {
+          return measurement.name;
+        }
+      } else if (measurement.demographic === "all") {
+        return measurement.name;
+      } else if (
+        typeof measurement.demographic === "object" &&
+        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
+        numberOfPeople <= measurement.demographic.maxNumberOfPeople
+      ) {
+        return measurement.name;
+      }
+      return undefined;
+    });
+    return ageMeasurements.filter((e) => e !== undefined);
+  };
+
+  // const setPriorities = () => {
+  //   const measurements = getDemographicMeasurements();
+  //   let priorities = form.priorities;
+  //   priorities = measurements;
+  //   setForm({ ...form, priorities });
+  // };
+
+  console.log(form.priorities);
 
   const handleFamilyMemberChange = (input, value, i) => {
     const oldFamily = form.family;
@@ -59,8 +99,6 @@ const CreateProfile = ({ form, setForm }) => {
     setForm({ ...form, family: family });
   };
 
-  console.log(form);
-
   const displaySection = (step) => {
     switch (step) {
       case 1:
@@ -72,6 +110,7 @@ const CreateProfile = ({ form, setForm }) => {
             form={form}
             setForm={setForm}
             nextStep={nextStep}
+            // setPriorities={setPriorities}
           />
         );
       case 2:
@@ -94,6 +133,7 @@ const CreateProfile = ({ form, setForm }) => {
             form={form}
             setForm={setForm}
             nextStep={nextStep}
+            // setPriorities={setPriorities}
           />
         );
     }

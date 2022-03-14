@@ -26,7 +26,7 @@ const Home = ({ languages, setCurrentLangCode, currentLangCode }) => {
             src="/assets/images/home-white.png"
           />
           <Typography color="#FFF" variant="h1" align="center" mx={2}>
-            {t("welcome")}
+            KULBA
           </Typography>
         </Grid>
         <Grid item mt={2} mb={5}>

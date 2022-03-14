@@ -4,36 +4,43 @@ import _ from "lodash";
 const additionalInfo = [
   {
     name: "gasbuddy_gas",
+    measurement: "Cost of gas",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "planhub_internet",
+    measurement: "Cost of internet plan",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "min_wage",
+    measurement: "Minimum wage",
     lowerIsBetter: false,
     demographic: ["19-35", "36-65"],
   },
   {
     name: "planhub_phone_basic_plan",
+    measurement: "Cost of basic phone plan",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "planhub_phone_avg_plan",
+    measurement: "Cost of premium phone plan",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "statscan_tuition",
+    measurement: "Cost of tuition",
     lowerIsBetter: true,
     demographic: ["13-18", "19-35"],
   },
   {
     name: "rent_one_br",
+    measurement: "Cost of 1 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 1,
@@ -42,6 +49,7 @@ const additionalInfo = [
   },
   {
     name: "rent_two_br",
+    measurement: "Cost of 2 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 3,
@@ -50,6 +58,7 @@ const additionalInfo = [
   },
   {
     name: "rent_three_br",
+    measurement: "Cost of 3 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 5,
@@ -58,6 +67,7 @@ const additionalInfo = [
   },
   {
     name: "rent_four_br",
+    measurement: "Cost of 4 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 6,
@@ -65,14 +75,266 @@ const additionalInfo = [
     },
   },
   {
-    name: "rent_five_br",
+    name: "",
+    measurement: "Number of computer classes for basic skills",
+    lowerIsBetter: false,
+    demographic: ["36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of briding programs for professionals",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of paid employment training and placement programs",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of public colleges",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of public universities",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of public schools",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of Caltholic schools",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of religious/ethnic schools",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of parenting and new mother programs",
+    lowerIsBetter: false,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Number of recreation programs for seniors",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of recreation programs for kids and teenagers",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of community organizations offering English courses",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of literacy programs for seniors",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of family shelters",
+    lowerIsBetter: false,
+    demographic: {
+      minNumberOfPeople: 3,
+      maxNumberOfPeople: 100,
+    },
+  },
+  {
+    name: "",
+    measurement: "Number of youth shelters",
+    lowerIsBetter: false,
+    demographic: ["13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of food banks and Islamic foodbanks",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of furniture banks",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of free/subsidized clothing resources",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Cost of public daycare",
     lowerIsBetter: true,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Cost of private daycare",
+    lowerIsBetter: true,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Number of parent relief programs",
+    lowerIsBetter: false,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Number of organizations offering financial resources",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Minimum deposit required to apply for secure credit card",
+    lowerIsBetter: true,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of banks that provide unsecure credit cards",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of employment services",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of services to file taxes",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Average temperature in winter",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of sunny days",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of snowy days",
+    lowerIsBetter: true,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of rainy days",
+    lowerIsBetter: true,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Cost of a business liscence",
+    lowerIsBetter: true,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Cost of municipal property tax",
+    lowerIsBetter: true,
+    demographic: ["36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of legal aid services for newcomers",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65", "65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of youth employment centres",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement:
+      "Number of doctors taking new patients who speak, Pashto, Dari, Urdu, or Arabic",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of libraries",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement:
+      "Number of community recreation centres providing sports programs/facilities",
+    lowerIsBetter: false,
+    demographic: ["13-18", "19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of mosques/islamic centres",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of Afghan community",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of stores that sell ethnic/cultural food",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of restaurants that offer Afgan cusines",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Cost of a senior's pass",
+    lowerIsBetter: false,
+    demographic: ["65+"],
   },
 ];
 
 const calcCity = (measurements) => {
   //specify which measurement we're comparing
-  // let measurements = ["gasbuddy_gas", "planhub_phone_avg_plan"];
 
   //create array with all the applicable cities & scores
   let flattenedScores = measurements.flatMap((measurement) => {

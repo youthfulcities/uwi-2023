@@ -1,36 +1,31 @@
 const additionalInfo = [
   {
-    name: "gasbuddy_gas",
-    lowerIsBetter: true,
-    demographic: "all",
-  },
-  {
     name: "planhub_internet",
+    measurement: "Cost of internet plan",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "min_wage",
+    measurement: "Minimum wage",
     lowerIsBetter: false,
     demographic: ["19-35", "36-65"],
   },
   {
     name: "planhub_phone_basic_plan",
-    lowerIsBetter: true,
-    demographic: "all",
-  },
-  {
-    name: "planhub_phone_avg_plan",
+    measurement: "Cost of basic phone plan",
     lowerIsBetter: true,
     demographic: "all",
   },
   {
     name: "statscan_tuition",
+    measurement: "Cost of tuition",
     lowerIsBetter: true,
     demographic: ["13-18", "19-35"],
   },
   {
     name: "rent_one_br",
+    measurement: "Cost of 1 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 1,
@@ -39,6 +34,7 @@ const additionalInfo = [
   },
   {
     name: "rent_two_br",
+    measurement: "Cost of 2 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 3,
@@ -47,6 +43,7 @@ const additionalInfo = [
   },
   {
     name: "rent_three_br",
+    measurement: "Cost of 3 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 5,
@@ -55,6 +52,7 @@ const additionalInfo = [
   },
   {
     name: "rent_four_br",
+    measurement: "Cost of 4 bedroom appartment",
     lowerIsBetter: true,
     demographic: {
       minNumberOfPeople: 6,
@@ -62,8 +60,154 @@ const additionalInfo = [
     },
   },
   {
-    name: "rent_five_br",
+    name: "",
+    measurement: "Number of briding programs for professionals",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of paid employment training and placement programs",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of post-secondary institutions",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of parenting and new mother programs",
+    lowerIsBetter: false,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Number of recreation programs for seniors",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of recreation programs for kids and teenagers",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
+  },
+  {
+    name: "",
+    measurement: "Number of recreation programs for kids and teenagers",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of shelters",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of food banks",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of furniture banks",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of free/subsidized clothing resources",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Cost of public daycare",
     lowerIsBetter: true,
+    demographic: ["0-12"],
+  },
+  {
+    name: "",
+    measurement: "Number of employment services",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of services to file taxes",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of business startup supports",
+    lowerIsBetter: false,
+    demographic: ["19-35", "36-65"],
+  },
+  {
+    name: "",
+    measurement: "Number of snowy days",
+    lowerIsBetter: true,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of youth employment centres",
+    lowerIsBetter: false,
+    demographic: ["19-35"],
+  },
+  {
+    name: "",
+    measurement: "Number of libraries",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of mosques/islamic centres",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of Afghan communities",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Number of stores that sell ethnic/cultural food",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Number of restaurants that offer Afgan cusines",
+    lowerIsBetter: false,
+    demographic: "all",
+  },
+  {
+    name: "",
+    measurement: "Cost of a senior's pass for public transport",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
+  {
+    name: "",
+    measurement: "Cost of a adult pass for public transport",
+    lowerIsBetter: false,
+    demographic: ["19-35, 36-65"],
+  },
+  {
+    name: "",
+    measurement: "Cost of a youth pass for public transport",
+    lowerIsBetter: false,
+    demographic: ["0-12", "13-18"],
   },
 ];
 

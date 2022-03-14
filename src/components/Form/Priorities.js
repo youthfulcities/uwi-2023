@@ -10,26 +10,22 @@ import {
   FormControlLabel,
   Checkbox,
 } from "@mui/material";
+import _ from "lodash";
+import additionalInfo from "../../cityCalc/additionalInfo.js";
 
-const Priorities = ({ handlePriorityChange, form, handleChange }) => {
-  const topics = [
-    "Education + Training",
-    "Diversity + Inclusion + Accessibility",
-    "Financial Services",
-    "Transportation",
-    "Employment",
-    "Weather",
-    "Entrepreneurship",
-    "Health",
-    "Public Built Space",
-    "Law",
-  ];
-
+const Priorities = ({
+  handlePriorityChange,
+  form,
+  handleChange,
+  setPriorities,
+}) => {
   const { priorities } = form;
+
   return (
     <>
       <Typography variant="h4" mt={2}>
-        Let us know what's important to you. (Optional)
+        Let us know what's important to you. We've selected some already based
+        on the ages and number of people in your family.
       </Typography>
       <Grid container direction="column" spacing={2}>
         <Grid
@@ -44,7 +40,7 @@ const Priorities = ({ handlePriorityChange, form, handleChange }) => {
           <Grid item>
             <FormControl component="fieldset" variant="standard">
               <FormLabel component="legend">
-                Tap on the options that intrest you.
+                Tap on the options to select.
               </FormLabel>
               <FormGroup>
                 <Grid
@@ -53,18 +49,18 @@ const Priorities = ({ handlePriorityChange, form, handleChange }) => {
                   spacing={2}
                   justifyContent="space-between"
                 >
-                  {topics.map((topic, i) => (
+                  {additionalInfo.map((topic, i) => (
                     <Grid item xs={6} key={i}>
                       <FormControlLabel
                         control={
                           <Checkbox
                             checked={priorities.includes(topic)}
                             onChange={(e) => handlePriorityChange(e)}
-                            name={topic}
+                            name={topic.measurement}
                             size="large"
                           />
                         }
-                        label={topic}
+                        label={topic.measurement}
                       />
                     </Grid>
                   ))}

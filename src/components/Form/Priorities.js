@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
+import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 import {
   Typography,
   Grid,
   Button,
   FormGroup,
+  Divider,
   FormControl,
   FormLabel,
   FormControlLabel,
@@ -12,6 +14,10 @@ import {
 } from "@mui/material";
 import _ from "lodash";
 import additionalInfo from "../../cityCalc/additionalInfo.js";
+
+const groupedPrioritiesArray = Object.values(
+  _.groupBy(additionalInfo, (item) => item.category)
+);
 
 const Priorities = ({
   handlePriorityChange,
@@ -21,11 +27,15 @@ const Priorities = ({
 }) => {
   const { priorities } = form;
 
+  useEffect(() => {
+    setPriorities();
+  }, []);
+
   return (
     <>
       <Typography variant="h4" mt={2}>
-        Let us know what's important to you. We've selected some already based
-        on the ages and number of people in your family.
+        Let us know what's important to you. We've selected some items already
+        based on the ages and number of people in your family.
       </Typography>
       <Grid container direction="column" spacing={2}>
         <Grid
@@ -39,32 +49,39 @@ const Priorities = ({
         >
           <Grid item>
             <FormControl component="fieldset" variant="standard">
-              <FormLabel component="legend">
-                Tap on the options to select.
-              </FormLabel>
               <FormGroup>
-                <Grid
-                  container
-                  direction="row"
-                  spacing={2}
-                  justifyContent="space-between"
-                >
-                  {additionalInfo.map((topic, i) => (
-                    <Grid item xs={6} key={i}>
-                      <FormControlLabel
-                        control={
-                          <Checkbox
-                            checked={priorities.includes(topic)}
-                            onChange={(e) => handlePriorityChange(e)}
-                            name={topic.measurement}
-                            size="large"
-                          />
-                        }
-                        label={topic.measurement}
-                      />
+                {groupedPrioritiesArray.map((categoryArray, i) => (
+                  <Grid
+                    item
+                    container
+                    xs={12}
+                    spacing={2}
+                    mt={1}
+                    key={uuidv4()}
+                  >
+                    <Grid item xs={12} key={i} py={1} mt={2}>
+                      <Typography variant="h3" mb={1}>
+                        {categoryArray[0].category}
+                      </Typography>
+                      <Divider />
                     </Grid>
-                  ))}
-                </Grid>
+                    {categoryArray.map((topic, i) => (
+                      <Grid item xs={6} key={i}>
+                        <FormControlLabel
+                          control={
+                            <Checkbox
+                              checked={priorities.includes(topic)}
+                              onChange={(e) => handlePriorityChange(e)}
+                              name={topic.measurement}
+                              size="large"
+                            />
+                          }
+                          label={topic.measurement}
+                        />
+                      </Grid>
+                    ))}
+                  </Grid>
+                ))}
               </FormGroup>
             </FormControl>
           </Grid>

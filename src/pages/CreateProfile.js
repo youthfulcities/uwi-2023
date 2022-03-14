@@ -45,39 +45,6 @@ const CreateProfile = ({ form, setForm }) => {
     }
   };
 
-  const getDemographicMeasurements = () => {
-    const { numberOfPeople, family } = form;
-
-    let ages = family.map((familyMember) => familyMember.age);
-
-    let ageMeasurements = additionalInfo.map((measurement) => {
-      if (Array.isArray(measurement.demographic)) {
-        if (_.intersection(measurement.demographic, ages).length > 0) {
-          return measurement.name;
-        }
-      } else if (measurement.demographic === "all") {
-        return measurement.name;
-      } else if (
-        typeof measurement.demographic === "object" &&
-        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
-        numberOfPeople <= measurement.demographic.maxNumberOfPeople
-      ) {
-        return measurement.name;
-      }
-      return undefined;
-    });
-    return ageMeasurements.filter((e) => e !== undefined);
-  };
-
-  // const setPriorities = () => {
-  //   const measurements = getDemographicMeasurements();
-  //   let priorities = form.priorities;
-  //   priorities = measurements;
-  //   setForm({ ...form, priorities });
-  // };
-
-  console.log(form.priorities);
-
   const handleFamilyMemberChange = (input, value, i) => {
     const oldFamily = form.family;
     const family = [...oldFamily];
@@ -99,6 +66,37 @@ const CreateProfile = ({ form, setForm }) => {
     setForm({ ...form, family: family });
   };
 
+  const getDemographicMeasurements = () => {
+    const { numberOfPeople, family } = form;
+
+    let ages = family.map((familyMember) => familyMember.age);
+
+    let ageMeasurements = additionalInfo.map((measurement) => {
+      if (Array.isArray(measurement.demographic)) {
+        if (_.intersection(measurement.demographic, ages).length > 0) {
+          return measurement;
+        }
+      } else if (measurement.demographic === "all") {
+        return measurement;
+      } else if (
+        typeof measurement.demographic === "object" &&
+        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
+        numberOfPeople <= measurement.demographic.maxNumberOfPeople
+      ) {
+        return measurement;
+      }
+      return undefined;
+    });
+    return ageMeasurements.filter((e) => e !== undefined);
+  };
+
+  const setPriorities = () => {
+    const measurements = getDemographicMeasurements();
+    let priorities = form.priorities;
+    priorities = measurements;
+    setForm({ ...form, priorities });
+  };
+
   const displaySection = (step) => {
     switch (step) {
       case 1:
@@ -110,7 +108,7 @@ const CreateProfile = ({ form, setForm }) => {
             form={form}
             setForm={setForm}
             nextStep={nextStep}
-            // setPriorities={setPriorities}
+            setPriorities={setPriorities}
           />
         );
       case 2:
@@ -121,6 +119,7 @@ const CreateProfile = ({ form, setForm }) => {
             form={form}
             setForm={setForm}
             resetStep={resetStep}
+            setPriorities={setPriorities}
           />
         );
 
@@ -133,7 +132,7 @@ const CreateProfile = ({ form, setForm }) => {
             form={form}
             setForm={setForm}
             nextStep={nextStep}
-            // setPriorities={setPriorities}
+            setPriorities={setPriorities}
           />
         );
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from "react-i18next";
 
 import {
@@ -14,13 +15,15 @@ import {
   FormLabel,
 } from "@mui/material";
 
+import additionalInfo from "../../cityCalc/additionalInfo";
+
 const FamilyMembers = ({
   handleFamilyMemberChange,
   handleChange,
   addFamilyMembers,
-  form,
+  setForm,
   nextStep,
-  setPriorities,
+  form,
 }) => {
   const { family, numberOfPeople } = form;
 
@@ -94,7 +97,13 @@ const FamilyMembers = ({
         {family.length > 0 &&
           family.map((member, i) => (
             <>
-              <Grid item container spacing={3} direction="column" key={i}>
+              <Grid
+                item
+                container
+                spacing={3}
+                direction="column"
+                key={uuidv4()}
+              >
                 <Grid item mt={2}>
                   <Typography variant="h3">
                     {member.name ||
@@ -188,7 +197,6 @@ const FamilyMembers = ({
             disabled={!allFieldsFilled()}
             onClick={() => {
               nextStep();
-              // setPriorities();
             }}
             fullWidth={true}
           >

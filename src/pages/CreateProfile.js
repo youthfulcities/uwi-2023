@@ -8,10 +8,16 @@ import Priorities from "../components/Form/Priorities";
 
 import additionalInfo from "../cityCalc/additionalInfo";
 
-const CreateProfile = ({ form, setForm }) => {
+const CreateProfile = ({
+  form,
+  setForm,
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   // const { t } = useTranslation();
-
-  console.log(form);
 
   const nextStep = () => {
     setForm({ ...form, step: form.step + 1 });
@@ -143,6 +149,11 @@ const CreateProfile = ({ form, setForm }) => {
         nextStep={nextStep}
         width="sm"
         step={form.step}
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+        textSize={textSize}
+        setTextSize={setTextSize}
       >
         {displaySection(form.step)}
       </FormContainer>

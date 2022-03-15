@@ -7,8 +7,13 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import Socials from "../Socials";
 import Decoration from "../Decoration";
 import Back from "../Back";
+import ChangeLang from "../ChangeLang";
 
-const FormContainer = ({ children, width, prevStep, step }) => {
+const FormContainer = ({ children, width, prevStep, step,   languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize, }) => {
   const { t } = useTranslation();
   return (
     <>
@@ -57,6 +62,13 @@ const FormContainer = ({ children, width, prevStep, step }) => {
             <Back />
           )}
         </Grid>
+        <ChangeLang
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
+        />
       </Container>
       <Decoration />
     </>

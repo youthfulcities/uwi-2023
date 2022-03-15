@@ -9,7 +9,13 @@ import getData from "../helpers/odsClientV2.js";
 import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";
 
-const ExploreAll = ({ currentLangCode }) => {
+const ExploreAll = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const { t } = useTranslation();
   const [recs, setRecs] = useState([]);
   const query = "/records?limit=10&offset=0";
@@ -26,7 +32,14 @@ const ExploreAll = ({ currentLangCode }) => {
 
   return (
     <>
-      <BasicContainer width="md">
+      <BasicContainer
+        width="md"
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+        textSize={textSize}
+        setTextSize={setTextSize}
+      >
         <Grid mb={2} item>
           <Typography align="center" variant="h1">
             {t("exploreHeading")}

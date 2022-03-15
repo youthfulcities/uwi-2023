@@ -63,8 +63,6 @@ const PhotoButton = ({
                 variant="body1"
               >
                 {t("population")}: {formattedNumber(factoid)}
-                <br />
-                {t("immPopulation")}: ???
               </Typography>
             </Grid>
           </Grid>

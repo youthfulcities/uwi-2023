@@ -6,12 +6,25 @@ import PhotoBackground from "../components/PhotoBackground";
 import BasicContainer from "../components/BasicContainer";
 import { useTranslation } from "react-i18next";
 
-const Intro = () => {
+const Intro = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <BasicContainer width="sm">
+      <BasicContainer
+        width="sm"
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+        textSize={textSize}
+        setTextSize={setTextSize}
+      >
         <Grid item>
           <Typography color="#FFF" variant="h1" align="center">
             {t("introHeading")}

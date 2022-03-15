@@ -12,8 +12,15 @@ import CityInfo from "../components/CityTemplate/CityInfo";
 import Stories from "../components/CityTemplate/Stories";
 import Resources from "../components/CityTemplate/Resources";
 import getData from "../helpers/odsClientV2.js";
+import ChangeLang from "../components/ChangeLang";
 
-const CityTemplate = ({ currentLangCode }) => {
+const CityTemplate = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const { t } = useTranslation();
   const { cityname } = useParams();
   const [city, setCity] = useState(undefined);
@@ -93,6 +100,13 @@ const CityTemplate = ({ currentLangCode }) => {
             <Grid item mb={2} sx={{ maxHeight: "10vh" }}>
               <Socials />
             </Grid>
+            <ChangeLang
+              languages={languages}
+              setCurrentLangCode={setCurrentLangCode}
+              currentLangCode={currentLangCode}
+              textSize={textSize}
+              setTextSize={setTextSize}
+            />
           </Container>
           <Decoration />
         </>

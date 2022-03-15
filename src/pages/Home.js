@@ -8,12 +8,25 @@ import PhotoBackground from "../components/PhotoBackground";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 
-const Home = ({ languages, setCurrentLangCode, currentLangCode }) => {
+const Home = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <BasicContainer width="xs">
+      <BasicContainer
+        width="xs"
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+        textSize={textSize}
+        setTextSize={setTextSize}
+      >
         <Grid
           item
           container

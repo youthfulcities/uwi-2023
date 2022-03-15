@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate";
 import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
-import ChangeLang from "./components/ChangeLang";
+import Map from "./pages/Map";
 
 function App() {
   //because ODS controls the search params via angular we can't use react-router-dom to do so
@@ -255,19 +255,44 @@ function App() {
                 languages={languages}
                 setCurrentLangCode={setCurrentLangCode}
                 currentLangCode={currentLangCode}
+                textSize={textSize}
+                setTextSize={setTextSize}
               />
             }
           />
-          <Route path="/intro" element={<Intro />}></Route>
+          <Route
+            path="/intro"
+            element={
+              <Intro
+                languages={languages}
+                setCurrentLangCode={setCurrentLangCode}
+                currentLangCode={currentLangCode}
+                textSize={textSize}
+                setTextSize={setTextSize}
+              />
+            }
+          ></Route>
           <Route
             path="/explore-all"
-            element={<ExploreAll currentLangCode={currentLangCode} />}
+            element={
+              <ExploreAll
+                languages={languages}
+                setCurrentLangCode={setCurrentLangCode}
+                textSize={textSize}
+                setTextSize={setTextSize}
+                currentLangCode={currentLangCode}
+              />
+            }
           />
           <Route
             path="create-profile"
             element={
               <CreateProfile
+                languages={languages}
+                setCurrentLangCode={setCurrentLangCode}
                 currentLangCode={currentLangCode}
+                textSize={textSize}
+                setTextSize={setTextSize}
                 form={form}
                 setForm={setForm}
               />
@@ -280,6 +305,10 @@ function App() {
                 <SuggestedCities
                   form={form}
                   currentLangCode={currentLangCode}
+                  languages={languages}
+                  setCurrentLangCode={setCurrentLangCode}
+                  textSize={textSize}
+                  setTextSize={setTextSize}
                 />
               ) : (
                 <Navigate replace to="/create-profile" />
@@ -288,16 +317,18 @@ function App() {
           />
           <Route
             path="/about/:cityname"
-            element={<CityTemplate currentLangCode={currentLangCode} />}
+            element={
+              <CityTemplate
+                languages={languages}
+                setCurrentLangCode={setCurrentLangCode}
+                currentLangCode={currentLangCode}
+                textSize={textSize}
+                setTextSize={setTextSize}
+              />
+            }
           />
+          <Route path="/map" element={<Map />} />
         </Routes>
-        <ChangeLang
-          languages={languages}
-          setCurrentLangCode={setCurrentLangCode}
-          currentLangCode={currentLangCode}
-          textSize={textSize}
-          setTextSize={setTextSize}
-        />
         <Footer />
       </Router>
     </ThemeProvider>

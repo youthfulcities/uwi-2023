@@ -12,12 +12,11 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import getData from "../../helpers/odsClientV2.js";
 import Search from "./Search";
-import FactCard from "../FactCard";
+// import FactCard from "../FactCard";
 import ResourceCard from "./ResourceCard";
 
 //nested accordian
-{
-  /* <Accordion
+/* <Accordion
 sx={{
   background: "#DCDCDC",
   "&.Mui-expanded": {
@@ -65,7 +64,6 @@ key={`panel-resources-${index}b`}
   }
 </AccordionDetails>
 </Accordion> */
-}
 
 //for removing unnescessary words from search query
 
@@ -77,31 +75,31 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
   const [searchStringQuery, setSearchStringQuery] = useState("");
 
   // get sub categories within resources
-  const getSubCategories = useCallback(() => {
-    const createSubResourceQuery = (indicator_en) => {
-      return `/records?refine=city:${cityname}&limit=10&select=avg(value) as value,measurement_en,indicator_en,noteen&where=indicator_en="${indicator_en}"${
-        searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
-      }&group_by=measurement_en,indicator_en,noteen`;
-    };
+  // const getSubCategories = useCallback(() => {
+  //   const createSubResourceQuery = (indicator_en) => {
+  //     return `/records?refine=city:${cityname}&limit=10&select=avg(value) as value,measurement_en,indicator_en,noteen&where=indicator_en="${indicator_en}"${
+  //       searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
+  //     }&group_by=measurement_en,indicator_en,noteen`;
+  //   };
 
-    if (resources !== undefined) {
-      const sub = resources.map((resource) =>
-        createSubResourceQuery(resource.record.fields.indicator_en)
-      );
+  //   if (resources !== undefined) {
+  //     const sub = resources.map((resource) =>
+  //       createSubResourceQuery(resource.record.fields.indicator_en)
+  //     );
 
-      const retrievedInfo = Promise.all(
-        sub.map((query) =>
-          getData("index-2020-full", query).then((res) => res.records)
-        )
-      );
+  //     const retrievedInfo = Promise.all(
+  //       sub.map((query) =>
+  //         getData("index-2020-full", query).then((res) => res.records)
+  //       )
+  //     );
 
-      const setSubs = async () => {
-        setSubResources(await retrievedInfo);
-      };
+  //     const setSubs = async () => {
+  //       setSubResources(await retrievedInfo);
+  //     };
 
-      setSubs();
-    }
-  }, [resources, cityname, searchStringQuery]);
+  //     setSubs();
+  //   }
+  // }, [resources, cityname, searchStringQuery]);
 
   //get resource data
   const getResources = useCallback(() => {

@@ -11,6 +11,8 @@ import additionalInfo from "../cityCalc/additionalInfo";
 const CreateProfile = ({ form, setForm }) => {
   // const { t } = useTranslation();
 
+  console.log(form);
+
   const nextStep = () => {
     setForm({ ...form, step: form.step + 1 });
   };
@@ -29,6 +31,7 @@ const CreateProfile = ({ form, setForm }) => {
 
   const handlePriorityChange = (e) => {
     if (e.target.checked) {
+      //add priority to selected
       const priorities = form.priorities;
       priorities.push(
         additionalInfo.find(
@@ -37,6 +40,7 @@ const CreateProfile = ({ form, setForm }) => {
       );
       setForm({ ...form, priorities });
     } else {
+      //remove priority from selected
       const oldPriorites = form.priorities;
       const priorities = oldPriorites.filter(
         (priority) => priority.measurement !== e.target.name
@@ -45,32 +49,28 @@ const CreateProfile = ({ form, setForm }) => {
     }
   };
 
-  const handleFamilyMemberChange = (input, value, i) => {
-    const oldFamily = form.family;
-    const family = [...oldFamily];
-    family[i] = { ...family[i], [input]: value };
-    setForm({ ...form, family });
-  };
+  const handleAgesChange = (e) => {
+    const ages = form.ages;
+    if (e.target.checked) {
+      //add age to array
+      ages.push(e.target.name);
+      setForm({ ...form, ages });
+    } else {
+      //remove age from array
+      const oldAges = form.ages;
+      const ages = oldAges.filter((age) => age !== e.target.name);
+      setForm({ ...form, ages });
+    }
 
-  const addFamilyMembers = (n) => {
-    const obj = {
-      id: "",
-      age: "",
-      name: "",
-    };
-
-    let index = 0;
-
-    let family = Array.from({ length: n }, () => ({ ...obj, id: index++ }));
-
-    setForm({ ...form, family: family });
+    if (ages.length > form.numberOfPeople) {
+      setForm({ ...form, numberOfPeople: ages.length });
+    }
   };
 
   const getDemographicMeasurements = () => {
-    const { numberOfPeople, family } = form;
+    const { numberOfPeople, ages } = form;
 
-    let ages = family.map((familyMember) => familyMember.age);
-
+    //return array of matching measurement objects
     let ageMeasurements = additionalInfo.map((measurement) => {
       if (Array.isArray(measurement.demographic)) {
         if (_.intersection(measurement.demographic, ages).length > 0) {
@@ -102,8 +102,7 @@ const CreateProfile = ({ form, setForm }) => {
       case 1:
         return (
           <FamilyMembers
-            addFamilyMembers={addFamilyMembers}
-            handleFamilyMemberChange={handleFamilyMemberChange}
+            handleAgesChange={handleAgesChange}
             handleChange={handleChange}
             form={form}
             setForm={setForm}
@@ -126,8 +125,7 @@ const CreateProfile = ({ form, setForm }) => {
       default:
         return (
           <FamilyMembers
-            addFamilyMembers={addFamilyMembers}
-            handleFamilyMemberChange={handleFamilyMemberChange}
+            handleAgesChange={handleAgesChange}
             handleChange={handleChange}
             form={form}
             setForm={setForm}

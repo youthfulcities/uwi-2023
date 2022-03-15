@@ -11,7 +11,7 @@ const additionalInfo = [
     measurement: "Minimum wage",
     category: "Employment",
     lowerIsBetter: false,
-    demographic: ["19-35", "36-65"],
+    demographic: ["13-18", "19-35", "36-65"],
   },
   {
     name: "planhub_phone_basic_plan",
@@ -69,7 +69,7 @@ const additionalInfo = [
   },
   {
     name: "",
-    measurement: "Number of briding programs for professionals",
+    measurement: "Number of bridging programs for professionals",
     category: "Education",
     lowerIsBetter: false,
     demographic: ["19-35", "36-65"],
@@ -184,7 +184,7 @@ const additionalInfo = [
     measurement: "Number of youth employment centres",
     category: "Employment",
     lowerIsBetter: false,
-    demographic: ["19-35"],
+    demographic: ["13-18", "19-35"],
   },
   {
     name: "",
@@ -233,7 +233,7 @@ const additionalInfo = [
     measurement: "Cost of a adult pass for public transport",
     category: "Cost of living",
     lowerIsBetter: false,
-    demographic: ["19-35, 36-65"],
+    demographic: ["19-35", "36-65"],
   },
   {
     name: "",

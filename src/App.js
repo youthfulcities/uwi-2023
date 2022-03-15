@@ -34,6 +34,7 @@ function App() {
   const [form, setForm] = useState({
     step: 1,
     numberOfPeople: 1,
+    ages: [],
     family: [],
     priorities: [],
     completed: false,

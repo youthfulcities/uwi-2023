@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 import {
@@ -8,7 +8,6 @@ import {
   FormGroup,
   Divider,
   FormControl,
-  FormLabel,
   FormControlLabel,
   Checkbox,
 } from "@mui/material";
@@ -29,6 +28,7 @@ const Priorities = ({
 
   useEffect(() => {
     setPriorities();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

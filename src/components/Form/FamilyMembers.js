@@ -1,6 +1,5 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import {
   Typography,
@@ -8,38 +7,23 @@ import {
   InputLabel,
   Grid,
   Button,
-  Radio,
-  RadioGroup,
+  FormGroup,
   FormControlLabel,
   FormControl,
   FormLabel,
+  Checkbox,
 } from "@mui/material";
 
-import additionalInfo from "../../cityCalc/additionalInfo";
+const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
+  const { ages, numberOfPeople } = form;
 
-const FamilyMembers = ({
-  handleFamilyMemberChange,
-  handleChange,
-  addFamilyMembers,
-  setForm,
-  nextStep,
-  form,
-}) => {
-  const { family, numberOfPeople } = form;
-
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const allFieldsFilled = () => {
-    if (family.length > 0 && family.every((member) => member.age.length > 0)) {
+    if (ages.length > 0 && numberOfPeople !== 0) {
       return true;
     }
     return false;
-  };
-
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      addFamilyMembers(numberOfPeople);
-    }
   };
 
   return (
@@ -73,7 +57,6 @@ const FamilyMembers = ({
               type="number"
               value={numberOfPeople}
               onChange={(e) => handleChange(e.target.name, e.target.value)}
-              onKeyDown={(e) => handleKeyPress(e)}
               InputProps={{
                 inputProps: {
                   max: 15,
@@ -82,113 +65,83 @@ const FamilyMembers = ({
               }}
             />
           </Grid>
-          <Grid item>
-            <Button
-              sx={{ minWidth: 0 }}
-              className="textRoundButton"
-              variant="contained"
-              color="primary"
-              onClick={() => addFamilyMembers(numberOfPeople)}
-            >
-              <Typography variant="h5">{t("confirm")}</Typography>
-            </Button>
+          <Grid item mt={4}>
+            <FormControl component="fieldset" variant="standard">
+              <FormGroup>
+                <FormLabel>
+                  Select each age group that matches someone in your family
+                </FormLabel>
+                <Grid item container xs={12} spacing={2}>
+                  <Grid item xs={4}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={ages.includes("<12")}
+                          onChange={(e) => handleAgesChange(e)}
+                          name="<12"
+                          size="large"
+                        />
+                      }
+                      label="Less than 12 years"
+                    />
+                  </Grid>
+                  <Grid item xs={4}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={ages.includes("13-18")}
+                          onChange={(e) => handleAgesChange(e)}
+                          name="13-18"
+                          size="large"
+                        />
+                      }
+                      label="13 - 18 years"
+                    />
+                  </Grid>
+                  <Grid item xs={4}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={ages.includes("19-35")}
+                          onChange={(e) => handleAgesChange(e)}
+                          name="19-35"
+                          size="large"
+                        />
+                      }
+                      label="19 - 35 years"
+                    />
+                  </Grid>
+                  <Grid item xs={4}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={ages.includes("36-65")}
+                          onChange={(e) => handleAgesChange(e)}
+                          name="36-65"
+                          size="large"
+                        />
+                      }
+                      label="36 - 65 years"
+                    />
+                  </Grid>
+                  <Grid item xs={4}>
+                    <FormControlLabel
+                      control={
+                        <Checkbox
+                          checked={ages.includes(">65")}
+                          onChange={(e) => handleAgesChange(e)}
+                          name=">65"
+                          size="large"
+                        />
+                      }
+                      label="65+ years"
+                    />
+                  </Grid>
+                </Grid>
+              </FormGroup>
+            </FormControl>
           </Grid>
         </Grid>
-        {family.length > 0 &&
-          family.map((member, i) => (
-            <>
-              <Grid
-                item
-                container
-                spacing={3}
-                direction="column"
-                key={uuidv4()}
-              >
-                <Grid item mt={2}>
-                  <Typography variant="h3">
-                    {member.name ||
-                      (i === 0 ? "You" : `Family member ${i + 1}`)}
-                  </Typography>
-                </Grid>
-                <Grid item>
-                  <InputLabel
-                    id={`family-name-label-${i}`}
-                    htmlFor={`family-name-${i}`}
-                  >
-                    Give this family member a nickname (optional)
-                  </InputLabel>
-                  <TextField
-                    id={`family-name-${i}`}
-                    name="name"
-                    label=""
-                    fullWidth={true}
-                    aria-labelledby={`family-name-label-${i}`}
-                    aria-describedby={`family-name-label-${i}`}
-                    value={member.name}
-                    onChange={(e) =>
-                      handleFamilyMemberChange(e.target.name, e.target.value, i)
-                    }
-                  />
-                </Grid>
-                <Grid item>
-                  <FormControl>
-                    <FormLabel id={`family-age-label-${i}`}>Age</FormLabel>
-                    <RadioGroup
-                      row
-                      aria-labelledby={`family-age-label-${i}`}
-                      aria-describedby={`family-age-label-${i}`}
-                      value={family[i].age}
-                      onChange={(e) =>
-                        handleFamilyMemberChange(
-                          e.target.name,
-                          e.target.value,
-                          i
-                        )
-                      }
-                      id={`family-age-${i}`}
-                      name="age"
-                    >
-                      <Grid item xs={4}>
-                        <FormControlLabel
-                          value="<12"
-                          control={<Radio size="medium" />}
-                          label="0 - 12 years"
-                        />
-                      </Grid>
-                      <Grid item xs={4}>
-                        <FormControlLabel
-                          value="13-18"
-                          control={<Radio size="medium" />}
-                          label="13 - 18 years"
-                        />
-                      </Grid>
-                      <Grid item xs={4}>
-                        <FormControlLabel
-                          value="19-35"
-                          control={<Radio size="medium" />}
-                          label="19 - 35 years"
-                        />
-                      </Grid>
-                      <Grid item xs={4}>
-                        <FormControlLabel
-                          value="36-65"
-                          control={<Radio size="medium" />}
-                          label="36 - 65 years"
-                        />
-                      </Grid>
-                      <Grid item xs={4}>
-                        <FormControlLabel
-                          value=">65"
-                          control={<Radio size="medium" />}
-                          label="65+ years"
-                        />
-                      </Grid>
-                    </RadioGroup>
-                  </FormControl>
-                </Grid>
-              </Grid>
-            </>
-          ))}
         <Grid item mt={2}>
           <Button
             variant="contained"

@@ -1,6 +1,8 @@
 import React from "react";
 import { Grid } from "@mui/material";
 
+import Back from "../components/Back";
+
 const Map = () => {
   return (
     <Grid sx={{ minHeight: "88vh", minWidth: "100%" }} container>
@@ -12,6 +14,7 @@ const Map = () => {
           height="100%"
         ></iframe>
       </Grid>
+      <Back />
     </Grid>
   );
 };

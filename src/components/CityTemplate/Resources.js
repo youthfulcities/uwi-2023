@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import {
@@ -7,6 +8,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Grid,
+  Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -160,7 +162,18 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
         aria-controls="panel2a-content"
         id="panel2a-header"
       >
-        <Typography variant="h3">{t("resources")}</Typography>
+        <Grid container direction="row" justifyContent="space-between">
+          <Grid item>
+            <Typography variant="h3">{t("resources")}</Typography>
+          </Grid>
+          <Grid item mx={2}>
+            <Link to="/map">
+              <Button color="primary" variant="contained" size="large">
+                <Typography variant="h5">View On Map</Typography>
+              </Button>
+            </Link>
+          </Grid>
+        </Grid>
       </AccordionSummary>
       <AccordionDetails>
         <Search setSearchStringQuery={setSearchStringQuery} />

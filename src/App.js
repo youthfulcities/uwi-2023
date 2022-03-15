@@ -35,7 +35,6 @@ function App() {
     step: 1,
     numberOfPeople: 1,
     ages: [],
-    family: [],
     priorities: [],
     completed: false,
   });

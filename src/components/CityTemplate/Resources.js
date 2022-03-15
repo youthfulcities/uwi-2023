@@ -160,11 +160,16 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
         aria-controls="panel2a-content"
         id="panel2a-header"
       >
-        <Grid container direction="row" justifyContent="space-between">
-          <Grid item>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space"
+          alignItems="flex-start"
+        >
+          <Grid item xs={12}>
             <Typography variant="h3">{t("resources")}</Typography>
           </Grid>
-          <Grid item mx={2}>
+          <Grid item my={2}>
             <Link to={`/map/${cityname}`}>
               <Button color="primary" variant="contained" size="large">
                 <Typography variant="h5">View On Map</Typography>
@@ -184,7 +189,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
             {resources !== undefined &&
               resources.map((resource, i) => {
                 return (
-                  <>
+                  <div key={i}>
                     {subResources &&
                     subResources[i] !== undefined &&
                     subResources[i].length > 0 ? (
@@ -241,7 +246,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
                         </AccordionDetails>
                       </Accordion>
                     ) : null}
-                  </>
+                  </div>
                 );
               })}
           </div>

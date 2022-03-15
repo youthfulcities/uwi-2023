@@ -29,7 +29,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
   return (
     <>
       <Typography variant="h4" mt={2}>
-        Tell us a bit about your family so we can help find the best city for
+        '' Tell us a bit about your family so we can help find the best city for
         you.
       </Typography>
       <Grid container direction="column" spacing={2}>
@@ -72,7 +72,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                   Select each age group that matches someone in your family
                 </FormLabel>
                 <Grid item container xs={12} spacing={2}>
-                  <Grid item xs={4}>
+                  <Grid item xs={6}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -85,7 +85,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                       label="Less than 12 years"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6} sm={4}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -98,7 +98,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                       label="13 - 18 years"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6} sm={4}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -111,7 +111,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                       label="19 - 35 years"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6} sm={4}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -124,7 +124,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                       label="36 - 65 years"
                     />
                   </Grid>
-                  <Grid item xs={4}>
+                  <Grid item xs={6} sm={4}>
                     <FormControlLabel
                       control={
                         <Checkbox

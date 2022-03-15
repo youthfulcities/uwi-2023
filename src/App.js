@@ -202,6 +202,9 @@ function App() {
         styleOverrides: {
           root: {
             fontSize: "1.75rem",
+            "&.MuiInputLabel-root": {
+              whiteSpace: "normal",
+            },
           },
         },
       },

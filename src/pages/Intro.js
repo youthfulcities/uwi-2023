@@ -25,6 +25,7 @@ const Intro = ({
         textSize={textSize}
         setTextSize={setTextSize}
       >
+        <PhotoBackground />
         <Grid item>
           <Typography color="#FFF" variant="h1" align="center">
             {t("introHeading")}
@@ -54,7 +55,6 @@ const Intro = ({
         </Grid>
       </BasicContainer>
       <Decoration />
-      <PhotoBackground />
     </>
   );
 };

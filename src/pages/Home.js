@@ -27,6 +27,7 @@ const Home = ({
         textSize={textSize}
         setTextSize={setTextSize}
       >
+        <PhotoBackground />
         <Grid
           item
           container
@@ -72,7 +73,6 @@ const Home = ({
         ))}
       </BasicContainer>
       <Decoration />
-      <PhotoBackground />
     </>
   );
 };

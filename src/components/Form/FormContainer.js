@@ -9,11 +9,17 @@ import Decoration from "../Decoration";
 import Back from "../Back";
 import ChangeLang from "../ChangeLang";
 
-const FormContainer = ({ children, width, prevStep, step,   languages,
+const FormContainer = ({
+  children,
+  width,
+  prevStep,
+  step,
+  languages,
   setCurrentLangCode,
   currentLangCode,
   textSize,
-  setTextSize, }) => {
+  setTextSize,
+}) => {
   const { t } = useTranslation();
   return (
     <>

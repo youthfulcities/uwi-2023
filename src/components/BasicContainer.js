@@ -23,7 +23,6 @@ const BasicContainer = ({
           justifyContent="space-between"
           alignItems="center"
           spacing={0}
-          mb="2vh"
         >
           <Grid
             sx={{ minHeight: "76vh", minWidth: "100%" }}
@@ -38,7 +37,7 @@ const BasicContainer = ({
           >
             {children}
           </Grid>
-          <Grid item pb={3} sx={{ maxHeight: "10vh" }}>
+          <Grid item mb={3} sx={{ maxHeight: "10vh" }}>
             <Socials />
           </Grid>
         </Grid>

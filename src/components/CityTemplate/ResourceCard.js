@@ -66,7 +66,7 @@ const ResourceCard = ({
         justifyContent="flex-start"
         alignItems="center"
       >
-        <Grid item>
+        <Grid item xs={12}>
           <Typography variant="h4">{name}</Typography>
           <Typography variant="body1">
             {description !== null ? description : ""}
@@ -112,7 +112,10 @@ const ResourceCard = ({
                         <Typography variant="h5">{t("website")}</Typography>
                       }
                       secondary={
-                        <Typography variant="body1">
+                        <Typography
+                          sx={{ wordBreak: "break-word" }}
+                          variant="body1"
+                        >
                           {createReadableUrl(url)}
                         </Typography>
                       }
@@ -131,7 +134,12 @@ const ResourceCard = ({
                         <Typography variant="h5">{t("email")}</Typography>
                       }
                       secondary={
-                        <Typography variant="body1">{email}</Typography>
+                        <Typography
+                          sx={{ wordBreak: "break-word" }}
+                          variant="body1"
+                        >
+                          {email}
+                        </Typography>
                       }
                     />
                   </ListItemButton>

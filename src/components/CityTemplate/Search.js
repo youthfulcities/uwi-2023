@@ -15,6 +15,7 @@ const cleanSearch = (s) => {
 const Search = ({ setSearchStringQuery }) => {
   const { t } = useTranslation();
   const [searchString, setSearchString] = useState("");
+  const [searched, setSearched] = useState(false);
 
   const handleKeyPress = (e) => {
     if (e.key === "Enter") {
@@ -53,13 +54,16 @@ const Search = ({ setSearchStringQuery }) => {
           <TextField
             value={searchString}
             variant="outlined"
-            onChange={(e) => setSearchString(e.target.value)}
+            onChange={(e) => {
+              setSearchString(e.target.value);
+              setSearched(true);
+            }}
             onKeyDown={(e) => handleKeyPress(e)}
             fullWidth={true}
             label={t("search")}
           ></TextField>
         </Grid>
-        {searchString.length > 0 && (
+        {(searchString.length > 0 || searched) && (
           <>
             <Grid item>
               <Button
@@ -70,6 +74,7 @@ const Search = ({ setSearchStringQuery }) => {
                 onClick={() => {
                   setSearchString("");
                   setSearchStringQuery("");
+                  setSearched(false);
                 }}
               >
                 <CloseIcon fontSize="large" />

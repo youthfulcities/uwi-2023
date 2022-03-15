@@ -27,7 +27,7 @@ const CityTemplate = ({
   const [resources, setResources] = useState(undefined);
 
   const cityQuery = `/records?refine=city_name:${cityname}`;
-  const resourceQuery = `/records?refine=city:${cityname}&limit=10&select=measurement&group_by=measurement`;
+  const resourceQuery = `/records?refine=city:${cityname}&limit=20&select=sheet_title as measurement&group_by=sheet_title`;
 
   const getCityData = useCallback(() => {
     const retrievedInfo = getData("cities", cityQuery).then(
@@ -42,7 +42,7 @@ const CityTemplate = ({
   }, [cityQuery]);
 
   const getCategories = useCallback(() => {
-    const retrievedInfo = getData("refugee-test-data", resourceQuery).then(
+    const retrievedInfo = getData("resource-data-test", resourceQuery).then(
       (res) => res.records
     );
 
@@ -55,11 +55,13 @@ const CityTemplate = ({
 
   //get initial city info
   useEffect(() => {
+    console.log("city data api triggered");
     getCityData();
   }, [getCityData]);
 
   //get main categories
   useEffect(() => {
+    console.log("category api triggered");
     getCategories();
   }, [getCategories]);
 

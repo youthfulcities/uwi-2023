@@ -44,7 +44,7 @@ const Home = ({
         </Grid>
         <Grid item mt={2} mb={5}>
           <Typography color="#FFF" variant="h4" align="center">
-            کلبه • کور • Home
+            کور • Home
           </Typography>
         </Grid>
         <Grid item mt={2} mb={5}>

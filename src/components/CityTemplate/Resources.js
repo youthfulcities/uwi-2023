@@ -67,10 +67,7 @@ key={`panel-resources-${index}b`}
 </AccordionDetails>
 </Accordion> */
 
-//for removing unnescessary words from search query
-
 const Resources = ({ resources, cityname, currentLangCode }) => {
-  console.log("I have rerendered");
   const { t } = useTranslation();
 
   const [subResources, setSubResources] = useState([]);
@@ -106,7 +103,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
   //get resource data
   const getResources = useCallback(() => {
     const createSubResourceQuery = (measurement) => {
-      return `/records?refine=city:${cityname}&limit=10&select=address_number_street_city_province_postal_code as address,name_of_recreation_centre as name,url_source as url,email,phone&where=measurement="${measurement}"${
+      return `/records?refine=city:${cityname}&limit=10&select=address,name,url,email,phone,description&where=sheet_title="${measurement}"${
         searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
       }`;
     };
@@ -118,7 +115,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
 
       const retrievedInfo = Promise.all(
         sub.map((query) =>
-          getData("refugee-test-data", query).then((res) => res.records)
+          getData("resource-data-test", query).then((res) => res.records)
         )
       );
 
@@ -131,6 +128,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
   }, [cityname, resources, searchStringQuery]);
 
   useEffect(() => {
+    console.log("resource api triggered");
     getResources();
   }, [getResources]);
 
@@ -167,7 +165,7 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
             <Typography variant="h3">{t("resources")}</Typography>
           </Grid>
           <Grid item mx={2}>
-            <Link to="/map">
+            <Link to={`/map/${cityname}`}>
               <Button color="primary" variant="contained" size="large">
                 <Typography variant="h5">View On Map</Typography>
               </Button>
@@ -224,6 +222,9 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
                                 <Grid container spacing={2} direction="column">
                                   <Grid item>
                                     <ResourceCard
+                                      description={
+                                        subResource.record.fields.description
+                                      }
                                       phone={subResource.record.fields.phone}
                                       address={
                                         subResource.record.fields.address

@@ -327,6 +327,7 @@ function App() {
               />
             }
           />
+          <Route path="/map/:cityname" element={<Map />} />
           <Route path="/map" element={<Map />} />
         </Routes>
         <Footer />

@@ -19,42 +19,43 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 
 import engToPersian from "../../helpers/persianNum";
 
+//use google map api to link to address. remove # as it's a special character and breaks the query
+const createQuery = (name, address) => {
+  let q = name.replace("#", "").replace("&", "and");
+  let newAddress = address.replace("#", "").replace("&", "and");
+
+  return `https://maps.google.com/?q=${q}+${newAddress}`;
+};
+
+//removes everything but the base url to make the url fit on the cards
+const createReadableUrl = (url) => {
+  if (url.includes("http") || url.includes("www")) {
+    let newUrl = url.split(/http(?:s:\/\/(?:www\.)?|:\/\/)|www\.|\//);
+    return newUrl[1];
+  }
+  let newUrl = url.split("/");
+  return newUrl[0];
+};
+
+//makes links input without http:// at the beginning usable
+const createLink = (url) => {
+  if (url.includes("http")) {
+    return url;
+  } else {
+    return `http://${url}`;
+  }
+};
+
 const ResourceCard = ({
   phone,
   address,
   name,
   email,
   url,
+  description,
   currentLangCode,
 }) => {
   const { t } = useTranslation();
-
-  //makes links input without http:// at the beginning usable
-  const createLink = (url) => {
-    if (url.includes("http")) {
-      return url;
-    } else {
-      return `http://${url}`;
-    }
-  };
-
-  //removes everything but the base url to make the url fit on the cards
-  const createReadableUrl = (url) => {
-    if (url.includes("http") || url.includes("www")) {
-      let newUrl = url.split(/http(?:s:\/\/(?:www\.)?|:\/\/)|www\.|\//);
-      return newUrl[1];
-    }
-    let newUrl = url.split("/");
-    return newUrl[0];
-  };
-
-  //use google map api to link to address. remove # as it's a special character and breaks the query
-  const createQuery = (name, address) => {
-    let q = name.replace("#", "").replace("&", "and");
-    let newAddress = address.replace("#", "").replace("&", "and");
-
-    return `https://maps.google.com/?q=${q}+${newAddress}`;
-  };
 
   return (
     <Card sx={{ minHeight: 100 }} m="auto">
@@ -68,14 +69,14 @@ const ResourceCard = ({
         <Grid item>
           <Typography variant="h4">{name}</Typography>
           <Typography variant="body1">
-            This is a description of this resource
+            {description !== null ? description : ""}
           </Typography>
           <Grid item my="12px">
             <Divider />
           </Grid>
           <Grid item>
             <List>
-              {phone !== "N/A" && (
+              {phone !== null && (
                 <ListItem disablePadding>
                   <ListItemButton component="a" href={`tel:${phone}`}>
                     <ListItemIcon>
@@ -96,7 +97,7 @@ const ResourceCard = ({
                   </ListItemButton>
                 </ListItem>
               )}
-              {url !== "N/A" && (
+              {url !== null && (
                 <ListItem disablePadding>
                   <ListItemButton
                     component="a"
@@ -119,7 +120,7 @@ const ResourceCard = ({
                   </ListItemButton>
                 </ListItem>
               )}
-              {email !== "N/A" && (
+              {email !== null && (
                 <ListItem disablePadding>
                   <ListItemButton component="a" href={`mailto:${email}`}>
                     <ListItemIcon>
@@ -136,7 +137,7 @@ const ResourceCard = ({
                   </ListItemButton>
                 </ListItem>
               )}
-              {address !== "N/A" && (
+              {address !== null && (
                 <ListItem disablePadding>
                   <ListItemButton
                     component="a"

@@ -50,11 +50,11 @@ function App() {
       language: "دری",
       dir: "rtl",
     },
-    {
-      code: "ps",
-      language: "پښتو",
-      dir: "rtl",
-    },
+    // {
+    //   code: "ps",
+    //   language: "پښتو",
+    //   dir: "rtl",
+    // },
   ];
 
   const currentLanguage = languages.find((l) => l.code === currentLangCode);

@@ -20,6 +20,7 @@ import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";
+import Loading from "../pages/Loading";
 
 import calcCity from "../cityCalc/calcCity";
 
@@ -190,7 +191,7 @@ const SuggestedCities = ({ form }) => {
             </>
           ))
         ) : (
-          <p>Loading...</p>
+          <Loading />
         )}
       </BasicContainer>
       <Decoration />

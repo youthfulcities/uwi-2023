@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useTranslation } from "react-i18next";
 
 import { useParams } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
@@ -13,6 +12,7 @@ import Stories from "../components/CityTemplate/Stories";
 import Resources from "../components/CityTemplate/Resources";
 import getData from "../helpers/odsClientV2.js";
 import ChangeLang from "../components/ChangeLang";
+import Loading from "../pages/Loading";
 
 const CityTemplate = ({
   languages,
@@ -21,7 +21,6 @@ const CityTemplate = ({
   textSize,
   setTextSize,
 }) => {
-  const { t } = useTranslation();
   const { cityname } = useParams();
   const [city, setCity] = useState(undefined);
   const [resources, setResources] = useState(undefined);
@@ -113,7 +112,7 @@ const CityTemplate = ({
           <Decoration />
         </>
       ) : (
-        <p>{t("loading")}</p>
+        <Loading />
       )}
     </>
   );

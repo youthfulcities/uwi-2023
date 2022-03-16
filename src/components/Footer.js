@@ -12,13 +12,8 @@ const Footer = () => {
           justifyContent="space-between"
           alignItems="center"
         >
-          <Grid item my={1}>
-            <Grid
-              container
-              direction="row"
-              // justifyContent="space-between"
-              alignItems="center"
-            >
+          <Grid item>
+            <Grid container direction="row" alignItems="center">
               <Grid item container spacing="1vh" direction="column">
                 <Grid item>
                   <a

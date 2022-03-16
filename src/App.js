@@ -250,90 +250,94 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <Home
-                languages={languages}
-                setCurrentLangCode={setCurrentLangCode}
-                currentLangCode={currentLangCode}
-                textSize={textSize}
-                setTextSize={setTextSize}
+        <div className="flexWrapper">
+          <div className="flexGrow">
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <Home
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    currentLangCode={currentLangCode}
+                    textSize={textSize}
+                    setTextSize={setTextSize}
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="/intro"
-            element={
-              <Intro
-                languages={languages}
-                setCurrentLangCode={setCurrentLangCode}
-                currentLangCode={currentLangCode}
-                textSize={textSize}
-                setTextSize={setTextSize}
+              <Route
+                path="/intro"
+                element={
+                  <Intro
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    currentLangCode={currentLangCode}
+                    textSize={textSize}
+                    setTextSize={setTextSize}
+                  />
+                }
+              ></Route>
+              <Route
+                path="/explore-all"
+                element={
+                  <ExploreAll
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    textSize={textSize}
+                    setTextSize={setTextSize}
+                    currentLangCode={currentLangCode}
+                  />
+                }
               />
-            }
-          ></Route>
-          <Route
-            path="/explore-all"
-            element={
-              <ExploreAll
-                languages={languages}
-                setCurrentLangCode={setCurrentLangCode}
-                textSize={textSize}
-                setTextSize={setTextSize}
-                currentLangCode={currentLangCode}
+              <Route
+                path="create-profile"
+                element={
+                  <CreateProfile
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    currentLangCode={currentLangCode}
+                    textSize={textSize}
+                    setTextSize={setTextSize}
+                    form={form}
+                    setForm={setForm}
+                  />
+                }
               />
-            }
-          />
-          <Route
-            path="create-profile"
-            element={
-              <CreateProfile
-                languages={languages}
-                setCurrentLangCode={setCurrentLangCode}
-                currentLangCode={currentLangCode}
-                textSize={textSize}
-                setTextSize={setTextSize}
-                form={form}
-                setForm={setForm}
+              <Route
+                path="/suggested-cities"
+                element={
+                  form.completed ? (
+                    <SuggestedCities
+                      form={form}
+                      currentLangCode={currentLangCode}
+                      languages={languages}
+                      setCurrentLangCode={setCurrentLangCode}
+                      textSize={textSize}
+                      setTextSize={setTextSize}
+                    />
+                  ) : (
+                    <Navigate replace to="/create-profile" />
+                  )
+                }
               />
-            }
-          />
-          <Route
-            path="/suggested-cities"
-            element={
-              form.completed ? (
-                <SuggestedCities
-                  form={form}
-                  currentLangCode={currentLangCode}
-                  languages={languages}
-                  setCurrentLangCode={setCurrentLangCode}
-                  textSize={textSize}
-                  setTextSize={setTextSize}
-                />
-              ) : (
-                <Navigate replace to="/create-profile" />
-              )
-            }
-          />
-          <Route
-            path="/about/:cityname"
-            element={
-              <CityTemplate
-                languages={languages}
-                setCurrentLangCode={setCurrentLangCode}
-                currentLangCode={currentLangCode}
-                textSize={textSize}
-                setTextSize={setTextSize}
+              <Route
+                path="/about/:cityname"
+                element={
+                  <CityTemplate
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    currentLangCode={currentLangCode}
+                    textSize={textSize}
+                    setTextSize={setTextSize}
+                  />
+                }
               />
-            }
-          />
-          <Route path="/map/:cityname" element={<Map />} />
-          <Route path="/map" element={<Map />} />
-        </Routes>
-        <Footer />
+              <Route path="/map/:cityname" element={<Map />} />
+              <Route path="/map" element={<Map />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
       </Router>
     </ThemeProvider>
   );

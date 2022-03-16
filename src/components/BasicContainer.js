@@ -25,7 +25,6 @@ const BasicContainer = ({
           spacing={0}
         >
           <Grid
-            flexGrow="5"
             sx={{ minHeight: "74vh", minWidth: "100%" }}
             container
             item

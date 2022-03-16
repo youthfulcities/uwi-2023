@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <Container maxWidth="md">
         <Grid
-          sx={{ minHeight: "12vh" }}
+          sx={{ minHeight: "13vh", maxHeight: "14vh" }}
           container
           direction="row"
           justifyContent="space-between"
@@ -19,7 +19,7 @@ const Footer = () => {
               // justifyContent="space-between"
               alignItems="center"
             >
-              <Grid item container spacing={1} direction="column">
+              <Grid item container spacing="1vh" direction="column">
                 <Grid item>
                   <a
                     target="_blank"
@@ -32,7 +32,7 @@ const Footer = () => {
                       alt="Youthful Cities logo"
                     />
                   </a>
-                  <Grid item className="attributionLink" mx={1}>
+                  <Grid item className="attributionLink" mx="1vh">
                     <a
                       target="_blank"
                       rel="noreferrer"
@@ -59,7 +59,7 @@ const Footer = () => {
               </Grid> */}
             </Grid>
           </Grid>
-          <Grid item mt={1}>
+          <Grid item mt="1vh">
             <a
               target="_blank"
               rel="noreferrer"

@@ -28,7 +28,7 @@ const Socials = ({ url }) => {
           justifyContent="center"
           alignItems="center"
           direction="row"
-          spacing={1}
+          spacing="1vh"
         >
           <Grid item>
             <EmailShareButton url={full} subject={title}>

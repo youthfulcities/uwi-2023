@@ -17,43 +17,45 @@ const Intro = ({
 
   return (
     <>
-      <BasicContainer
-        width="sm"
-        languages={languages}
-        setCurrentLangCode={setCurrentLangCode}
-        currentLangCode={currentLangCode}
-        textSize={textSize}
-        setTextSize={setTextSize}
-      >
+      <div>
         <PhotoBackground />
-        <Grid item>
-          <Typography color="#FFF" variant="h1" align="center">
-            {t("introHeading")}
-          </Typography>
-        </Grid>
-        <Grid item mt={5}>
-          <Typography color="#FFF" variant="h5" align="center">
-            {t("introPar1")}
-            <br />
-            <br />
-            {t("introPar2")}
-          </Typography>
-        </Grid>
-        <Grid item mt={5}>
-          <Link to="/create-profile">
-            <Button color="primary" variant="contained" size="large">
-              <Typography variant="h5">{t("toProfile")}</Typography>
-            </Button>
-          </Link>
-        </Grid>
-        <Grid item mt={1}>
-          <Link to="/explore-all">
-            <Button color="info" variant="outlined" size="large">
-              <Typography variant="h5">{t("toExplore")}</Typography>
-            </Button>
-          </Link>
-        </Grid>
-      </BasicContainer>
+        <BasicContainer
+          width="sm"
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
+        >
+          <Grid item>
+            <Typography color="#FFF" variant="h1" align="center">
+              {t("introHeading")}
+            </Typography>
+          </Grid>
+          <Grid item mt={5}>
+            <Typography color="#FFF" variant="h5" align="center">
+              {t("introPar1")}
+              <br />
+              <br />
+              {t("introPar2")}
+            </Typography>
+          </Grid>
+          <Grid item mt={5}>
+            <Link to="/create-profile">
+              <Button color="primary" variant="contained" size="large">
+                <Typography variant="h5">{t("toProfile")}</Typography>
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item mt={1}>
+            <Link to="/explore-all">
+              <Button color="info" variant="outlined" size="large">
+                <Typography variant="h5">{t("toExplore")}</Typography>
+              </Button>
+            </Link>
+          </Grid>
+        </BasicContainer>
+      </div>
       <Decoration />
     </>
   );

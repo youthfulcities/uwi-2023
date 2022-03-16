@@ -19,59 +19,61 @@ const Home = ({
 
   return (
     <>
-      <BasicContainer
-        width="xs"
-        languages={languages}
-        setCurrentLangCode={setCurrentLangCode}
-        currentLangCode={currentLangCode}
-        textSize={textSize}
-        setTextSize={setTextSize}
-      >
+      <div>
         <PhotoBackground />
-        <Grid
-          item
-          container
-          direction="row"
-          alignItems="center"
-          justifyContent="center"
+        <BasicContainer
+          width="xs"
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
         >
-          <img
-            alt="Home icon with a group of four houses"
-            src="/assets/images/home-white.png"
-          />
-          <Typography color="#FFF" variant="h1" align="center" mx={2}>
-            KULBA
-          </Typography>
-        </Grid>
-        <Grid item mt={2} mb={5}>
-          <Typography color="#FFF" variant="h4" align="center">
-            کور • Home
-          </Typography>
-        </Grid>
-        <Grid item mt={2} mb={5}>
-          <Typography color="#FFF" variant="h5" align="center">
-            {t("welcomeMessage")}
-          </Typography>
-        </Grid>
-
-        {languages.map(({ code, language }) => (
-          <Grid key={code} item mt={1}>
-            <Link to="/intro">
-              <Button
-                color="primary"
-                variant="contained"
-                size="large"
-                onClick={() => {
-                  i18next.changeLanguage(code);
-                  setCurrentLangCode(code);
-                }}
-              >
-                <Typography variant="h5">{language}</Typography>
-              </Button>
-            </Link>
+          <Grid
+            item
+            container
+            direction="row"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <img
+              alt="Home icon with a group of four houses"
+              src="/assets/images/home-white.png"
+            />
+            <Typography color="#FFF" variant="h1" align="center" mx="2vh">
+              KULBA
+            </Typography>
           </Grid>
-        ))}
-      </BasicContainer>
+          <Grid item mt="2vh" mb="5vh">
+            <Typography color="#FFF" variant="h4" align="center">
+              کلبه • Home
+            </Typography>
+          </Grid>
+          <Grid item mt="2vh" mb="5vh">
+            <Typography color="#FFF" variant="h5" align="center">
+              {t("welcomeMessage")}
+            </Typography>
+          </Grid>
+
+          {languages.map(({ code, language }) => (
+            <Grid key={code} item mt="1vh">
+              <Link to="/intro">
+                <Button
+                  color="primary"
+                  variant="contained"
+                  size="large"
+                  onClick={() => {
+                    i18next.changeLanguage(code);
+                    setCurrentLangCode(code);
+                  }}
+                >
+                  <Typography variant="h5">{language}</Typography>
+                </Button>
+              </Link>
+            </Grid>
+          ))}
+        </BasicContainer>
+      </div>
       <Decoration />
     </>
   );

@@ -29,7 +29,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
   return (
     <>
       <Typography variant="h4" mt={2}>
-        '' Tell us a bit about your family so we can help find the best city for
+        Tell us a bit about your family so we can help find the best city for
         you.
       </Typography>
       <Grid container direction="column" spacing={2}>

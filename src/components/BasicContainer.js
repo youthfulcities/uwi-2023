@@ -17,7 +17,7 @@ const BasicContainer = ({
     <>
       <Container maxWidth={width === undefined ? "xs" : width}>
         <Grid
-          sx={{ minHeight: "86vh", minWidth: "100%" }}
+          sx={{ minWidth: "100%" }}
           container
           direction="column"
           justifyContent="space-between"
@@ -25,19 +25,20 @@ const BasicContainer = ({
           spacing={0}
         >
           <Grid
-            sx={{ minHeight: "76vh", minWidth: "100%" }}
+            flexGrow="5"
+            sx={{ minHeight: "74vh", minWidth: "100%" }}
             container
             item
             direction="column"
             justifyContent="center"
             alignItems="center"
             pt="14vh"
-            pb="10vh"
+            pb="5vh"
             spacing={0}
           >
             {children}
           </Grid>
-          <Grid item mb={3} sx={{ maxHeight: "10vh" }}>
+          <Grid item mb="3vh">
             <Socials />
           </Grid>
         </Grid>

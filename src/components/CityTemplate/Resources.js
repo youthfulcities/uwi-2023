@@ -163,15 +163,21 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
         <Grid
           container
           direction="row"
-          justifyContent="space"
-          alignItems="flex-start"
+          justifyContent="space-between"
+          alignItems="center"
+          flexWrap="nowrap"
         >
-          <Grid item xs={12}>
+          <Grid item>
             <Typography variant="h3">{t("resources")}</Typography>
           </Grid>
-          <Grid item my={2}>
+          <Grid item mx={2}>
             <Link to={`/map/${cityname}`}>
-              <Button color="primary" variant="contained" size="large">
+              <Button
+                sx={{ minWidth: 0 }}
+                color="primary"
+                variant="contained"
+                size="large"
+              >
                 <Typography variant="h5">View On Map</Typography>
               </Button>
             </Link>

@@ -76,9 +76,9 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                     <FormControlLabel
                       control={
                         <Checkbox
-                          checked={ages.includes("<12")}
+                          checked={ages.includes("0-12")}
                           onChange={(e) => handleAgesChange(e)}
-                          name="<12"
+                          name="0-12"
                           size="large"
                         />
                       }
@@ -128,9 +128,9 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                     <FormControlLabel
                       control={
                         <Checkbox
-                          checked={ages.includes(">65")}
+                          checked={ages.includes("65+")}
                           onChange={(e) => handleAgesChange(e)}
-                          name=">65"
+                          name="65+"
                           size="large"
                         />
                       }

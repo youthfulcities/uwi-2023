@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link } from "react-router-dom";
 import {
@@ -18,18 +18,60 @@ const groupedPrioritiesArray = Object.values(
   _.groupBy(additionalInfo, (item) => item.category)
 );
 
-const Priorities = ({
-  handlePriorityChange,
-  form,
-  handleChange,
-  setPriorities,
-}) => {
-  const { priorities } = form;
+const Priorities = ({ form, setForm, handleChange }) => {
+  const [initial] = useState(form);
+
+  const getDemographicMeasurements = useCallback(() => {
+    const { numberOfPeople, ages } = initial;
+
+    //return array of matching measurement objects
+    let ageMeasurements = additionalInfo.map((measurement) => {
+      if (Array.isArray(measurement.demographic)) {
+        if (_.intersection(measurement.demographic, ages).length > 0) {
+          return measurement;
+        }
+      } else if (measurement.demographic === "all") {
+        return measurement;
+      } else if (
+        typeof measurement.demographic === "object" &&
+        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
+        numberOfPeople <= measurement.demographic.maxNumberOfPeople
+      ) {
+        return measurement;
+      }
+      return undefined;
+    });
+    return ageMeasurements.filter((e) => e !== undefined);
+  }, [initial]);
+
+  const setPriorities = useCallback(() => {
+    const measurements = getDemographicMeasurements();
+    let priorities = initial.priorities;
+    priorities = measurements;
+    setForm({ ...initial, priorities });
+  }, [getDemographicMeasurements, initial, setForm]);
 
   useEffect(() => {
     setPriorities();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setPriorities]);
+
+  const handlePriorityChange = (e) => {
+    if (e.target.checked) {
+      //add priority to selected
+      const priorities = form.priorities;
+      priorities.push(
+        additionalInfo.find((priority) => priority.name === e.target.name)
+      );
+      setForm({ ...form, priorities });
+    } else {
+      //remove priority from selected
+      const oldPriorites = form.priorities;
+      const priorities = oldPriorites.filter(
+        (priority) => priority.name !== e.target.name
+      );
+      setForm({ ...form, priorities });
+    }
+  };
 
   return (
     <>
@@ -70,9 +112,9 @@ const Priorities = ({
                         <FormControlLabel
                           control={
                             <Checkbox
-                              checked={priorities.includes(topic)}
+                              checked={form.priorities.includes(topic)}
                               onChange={(e) => handlePriorityChange(e)}
-                              name={topic.measurement}
+                              name={topic.name}
                               size="large"
                             />
                           }

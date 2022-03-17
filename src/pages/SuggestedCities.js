@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import { useTranslation } from "react-i18next";
-import _ from "lodash";
+// import _ from "lodash";
 import {
   Typography,
   Grid,
@@ -14,7 +14,6 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import getData from "../helpers/odsClientV2";
-import additionalInfo from "../cityCalc/additionalInfo";
 
 import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
@@ -27,40 +26,14 @@ import calcCity from "../cityCalc/calcCity";
 const SuggestedCities = ({ form }) => {
   const { t } = useTranslation();
 
-  const getDemographicMeasurements = () => {
-    const { numberOfPeople, family } = form;
-    let ages = family.map((familyMember) => familyMember.age);
-
-    let ageMeasurements = additionalInfo.map((measurement) => {
-      if (Array.isArray(measurement.demographic)) {
-        if (_.intersection(measurement.demographic, ages).length > 0) {
-          return measurement.name;
-        }
-      } else if (measurement.demographic === "all") {
-        return measurement.name;
-      } else if (
-        typeof measurement.demographic === "object" &&
-        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
-        numberOfPeople <= measurement.demographic.maxNumberOfPeople
-      ) {
-        return measurement.name;
-      }
-      return undefined;
-    });
-    return ageMeasurements.filter((e) => e !== undefined);
-  };
-
-  const measurements = getDemographicMeasurements();
-
-  console.log(measurements);
-
-  const topThreeCities = calcCity(measurements)
+  console.log(calcCity(form.priorities));
+  const topThreeCities = calcCity(form.priorities)
     .slice(0, 3)
     .map((e) => e.city);
 
   const [cityNames] = useState(topThreeCities);
   const [cityData, setCityData] = useState(undefined);
-  const [resources, setResources] = useState(undefined);
+  const [resources] = useState(undefined);
 
   useEffect(() => {
     const createQuery = (city) => {
@@ -84,28 +57,31 @@ const SuggestedCities = ({ form }) => {
     }
   }, [cityNames]);
 
-  //get sub categories within resources
-  useEffect(() => {
-    const createQuery = (city) => {
-      return `/records?refine=city:${city}&limit=3&select=avg(value) as value,measurement_en,indicator_en,noteen,city&group_by=measurement_en,indicator_en,noteen,city`;
-    };
+  console.log(cityNames);
+  console.log(cityData);
 
-    if (cityNames !== undefined) {
-      const queries = cityNames.map((city) => createQuery(city));
+  // //get sub categories within resources
+  // useEffect(() => {
+  //   const createQuery = (city) => {
+  //     return `/records?refine=city:${city}&limit=3&select=avg(value) as value,measurement_en,indicator_en,noteen,city&group_by=measurement_en,indicator_en,noteen,city`;
+  //   };
 
-      const retrievedInfo = Promise.all(
-        queries.map((query) =>
-          getData("index-2020-full", query).then((res) => res.records)
-        )
-      );
+  //   if (cityNames !== undefined) {
+  //     const queries = cityNames.map((city) => createQuery(city));
 
-      const setSubs = async () => {
-        setResources(await retrievedInfo);
-      };
+  //     const retrievedInfo = Promise.all(
+  //       queries.map((query) =>
+  //         getData("resource-data-test", query).then((res) => res.records)
+  //       )
+  //     );
 
-      setSubs();
-    }
-  }, [cityNames]);
+  //     const setSubs = async () => {
+  //       setResources(await retrievedInfo);
+  //     };
+
+  //     setSubs();
+  //   }
+  // }, [cityNames]);
 
   //for controlling open/close manually
   // const handleExpand = (e) => {

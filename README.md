@@ -26,6 +26,14 @@
   106: return `/records?refine=city:${cityname}&limit=10&select=address as address,name as name,url as url,email,phone,description&where=sheet_title="${measurement}"${ 107: searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : "" 108: }`;
   109: };
 
+- Change database slug on SuggestedCities pages
+  File: SuggestedCities.js
+  71: const retrievedInfo = Promise.all(
+  72: queries.map((query) =>
+  73: getData("resource-data-test", query).then((res) => res.records)
+  74: )
+  75: );
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

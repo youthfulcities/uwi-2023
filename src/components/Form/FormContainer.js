@@ -23,6 +23,7 @@ const FormContainer = ({
   const { t } = useTranslation();
   return (
     <>
+      <Decoration />
       <Container maxWidth={width === undefined ? "xs" : width}>
         <Grid
           sx={{ minHeight: "90vh", minWidth: "100%" }}
@@ -32,7 +33,7 @@ const FormContainer = ({
           alignItems="center"
           spacing={0}
         >
-          <Grid item mt="17vh" mb="7vh">
+          <Grid item my="5vh">
             <Paper>
               <Grid
                 sx={{ minWidth: "100%" }}
@@ -76,7 +77,6 @@ const FormContainer = ({
           setTextSize={setTextSize}
         />
       </Container>
-      <Decoration />
     </>
   );
 };

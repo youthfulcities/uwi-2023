@@ -20,6 +20,7 @@ const Home = ({
   return (
     <>
       <div>
+        <Decoration />
         <PhotoBackground />
         <BasicContainer
           width="xs"
@@ -74,7 +75,6 @@ const Home = ({
           ))}
         </BasicContainer>
       </div>
-      <Decoration />
     </>
   );
 };

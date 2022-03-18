@@ -32,6 +32,7 @@ const ExploreAll = ({
 
   return (
     <>
+      <Decoration />
       <BasicContainer
         width="md"
         languages={languages}
@@ -59,7 +60,6 @@ const ExploreAll = ({
           </Grid>
         ))}
       </BasicContainer>
-      <Decoration />
     </>
   );
 };

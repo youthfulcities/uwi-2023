@@ -17,7 +17,8 @@ const Intro = ({
 
   return (
     <>
-      <div>
+      <div className="photoBackgroundContainer">
+        <Decoration />
         <PhotoBackground />
         <BasicContainer
           width="sm"
@@ -56,7 +57,6 @@ const Intro = ({
           </Grid>
         </BasicContainer>
       </div>
-      <Decoration />
     </>
   );
 };

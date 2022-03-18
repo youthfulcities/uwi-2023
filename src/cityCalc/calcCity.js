@@ -1,9 +1,19 @@
 import values from "./values.json";
 import _ from "lodash";
 
-const calcCity = (measurements) => {
-  //specify which measurement we're comparing
+const topMeasurements = (measurements, cities, n) => {
+  const allScores = getCitiesWithScores(measurements);
+  const selectScores = cities.map((city) => {
+    const filtered = allScores.filter((score) => score.City === city);
+    const ordered = _.orderBy(filtered, "score", "desc");
+    const truncated = ordered.slice(0, n);
+    return truncated;
+  });
 
+  return selectScores;
+};
+
+const getCitiesWithScores = (measurements) => {
   //create array with all the applicable cities & scores
   let flattenedScores = measurements.flatMap((measurement) => {
     //filter out array to include only the current measurement
@@ -33,6 +43,10 @@ const calcCity = (measurements) => {
     return null;
   });
 
+  return flattenedScores;
+};
+
+const getTotalScores = (flattenedScores) => {
   //reduce the array to just one instance of each city with a total score
   let addedScores = flattenedScores.reduce((preValue, current, i) => {
     //if this is the first instance of this city in the array, then use it to create a total score
@@ -54,6 +68,12 @@ const calcCity = (measurements) => {
       return preValue;
     }
   }, []);
+  return addedScores;
+};
+
+const calcCity = (measurements) => {
+  const flattenedScores = getCitiesWithScores(measurements);
+  const addedScores = getTotalScores(flattenedScores);
 
   let sorted = _.orderBy(addedScores, "score", "desc");
   return sorted;
@@ -83,4 +103,4 @@ const getInvertedScore = (array, x) => {
   return !isNaN(result) ? result : 0;
 };
 
-export default calcCity;
+export { calcCity, topMeasurements };

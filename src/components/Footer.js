@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <Container maxWidth="md">
         <Grid
-          sx={{ minHeight: "13vh", maxHeight: "14vh" }}
+          sx={{ minHeight: "14vh", maxHeight: "14vh" }}
           container
           direction="row"
           justifyContent="space-between"

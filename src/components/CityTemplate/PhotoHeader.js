@@ -1,10 +1,12 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
+import Decoration from "../Decoration";
 
 const PhotoHeader = ({ src, alt, children }) => {
   return (
     <>
       <div className="photoHeaderContainer">
+        <Decoration absolute={true} />
         <img className="photoHeaderImg" src={src} alt={alt} />
         <Grid
           container

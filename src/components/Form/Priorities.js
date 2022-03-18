@@ -19,6 +19,7 @@ const groupedPrioritiesArray = Object.values(
 );
 
 const Priorities = ({ form, setForm, handleChange }) => {
+  const { completed, priorities } = form;
   const [initial] = useState(form);
 
   const getDemographicMeasurements = useCallback(() => {
@@ -45,11 +46,13 @@ const Priorities = ({ form, setForm, handleChange }) => {
   }, [initial]);
 
   const setPriorities = useCallback(() => {
-    const measurements = getDemographicMeasurements();
-    let priorities = initial.priorities;
-    priorities = measurements;
-    setForm({ ...initial, priorities });
-  }, [getDemographicMeasurements, initial, setForm]);
+    if (!completed) {
+      const measurements = getDemographicMeasurements();
+      let priorities = initial.priorities;
+      priorities = measurements;
+      setForm({ ...initial, priorities });
+    }
+  }, [getDemographicMeasurements, initial, setForm, completed]);
 
   useEffect(() => {
     setPriorities();
@@ -112,7 +115,7 @@ const Priorities = ({ form, setForm, handleChange }) => {
                         <FormControlLabel
                           control={
                             <Checkbox
-                              checked={form.priorities.includes(topic)}
+                              checked={priorities.includes(topic)}
                               onChange={(e) => handlePriorityChange(e)}
                               name={topic.name}
                               size="large"

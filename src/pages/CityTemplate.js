@@ -3,7 +3,6 @@ import React, { useState, useEffect, useCallback } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
 
-import Decoration from "../components/Decoration";
 import PhotoHeader from "../components/CityTemplate/PhotoHeader";
 import Back from "../components/Back";
 import Socials from "../components/Socials";
@@ -109,7 +108,6 @@ const CityTemplate = ({
               setTextSize={setTextSize}
             />
           </Container>
-          <Decoration />
         </>
       ) : (
         <Loading />

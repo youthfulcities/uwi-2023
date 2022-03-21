@@ -121,7 +121,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="36 - 65 years"
+                      label="36 - 64 years"
                     />
                   </Grid>
                   <Grid item xs={6} sm={4}>

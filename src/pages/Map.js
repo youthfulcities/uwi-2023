@@ -41,7 +41,7 @@ const Map = () => {
   };
   return (
     <>
-      <Grid sx={{ minHeight: "88vh", minWidth: "100%" }} container>
+      <Grid sx={{ minHeight: "86vh", minWidth: "100%" }} container>
         <Grid item sx={{ minHeight: "100%", minWidth: "100%" }}>
           <iframe
             title="Resource map"

@@ -143,6 +143,12 @@ const SuggestedCities = ({ form }) => {
                       <Typography variant="h3">{t("facts")}</Typography>
                     </AccordionSummary>
                     <AccordionDetails>
+                      <div className="accordianContainer">
+                        <Typography variant="h4">
+                          Here are some of the highest scoring measurements in
+                          this city based on what was important to you:
+                        </Typography>
+                      </div>
                       {resources &&
                         resources[i].map((resource) => (
                           <Grid item sx={{ width: "100%" }} flexGrow="5">
@@ -160,7 +166,9 @@ const SuggestedCities = ({ form }) => {
                                     ).measurement
                                   }
                                 </Typography>
-                                {resource.Value}
+                                {resource.measureable === "dollar value"
+                                  ? `$${resource.Value}`
+                                  : resource.Value}
                               </FactCard>
                             </div>
                           </Grid>

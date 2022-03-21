@@ -11,7 +11,7 @@ const FactCard = ({ children }) => {
         alignItems="center"
       >
         <Grid item>
-          <Typography variant="h2" align="center" color="rgb(238, 96, 91)">
+          <Typography variant="h2" align="center" color="#F2695D">
             {children}
           </Typography>
         </Grid>

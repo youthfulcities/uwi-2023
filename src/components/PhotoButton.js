@@ -10,6 +10,7 @@ const PhotoButton = ({
   src,
   alt,
   factoid,
+  province,
   currentLangCode,
   children,
 }) => {
@@ -17,10 +18,10 @@ const PhotoButton = ({
 
   const formattedNumber = (number) => {
     if (currentLangCode === "fa" || currentLangCode === "ps") {
-      const newNum = persianNum(number.toLocaleString());
+      const newNum = persianNum(Number(number).toLocaleString());
       return newNum;
     }
-    return number.toLocaleString();
+    return Number(number).toLocaleString();
   };
 
   return (
@@ -51,7 +52,7 @@ const PhotoButton = ({
                 className="photoButtonText"
                 variant="h4"
               >
-                Province
+                {province}
               </Typography>
             </Grid>
             <Grid item>

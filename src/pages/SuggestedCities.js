@@ -13,7 +13,8 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-import getData from "../helpers/odsClientV2";
+// import getData from "../helpers/odsClientV2";
+import cities from "../data/cities.json";
 
 import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
@@ -27,37 +28,46 @@ const SuggestedCities = ({ form }) => {
   const { t } = useTranslation();
   const { priorities } = form;
 
-  const cities = calcCity(priorities)
+  const topCities = calcCity(priorities)
     .slice(0, 3)
     .map((e) => e.city);
 
-  const [cityNames] = useState(cities);
+  const [cityNames] = useState(topCities);
 
   const resources = topMeasurements(priorities, cityNames, 3);
 
   const [cityData, setCityData] = useState(undefined);
 
   useEffect(() => {
-    const createQuery = (city) => {
-      return `/records?refine=city_name:${city}`;
-    };
-
-    if (cityNames !== undefined) {
-      const queries = cityNames.map((city) => createQuery(city));
-
-      const retrievedInfo = Promise.all(
-        queries.map((query) =>
-          getData("cities", query).then((res) => res.records[0])
-        )
-      );
-
-      const addCities = async () => {
-        setCityData(await retrievedInfo);
-      };
-
-      addCities();
-    }
+    const data = cityNames.flatMap((city) =>
+      cities.filter((e) => e.city_name === city)
+    );
+    setCityData(data);
   }, [cityNames]);
+
+  //for retrieving city data via API
+  // useEffect(() => {
+  //   const createQuery = (city) => {
+  //     return `/records?refine=city_name:${city}`;
+  //   };
+
+  //   if (cityNames !== undefined) {
+  //     const queries = cityNames.map((city) => createQuery(city));
+
+  //     const retrievedInfo = Promise.all(
+  //       queries.map((query) =>
+  //         getData("cities", query).then((res) => res.records[0])
+  //       )
+  //     );
+
+  //     const addCities = async () => {
+  //       setCityData(await retrievedInfo);
+  //     };
+
+  //     console.log("city api triggered");
+  //     addCities();
+  //   }
+  // }, [cityNames]);
 
   // //get sub categories within resources
   // useEffect(() => {
@@ -95,7 +105,7 @@ const SuggestedCities = ({ form }) => {
     <>
       <Decoration />
       <BasicContainer width="md">
-        {cityData ? (
+        {cityData !== undefined ? (
           <>
             <Grid mb={2} item>
               <Typography align="center" variant="h1">
@@ -117,12 +127,13 @@ const SuggestedCities = ({ form }) => {
                   item
                 >
                   <PhotoButton
-                    city={city.record.fields.city_name}
-                    alt={city.record.fields.main_img_alt}
-                    src={city.record.fields.main_img}
-                    factoid={city.record.fields.population}
+                    city={city.city_name}
+                    alt={city.main_img_alt}
+                    src={city.main_img}
+                    province={city.province}
+                    factoid={city.population}
                   >
-                    {city.record.fields.city_name}
+                    {city.city_name}
                   </PhotoButton>
                 </Grid>
                 <Grid mt={1} item xs={12}>
@@ -150,9 +161,9 @@ const SuggestedCities = ({ form }) => {
                         </Typography>
                       </div>
                       {resources &&
-                        resources[i].map((resource) => (
+                        resources[i].map((resource, i) => (
                           <Grid item sx={{ width: "100%" }} flexGrow="5">
-                            <div className="accordianContainer">
+                            <div key={i} className="accordianContainer">
                               <FactCard>
                                 <Typography
                                   variant="h5"
@@ -166,15 +177,22 @@ const SuggestedCities = ({ form }) => {
                                     ).measurement
                                   }
                                 </Typography>
-                                {resource.measureable === "dollar value"
-                                  ? `$${resource.Value}`
-                                  : resource.Value}
+                                <Typography
+                                  mt={2}
+                                  variant="h2"
+                                  align="center"
+                                  color="#F2695D"
+                                >
+                                  {resource.measureableValue === "dollar value"
+                                    ? `$${resource.Value}`
+                                    : resource.Value}
+                                </Typography>
                               </FactCard>
                             </div>
                           </Grid>
                         ))}
                       <div className="accordianContainer">
-                        <Link to={`/about/${city.record.fields.city_name}`}>
+                        <Link to={`/about/${city.city_name}`}>
                           <Grid mt={1} item flexGrow="1">
                             <Button
                               variant="contained"

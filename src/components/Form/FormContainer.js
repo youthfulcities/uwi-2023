@@ -19,6 +19,7 @@ const FormContainer = ({
   currentLangCode,
   textSize,
   setTextSize,
+  handleChange,
 }) => {
   const { t } = useTranslation();
   return (
@@ -58,7 +59,9 @@ const FormContainer = ({
           </Grid>
           {step > 1 ? (
             <Fab
-              onClick={() => prevStep()}
+              onClick={() => {
+                prevStep();
+              }}
               color="primary"
               size="medium"
               className="backButton"

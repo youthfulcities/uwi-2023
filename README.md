@@ -34,6 +34,17 @@
   74: )
   75: );
 
+## Adding new cities
+
+There is an option to pull all city data from Opendatasoft; however, to reduce the number of API calls made per day (limit of 10,000) right now this data is being stored locally in `cities.json`. To initiate adding a new city simply add a new entry to this array and add the applicable key/value pairs.
+
+To do this, suggest updating the [cities spreadsheet](https://docs.google.com/spreadsheets/d/1-mPapTDizDicf4FPlKVQuDeujC6zYCxJa7yAZ5Gfh40/edit#gid=0) and then converting from csv to json.
+
+Pages affected:
+`CityTemplate.js`
+`ExploreAll.js`
+`SuggestedCities.js`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

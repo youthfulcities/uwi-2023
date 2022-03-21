@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Typography, Grid } from "@mui/material";
+import { Card, Grid } from "@mui/material";
 
 const FactCard = ({ children }) => {
   return (
@@ -9,12 +9,9 @@ const FactCard = ({ children }) => {
         sx={{ minHeight: 100 }}
         justifyContent="center"
         alignItems="center"
+        p={3}
       >
-        <Grid item>
-          <Typography variant="h2" align="center" color="#F2695D">
-            {children}
-          </Typography>
-        </Grid>
+        <Grid item>{children}</Grid>
       </Grid>
     </Card>
   );

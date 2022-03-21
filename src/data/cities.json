@@ -1,0 +1,92 @@
+[
+  {
+    "city_name": "Calgary",
+    "province": "Alberta",
+    "population": 1500000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Calgary.jpeg",
+    "main_img_alt": "Wide view of Calgary skyline on a clear day."
+  },
+  {
+    "city_name": "Kelowna",
+    "province": "British Columbia",
+    "population": 222000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Kelowna.jpeg",
+    "main_img_alt": "Vineyard in front of a lake in Kelowna."
+  },
+  {
+    "city_name": "Saskatoon",
+    "province": "Saskatchewan",
+    "population": 336000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Saskatoon.jpeg",
+    "main_img_alt": "University Bridge in Saskatoon at sunrise."
+  },
+  {
+    "city_name": "Victoria",
+    "province": "British Columbia",
+    "population": 390000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Victoria.jpeg",
+    "main_img_alt": "Parliament buildings in Victoria, BC with tulips in front."
+  },
+  {
+    "city_name": "Lethbridge",
+    "province": "Alberta",
+    "population": 101300,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Lethbridge.jpeg",
+    "main_img_alt": "High Level Bridge in Lethbridge, Alberta."
+  },
+  {
+    "city_name": "Winnipeg",
+    "province": "Manitoba",
+    "population": 850000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Winnipeg.jpeg",
+    "main_img_alt": "Esplanade Riel pedestrian bridge in Winnipeg, Manitoba."
+  },
+  {
+    "city_name": "London",
+    "province": "Ontario",
+    "population": 500000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/London.jpeg",
+    "main_img_alt": "A park in London, Ontario."
+  },
+  {
+    "city_name": "Halifax",
+    "province": "Nova Scotia",
+    "population": 448518,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Halifax.png",
+    "main_img_alt": "A view of Halifax, Ontario accross the water."
+  },
+  {
+    "city_name": "Moncton",
+    "province": "New Brunswick",
+    "population": 80000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Moncton.jpeg",
+    "main_img_alt": "A street in Moncton, New Brunswick at dusk."
+  },
+  {
+    "city_name": "Regina",
+    "province": "Saskatchewan",
+    "population": 260000,
+    "description": "",
+    "stories": "",
+    "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Regina.jpeg",
+    "main_img_alt": "A view of office buildings in Regina, Saskatchewan from a park in fall."
+  }
+ ]

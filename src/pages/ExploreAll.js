@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { Grid, Typography } from "@mui/material";
 
+import cities from "../data/cities.json";
 import PhotoButton from "../components/PhotoButton";
-import getData from "../helpers/odsClientV2.js";
+// import getData from "../helpers/odsClientV2.js";
 
 import BasicContainer from "../components/BasicContainer";
 import Decoration from "../components/Decoration";
@@ -17,18 +18,22 @@ const ExploreAll = ({
   setTextSize,
 }) => {
   const { t } = useTranslation();
-  const [recs, setRecs] = useState([]);
-  const query = "/records?limit=10&offset=0";
 
-  useEffect(() => {
-    const retrievedCities = getData("cities", query).then((res) => res.records);
+  const [recs] = useState(cities);
 
-    const setCities = async () => {
-      setRecs(await retrievedCities);
-    };
+  //for retriving cities via api
+  // const [recs, setRecs] = useState([]);
+  // const query = "/records?limit=10&offset=0";
 
-    setCities();
-  }, []);
+  // useEffect(() => {
+  //   const retrievedCities = getData("cities", query).then((res) => res.records);
+
+  //   const setCities = async () => {
+  //     setRecs(await retrievedCities);
+  //   };
+
+  //   setCities();
+  // }, []);
 
   return (
     <>
@@ -49,13 +54,14 @@ const ExploreAll = ({
         {recs.map((city, i) => (
           <Grid key={i} mt={2} className="photoButtonContainer" item>
             <PhotoButton
-              city={city.record.fields.city_name}
-              alt={city.record.fields.main_img_alt}
-              src={city.record.fields.main_img}
-              factoid={city.record.fields.population}
+              city={city.city_name}
+              alt={city.main_img_alt}
+              src={city.main_img}
+              factoid={city.population}
+              province={city.province}
               currentLangCode={currentLangCode}
             >
-              {city.record.fields.city_name}
+              {city.city_name}
             </PhotoButton>
           </Grid>
         ))}

@@ -26,7 +26,11 @@ const getCitiesWithScores = (measurements) => {
       //create array for measurements with cities & scores
       let arrayWithScores = measurementsByCity.reduce((preValue, city) => {
         //normalize values so we can get scores
-        let score = getInvertedScore(measurementsByCity, city.Value);
+        let score = getInvertedScore(
+          measurementsByCity,
+          city.Value,
+          city.perCapita
+        );
 
         //add City with normalized score to array
         return [...preValue, { ...city, score: score }];
@@ -34,7 +38,7 @@ const getCitiesWithScores = (measurements) => {
       return arrayWithScores;
     } else if (!measurement.lowerIsBetter) {
       let arrayWithScores = measurementsByCity.reduce((preValue, city) => {
-        let score = getScore(measurementsByCity, city.Value);
+        let score = getScore(measurementsByCity, city.Value, city.perCapita);
         return [...preValue, { ...city, score: score }];
       }, []);
       return arrayWithScores;
@@ -80,27 +84,49 @@ const calcCity = (measurements) => {
 };
 
 //If a higher Value is preferred, the formula (𝑥-𝑥_min)/(𝑥_max-𝑥_min) is applied
-const getScore = (array, x) => {
-  //sort by smallest to largest
-  let sortedArray = _.sortBy(array, ["Value"]);
-  //get first item in array
-  let x_min = sortedArray[0].Value;
-  //get last item in array
-  let x_max = sortedArray[sortedArray.length - 1].Value;
-  let result = (x - x_min) / (x_max - x_min);
-  return !isNaN(result) ? result : 0;
+const getScore = (array, value, perCapita) => {
+  //if it's a "number of" type score calculate per capita
+  if (array[0].measureableValue === "# of") {
+    let x = perCapita;
+    //sort by smallest to largest
+    let sortedArray = _.sortBy(array, ["perCapita"]);
+    //get first item in array
+    let x_min = sortedArray[0].perCapita;
+    //get last item in array
+    let x_max = sortedArray[sortedArray.length - 1].perCapita;
+    let result = (x - x_min) / (x_max - x_min);
+    return !isNaN(result) ? result : 0;
+  } else {
+    let x = value;
+    let sortedArray = _.sortBy(array, ["Value"]);
+    let x_min = sortedArray[0].Value;
+    let x_max = sortedArray[sortedArray.length - 1].Value;
+    let result = (x - x_min) / (x_max - x_min);
+    return !isNaN(result) ? result : 0;
+  }
 };
 
 //If a lower Value is preferred, the formula 1-(𝑥-𝑥_min)/(𝑥_max-𝑥_min) is applied
-const getInvertedScore = (array, x) => {
-  //sort by smallest to largest
-  let sortedArray = _.sortBy(array, ["Value"]);
-  //get first item in array
-  let x_min = sortedArray[0].Value;
-  //get last item in array
-  let x_max = sortedArray[sortedArray.length - 1].Value;
-  let result = 1 - (x - x_min) / (x_max - x_min);
-  return !isNaN(result) ? result : 0;
+const getInvertedScore = (array, value, perCapita) => {
+  //if it's a "number of" type score calculate per capita
+  if (array[0].measureableValue === "# of") {
+    let x = perCapita;
+    //sort by smallest to largest
+    let sortedArray = _.sortBy(array, ["perCapita"]);
+    //get first item in array
+    let x_min = sortedArray[0].perCapita;
+    //get last item in array
+    let x_max = sortedArray[sortedArray.length - 1].perCapita;
+    let result = 1 - (x - x_min) / (x_max - x_min);
+    return !isNaN(result) ? result : 0;
+  } else {
+    let x = value;
+    let sortedArray = _.sortBy(array, ["Value"]);
+    let x_min = sortedArray[0].Value;
+    let x_max = sortedArray[sortedArray.length - 1].Value;
+    let result = 1 - (x - x_min) / (x_max - x_min);
+    return !isNaN(result) ? result : 0;
+  }
 };
 
 export { calcCity, topMeasurements };

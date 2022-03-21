@@ -1,0 +1,42 @@
+[
+  {
+      "City": "Calgary",
+      "Population": 1500000
+  },
+  {
+      "City": "Halifax",
+      "Population": 448518
+  },
+  {
+      "City": "Kelowna",
+      "Population": 222000
+  },
+  {
+      "City": "Lethbridge",
+      "Population": 101300
+  },
+  {
+      "City": "London",
+      "Population": 500000
+  },
+  {
+      "City": "Moncton",
+      "Population": 80000
+  },
+  {
+      "City": "Regina",
+      "Population": 260000
+  },
+  {
+      "City": "Saskatoon",
+      "Population": 336000
+  },
+  {
+      "City": "Victoria",
+      "Population": 390000
+  },
+  {
+      "City": "Winnipeg",
+      "Population": 850000
+  }
+]

@@ -16,20 +16,20 @@ const CreateProfile = ({
 }) => {
   // const { t } = useTranslation();
 
+  const handleChange = (input, value) => {
+    setForm({ ...form, [input]: value });
+  };
+
   const nextStep = () => {
     setForm({ ...form, step: form.step + 1 });
   };
 
   const prevStep = () => {
-    setForm({ ...form, step: form.step - 1 });
+    setForm({ ...form, completed: false, step: form.step - 1 });
   };
 
   const resetStep = () => {
-    setForm({ ...form, step: (form.step = 1) });
-  };
-
-  const handleChange = (input, value) => {
-    setForm({ ...form, [input]: value });
+    setForm({ ...form, completed: false, step: (form.step = 1) });
   };
 
   const handleAgesChange = (e) => {
@@ -97,6 +97,7 @@ const CreateProfile = ({
         currentLangCode={currentLangCode}
         textSize={textSize}
         setTextSize={setTextSize}
+        handleChange={handleChange}
       >
         {displaySection(form.step)}
       </FormContainer>

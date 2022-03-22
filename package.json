@@ -13,6 +13,8 @@
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "deepdash": "^5.3.9",
+    "deepdash-es": "^5.3.9",
     "dotenv": "^11.0.0",
     "i18next": "^21.6.11",
     "i18next-browser-languagedetector": "^6.1.3",

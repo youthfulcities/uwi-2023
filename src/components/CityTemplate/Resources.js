@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
+import _ from "lodash";
+import { filterDeep } from "deepdash-es/standalone";
 
 import { useTranslation } from "react-i18next";
 import {
@@ -17,61 +19,75 @@ import Search from "./Search";
 // import FactCard from "../FactCard";
 import ResourceCard from "./ResourceCard";
 
-//nested accordian
-/* <Accordion
-sx={{
-  background: "#DCDCDC",
-  "&.Mui-expanded": {
-    background: "#B8D98D",
-  },
-}}
-square={
-  index === resources.length - 1 ? false : true
-}
-disableGutters={true}
-key={`panel-resources-${index}b`}
->
-<AccordionSummary
-  sx={{
-    marginLeft: 5,
-  }}
-  expandIcon={
-    <ExpandMoreIcon fontSize="large" />
-  }
-  aria-controls={`panel-resources-${index}b-content`}
-  id={`panel-resources-${index}b-header`}
->
-  <Typography variant="h5">
-    {subResource.record.fields.measurement_en}
-  </Typography>
-</AccordionSummary>
-<AccordionDetails>
-  {
-    <div className="accordianContainer">
-      <Grid
-        container
-        spacing={2}
-        direction="column"
-      >
-        <Grid item>
-          <FactCard>
-            {subResource.record.fields.value}
-          </FactCard>
-        </Grid>
-        <Grid item>
-          <ResourceCard />
-        </Grid>
-      </Grid>
-    </div>
-  }
-</AccordionDetails>
-</Accordion> */
+const groupedArray = (array) => {
+  let grouped = _.groupBy(array, (item) => item.record.fields.category_for_app);
+  return grouped;
+};
 
-const Resources = ({ resources, cityname, currentLangCode }) => {
+const subGroup = (array, i) => {
+  let grouped = _.groupBy(array, (item) => item.record.fields.edited_title);
+  return grouped;
+};
+
+const subGroupNames = (array) => {
+  let names = Object.keys(
+    _.groupBy(array, (item) => item.record.fields.edited_title)
+  );
+  return names;
+};
+
+const Resources = ({ cityname, currentLangCode }) => {
   const { t } = useTranslation();
 
+  const [offset, setOffset] = useState(0);
+  const [resources, setResources] = useState([]);
   const [subResources, setSubResources] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [searchStringQuery, setSearchStringQuery] = useState("");
+
+  const getResources = useCallback(() => {
+    const query = `/records?refine=city:${cityname}&limit=100&offset=${offset}`;
+
+    const retrievedInfo = getData("resource-data", query).then(
+      (res) => res.records
+    );
+    console.log("resource api triggered");
+
+    const setRes = async () => {
+      let newResources = await retrievedInfo;
+      setResources((prev) => [...prev, ...newResources]);
+      if (newResources.length === 100) {
+        setOffset((prev) => prev + 100);
+      }
+    };
+
+    setRes();
+  }, [cityname, offset]);
+
+  useEffect(() => {
+    getResources();
+  }, [getResources]);
+
+  useEffect(() => {
+    if (searchStringQuery.length > 0) {
+      console.log("find effect triggered");
+      const findWithinArray = (array) => {
+        const filtered = filterDeep(array, searchStringQuery);
+        console.log(filtered);
+        // setResources(filtered);
+      };
+      findWithinArray(resources);
+    }
+  }, [resources, searchStringQuery]);
+
+  useEffect(() => {
+    console.log("subcategory effect triggered");
+    const createSubCategories = () => {
+      setSubResources(groupedArray(resources));
+      setCategories(Object.keys(groupedArray(resources)));
+    };
+    createSubCategories();
+  }, [resources]);
 
   // get sub categories within resources
   // const getSubCategories = useCallback(() => {
@@ -100,43 +116,41 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
   //   }
   // }, [resources, cityname, searchStringQuery]);
 
-  //get resource data
-  const getResources = useCallback(() => {
-    const createSubResourceQuery = (measurement) => {
-      return `/records?refine=city:${cityname}&limit=10&select=address,name,url,email,phone,description&where=sheet_title="${measurement}"${
-        searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
-      }`;
-    };
+  //get resource data & search via API
+  // const getResources = useCallback(() => {
+  //   const createSubResourceQuery = (measurement) => {
+  //     return `/records?refine=city:${cityname}&limit=10&select=address,name,url,email,phone,description&where=sheet_title="${measurement}"${
+  //       searchStringQuery.length > 0 ? "AND '" + searchStringQuery + "'" : ""
+  //     }`;
+  //   };
 
-    if (resources !== undefined) {
-      const sub = resources.map((resource) =>
-        createSubResourceQuery(resource.record.fields.measurement)
-      );
+  //   if (resources !== undefined) {
+  //     const sub = resources.map((resource) =>
+  //       createSubResourceQuery(resource.record.fields.measurement)
+  //     );
 
-      const retrievedInfo = Promise.all(
-        sub.map((query) =>
-          getData("resource-data-test", query).then((res) => res.records)
-        )
-      );
+  //     const retrievedInfo = Promise.all(
+  //       sub.map((query) =>
+  //         getData("resource-data-test", query).then((res) => res.records)
+  //       )
+  //     );
 
-      const setSubs = async () => {
-        setSubResources(await retrievedInfo);
-      };
+  //     const setSubs = async () => {
+  //       setSubResources(await retrievedInfo);
+  //     };
 
-      setSubs();
-    }
-  }, [cityname, resources, searchStringQuery]);
+  //     setSubs();
+  //   }
+  // }, [cityname, resources, searchStringQuery]);
 
-  useEffect(() => {
-    console.log("resource api triggered");
-    getResources();
-  }, [getResources]);
+  // useEffect(() => {
+  //   console.log("resource api triggered");
+  //   getResources();
+  // }, [getResources]);
 
   //determine which array of resources is the last one with actual entries so that we can format the rounded corners properly
   const getLastIndex = () => {
-    const lastIndex = subResources
-      .map((resource) => resource.length > 0)
-      .lastIndexOf(true);
+    const lastIndex = categories.length - 1;
     return lastIndex;
   };
 
@@ -186,72 +200,110 @@ const Resources = ({ resources, cityname, currentLangCode }) => {
       </AccordionSummary>
       <AccordionDetails>
         <Search setSearchStringQuery={setSearchStringQuery} />
-        {subResources && subResources.flat().length === 0 ? (
+        {categories && categories.length === 0 ? (
           <div className="accordianContainer">
             <Typography variant="body1">{t("noneFound")}</Typography>
           </div>
         ) : (
           <div>
-            {resources !== undefined &&
-              resources.map((resource, i) => {
+            {categories !== undefined &&
+              categories.map((category, i) => {
                 return (
                   <div key={i}>
-                    {subResources &&
-                    subResources[i] !== undefined &&
-                    subResources[i].length > 0 ? (
-                      <Accordion
-                        sx={{
-                          background: "#E8E8E8",
-                          "&.Mui-expanded": {
-                            background: "#B8D98D",
-                          },
-                          "&:first-of-type": {
-                            borderTopLeftRadius: 0,
-                            borderTopRightRadius: 0,
-                          },
-                        }}
-                        square={checkIfSquare(i)}
-                        disableGutters={true}
-                        key={`panel-resources-${i}a`}
+                    <Accordion
+                      sx={{
+                        background: "#E8E8E8",
+                        "&.Mui-expanded": {
+                          background: "#B8D98D",
+                        },
+                        "&:first-of-type": {
+                          borderTopLeftRadius: 0,
+                          borderTopRightRadius: 0,
+                        },
+                      }}
+                      square={checkIfSquare(i)}
+                      disableGutters={true}
+                      key={`panel-resources-${i}a`}
+                    >
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon fontSize="large" />}
+                        aria-controls={`panel-resources-${i}a-content`}
+                        id={`panel-resources-${i}a-header`}
                       >
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon fontSize="large" />}
-                          aria-controls={`panel-resources-${i}a-content`}
-                          id={`panel-resources-${i}a-header`}
-                        >
-                          <Typography variant="h5">
-                            {resource.record.fields.measurement}
-                          </Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          {subResources &&
-                            subResources[i].map((subResource, index) => (
-                              <div
-                                key={subResource.record.fields.name}
-                                className="accordianContainer"
+                        <Typography variant="h5">{category}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        {subGroupNames(subResources[category]).map(
+                          (name, index) => (
+                            <Accordion
+                              sx={{
+                                "&:first-of-type": {
+                                  borderTopLeftRadius: 0,
+                                  borderTopRightRadius: 0,
+                                },
+                                background: "#DCDCDC",
+                                "&.Mui-expanded": {
+                                  background: "#F2695D",
+                                },
+                              }}
+                              square={checkIfSquare(i)}
+                              disableGutters={true}
+                              key={`panel-resources-${index}b`}
+                            >
+                              <AccordionSummary
+                                sx={{
+                                  marginLeft: 5,
+                                }}
+                                expandIcon={<ExpandMoreIcon fontSize="large" />}
+                                aria-controls={`panel-resources-${index}b-content`}
+                                id={`panel-resources-${index}b-header`}
                               >
-                                <Grid container spacing={2} direction="column">
-                                  <Grid item>
-                                    <ResourceCard
-                                      description={
-                                        subResource.record.fields.description
-                                      }
-                                      phone={subResource.record.fields.phone}
-                                      address={
-                                        subResource.record.fields.address
-                                      }
-                                      name={subResource.record.fields.name}
-                                      email={subResource.record.fields.email}
-                                      url={subResource.record.fields.url}
-                                      currentLangCode={currentLangCode}
-                                    />
-                                  </Grid>
-                                </Grid>
-                              </div>
-                            ))}
-                        </AccordionDetails>
-                      </Accordion>
-                    ) : null}
+                                <Typography variant="h5">{name}</Typography>
+                              </AccordionSummary>
+                              <AccordionDetails>
+                                {subGroup(subResources[category])[name].map(
+                                  (subResource, index) => (
+                                    <div
+                                      key={`subresource-${index}`}
+                                      className="accordianContainer"
+                                    >
+                                      <Grid
+                                        container
+                                        spacing={2}
+                                        direction="column"
+                                      >
+                                        <Grid item>
+                                          <ResourceCard
+                                            description={
+                                              subResource.record.fields
+                                                .description
+                                            }
+                                            phone={
+                                              subResource.record.fields.phone
+                                            }
+                                            address={
+                                              subResource.record.fields.address
+                                            }
+                                            name={
+                                              subResource.record.fields.name
+                                            }
+                                            email={
+                                              subResource.record.fields.email
+                                            }
+                                            url={subResource.record.fields.url}
+                                            currentLangCode={currentLangCode}
+                                          />
+                                        </Grid>
+                                      </Grid>
+                                    </div>
+                                  )
+                                )}
+                              </AccordionDetails>
+                            </Accordion>
+                          )
+                        )}
+                      </AccordionDetails>
+                    </Accordion>
                   </div>
                 );
               })}

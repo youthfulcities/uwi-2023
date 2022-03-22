@@ -10,7 +10,7 @@ import {
 
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-const Stories = () => {
+const Facts = () => {
   const { t } = useTranslation();
   return (
     <>
@@ -31,7 +31,7 @@ const Stories = () => {
           aria-controls="panel3a-content"
           id="panel3a-header"
         >
-          <Typography variant="h3">{t("stories")}</Typography>
+          <Typography variant="h3">Facts</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <div className="accordianContainer">
@@ -47,4 +47,4 @@ const Stories = () => {
   );
 };
 
-export default Stories;
+export default Facts;

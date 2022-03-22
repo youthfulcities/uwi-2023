@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState } from "react";
 
 import { useParams } from "react-router-dom";
 import { Container, Grid } from "@mui/material";
@@ -9,9 +9,9 @@ import PhotoHeader from "../components/CityTemplate/PhotoHeader";
 import Back from "../components/Back";
 import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
-import Stories from "../components/CityTemplate/Stories";
+import Facts from "../components/CityTemplate/Facts";
 import Resources from "../components/CityTemplate/Resources";
-import getData from "../helpers/odsClientV2.js";
+// import getData from "../helpers/odsClientV2.js";
 import ChangeLang from "../components/ChangeLang";
 import Loading from "../pages/Loading";
 
@@ -32,11 +32,11 @@ const CityTemplate = ({
 
   //for getting city data via api call
   // const [city, setCity] = useState(undefined)
-  const [resources, setResources] = useState(undefined);
+  // const [resources, setResources] = useState(undefined);
 
   //for getting city data via api call
   // const cityQuery = `/records?refine=city_name:${cityname}`;
-  const resourceQuery = `/records?refine=city:${cityname}&limit=20&select=sheet_title as measurement&group_by=sheet_title`;
+  // const resourceQuery = `/records?refine=city:${cityname}&limit=20&select=sheet_title as measurement&group_by=sheet_title`;
 
   //for getting city data via api call
   // const getCityData = useCallback(() => {
@@ -51,17 +51,17 @@ const CityTemplate = ({
   //   setCities();
   // }, [cityQuery]);
 
-  const getCategories = useCallback(() => {
-    const retrievedInfo = getData("resource-data-test", resourceQuery).then(
-      (res) => res.records
-    );
+  // const getCategories = useCallback(() => {
+  //   const retrievedInfo = getData("resource-data-test", resourceQuery).then(
+  //     (res) => res.records
+  //   );
 
-    const setCities = async () => {
-      setResources(await retrievedInfo);
-    };
+  //   const setCities = async () => {
+  //     setResources(await retrievedInfo);
+  //   };
 
-    setCities();
-  }, [resourceQuery]);
+  //   setCities();
+  // }, [resourceQuery]);
 
   //for getting city data via api call
   // useEffect(() => {
@@ -71,10 +71,10 @@ const CityTemplate = ({
   //to access returning data the format is "city.record.fields.main_img"
 
   //get main categories
-  useEffect(() => {
-    console.log("category api triggered");
-    getCategories();
-  }, [getCategories]);
+  // useEffect(() => {
+  //   console.log("category api triggered");
+  //   getCategories();
+  // }, [getCategories]);
 
   return (
     <>
@@ -99,9 +99,8 @@ const CityTemplate = ({
                   src={city.main_img}
                   alt={city.main_img_alt}
                 />
-                <Stories stories={city.stories} />
+                <Facts />
                 <Resources
-                  resources={resources}
                   cityname={cityname}
                   currentLangCode={currentLangCode}
                 />

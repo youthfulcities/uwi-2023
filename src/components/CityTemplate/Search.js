@@ -29,10 +29,10 @@ const Search = ({ setSearchStringQuery }) => {
     } else {
       let words = cleanSearch(searchString)
         .replace(/\s+/g, " ") //remove extra spaces
-        .trim()
-        .split(" ") //split at spaces
-        .join("*' AND '") //add wildcard to each query word
-        .concat("*");
+        .trim();
+      // .split(" ") //split at spaces
+      // .join("*' AND '") //add wildcard to each query word
+      // .concat("*");
 
       setSearchStringQuery(words);
     }

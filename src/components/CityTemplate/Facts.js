@@ -1,5 +1,5 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 import {
   Typography,
@@ -11,7 +11,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Facts = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <>
       <Accordion

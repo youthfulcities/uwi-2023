@@ -106,11 +106,12 @@ footer {
 }
 
 .centered {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 30;
 }
 
 .smallText {
@@ -222,6 +223,10 @@ footer {
   border-radius: 35px;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 5px 10px;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Buttons
@@ -411,8 +416,20 @@ footer {
 /* Loading
    ========================================================================== */
 
+.loading {
+  background-color: #fff;
+  opacity: 70%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .loadingText {
   margin-bottom: 10px;
+  z-index: 20;
   text-align: center;
 }
 

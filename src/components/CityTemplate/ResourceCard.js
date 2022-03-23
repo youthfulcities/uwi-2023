@@ -21,10 +21,15 @@ import engToPersian from "../../helpers/persianNum";
 
 //use google map api to link to address. remove # as it's a special character and breaks the query
 const createQuery = (name, address) => {
-  let q = name.replace("#", "").replace("&", "and");
-  let newAddress = address.replace("#", "").replace("&", "and");
+  if (name && address) {
+    let q = name.replace("#", "").replace("&", "and");
+    let newAddress = address.replace("#", "").replace("&", "and");
 
-  return `https://maps.google.com/?q=${q}+${newAddress}`;
+    return `https://maps.google.com/?q=${q}+${newAddress}`;
+  } else {
+    console.log(`Name: ${name}, Address:${address}`);
+    return `https://maps.google.com/?q=$${address}`;
+  }
 };
 
 //removes everything but the base url to make the url fit on the cards

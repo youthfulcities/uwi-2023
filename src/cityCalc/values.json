@@ -136,7 +136,7 @@
     "City": "Lethbridge",
     "JSONNames": "SnowDays",
     "Value": 51,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0005034551
     },
     {
@@ -290,7 +290,7 @@
     "City": "Calgary",
     "JSONNames": "SnowDays",
     "Value": 75,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.00005
     },
     {
@@ -444,7 +444,7 @@
     "City": "Kelowna",
     "JSONNames": "SnowDays",
     "Value": 53,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0002387387
     },
     {
@@ -773,7 +773,7 @@
     "City": "Saskatoon",
     "JSONNames": "SnowDays",
     "Value": 72,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0002142857
     },
     {
@@ -913,7 +913,7 @@
     "City": "Winnipeg",
     "JSONNames": "SnowDays",
     "Value": 73,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0000858824
     },
     {
@@ -1025,7 +1025,7 @@
     "City": "London",
     "JSONNames": "SnowDays",
     "Value": 68,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.000136
     },
     {
@@ -1207,7 +1207,7 @@
     "City": "Moncton",
     "JSONNames": "SnowDays",
     "Value": 78,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.000975
     },
     {
@@ -1459,7 +1459,7 @@
     "City": "Halifax",
     "JSONNames": "SnowDays",
     "Value": 43,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0000958713
     },
     {
@@ -1711,7 +1711,7 @@
     "City": "Victoria",
     "JSONNames": "SnowDays",
     "Value": 7,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.0000179487
     },
     {
@@ -1865,7 +1865,7 @@
     "City": "Regina",
     "JSONNames": "SnowDays",
     "Value": 39,
-    "measureableValue": "# of",
+    "measureableValue": "numerical",
     "perCapita": 0.00015
     },
     {

@@ -205,7 +205,7 @@ const additionalInfo = [
   },
   {
     name: "TaxServices",
-    measurement: "Number of tax",
+    measurement: "Number of tax supports",
     category: "Personal Banking  and Financial Services",
     lowerIsBetter: false,
     demographic: ["19-35", "36-65"],

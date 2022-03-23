@@ -157,7 +157,8 @@ const SuggestedCities = ({ form }) => {
                       <div className="accordianContainer">
                         <Typography variant="h4">
                           Here are some of the highest scoring measurements in
-                          this city based on what was important to you:
+                          this city based on what was important to you. (Scores
+                          are calculated per capita when applicable.)
                         </Typography>
                       </div>
                       {resources &&

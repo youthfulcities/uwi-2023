@@ -99,7 +99,7 @@ const CityTemplate = ({
                   src={city.main_img}
                   alt={city.main_img_alt}
                 />
-                <Facts />
+                <Facts cityname={cityname} currentLangCode={currentLangCode} />
                 <Resources
                   cityname={cityname}
                   currentLangCode={currentLangCode}

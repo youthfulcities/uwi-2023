@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import _ from "lodash";
 
 import { useTranslation } from "react-i18next";
@@ -9,7 +9,7 @@ import {
   AccordionSummary,
   AccordionDetails,
   Grid,
-  Button,
+  // Button,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
@@ -130,7 +130,7 @@ const Resources = ({ cityname, currentLangCode }) => {
               <Typography variant="h3">{t("resources")}</Typography>
             </Grid>
             <Grid item mx={2}>
-              <Link to={`/map/${cityname}`}>
+              {/* <Link to={`/map/${cityname}`}>
                 <Button
                   sx={{ minWidth: 0 }}
                   color="primary"
@@ -139,7 +139,7 @@ const Resources = ({ cityname, currentLangCode }) => {
                 >
                   <Typography variant="h5">View On Map</Typography>
                 </Button>
-              </Link>
+              </Link> */}
             </Grid>
           </Grid>
         </AccordionSummary>

@@ -4,7 +4,7 @@ import { ApiClient } from "@opendatasoft/api-client";
 const getData = async (dataset, query) => {
   const client = new ApiClient({
     /* (Optional) authenticate through an api key */
-    apiKey: process.env.REACT_APP_ODS_API,
+    // apiKey: process.env.REACT_APP_ODS_API,
 
     /* (Optional) The Opendatasoft domain identifier or url.
        If missing, in the browser, the client will use the current host. */

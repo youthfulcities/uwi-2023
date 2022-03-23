@@ -73,7 +73,7 @@ const ResourceCard = ({
       >
         <Grid item xs={12}>
           <Typography variant="h4">{name}</Typography>
-          <Typography variant="body1">
+          <Typography sx={{ wordBreak: "break-word" }} variant="body1">
             {description !== null ? description : ""}
           </Typography>
           <Grid item my="12px">
@@ -118,7 +118,7 @@ const ResourceCard = ({
                       }
                       secondary={
                         <Typography
-                          sx={{ wordBreak: "break-word" }}
+                          sx={{ wordBreak: "break-all" }}
                           variant="body1"
                         >
                           {createReadableUrl(url)}
@@ -140,7 +140,7 @@ const ResourceCard = ({
                       }
                       secondary={
                         <Typography
-                          sx={{ wordBreak: "break-word" }}
+                          sx={{ wordBreak: "break-all" }}
                           variant="body1"
                         >
                           {email}
@@ -165,7 +165,10 @@ const ResourceCard = ({
                         <Typography variant="h5">{t("address")}</Typography>
                       }
                       secondary={
-                        <Typography variant="body1">
+                        <Typography
+                          sx={{ wordBreak: "break-word" }}
+                          variant="body1"
+                        >
                           {currentLangCode === "fa" || currentLangCode === "ps"
                             ? engToPersian(address)
                             : address}

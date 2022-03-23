@@ -159,7 +159,11 @@ const Facts = ({ cityname, currentLangCode }) => {
                               <Grid container spacing={2} direction="column">
                                 <Grid item>
                                   <FactCard>
-                                    <Typography variant="h5" align="center">
+                                    <Typography
+                                      sx={{ wordBreak: "break-all" }}
+                                      variant="h5"
+                                      align="center"
+                                    >
                                       {resource.record.fields.measurement_en}
                                     </Typography>
                                     {(resource.record.fields.comment ||

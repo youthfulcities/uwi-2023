@@ -6,6 +6,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "@mui/icons-material": "^5.3.1",
+    "@mui/lab": "^5.0.0-alpha.74",
     "@mui/material": "^5.3.1",
     "@opendatasoft/api-client": "^0.3.2",
     "@opendatasoft/visualizations": "^0.7.3",

@@ -29,7 +29,7 @@ const getData = async (dataset, query) => {
   });
 
   // Create the query to run.
-  const fullQuery = `https://pivothub.youthfulcities.com/api/records/1.0/search/?dataset=${dataset}&q=&rows=10&facet=topic_en&facet=indicator_en&facet=measurement_en&facet=city_cma&facet=city&${query}`;
+  const fullQuery = `https://pivothub.youthfulcities.com/api/records/1.0/search/?dataset=${dataset}&q=${query}`;
 
   // console.log(fullQuery);
   // Now, run the query.

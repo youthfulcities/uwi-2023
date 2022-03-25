@@ -1,7 +1,6 @@
 const Filter = ({ setUrl }) => {
   return (
     <>
-      {" "}
       <ods-facets
         context="index"
         onClick={() =>

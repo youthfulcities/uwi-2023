@@ -1,5 +1,5 @@
 const WidgetWrapper = ({ children }) => {
-  const dataset = "index-2020-full";
+  const dataset = "refugee-data";
 
   return (
     <>
@@ -8,7 +8,7 @@ const WidgetWrapper = ({ children }) => {
         context="index"
         index-domain="https://pivothub.youthfulcities.com/"
         index-dataset={dataset}
-        index-urlsync="true"
+        index-urlsync="false"
       >
         {children}
       </ods-dataset-context>

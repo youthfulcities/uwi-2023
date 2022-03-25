@@ -1,71 +1,93 @@
 import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-
-import { Grid, Typography } from "@mui/material";
-
-import cities from "../data/cities.json";
-import PhotoButton from "../components/PhotoButton";
-// import getData from "../helpers/odsClientV2.js";
-
+import "../ODS.css";
+import { Grid, Tabs, Tab } from "@mui/material";
 import BasicContainer from "../components/BasicContainer";
-import Decoration from "../components/Decoration";
+import Profiles from "./Profiles";
 
 const ExploreAll = ({
+  currentLangCode,
   languages,
   setCurrentLangCode,
-  currentLangCode,
   textSize,
   setTextSize,
 }) => {
-  const { t } = useTranslation();
+  const [value, setValue] = useState(0);
 
-  const [recs] = useState(cities);
-
-  //for retriving cities via api
-  // const [recs, setRecs] = useState([]);
-  // const query = "/records?limit=10&offset=0";
-
-  // useEffect(() => {
-  //   const retrievedCities = getData("cities", query).then((res) => res.records);
-
-  //   const setCities = async () => {
-  //     setRecs(await retrievedCities);
-  //   };
-
-  //   setCities();
-  // }, []);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
     <>
-      <Decoration />
-      <BasicContainer
-        width="md"
-        languages={languages}
-        setCurrentLangCode={setCurrentLangCode}
-        currentLangCode={currentLangCode}
-        textSize={textSize}
-        setTextSize={setTextSize}
+      <Grid container mt={2} justifyContent="center">
+        <Tabs value={value} onChange={handleChange} aria-label="tabs">
+          <Tab
+            sx={{ fontSize: "2rem" }}
+            label="Dashboard"
+            id="tab-1"
+            aria-controls="tab-1"
+          />
+          <Tab
+            sx={{ fontSize: "2rem" }}
+            label="City Profiles"
+            id="tab-2"
+            aria-controls="tab-2"
+          />
+        </Tabs>
+      </Grid>
+      <div
+        role="tabpanel"
+        hidden={value !== 0}
+        id="tabpanel-1"
+        aria-labelledby="tab-1"
       >
-        <Grid mb={2} item>
-          <Typography align="center" variant="h1">
-            {t("exploreHeading")}
-          </Typography>
-        </Grid>
-        {recs.map((city, i) => (
-          <Grid key={i} mt={2} className="photoButtonContainer" item>
-            <PhotoButton
-              city={city.city_name}
-              alt={city.main_img_alt}
-              src={city.main_img}
-              factoid={city.population}
-              province={city.province}
-              currentLangCode={currentLangCode}
-            >
-              {city.city_name}
-            </PhotoButton>
-          </Grid>
-        ))}
-      </BasicContainer>
+        <BasicContainer
+          width="md"
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
+        >
+          <h1>Dashboard</h1>
+          <ods-dataset-context
+            context="refugeedata"
+            refugeedata-domain="https://pivothub.youthfulcities.com/"
+            refugeedata-dataset="refugee-data"
+            refugeedata-parameters="{'refine.measurement_en':'# of libraries'}"
+          >
+            <ods-chart align-month="true">
+              <ods-chart-query
+                context="refugeedata"
+                field-x="city"
+                maxpoints="0"
+                series-breakdown="measurement_en"
+              >
+                <ods-chart-serie
+                  expression-y="value"
+                  chart-type="column"
+                  function-y="AVG"
+                  scientific-display="true"
+                ></ods-chart-serie>
+              </ods-chart-query>
+            </ods-chart>
+          </ods-dataset-context>
+        </BasicContainer>
+      </div>
+      <div
+        role="tabpanel"
+        hidden={value !== 1}
+        id="tabpanel-2"
+        aria-labelledby="tab-2"
+      >
+        <Profiles
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+          textSize={textSize}
+          setTextSize={setTextSize}
+        />
+      </div>
     </>
   );
 };

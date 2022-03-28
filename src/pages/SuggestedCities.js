@@ -24,9 +24,10 @@ import Loading from "../pages/Loading";
 
 import { calcCity, topMeasurements } from "../cityCalc/calcCity";
 
-const SuggestedCities = ({ form }) => {
+const SuggestedCities = ({ form, currentLangCode }) => {
   const { t } = useTranslation();
   const { priorities } = form;
+  const measure = `measurement_${currentLangCode}`;
 
   const topCities = calcCity(priorities)
     .slice(0, 3)
@@ -44,6 +45,14 @@ const SuggestedCities = ({ form }) => {
     );
     setCityData(data);
   }, [cityNames]);
+
+  const formattedNumber = (number) => {
+    if (currentLangCode === "fa") {
+      const newNum = Number(number).toLocaleString("fa-AF");
+      return newNum;
+    }
+    return Number(number).toLocaleString();
+  };
 
   //for retrieving city data via API
   // useEffect(() => {
@@ -131,6 +140,7 @@ const SuggestedCities = ({ form }) => {
                     alt={city.main_img_alt}
                     src={city.main_img}
                     province={city.province}
+                    currentLangCode={currentLangCode}
                     factoid={city.population}
                   >
                     {city.city_name}
@@ -156,9 +166,7 @@ const SuggestedCities = ({ form }) => {
                     <AccordionDetails>
                       <div className="accordianContainer">
                         <Typography variant="h4">
-                          Here are some of the highest scoring measurements in
-                          this city based on what was important to you. (Scores
-                          are calculated per capita when applicable.)
+                          {t("highestScoring")}
                         </Typography>
                       </div>
                       {resources &&
@@ -175,7 +183,7 @@ const SuggestedCities = ({ form }) => {
                                     priorities.find(
                                       (priority) =>
                                         priority.name === resource.JSONNames
-                                    ).measurement
+                                    )[measure]
                                   }
                                 </Typography>
                                 <Typography
@@ -185,8 +193,8 @@ const SuggestedCities = ({ form }) => {
                                   color="#F2695D"
                                 >
                                   {resource.measureableValue === "dollar value"
-                                    ? `$${resource.Value}`
-                                    : resource.Value}
+                                    ? `$${formattedNumber(resource.Value)}`
+                                    : formattedNumber(resource.Value)}
                                 </Typography>
                               </FactCard>
                             </div>

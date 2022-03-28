@@ -12,15 +12,20 @@ import {
   Checkbox,
 } from "@mui/material";
 import _ from "lodash";
+import { useTranslation } from "react-i18next";
 import additionalInfo from "../../cityCalc/additionalInfo.js";
 
-const groupedPrioritiesArray = Object.values(
-  _.groupBy(additionalInfo, (item) => item.category)
-);
-
-const Priorities = ({ form, setForm, handleChange }) => {
+const Priorities = ({ form, setForm, handleChange, currentLangCode }) => {
+  const { t } = useTranslation();
   const { completed, priorities } = form;
   const [initial] = useState(form);
+
+  let cat = `category_${currentLangCode}`;
+  let measure = `measurement_${currentLangCode}`;
+
+  const groupedPrioritiesArray = Object.values(
+    _.groupBy(additionalInfo, (item) => item[cat])
+  );
 
   const getDemographicMeasurements = useCallback(() => {
     const { numberOfPeople, ages } = initial;
@@ -79,8 +84,7 @@ const Priorities = ({ form, setForm, handleChange }) => {
   return (
     <>
       <Typography variant="h4" mt={2}>
-        Let us know what's important to you. We've selected some items already
-        based on the ages and number of people in your family.
+        {t("profileImportant")}
       </Typography>
       <Grid container direction="column" spacing={2}>
         <Grid
@@ -106,7 +110,7 @@ const Priorities = ({ form, setForm, handleChange }) => {
                   >
                     <Grid item xs={12} key={i} py={1} mt={2}>
                       <Typography variant="h3" mb={1}>
-                        {categoryArray[0].category}
+                        {categoryArray[0][cat]}
                       </Typography>
                       <Divider />
                     </Grid>
@@ -121,7 +125,7 @@ const Priorities = ({ form, setForm, handleChange }) => {
                               size="large"
                             />
                           }
-                          label={topic.measurement}
+                          label={topic[measure]}
                         />
                       </Grid>
                     ))}
@@ -140,7 +144,7 @@ const Priorities = ({ form, setForm, handleChange }) => {
               fullWidth={true}
               onClick={() => handleChange("completed", true)}
             >
-              <Typography variant="h5">Confirm & Continue</Typography>
+              <Typography variant="h5">{t("confirm")}</Typography>
             </Button>
           </Link>
         </Grid>

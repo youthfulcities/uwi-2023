@@ -1,22 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../ODS.css";
-import { Grid, Tabs, Tab } from "@mui/material";
-import BasicContainer from "../components/BasicContainer";
-import Profiles from "./Profiles";
 
-const Dashboard = ({
-  currentLangCode,
-  languages,
-  setCurrentLangCode,
-  textSize,
-  setTextSize,
-}) => {
-  const [value, setValue] = useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
+const Dashboard = () => {
   return (
     <>
       <ods-dataset-context

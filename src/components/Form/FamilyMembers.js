@@ -1,5 +1,5 @@
 import React from "react";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 import {
   Typography,
@@ -17,7 +17,7 @@ import {
 const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
   const { ages, numberOfPeople } = form;
 
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   const allFieldsFilled = () => {
     if (ages.length > 0 && numberOfPeople !== 0) {
@@ -29,8 +29,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
   return (
     <>
       <Typography variant="h4" mt={2}>
-        Tell us a bit about your family so we can help find the best city for
-        you.
+        {t("profileFamily")}
       </Typography>
       <Grid container direction="column" spacing={2}>
         <Grid
@@ -44,7 +43,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
         >
           <Grid item flexGrow="2">
             <InputLabel id="family-num-label" htmlFor="family-num">
-              Number of people in your family (including you)
+              {t("profileNumber")}
             </InputLabel>
             <TextField
               id="family-num"
@@ -68,9 +67,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
           <Grid item mt={4}>
             <FormControl component="fieldset" variant="standard">
               <FormGroup>
-                <FormLabel>
-                  Select each age group that matches someone in your family
-                </FormLabel>
+                <FormLabel>{t("profileAge")}</FormLabel>
                 <Grid item container xs={12} spacing={2}>
                   <Grid item xs={6}>
                     <FormControlLabel
@@ -82,10 +79,10 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="Less than 12 years"
+                      label={t("12")}
                     />
                   </Grid>
-                  <Grid item xs={6} sm={4}>
+                  <Grid item xs={12}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -95,10 +92,10 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="13 - 18 years"
+                      label={t("18")}
                     />
                   </Grid>
-                  <Grid item xs={6} sm={4}>
+                  <Grid item xs={12}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -108,10 +105,10 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="19 - 35 years"
+                      label={t("35")}
                     />
                   </Grid>
-                  <Grid item xs={6} sm={4}>
+                  <Grid item xs={12}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -121,10 +118,10 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="36 - 64 years"
+                      label={t("64")}
                     />
                   </Grid>
-                  <Grid item xs={6} sm={4}>
+                  <Grid item xs={12}>
                     <FormControlLabel
                       control={
                         <Checkbox
@@ -134,7 +131,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
                           size="large"
                         />
                       }
-                      label="65+ years"
+                      label={t("65")}
                     />
                   </Grid>
                 </Grid>
@@ -153,7 +150,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
             }}
             fullWidth={true}
           >
-            <Typography variant="h5">Confirm & Continue</Typography>
+            <Typography variant="h5">{t("confirm")}</Typography>
           </Button>
         </Grid>
       </Grid>

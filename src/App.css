@@ -1,10 +1,10 @@
 :root {
   /*YOUTHFUL CITIES COLOURS*/
-  --yellow: rgb(251, 209, 102);
-  --pink: rgb(247, 188, 183);
-  --green: rgb(184, 217, 141);
-  --indigo: rgb(79, 102, 175);
-  --red: rgb(238, 96, 91);
+  --yellow: #fbd166;
+  --pink: #f6d9d7;
+  --green: #b8d98d;
+  --indigo: #253d88;
+  --red: #f2695d;
   --chestnuts: #884c41;
 
   --font_heading: font(normal normal normal 45px/1.4em arial + black);

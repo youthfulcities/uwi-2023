@@ -55,6 +55,7 @@ const CreateProfile = ({
       case 1:
         return (
           <FamilyMembers
+            currentLangCode={currentLangCode}
             handleAgesChange={handleAgesChange}
             handleChange={handleChange}
             form={form}
@@ -65,6 +66,7 @@ const CreateProfile = ({
       case 2:
         return (
           <Priorities
+            currentLangCode={currentLangCode}
             handleChange={handleChange}
             form={form}
             setForm={setForm}
@@ -75,6 +77,7 @@ const CreateProfile = ({
       default:
         return (
           <FamilyMembers
+            currentLangCode={currentLangCode}
             handleAgesChange={handleAgesChange}
             handleChange={handleChange}
             form={form}

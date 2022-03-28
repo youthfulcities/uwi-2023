@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { useParams } from "react-router-dom";
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Button, Typography } from "@mui/material";
 
 import cities from "../data/cities.json";
 
@@ -85,14 +85,22 @@ const CityTemplate = ({
           </PhotoHeader>
           <Container maxWidth="md">
             <Grid
-              sx={{ minHeight: "55vh" }}
+              sx={{ minHeight: "30vh" }}
               container
               direction="column"
               justifyContent="center"
               alignItems="center"
-              py="7vh"
+              pt={0}
+              pb={10}
               spacing={0}
             >
+              <Grid item my={5}>
+                <Button variant="contained" color="success" size="large">
+                  <Typography variant="h5">
+                    Book an appointment and learn more
+                  </Typography>
+                </Button>
+              </Grid>
               <div>
                 <CityInfo
                   description={city.description}
@@ -100,10 +108,10 @@ const CityTemplate = ({
                   alt={city.main_img_alt}
                 />
                 <Facts cityname={cityname} currentLangCode={currentLangCode} />
-                <Resources
+                {/* <Resources
                   cityname={cityname}
                   currentLangCode={currentLangCode}
-                />
+                /> */}
               </div>
             </Grid>
             <Back />

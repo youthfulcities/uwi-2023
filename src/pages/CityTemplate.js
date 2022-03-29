@@ -10,7 +10,7 @@ import Back from "../components/Back";
 import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
 import Facts from "../components/CityTemplate/Facts";
-import Resources from "../components/CityTemplate/Resources";
+// import Resources from "../components/CityTemplate/Resources";
 // import getData from "../helpers/odsClientV2.js";
 import ChangeLang from "../components/ChangeLang";
 import Loading from "../pages/Loading";
@@ -95,11 +95,13 @@ const CityTemplate = ({
               spacing={0}
             >
               <Grid item my={5}>
-                <Button variant="contained" color="success" size="large">
-                  <Typography variant="h5">
-                    Book an appointment and learn more
-                  </Typography>
-                </Button>
+                <a href="https://calendly.com/youthful-cities/city-consultation">
+                  <Button variant="contained" color="success" size="large">
+                    <Typography variant="h5">
+                      Book an appointment and learn more
+                    </Typography>
+                  </Button>
+                </a>
               </Grid>
               <div>
                 <CityInfo

@@ -40,6 +40,8 @@ function App() {
     completed: false,
   });
 
+  console.log(form);
+
   const languages = [
     {
       code: "en",

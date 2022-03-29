@@ -68,7 +68,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
             <FormControl component="fieldset" variant="standard">
               <FormGroup>
                 <FormLabel>{t("profileAge")}</FormLabel>
-                <Grid item container xs={12} spacing={2}>
+                <Grid item container xs={12} spacing={0}>
                   <Grid item xs={6}>
                     <FormControlLabel
                       control={
@@ -150,7 +150,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
             }}
             fullWidth={true}
           >
-            <Typography variant="h5">{t("confirm")}</Typography>
+            <Typography variant="h5">{t("continue")}</Typography>
           </Button>
         </Grid>
       </Grid>

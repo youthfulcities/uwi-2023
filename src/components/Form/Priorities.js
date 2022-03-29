@@ -1,85 +1,27 @@
-import React, { useCallback, useEffect, useState } from "react";
-import { v4 as uuidv4 } from "uuid";
+import React from "react";
 import { Link } from "react-router-dom";
 import {
   Typography,
   Grid,
   Button,
   FormGroup,
-  Divider,
   FormControl,
-  FormControlLabel,
-  Checkbox,
 } from "@mui/material";
-import _ from "lodash";
 import { useTranslation } from "react-i18next";
-import additionalInfo from "../../cityCalc/additionalInfo.js";
+import Category from "./Category";
 
-const Priorities = ({ form, setForm, handleChange, currentLangCode }) => {
+const Priorities = ({
+  handleChange,
+  nextStep,
+  categoryArray,
+  cat,
+  priorities,
+  handlePriorityChange,
+  measure,
+  groupedPrioritiesArray,
+  step,
+}) => {
   const { t } = useTranslation();
-  const { completed, priorities } = form;
-  const [initial] = useState(form);
-
-  let cat = `category_${currentLangCode}`;
-  let measure = `measurement_${currentLangCode}`;
-
-  const groupedPrioritiesArray = Object.values(
-    _.groupBy(additionalInfo, (item) => item[cat])
-  );
-
-  const getDemographicMeasurements = useCallback(() => {
-    const { numberOfPeople, ages } = initial;
-
-    //return array of matching measurement objects
-    let ageMeasurements = additionalInfo.map((measurement) => {
-      if (Array.isArray(measurement.demographic)) {
-        if (_.intersection(measurement.demographic, ages).length > 0) {
-          return measurement;
-        }
-      } else if (measurement.demographic === "all") {
-        return measurement;
-      } else if (
-        typeof measurement.demographic === "object" &&
-        numberOfPeople >= measurement.demographic.minNumberOfPeople &&
-        numberOfPeople <= measurement.demographic.maxNumberOfPeople
-      ) {
-        return measurement;
-      }
-      return undefined;
-    });
-    return ageMeasurements.filter((e) => e !== undefined);
-  }, [initial]);
-
-  const setPriorities = useCallback(() => {
-    if (!completed) {
-      const measurements = getDemographicMeasurements();
-      let priorities = initial.priorities;
-      priorities = measurements;
-      setForm({ ...initial, priorities });
-    }
-  }, [getDemographicMeasurements, initial, setForm, completed]);
-
-  useEffect(() => {
-    setPriorities();
-  }, [setPriorities]);
-
-  const handlePriorityChange = (e) => {
-    if (e.target.checked) {
-      //add priority to selected
-      const priorities = form.priorities;
-      priorities.push(
-        additionalInfo.find((priority) => priority.name === e.target.name)
-      );
-      setForm({ ...form, priorities });
-    } else {
-      //remove priority from selected
-      const oldPriorites = form.priorities;
-      const priorities = oldPriorites.filter(
-        (priority) => priority.name !== e.target.name
-      );
-      setForm({ ...form, priorities });
-    }
-  };
 
   return (
     <>
@@ -99,38 +41,13 @@ const Priorities = ({ form, setForm, handleChange, currentLangCode }) => {
           <Grid item>
             <FormControl component="fieldset" variant="standard">
               <FormGroup>
-                {groupedPrioritiesArray.map((categoryArray, i) => (
-                  <Grid
-                    item
-                    container
-                    xs={12}
-                    spacing={2}
-                    mt={1}
-                    key={uuidv4()}
-                  >
-                    <Grid item xs={12} key={i} py={1} mt={2}>
-                      <Typography variant="h3" mb={1}>
-                        {categoryArray[0][cat]}
-                      </Typography>
-                      <Divider />
-                    </Grid>
-                    {categoryArray.map((topic, i) => (
-                      <Grid item xs={6} key={i}>
-                        <FormControlLabel
-                          control={
-                            <Checkbox
-                              checked={priorities.includes(topic)}
-                              onChange={(e) => handlePriorityChange(e)}
-                              name={topic.name}
-                              size="large"
-                            />
-                          }
-                          label={topic[measure]}
-                        />
-                      </Grid>
-                    ))}
-                  </Grid>
-                ))}
+                <Category
+                  categoryArray={categoryArray}
+                  cat={cat}
+                  priorities={priorities}
+                  handlePriorityChange={handlePriorityChange}
+                  measure={measure}
+                />
               </FormGroup>
             </FormControl>
           </Grid>
@@ -140,11 +57,23 @@ const Priorities = ({ form, setForm, handleChange, currentLangCode }) => {
             <Button
               variant="contained"
               size="large"
-              color="primary"
+              color={
+                groupedPrioritiesArray.length === step - 1
+                  ? "success"
+                  : "primary"
+              }
               fullWidth={true}
-              onClick={() => handleChange("completed", true)}
+              onClick={() => {
+                groupedPrioritiesArray.length === step - 1
+                  ? handleChange("completed", true)
+                  : nextStep();
+              }}
             >
-              <Typography variant="h5">{t("confirm")}</Typography>
+              <Typography variant="h5">
+                {groupedPrioritiesArray.length === step - 1
+                  ? t("confirm")
+                  : t("continue")}
+              </Typography>
             </Button>
           </Link>
         </Grid>

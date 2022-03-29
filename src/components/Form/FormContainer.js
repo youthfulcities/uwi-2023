@@ -1,7 +1,14 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { Container, Grid, Fab, Typography, Paper } from "@mui/material";
+import {
+  Container,
+  Grid,
+  Fab,
+  Typography,
+  Paper,
+  LinearProgress,
+} from "@mui/material";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import Socials from "../Socials";
@@ -16,12 +23,17 @@ const FormContainer = ({
   step,
   languages,
   setCurrentLangCode,
+  groupedPrioritiesArray,
   currentLangCode,
   textSize,
   setTextSize,
-  handleChange,
 }) => {
   const { t } = useTranslation();
+
+  const progress = (step / (groupedPrioritiesArray.length + 1)) * 100;
+
+  console.log(progress);
+
   return (
     <>
       <Decoration />
@@ -36,6 +48,9 @@ const FormContainer = ({
         >
           <Grid item my="5vh">
             <Paper>
+              <Grid item pt={5}>
+                <LinearProgress variant="determinate" value={progress} />
+              </Grid>
               <Grid
                 sx={{ minWidth: "100%" }}
                 container

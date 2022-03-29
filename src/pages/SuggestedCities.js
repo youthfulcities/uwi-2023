@@ -18,6 +18,7 @@ import cities from "../data/cities.json";
 
 import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
+import BookNow from "../components/BookNow";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";
 import Loading from "../pages/Loading";
@@ -121,6 +122,9 @@ const SuggestedCities = ({ form, currentLangCode }) => {
                 {t("suggestedCitiesHeading")}
               </Typography>
             </Grid>
+            <Grid mt={2} item>
+              <BookNow />
+            </Grid>
             {cityData.map((city, i) => (
               <Grid
                 container
@@ -128,13 +132,7 @@ const SuggestedCities = ({ form, currentLangCode }) => {
                 sx={{ minWidth: "100%" }}
                 key={i}
               >
-                <Grid
-                  key={i}
-                  mt={6}
-                  xs={12}
-                  className="photoButtonContainer"
-                  item
-                >
+                <Grid key={i} mt={6} className="photoButtonContainer" item>
                   <PhotoButton
                     city={city.city_name}
                     alt={city.main_img_alt}
@@ -146,7 +144,7 @@ const SuggestedCities = ({ form, currentLangCode }) => {
                     {city.city_name}
                   </PhotoButton>
                 </Grid>
-                <Grid mt={1} item xs={12}>
+                <Grid mt={1} item>
                   <Accordion
                     sx={{
                       width: "100%",

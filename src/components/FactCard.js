@@ -1,17 +1,28 @@
 import React from "react";
 import { Card, Grid } from "@mui/material";
 
-const FactCard = ({ children }) => {
+const FactCard = ({ children, colour }) => {
   return (
-    <Card sx={{ minHeight: 100 }}>
+    <Card
+      sx={{
+        minHeight: "100%",
+        display: "flex",
+        alignItems: "center",
+        textAlign: "center",
+        backgroundColor: colour.background,
+        color: colour.text,
+      }}
+    >
       <Grid
         container
-        sx={{ minHeight: 100 }}
+        direction="column"
+        sx={{ height: "100%" }}
         justifyContent="center"
+        alignContent="center"
         alignItems="center"
         p={3}
       >
-        <Grid item>{children}</Grid>
+        {children}
       </Grid>
     </Card>
   );

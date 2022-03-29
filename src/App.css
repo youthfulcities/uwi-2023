@@ -101,6 +101,10 @@ footer {
   min-width: 100%;
 }
 
+img {
+  object-fit: cover;
+}
+
 #root {
   min-height: 100%;
 }

@@ -1,15 +1,17 @@
 import React, { useState } from "react";
 
 import { useParams } from "react-router-dom";
-import { Container, Grid, Button, Typography } from "@mui/material";
+import { Container, Grid, Card, CardMedia } from "@mui/material";
 
 import cities from "../data/cities.json";
 
+import BookNow from "../components/BookNow";
 import PhotoHeader from "../components/CityTemplate/PhotoHeader";
 import Back from "../components/Back";
 import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
 import Facts from "../components/CityTemplate/Facts";
+import Search from "../components/CityTemplate/Search";
 // import Resources from "../components/CityTemplate/Resources";
 // import getData from "../helpers/odsClientV2.js";
 import ChangeLang from "../components/ChangeLang";
@@ -29,52 +31,7 @@ const CityTemplate = ({
   };
 
   const [city] = useState(getCityData());
-
-  //for getting city data via api call
-  // const [city, setCity] = useState(undefined)
-  // const [resources, setResources] = useState(undefined);
-
-  //for getting city data via api call
-  // const cityQuery = `/records?refine=city_name:${cityname}`;
-  // const resourceQuery = `/records?refine=city:${cityname}&limit=20&select=sheet_title as measurement&group_by=sheet_title`;
-
-  //for getting city data via api call
-  // const getCityData = useCallback(() => {
-  //   const retrievedInfo = getData("cities", cityQuery).then(
-  //     (res) => res.records[0]
-  //   );
-
-  //   const setCities = async () => {
-  //     setCity(await retrievedInfo);
-  //   };
-
-  //   setCities();
-  // }, [cityQuery]);
-
-  // const getCategories = useCallback(() => {
-  //   const retrievedInfo = getData("resource-data-test", resourceQuery).then(
-  //     (res) => res.records
-  //   );
-
-  //   const setCities = async () => {
-  //     setResources(await retrievedInfo);
-  //   };
-
-  //   setCities();
-  // }, [resourceQuery]);
-
-  //for getting city data via api call
-  // useEffect(() => {
-  //   console.log("city data api triggered");
-  //   getCityData();
-  // }, [getCityData]);
-  //to access returning data the format is "city.record.fields.main_img"
-
-  //get main categories
-  // useEffect(() => {
-  //   console.log("category api triggered");
-  //   getCategories();
-  // }, [getCategories]);
+  const [searchStringQuery, setSearchStringQuery] = useState("");
 
   return (
     <>
@@ -83,7 +40,7 @@ const CityTemplate = ({
           <PhotoHeader src={city.main_img} alt={city.main_img_alt}>
             {cityname}
           </PhotoHeader>
-          <Container maxWidth="md">
+          <Container maxWidth="lg">
             <Grid
               sx={{ minHeight: "30vh" }}
               container
@@ -95,26 +52,50 @@ const CityTemplate = ({
               spacing={0}
             >
               <Grid item my={5}>
-                <a href="https://calendly.com/youthful-cities/city-consultation">
-                  <Button variant="contained" color="success" size="large">
-                    <Typography variant="h5">
-                      Book an appointment and learn more
-                    </Typography>
-                  </Button>
-                </a>
+                <BookNow />
               </Grid>
-              <div>
-                <CityInfo
-                  description={city.description}
-                  src={city.main_img}
-                  alt={city.main_img_alt}
-                />
-                <Facts cityname={cityname} currentLangCode={currentLangCode} />
-                {/* <Resources
+              <Grid
+                container
+                direction="row"
+                spacing={2}
+                justifyContent="space-between"
+              >
+                <Grid item xs={12} md={6} lg={4}>
+                  <CityInfo
+                    description={city.description}
+                    src={city.main_img}
+                    alt={city.main_img_alt}
+                  />
+                </Grid>
+                <Grid item xs={12} md={6} lg={8}>
+                  <Card
+                    sx={{
+                      marginTop: "20px",
+                      position: "relative",
+                      height: "300px",
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="100%"
+                      src={city.main_img}
+                      alt={city.main_img_alt}
+                    />
+                  </Card>
+                  <Search setSearchStringQuery={setSearchStringQuery} />
+                </Grid>
+                <Grid item>
+                  <Facts
+                    cityname={cityname}
+                    currentLangCode={currentLangCode}
+                    searchStringQuery={searchStringQuery}
+                  />
+                  {/* <Resources
                   cityname={cityname}
                   currentLangCode={currentLangCode}
                 /> */}
-              </div>
+                </Grid>
+              </Grid>
             </Grid>
             <Back />
             <Grid item mb={2} sx={{ maxHeight: "10vh" }}>

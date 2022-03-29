@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
-import { Card, CardMedia, Typography, Grid } from "@mui/material";
+import { Card, Typography } from "@mui/material";
 
 const CityInfo = ({ alt, src }) => {
   const { t } = useTranslation();

@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 import { Typography, Grid } from "@mui/material";
 
 import getData from "../../helpers/odsClientV2.js";
-import Search from "./Search";
 import FactCard from "../FactCard";
 import Loading from "../../pages/Loading.js";
 

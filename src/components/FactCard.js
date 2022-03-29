@@ -9,8 +9,8 @@ const FactCard = ({ children, colour }) => {
         display: "flex",
         alignItems: "center",
         textAlign: "center",
-        backgroundColor: colour.background,
-        color: colour.text,
+        backgroundColor: colour !== undefined && colour.background,
+        color: colour !== undefined && colour.text,
       }}
     >
       <Grid

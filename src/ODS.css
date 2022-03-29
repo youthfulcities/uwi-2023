@@ -128,7 +128,7 @@ the modal default size (width) is 57px, it correspond to the leftside width */
   padding: 0 10px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   opacity: 0;
   transition: opacity 0s;
 }

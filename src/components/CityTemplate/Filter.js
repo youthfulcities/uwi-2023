@@ -1,5 +1,5 @@
 import React from "react";
-import { Chip } from "@mui/material";
+import { Chip, Typography } from "@mui/material";
 import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
 import PaidIcon from "@mui/icons-material/Paid";
 import HelpIcon from "@mui/icons-material/Help";
@@ -31,8 +31,6 @@ const Filter = ({
       setFilteredCategories(newCategories);
     }
   };
-
-  console.log(filteredCategories);
 
   const getIcon = (category) => {
     switch (category) {
@@ -67,7 +65,9 @@ const Filter = ({
 
   return (
     <>
-      <div>Filter</div>
+      <Typography variant="h4" mt={4} mb={2} mx={2}>
+        Click the categories to filter the fact cards
+      </Typography>
       <div>
         {categories.map((category, i) => (
           <Chip

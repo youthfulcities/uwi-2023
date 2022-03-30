@@ -12,11 +12,11 @@ import PhotoHeader from "../components/CityTemplate/PhotoHeader";
 import Back from "../components/Back";
 import Socials from "../components/Socials";
 import CityInfo from "../components/CityTemplate/CityInfo";
-import Facts from "../components/CityTemplate/Facts";
 import Search from "../components/CityTemplate/Search";
 import Filter from "../components/CityTemplate/Filter";
 import ChangeLang from "../components/ChangeLang";
 import Loading from "../pages/Loading";
+import Facts from "../components/CityTemplate/Facts";
 
 const groupedArray = async (array) => {
   let grouped = _.groupBy(array, (item) => item.record.fields.category_for_app);
@@ -50,6 +50,9 @@ const CityTemplate = ({
   const [subResources, setSubResources] = useState([]);
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([categories]);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  console.log(isLoaded);
 
   const colours = [
     { background: "#1e316d", text: "#fff" },
@@ -105,6 +108,7 @@ const CityTemplate = ({
   useEffect(() => {
     setOffset(0);
     setResources([]);
+    setIsLoaded(false);
   }, [searchStringQuery]);
 
   return (
@@ -125,7 +129,7 @@ const CityTemplate = ({
               pb={10}
               spacing={0}
             >
-              <Grid item my={5}>
+              <Grid item mt={5} mb={3}>
                 <BookNow />
               </Grid>
               <Grid
@@ -159,7 +163,7 @@ const CityTemplate = ({
                   <Search setSearchStringQuery={setSearchStringQuery} />
                 </Grid>
               </Grid>
-              <Grid item mb={1}>
+              <Grid item mb={3} width="100%">
                 <Filter
                   categories={categories}
                   filteredCategories={filteredCategories}
@@ -167,16 +171,18 @@ const CityTemplate = ({
                   colours={colours}
                 />
               </Grid>
-              <Facts
-                cityname={cityname}
-                currentLangCode={currentLangCode}
-                searchStringQuery={searchStringQuery}
-                colours={colours}
-                subResources={subResources}
-                resources={resources}
-                categories={categories}
-                filteredCategories={filteredCategories}
-              />
+              {resources.length > 0 && (
+                <Facts
+                  cityname={cityname}
+                  currentLangCode={currentLangCode}
+                  searchStringQuery={searchStringQuery}
+                  colours={colours}
+                  subResources={subResources}
+                  resources={resources}
+                  categories={categories}
+                  filteredCategories={filteredCategories}
+                />
+              )}
               {/* <Resources
                   cityname={cityname}
                   currentLangCode={currentLangCode}

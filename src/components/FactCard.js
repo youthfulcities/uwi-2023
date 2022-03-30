@@ -9,6 +9,7 @@ const FactCard = ({ children, colour }) => {
         display: "flex",
         alignItems: "center",
         textAlign: "center",
+        minWidth: "200px",
         backgroundColor: colour !== undefined && colour.background,
         color: colour !== undefined && colour.text,
       }}

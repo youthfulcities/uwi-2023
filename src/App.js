@@ -137,7 +137,14 @@ function App() {
           },
         },
       },
-
+      MuiChip: {
+        styleOverrides: {
+          icon: {
+            color: "inherit",
+            marginLeft: "8px",
+          },
+        },
+      },
       MuiAccordion: {
         styleOverrides: {
           root: {

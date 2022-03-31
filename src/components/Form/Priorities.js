@@ -17,6 +17,8 @@ const Priorities = ({
   cat,
   priorities,
   handlePriorityChange,
+  handleRemoveAll,
+  handleAddAll,
   measure,
   groupedPrioritiesArray,
   step,
@@ -47,6 +49,8 @@ const Priorities = ({
                   priorities={priorities}
                   handlePriorityChange={handlePriorityChange}
                   measure={measure}
+                  handleRemoveAll={handleRemoveAll}
+                  handleAddAll={handleAddAll}
                 />
               </FormGroup>
             </FormControl>

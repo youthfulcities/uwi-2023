@@ -118,6 +118,23 @@ const CreateProfile = ({
     }
   };
 
+  const handleAddAll = (category) => {
+    const oldPriorities = form.priorities;
+    const filteredPriorities = oldPriorities.filter(
+      (item) => category.indexOf(item) === -1
+    );
+    const priorities = [...filteredPriorities, ...category];
+    setForm({ ...form, priorities });
+  };
+
+  const handleRemoveAll = (category) => {
+    const oldPriorities = form.priorities;
+    const priorities = oldPriorities.filter(
+      (item) => category.indexOf(item) === -1
+    );
+    setForm({ ...form, priorities });
+  };
+
   const displaySection = (step) => {
     if (step === 1) {
       return (
@@ -146,6 +163,8 @@ const CreateProfile = ({
           setForm={setForm}
           nextStep={nextStep}
           resetStep={resetStep}
+          handleRemoveAll={handleRemoveAll}
+          handleAddAll={handleAddAll}
         />
       );
     } else {

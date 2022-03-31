@@ -32,8 +32,6 @@ const FormContainer = ({
 
   const progress = (step / (groupedPrioritiesArray.length + 1)) * 100;
 
-  console.log(progress);
-
   return (
     <>
       <Decoration />

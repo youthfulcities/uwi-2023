@@ -3,7 +3,7 @@
     "city_name": "Calgary",
     "province": "Alberta",
     "population": 1500000,
-    "description": "",
+    "description": "<p>As the largest city in the province by size and population, The City of Calgary is located in the south of the Province of Alberta. Located at the meeting of two rivers (Bow River and Elbow River), Calgary is known for its indoor and outdoor recreation infrastructure and parks, connection to sports, culture, and events.</p><p>With English being the main spoken language in the city, Calgary has a greatly diverse population speaking more than 140 different languages. With a population of over 1.3 million people, 400,000 residents represent as immigrants.</p><p>In regards to employment, Calgary's major job sectors include aerospace and logistics, energy, creative industries, life sciences, technology, agribusiness, and financial services.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Calgary.jpeg",
     "main_img_alt": "Wide view of Calgary skyline on a clear day."
@@ -12,7 +12,7 @@
     "city_name": "Kelowna",
     "province": "British Columbia",
     "population": 222000,
-    "description": "",
+    "description": "<p>Located in the southern part of  the Province of British Columbia, The City of Kelowna is known for its lakes, nature, hiking trails, great weather and of course, its famous vineyards. With a population of over 145,000, Kelowna is one of the fastest-growing cities in Canada, with more immigrants finding a home in the city, growing its diversity.</p><p>With English being the main spoken language, its moderate weather and a growing post secondary population are a few bonuses. Kelowna's employment sectors include health care, technology, professional Services, trade and construction.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Kelowna.jpeg",
     "main_img_alt": "Vineyard in front of a lake in Kelowna."
@@ -21,7 +21,7 @@
     "city_name": "Saskatoon",
     "province": "Saskatchewan",
     "population": 336000,
-    "description": "",
+    "description": "<p>As the largest city in the Province of Saskatchewan, The City of Saskatoon is located centrally in the province on the South Saskatchewan River. As a key commercial and education center with a few large universities, Saskatoon has a diverse geography with lakes, rivers, beaches, and mountains. Saskatoon is Canada's “city of bridges,” thanks to the seven bridges that span the city, all of which cross the South Saskatchewan River.</p><p>The city's diversity includes 8.9% Aboriginals, and almost 5% other visible ethnic minorities. Saskatoon fits both a large and small city vibrancy with a population of just over 330,000.</p><p>In regards to employment, the major industries in Saskatoon are agriculture, mining, manufacturing and retail.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Saskatoon.jpeg",
     "main_img_alt": "University Bridge in Saskatoon at sunrise."
@@ -30,7 +30,7 @@
     "city_name": "Victoria",
     "province": "British Columbia",
     "population": 390000,
-    "description": "",
+    "description": "<p>The provincial capital of British Columbia, The City of Victoria is located on the southern end of Vancouver Island. With lakes, hiking trails, and beaches Victoria is known for its outdoor activities and mild and modest weather all year round.</p><p>The main spoken language in Victoria in English and the city has a diverse population. Over 65,000 of the approximately 400,000 residents (16.25%) represent as immigrants from various ethnicities.<p></p>In regards to employment, jobs in Victoria are spread across various industries including education, marine, construction, health, retail, and agriculture.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Victoria.jpeg",
     "main_img_alt": "Parliament buildings in Victoria, BC with tulips in front."
@@ -39,7 +39,7 @@
     "city_name": "Lethbridge",
     "province": "Alberta",
     "population": 101300,
-    "description": "",
+    "description": "<p>As the fourth largest city in The Province of Alberta, The City of Lethbridge is located 135 miles (217 km) south-southeast of Calgary. As a small city with a population of just over 100,000 people, Lethbridge is a welcoming and compassionate city offering the resources of a large city. Lethbridge is known for its vibrant population and diversity of events year round, including a proud LGBTQ2S+ population. Lethbirdge has also welcomed many refugees including building a new Multicultural Centre in 2016 as a community hub for more than 30 ethno-cultural groups from across the region.</p><p>In regards to employment Lethbridge's major job sectors include health care, education, government services, and freight transporation. Further manufacturing and logistics, retail and hospitality, agri-food and the financial sector also play an importnant role for employment.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Lethbridge.jpeg",
     "main_img_alt": "High Level Bridge in Lethbridge, Alberta."
@@ -48,7 +48,7 @@
     "city_name": "Winnipeg",
     "province": "Manitoba",
     "population": 850000,
-    "description": "",
+    "description": "<p>Winnipeg is the capital of one of The Province of Manitoba, and is know as the “Cultural Cradle of Canada”. Centred at the 'Forks' where the Red River meets the Assiniboine River, Winnipeg is a large prairie city surrounded by farmland and within an hour of lakes and provincial parks.</p><p>While Winnipeg is known as a cold city for its winter, it is also known for its diverse cultural and food scene, professional sports teams, and an impressive number of festivals. With a population of over 880,000 residents, Winnipeg is one of the most culturally diverse cities where 100 languages are represented, and over 24% of the population is representing immigrants.</p><p>The main industries in the city are agriculture, tourism, electricity, oil, mining and forestry. Manitoba also has a large manufacturing sector.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Winnipeg.jpeg",
     "main_img_alt": "Esplanade Riel pedestrian bridge in Winnipeg, Manitoba."
@@ -57,7 +57,7 @@
     "city_name": "London",
     "province": "Ontario",
     "population": 500000,
-    "description": "",
+    "description": "<p>The City of London is located in the southwestern part of the Province of Ontario, just north of Lake Erie and the U.S. border. It is proudly known as The Forest City because of its famous rivers, lakes, beaches and nature.</p><p>The population of London is over 515,000 with over 21.6% identify as visible minorities. London benefits from a diverse community both in terms of ethnocultural background and religious diversity. London's  main language is English but because of its vast diversity, many languages are spoken in the city including Spanish, Arabic, Polish, Portuguese and more.</p><p>The major industries in London are agri-food, manufacturing, digital media and technology, health, and professional services.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/London.jpeg",
     "main_img_alt": "A park in London, Ontario."
@@ -66,7 +66,7 @@
     "city_name": "Halifax",
     "province": "Nova Scotia",
     "population": 448518,
-    "description": "",
+    "description": "<p>The City of Halifax is the provincial capital of Nova Scotia. With a population of over 450,000, Halifax is the largest urban centre in Atlantic Canada. The city offers a mix of waterfront peninsula to forested rolling hills with a humid climate.</p><p>Considered The Multiculutral Hub of Atlantic Canada, Halifax's population is represented by 200 ethnicities and speaking over 100 languages. While French is also spoken, English remains the main spoken language.</p><p>Halifax has many diverse employment industries includuing wholesale and retail trade, health care, accomodation and food services, professional, scientific, and technical services, education, public administration, construction, and more. Additionally IT, gaming, and digital media, finincial services, and ocean technology also are key sectors.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Halifax.png",
     "main_img_alt": "A view of Halifax, Ontario accross the water."
@@ -75,7 +75,7 @@
     "city_name": "Moncton",
     "province": "New Brunswick",
     "population": 80000,
-    "description": "",
+    "description": "<p>The City of Moncton lies in southeastern part of the Province of New Brunswick, at the geographic centre of the Maritime Provinces, it has easy access to water, untouched forests and beautiful scenaries. With its common greeting of 'Hello, Bonjour', Moncton has both a strong English and French speaking population. Moncton is a fairly racially homogeneous city with most people claiming northwestern European ancestry, but the city has many immigrants from all over the world. The population of the city is just over 85,000 people with over 5,000 visible minorities living in the greater Moncton region.</p><p>Whether you are a working profossional or a student, Moncton has a reputation for being one of the best cities to live in Canada for affordable real estate and a friendly, welcoming community. The main employment industries in the city are tourism and retail services, education and food services, ICT, Financial Services, Insurance, and more.</p>",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Moncton.jpeg",
     "main_img_alt": "A street in Moncton, New Brunswick at dusk."
@@ -84,7 +84,7 @@
     "city_name": "Regina",
     "province": "Saskatchewan",
     "population": 260000,
-    "description": "",
+    "description": "<p>The City of Regina, also known as the queen city, is the capital of the Province of Saskatchewan. The city is located in the central south of the province and in the center of the Prarie Provinces. With many greenspaces and parks, Regina is known as a city of four seasons. Though the city has cold winters, it is also know as the sunniest city in Canada.</p><p>Regina has fast growing population of over 258,000 residents, with 10% of them representing visible minorities.</p><p>As for the major employment industries, it ranges from manufacturing, metal fabricating and oil and gas supply to agriculture and tourism, financial services, and events, conventions, and tradeshows.</p> ",
     "stories": "",
     "main_img": "https://pivothub.youthfulcities.com/assets/theme_image/Regina.jpeg",
     "main_img_alt": "A view of office buildings in Regina, Saskatchewan from a park in fall."

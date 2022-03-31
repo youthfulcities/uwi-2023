@@ -1,5 +1,5 @@
 import React from "react";
-import { Chip, Typography } from "@mui/material";
+import { Chip, Typography, Grid } from "@mui/material";
 import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
 import PaidIcon from "@mui/icons-material/Paid";
 import HelpIcon from "@mui/icons-material/Help";
@@ -30,6 +30,14 @@ const Filter = ({
       const newCategories = oldCategories.filter((cat) => cat !== category);
       setFilteredCategories(newCategories);
     }
+  };
+
+  const handleClearAll = () => {
+    setFilteredCategories([]);
+  };
+
+  const handleSelectAll = () => {
+    setFilteredCategories(categories);
   };
 
   const getIcon = (category) => {
@@ -65,12 +73,35 @@ const Filter = ({
 
   return (
     <>
-      <Typography variant="h4" mt={4} mb={2} mx={2}>
-        Click the categories to filter the fact cards
-      </Typography>
+      <Grid item>
+        <Typography variant="h4" mt={4} mb={1} mx={2}>
+          Click the categories to filter the fact cards
+        </Typography>
+        <Chip
+          onClick={() => handleClearAll()}
+          label="Clear all"
+          sx={{
+            fontSize: "1.5rem",
+            marginLeft: 1,
+            marginBottom: 1,
+          }}
+          disabled={filteredCategories.length === 0}
+        />
+        <Chip
+          label="Select all"
+          onClick={() => handleSelectAll()}
+          sx={{
+            fontSize: "1.5rem",
+            marginLeft: 1,
+            marginBottom: 1,
+          }}
+          disabled={filteredCategories.length === categories.length}
+        />
+      </Grid>
       <div>
         {categories.map((category, i) => (
           <Chip
+            key={i}
             sx={{
               fontSize: "1.5rem",
               marginLeft: 1,

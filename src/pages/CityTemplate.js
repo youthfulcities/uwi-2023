@@ -50,9 +50,6 @@ const CityTemplate = ({
   const [subResources, setSubResources] = useState([]);
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([categories]);
-  const [isLoaded, setIsLoaded] = useState(false);
-
-  console.log(isLoaded);
 
   const colours = [
     { background: "#1e316d", text: "#fff" },
@@ -108,7 +105,6 @@ const CityTemplate = ({
   useEffect(() => {
     setOffset(0);
     setResources([]);
-    setIsLoaded(false);
   }, [searchStringQuery]);
 
   return (

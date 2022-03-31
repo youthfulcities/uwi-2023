@@ -27,7 +27,7 @@ const createQuery = (name, address) => {
 
     return `https://maps.google.com/?q=${q}+${newAddress}`;
   } else {
-    console.log(`Name: ${name}, Address:${address}`);
+    // console.log(`Name: ${name}, Address:${address}`);
     return `https://maps.google.com/?q=$${address}`;
   }
 };

@@ -18,6 +18,7 @@ import cities from "../data/cities.json";
 
 import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
+import PhotoCard from "../components/PhotoCard";
 import BookNow from "../components/BookNow";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";
@@ -54,62 +55,6 @@ const SuggestedCities = ({ form, currentLangCode }) => {
     }
     return Number(number).toLocaleString();
   };
-
-  //for retrieving city data via API
-  // useEffect(() => {
-  //   const createQuery = (city) => {
-  //     return `/records?refine=city_name:${city}`;
-  //   };
-
-  //   if (cityNames !== undefined) {
-  //     const queries = cityNames.map((city) => createQuery(city));
-
-  //     const retrievedInfo = Promise.all(
-  //       queries.map((query) =>
-  //         getData("cities", query).then((res) => res.records[0])
-  //       )
-  //     );
-
-  //     const addCities = async () => {
-  //       setCityData(await retrievedInfo);
-  //     };
-
-  //     console.log("city api triggered");
-  //     addCities();
-  //   }
-  // }, [cityNames]);
-
-  // //get sub categories within resources
-  // useEffect(() => {
-  //   const createQuery = (city) => {
-  //     return `/records?refine=city:${city}&limit=3&select=avg(value) as value,measurement_en,indicator_en,noteen,city&group_by=measurement_en,indicator_en,noteen,city`;
-  //   };
-
-  //   if (cityNames !== undefined) {
-  //     const queries = cityNames.map((city) => createQuery(city));
-
-  //     const retrievedInfo = Promise.all(
-  //       queries.map((query) =>
-  //         getData("resource-data-test", query).then((res) => res.records)
-  //       )
-  //     );
-
-  //     const setSubs = async () => {
-  //       setResources(await retrievedInfo);
-  //     };
-
-  //     setSubs();
-  //   }
-  // }, [cityNames]);
-
-  //for controlling open/close manually
-  // const handleExpand = (e) => {
-  //   let i = e.target.id;
-  //   let expanded = expand[i].state;
-  //   const newStates = [...expand];
-  //   expand[i].state = !expanded;
-  //   setExpand(newStates);
-  // };
 
   return (
     <>

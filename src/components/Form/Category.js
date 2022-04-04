@@ -7,6 +7,8 @@ import {
   Checkbox,
   Chip,
 } from "@mui/material";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const Category = ({
   categoryArray,
@@ -30,20 +32,30 @@ const Category = ({
             <Grid item>
               <Chip
                 onClick={() => handleRemoveAll(categoryArray)}
+                disabled={
+                  !categoryArray.some((item) => priorities.includes(item))
+                }
                 label="Clear all"
                 sx={{
                   fontSize: "1.5rem",
                   marginBottom: 1,
+                  marginRight: 1,
+                  marginLeft: 1,
                 }}
+                icon={<HighlightOffIcon />}
               />
               <Chip
                 label="Select all"
+                disabled={categoryArray.every((item) =>
+                  priorities.includes(item)
+                )}
                 onClick={() => handleAddAll(categoryArray)}
                 sx={{
                   fontSize: "1.5rem",
                   marginLeft: 1,
                   marginBottom: 1,
                 }}
+                icon={<CheckCircleIcon />}
               />
             </Grid>
           </Grid>

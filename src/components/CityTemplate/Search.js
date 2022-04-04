@@ -39,12 +39,13 @@ const Search = ({ setSearchStringQuery }) => {
   };
 
   return (
-    <div className="accordianContainer">
+    <div>
       <Grid
         container
         direction="row"
         justifyContent="flex-end"
         alignItems="center"
+        mt={1}
         spacing={1}
       >
         <Grid item>

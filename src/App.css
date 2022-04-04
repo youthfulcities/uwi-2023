@@ -299,6 +299,17 @@ img {
   z-index: 5;
 }
 
+.cardOverlay {
+  background-color: #000000;
+  opacity: 60%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: inherit;
+  top: 0;
+  z-index: 5;
+}
+
 .photoButtonText {
   position: relative;
   z-index: 10;
@@ -309,11 +320,11 @@ img {
   z-index: 10;
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-width: 500px) {
   .smallPhotoButtonText {
     display: none;
   }
-}
+} */
 
 .photoOverlay:hover {
   background-color: var(--indigo);

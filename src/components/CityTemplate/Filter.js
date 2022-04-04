@@ -13,6 +13,8 @@ import CountertopsIcon from "@mui/icons-material/Countertops";
 import MosqueIcon from "@mui/icons-material/Mosque";
 import PolicyIcon from "@mui/icons-material/Policy";
 import HomeIcon from "@mui/icons-material/Home";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 const Filter = ({
   categories,
@@ -86,6 +88,7 @@ const Filter = ({
             marginBottom: 1,
           }}
           disabled={filteredCategories.length === 0}
+          icon={<HighlightOffIcon />}
         />
         <Chip
           label="Select all"
@@ -96,6 +99,7 @@ const Filter = ({
             marginBottom: 1,
           }}
           disabled={filteredCategories.length === categories.length}
+          icon={<CheckCircleIcon />}
         />
       </Grid>
       <div>

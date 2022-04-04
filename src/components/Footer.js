@@ -4,7 +4,7 @@ import { Container, Grid } from "@mui/material";
 const Footer = () => {
   return (
     <footer>
-      <Container maxWidth="md">
+      <Container maxWidth="lg">
         <Grid
           sx={{ minHeight: "14vh", maxHeight: "14vh" }}
           container

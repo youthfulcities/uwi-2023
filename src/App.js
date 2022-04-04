@@ -140,6 +140,7 @@ function App() {
           icon: {
             color: "inherit",
             marginLeft: "8px",
+            marginRight: "8px",
           },
         },
       },

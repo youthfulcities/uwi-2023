@@ -95,17 +95,19 @@ const Facts = ({
                           align="center"
                           sx={{ wordBreak: "break-word" }}
                         >
+                          (
                           {resource.record.fields.comment &&
                           resource.record.fields.noteen
-                            ? `(${resource.record.fields.comment}, ${
+                            ? `${resource.record.fields.comment}, ${
                                 resource.record.fields.noteen ||
                                 resource.record.fields.measureable_value
-                              })`
-                            : `(${
+                              }`
+                            : `${
                                 resource.record.fields.comment ||
                                 resource.record.fields.noteen ||
                                 resource.record.fields.measureable_value
-                              })`}
+                              }`}
+                          )
                         </Typography>
                       )}
                       <Typography

@@ -55,16 +55,14 @@ const CityTemplate = ({
     { background: "#1e316d", text: "#fff" },
     { background: "#253D88", text: "#fff" },
     { background: "#5164a0", text: "#fff" },
+    { background: "#cde4af", text: "#000" },
+    { background: "#B8D98D", text: "#000" },
     { background: "#FBD166", text: "#000" },
     { background: "#fcdf94", text: "#000" },
     { background: "#F2695D", text: "#000" },
     { background: "#f5877d", text: "#000" },
-    { background: "#ddc3c2", text: "#000" },
     { background: "#F6D9D7", text: "#000" },
     { background: "#fae8e7", text: "#000" },
-    { background: "#cde4af", text: "#000" },
-    { background: "#B8D98D", text: "#000" },
-    { background: "#93ae71", text: "#000" },
   ];
 
   const getResources = useCallback(() => {
@@ -136,7 +134,12 @@ const CityTemplate = ({
               >
                 <Grid item xs={12} md={6} lg={4}>
                   <CityInfo
-                    description={city.description}
+                    description={
+                      city.description_fa !== undefined &&
+                      currentLangCode === "fa"
+                        ? city.description_fa
+                        : city.description
+                    }
                     src={city.main_img}
                     alt={city.main_img_alt}
                   />

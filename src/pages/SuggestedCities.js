@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
-// import _ from "lodash";
+
 import {
   Typography,
   Grid,
@@ -13,12 +13,10 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
-// import getData from "../helpers/odsClientV2";
 import cities from "../data/cities.json";
 
 import BasicContainer from "../components/BasicContainer";
 import PhotoButton from "../components/PhotoButton";
-import PhotoCard from "../components/PhotoCard";
 import BookNow from "../components/BookNow";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";

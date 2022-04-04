@@ -11,7 +11,6 @@ import { useTranslation } from "react-i18next";
 import Category from "./Category";
 
 const Priorities = ({
-  handleChange,
   nextStep,
   categoryArray,
   cat,
@@ -57,29 +56,28 @@ const Priorities = ({
           </Grid>
         </Grid>
         <Grid item mt={2}>
-          <Link to="/suggested-cities">
+          {groupedPrioritiesArray.length === step - 1 ? (
+            <Link to="/suggested-cities">
+              <Button
+                variant="contained"
+                size="large"
+                color="success"
+                fullWidth={true}
+              >
+                <Typography variant="h5">{t("confirm")}</Typography>
+              </Button>
+            </Link>
+          ) : (
             <Button
               variant="contained"
               size="large"
-              color={
-                groupedPrioritiesArray.length === step - 1
-                  ? "success"
-                  : "primary"
-              }
+              color="primary"
               fullWidth={true}
-              onClick={() => {
-                groupedPrioritiesArray.length === step - 1
-                  ? handleChange("completed", true)
-                  : nextStep();
-              }}
+              onClick={() => nextStep()}
             >
-              <Typography variant="h5">
-                {groupedPrioritiesArray.length === step - 1
-                  ? t("confirm")
-                  : t("continue")}
-              </Typography>
+              <Typography variant="h5">{t("continue")}</Typography>
             </Button>
-          </Link>
+          )}
         </Grid>
       </Grid>
     </>

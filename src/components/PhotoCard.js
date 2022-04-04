@@ -10,6 +10,8 @@ const PhotoButton = ({
   factoid,
   province,
   currentLangCode,
+  score,
+  outOf,
   children,
 }) => {
   const { t } = useTranslation();
@@ -44,7 +46,7 @@ const PhotoButton = ({
                 pb={1}
                 color="#FFF"
                 className="photoButtonText"
-                variant="h3"
+                variant="h2"
               >
                 {children}
               </Typography>
@@ -58,6 +60,19 @@ const PhotoButton = ({
                 {province}
               </Typography>
             </Grid>
+            {score && (
+              <Grid item p={2}>
+                <Typography
+                  px={3}
+                  py={0}
+                  color="#FFF"
+                  className="photoButtonText"
+                  variant="h3"
+                >
+                  {`Score: ${Math.round(score * 10) / 10}/${outOf}`}
+                </Typography>
+              </Grid>
+            )}
             <Grid item p={2}>
               <Typography
                 p={3}

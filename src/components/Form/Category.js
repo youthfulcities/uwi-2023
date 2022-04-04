@@ -40,7 +40,6 @@ const Category = ({
                   fontSize: "1.5rem",
                   marginBottom: 1,
                   marginRight: 1,
-                  marginLeft: 1,
                 }}
                 icon={<HighlightOffIcon />}
               />
@@ -52,8 +51,8 @@ const Category = ({
                 onClick={() => handleAddAll(categoryArray)}
                 sx={{
                   fontSize: "1.5rem",
-                  marginLeft: 1,
                   marginBottom: 1,
+                  marginRight: 1,
                 }}
                 icon={<CheckCircleIcon />}
               />

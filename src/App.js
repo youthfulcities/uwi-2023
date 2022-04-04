@@ -33,12 +33,13 @@ function App() {
   const [textSize, setTextSize] = useState(0);
 
   const [form, setForm] = useState({
-    step: 1,
+    step: 0,
     numberOfPeople: 1,
     ages: [],
     priorities: [],
-    completed: false,
   });
+
+  console.log(form);
 
   const languages = [
     {
@@ -278,6 +279,8 @@ function App() {
                 path="/intro"
                 element={
                   <Intro
+                    form={form}
+                    setForm={setForm}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}
@@ -315,7 +318,7 @@ function App() {
               <Route
                 path="/suggested-cities"
                 element={
-                  form.completed ? (
+                  form.priorities.length > 0 ? (
                     <SuggestedCities
                       form={form}
                       currentLangCode={currentLangCode}

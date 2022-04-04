@@ -12,6 +12,8 @@ const Intro = ({
   currentLangCode,
   textSize,
   setTextSize,
+  form,
+  setForm,
 }) => {
   const { t } = useTranslation();
 
@@ -43,7 +45,12 @@ const Intro = ({
           </Grid>
           <Grid item mt={5}>
             <Link to="/create-profile">
-              <Button color="primary" variant="contained" size="large">
+              <Button
+                color="primary"
+                variant="contained"
+                size="large"
+                onClick={() => setForm({ ...form, step: 1 })}
+              >
                 <Typography variant="h5">{t("toProfile")}</Typography>
               </Button>
             </Link>

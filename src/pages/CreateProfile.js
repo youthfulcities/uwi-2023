@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useCallback } from "react";
 import _ from "lodash";
 
 import FormContainer from "../components/Form/FormContainer";
@@ -16,8 +16,7 @@ const CreateProfile = ({
   textSize,
   setTextSize,
 }) => {
-  const [initial] = useState(form);
-  const { completed, priorities, step } = form;
+  const { priorities, step } = form;
 
   const handleChange = (input, value) => {
     setForm({ ...form, [input]: value });
@@ -32,7 +31,7 @@ const CreateProfile = ({
   };
 
   const resetStep = () => {
-    setForm({ ...form, completed: false, step: (form.step = 1) });
+    setForm({ ...form, step: (form.step = 1) });
   };
 
   const handleAgesChange = (e) => {
@@ -65,7 +64,7 @@ const CreateProfile = ({
   const categoryArray = groupedPrioritiesArray[step - 2];
 
   const getDemographicMeasurements = useCallback(() => {
-    const { numberOfPeople, ages } = initial;
+    const { numberOfPeople, ages } = form;
 
     //return array of matching measurement objects
     let ageMeasurements = additionalInfo.map((measurement) => {
@@ -85,20 +84,13 @@ const CreateProfile = ({
       return undefined;
     });
     return ageMeasurements.filter((e) => e !== undefined);
-  }, [initial]);
+  }, [form]);
 
-  const setPriorities = useCallback(() => {
-    if (!completed) {
-      const measurements = getDemographicMeasurements();
-      let priorities = initial.priorities;
-      priorities = measurements;
-      setForm({ ...initial, priorities });
-    }
-  }, [getDemographicMeasurements, initial, setForm, completed]);
-
-  useEffect(() => {
-    setPriorities();
-  }, [setPriorities]);
+  const setPriorities = () => {
+    const measurements = getDemographicMeasurements();
+    let priorities = measurements;
+    setForm({ ...form, priorities, step: 2 });
+  };
 
   const handlePriorityChange = (e) => {
     if (e.target.checked) {
@@ -140,6 +132,7 @@ const CreateProfile = ({
       return (
         <FamilyMembers
           currentLangCode={currentLangCode}
+          setPriorities={setPriorities}
           handleAgesChange={handleAgesChange}
           handleChange={handleChange}
           form={form}

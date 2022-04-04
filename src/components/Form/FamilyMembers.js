@@ -14,7 +14,13 @@ import {
   Checkbox,
 } from "@mui/material";
 
-const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
+const FamilyMembers = ({
+  handleAgesChange,
+  handleChange,
+  nextStep,
+  form,
+  setPriorities,
+}) => {
   const { ages, numberOfPeople } = form;
 
   const { t } = useTranslation();
@@ -146,7 +152,7 @@ const FamilyMembers = ({ handleAgesChange, handleChange, nextStep, form }) => {
             color="primary"
             disabled={!allFieldsFilled()}
             onClick={() => {
-              nextStep();
+              setPriorities();
             }}
             fullWidth={true}
           >

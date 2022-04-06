@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import i18next from "i18next";
-import { useTranslation } from "react-i18next";
-import {
-  Box,
-  Tooltip,
-  Button,
-  ClickAwayListener,
-  Paper,
-  Typography,
-  Fab,
-} from "@mui/material";
-import TranslateIcon from "@mui/icons-material/Translate";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import TranslateIcon from "@mui/icons-material/Translate";
+import {
+  Box,
+  Button,
+  ClickAwayListener,
+  Fab,
+  Paper,
+  Tooltip,
+  Typography,
+} from "@mui/material";
+import i18next from "i18next";
+import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ChangeLang = ({
   languages,
@@ -84,6 +84,7 @@ const ChangeLang = ({
                   ))}
                 </Paper>
                 <Fab
+                  sx={{ position: "absolute" }}
                   color="primary"
                   size="medium"
                   className="textSizeButtonDecrease"
@@ -95,10 +96,11 @@ const ChangeLang = ({
                 <Fab
                   color="primary"
                   size="medium"
+                  sx={{ position: "absolute" }}
                   className="textSizeButtonIncrease"
                   onClick={() => setTextSize(textSize + 1)}
                   disabled={
-                    currentLangCode === "en" ? textSize === 2 : textSize === 4
+                    currentLangCode === "en" ? textSize === 6 : textSize === 8
                   }
                 >
                   <AddIcon fontSize="large" />

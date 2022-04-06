@@ -1,23 +1,20 @@
-import React, { useState, useCallback, useEffect } from "react";
-
-import { useParams } from "react-router-dom";
-import { Container, Grid, Card, CardMedia } from "@mui/material";
+import { Card, CardMedia, Container, Grid } from "@mui/material";
 import _ from "lodash";
-
+import React, { useCallback, useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import Back from "../components/Back";
+import BookNow from "../components/BookNow";
+import ChangeLang from "../components/ChangeLang";
+import CityInfo from "../components/CityTemplate/CityInfo";
+import Facts from "../components/CityTemplate/Facts";
+import Filter from "../components/CityTemplate/Filter";
+import PhotoHeader from "../components/CityTemplate/PhotoHeader";
+import Search from "../components/CityTemplate/Search";
+import Feedback from "../components/Feedback";
+import Socials from "../components/Socials";
 import cities from "../data/cities.json";
 import getData from "../helpers/odsClientV2.js";
-
-import BookNow from "../components/BookNow";
-import PhotoHeader from "../components/CityTemplate/PhotoHeader";
-import Back from "../components/Back";
-import Socials from "../components/Socials";
-import CityInfo from "../components/CityTemplate/CityInfo";
-import Search from "../components/CityTemplate/Search";
-import Filter from "../components/CityTemplate/Filter";
-import ChangeLang from "../components/ChangeLang";
 import Loading from "../pages/Loading";
-import Facts from "../components/CityTemplate/Facts";
-import Feedback from "../components/Feedback";
 
 const groupedArray = async (array) => {
   let grouped = _.groupBy(array, (item) => item.record.fields.category_for_app);
@@ -51,8 +48,6 @@ const CityTemplate = ({
   const [subResources, setSubResources] = useState([]);
   const [categories, setCategories] = useState([]);
   const [filteredCategories, setFilteredCategories] = useState([]);
-
-  console.log(filteredCategories);
 
   const colours = [
     { background: "#1e316d", text: "#fff" },
@@ -97,7 +92,7 @@ const CityTemplate = ({
       groupedArray(resources).then((res) => setSubResources(res));
       groupedArrayNames(resources).then((res) => {
         setCategories(res);
-        setFilteredCategories(res);
+        res.length !== 0 && setFilteredCategories([res[0]]);
       });
     };
     createSubCategories();
@@ -189,8 +184,10 @@ const CityTemplate = ({
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item mb={3} width="100%">
+              <Grid item mb={1} mt={3} width="100%">
                 <Search setSearchStringQuery={setSearchStringQuery} />
+              </Grid>
+              <Grid item mb={3} width="100%">
                 <Filter
                   categories={categories}
                   filteredCategories={filteredCategories}

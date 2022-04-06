@@ -1,6 +1,6 @@
+import { Button, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Button, Typography } from "@mui/material";
 
 const BookNow = () => {
   const { t } = useTranslation();

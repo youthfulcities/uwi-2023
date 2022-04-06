@@ -25,7 +25,14 @@ import Loading from "../pages/Loading";
 
 import { calcCity, topMeasurements } from "../cityCalc/calcCity";
 
-const SuggestedCities = ({ form, currentLangCode }) => {
+const SuggestedCities = ({
+  form,
+  currentLangCode,
+  languages,
+  setCurrentLangCode,
+  textSize,
+  setTextSize,
+}) => {
   const { t } = useTranslation();
   const { priorities } = form;
   const measure = `measurement_${currentLangCode}`;
@@ -58,7 +65,14 @@ const SuggestedCities = ({ form, currentLangCode }) => {
   return (
     <>
       <Decoration />
-      <BasicContainer width="lg">
+      <BasicContainer
+        width="lg"
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+        textSize={textSize}
+        setTextSize={setTextSize}
+      >
         {cityData !== undefined ? (
           <>
             <Grid mb={2} item>
@@ -90,7 +104,7 @@ const SuggestedCities = ({ form, currentLangCode }) => {
                       currentLangCode={currentLangCode}
                       factoid={city.population}
                     >
-                      {city.city_name}
+                      {`#${i + 1} ${city.city_name}`}
                     </PhotoCard>
                   </Grid>
                   <Grid mt={1} item>

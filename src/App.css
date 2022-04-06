@@ -237,13 +237,13 @@ img {
    ========================================================================== */
 
 .backButton {
-  bottom: 4vh;
-  left: 24px;
+  top: 5vh;
+  left: 40px;
   z-index: 100;
 }
 
 .forwardButton {
-  bottom: 4vh;
+  bottom: 8vh;
   right: 24px;
   z-index: 100;
 }

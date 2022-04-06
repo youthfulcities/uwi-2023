@@ -12,6 +12,7 @@ const Back = () => {
       color="primary"
       size="medium"
       className="backButton"
+      sx={{ height: "58px", width: "58px" }}
     >
       <ArrowBackIcon fontSize="large" />
     </Fab>

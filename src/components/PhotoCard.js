@@ -31,6 +31,9 @@ const PhotoButton = ({
           sx={{
             position: "relative",
             width: "100%",
+            "&:hover": {
+              cursor: "pointer",
+            },
           }}
         >
           <Grid

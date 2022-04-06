@@ -6,6 +6,7 @@ import { Grid, Typography } from "@mui/material";
 import cities from "../data/cities.json";
 import PhotoCard from "../components/PhotoCard";
 import BasicContainer from "../components/BasicContainer";
+import Decoration from "../components/Decoration";
 
 const ExploreAll = ({
   currentLangCode,
@@ -20,6 +21,7 @@ const ExploreAll = ({
 
   return (
     <>
+      <Decoration />
       <BasicContainer
         width="lg"
         languages={languages}

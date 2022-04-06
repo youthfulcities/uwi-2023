@@ -1,5 +1,15 @@
 import React from "react";
-import { Chip, Typography, Grid } from "@mui/material";
+import {
+  Chip,
+  Typography,
+  Grid,
+  ListItem,
+  List,
+  ListItemButton,
+  Checkbox,
+  ListItemAvatar,
+  ListItemText,
+} from "@mui/material";
 import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
 import PaidIcon from "@mui/icons-material/Paid";
 import HelpIcon from "@mui/icons-material/Help";
@@ -15,6 +25,8 @@ import PolicyIcon from "@mui/icons-material/Policy";
 import HomeIcon from "@mui/icons-material/Home";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+
+import Search from "./Search";
 
 const Filter = ({
   categories,
@@ -102,7 +114,32 @@ const Filter = ({
           icon={<CheckCircleIcon />}
         />
       </Grid>
-      <div>
+      <List dense sx={{ width: "100%", bgcolor: "background.paper" }}>
+        {categories.map((category, i) => {
+          const labelId = category;
+          return (
+            <ListItem
+              key={i}
+              onClick={() => handleChange(category)}
+              secondaryAction={
+                <Checkbox
+                  edge="end"
+                  inputProps={{ "aria-labelledby": labelId }}
+                  onChange={() => handleChange(category)}
+                  checked={filteredCategories.indexOf(category) !== -1}
+                />
+              }
+              disablePadding
+            >
+              <ListItemButton>
+                <ListItemAvatar>{getIcon(category)}</ListItemAvatar>
+                <ListItemText id={labelId} primary={category} />
+              </ListItemButton>
+            </ListItem>
+          );
+        })}
+      </List>
+      {/* <div>
         {categories.map((category, i) => (
           <Chip
             key={i}
@@ -131,7 +168,7 @@ const Filter = ({
             icon={getIcon(category)}
           />
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

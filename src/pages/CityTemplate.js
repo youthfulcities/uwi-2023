@@ -17,6 +17,7 @@ import Filter from "../components/CityTemplate/Filter";
 import ChangeLang from "../components/ChangeLang";
 import Loading from "../pages/Loading";
 import Facts from "../components/CityTemplate/Facts";
+import Feedback from "../components/Feedback";
 
 const groupedArray = async (array) => {
   let grouped = _.groupBy(array, (item) => item.record.fields.category_for_app);
@@ -49,7 +50,9 @@ const CityTemplate = ({
   const [resources, setResources] = useState([]);
   const [subResources, setSubResources] = useState([]);
   const [categories, setCategories] = useState([]);
-  const [filteredCategories, setFilteredCategories] = useState([categories]);
+  const [filteredCategories, setFilteredCategories] = useState([]);
+
+  console.log(filteredCategories);
 
   const colours = [
     { background: "#1e316d", text: "#fff" },
@@ -114,7 +117,7 @@ const CityTemplate = ({
           </PhotoHeader>
           <Container maxWidth="lg">
             <Grid
-              sx={{ minHeight: "30vh" }}
+              sx={{ minHeight: "30vh", height: "100%" }}
               container
               direction="column"
               justifyContent="center"
@@ -123,9 +126,6 @@ const CityTemplate = ({
               pb={10}
               spacing={0}
             >
-              <Grid item mt={5} mb={3}>
-                <BookNow />
-              </Grid>
               <Grid
                 container
                 direction="row"
@@ -144,25 +144,53 @@ const CityTemplate = ({
                     alt={city.main_img_alt}
                   />
                 </Grid>
-                <Grid item xs={12} md={6} lg={8}>
-                  <Card
-                    sx={{
-                      marginTop: "20px",
-                      position: "relative",
-                      height: "300px",
-                    }}
+                <Grid
+                  item
+                  xs={12}
+                  md={6}
+                  lg={8}
+                  container
+                  direction="column"
+                  flexWrap="nowrap"
+                  alignItems="center"
+                  spacing={2}
+                  mt={1}
+                >
+                  <Grid item sx={{ height: "100%", width: "100%" }}>
+                    <Card
+                      sx={{
+                        position: "relative",
+                        width: "100%",
+                        height: "100%",
+                      }}
+                    >
+                      <CardMedia
+                        sx={{ zIndex: "1", position: "absolute" }}
+                        component="img"
+                        height="100%"
+                        src={city.main_img}
+                        alt={city.main_img_alt}
+                      />
+                    </Card>
+                  </Grid>
+                  <Grid
+                    item
+                    container
+                    flexWrap="nowrap"
+                    alignItems="stretch"
+                    spacing={2}
                   >
-                    <CardMedia
-                      component="img"
-                      height="100%"
-                      src={city.main_img}
-                      alt={city.main_img_alt}
-                    />
-                  </Card>
-                  <Search setSearchStringQuery={setSearchStringQuery} />
+                    <Grid item flexGrow={2}>
+                      <BookNow />
+                    </Grid>
+                    <Grid item>
+                      <Feedback />
+                    </Grid>
+                  </Grid>
                 </Grid>
               </Grid>
               <Grid item mb={3} width="100%">
+                <Search setSearchStringQuery={setSearchStringQuery} />
                 <Filter
                   categories={categories}
                   filteredCategories={filteredCategories}
@@ -182,10 +210,6 @@ const CityTemplate = ({
                   filteredCategories={filteredCategories}
                 />
               )}
-              {/* <Resources
-                  cityname={cityname}
-                  currentLangCode={currentLangCode}
-                /> */}
             </Grid>
             <Back />
             <Grid item mb={2} sx={{ maxHeight: "10vh" }}>

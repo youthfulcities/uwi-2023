@@ -39,8 +39,6 @@ function App() {
     priorities: [],
   });
 
-  console.log(form);
-
   const languages = [
     {
       code: "en",
@@ -197,7 +195,7 @@ function App() {
       MuiFab: {
         styleOverrides: {
           root: {
-            position: "absolute",
+            position: "fixed",
           },
         },
       },

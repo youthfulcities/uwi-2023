@@ -1,22 +1,21 @@
-import React, { useState, useEffect } from "react";
-import "./App.css";
+import { createTheme, ThemeProvider } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Navigate,
+  Route,
+  Routes,
 } from "react-router-dom";
-import { createTheme, ThemeProvider } from "@mui/material";
-
-import Home from "./pages/Home";
-import ExploreAll from "./pages/ExploreAll";
-import Intro from "./pages/Intro";
+import "./App.css";
 import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate";
-import SuggestedCities from "./pages/SuggestedCities";
 import CreateProfile from "./pages/CreateProfile";
-import Map from "./pages/Map";
 import Dashboard from "./pages/Dashboard";
+import ExploreAll from "./pages/ExploreAll";
+import Home from "./pages/Home";
+import Intro from "./pages/Intro";
+import Map from "./pages/Map";
+import SuggestedCities from "./pages/SuggestedCities";
 
 function App() {
   //because ODS controls the search params via angular we can't use react-router-dom to do so

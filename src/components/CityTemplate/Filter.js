@@ -29,13 +29,17 @@ import {
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Filter = ({
   categories,
   filteredCategories,
   setFilteredCategories,
-  colours,
+  subResources,
+  currentLangCode,
 }) => {
+  const { t } = useTranslation();
+
   const [expanded, setExpanded] = useState(false);
   const handleChange = (category) => {
     if (filteredCategories.indexOf(category) === -1) {
@@ -113,13 +117,13 @@ const Filter = ({
         <AccordionDetails>
           <Grid item>
             <Typography variant="h5" mt={2} mb={1} mx={2}>
-              Click the categories to filter the fact cards
+              {t("filterTip")}
             </Typography>
             <Grid container mx={1} mb={1} spacing={1}>
               <Grid item>
                 <Chip
                   onClick={() => handleClearAll()}
-                  label="Clear all"
+                  label={t("clear")}
                   sx={{
                     fontSize: "1.5rem",
                   }}
@@ -129,7 +133,7 @@ const Filter = ({
               </Grid>
               <Grid item>
                 <Chip
-                  label="Select all"
+                  label={t("select")}
                   onClick={() => handleSelectAll()}
                   sx={{
                     fontSize: "1.5rem",
@@ -169,7 +173,15 @@ const Filter = ({
                   >
                     <ListItemButton sx={{ borderRadius: "35px" }}>
                       <ListItemAvatar>{getIcon(category)}</ListItemAvatar>
-                      <ListItemText id={labelId} primary={category} />
+                      <ListItemText
+                        id={labelId}
+                        primary={
+                          currentLangCode === "fa"
+                            ? subResources[category][0].record.fields
+                                .category_for_app_fa
+                            : category
+                        }
+                      />
                     </ListItemButton>
                   </ListItem>
                 );

@@ -37,5 +37,12 @@
     "phone": "Phone",
     "email": "Email",
     "address": "Address",
-    "book":"Book an appointment and learn more"
+    "book":"Book an appointment and learn more",
+    "feedback":"Leave feedback",
+    "clear":"Clear all",
+    "select":"Select all",
+    "categories":"Categories",
+    "filterTip":"Click the categories to filter the fact cards",
+    "moreInfo":"More information",
+    "score":"Score"
 }

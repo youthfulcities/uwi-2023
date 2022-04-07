@@ -164,7 +164,7 @@ const SuggestedCities = ({
                                       : formattedNumber(resource.Value)}
                                   </Typography>
                                   <Typography variant="body1" mt={2}>
-                                    {`Score: ${
+                                    {`${t("score")}: ${
                                       Math.round(resource.score * 100) / 100
                                     }/1`}
                                   </Typography>

@@ -72,7 +72,7 @@ const PhotoButton = ({
                   className="photoButtonText"
                   variant="h3"
                 >
-                  {`Score: ${Math.round(score * 10) / 10}/${outOf}`}
+                  {`${t("score")}: ${Math.round(score * 10) / 10}/${outOf}`}
                 </Typography>
               </Grid>
             )}

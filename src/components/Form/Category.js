@@ -1,14 +1,15 @@
-import React from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import {
-  Grid,
-  Typography,
-  Divider,
-  FormControlLabel,
   Checkbox,
   Chip,
+  Divider,
+  FormControlLabel,
+  Grid,
+  Typography,
 } from "@mui/material";
-import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Category = ({
   categoryArray,
@@ -19,6 +20,8 @@ const Category = ({
   handleAddAll,
   measure,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <Grid item container xs={12} spacing={0} mt={1}>
@@ -35,7 +38,7 @@ const Category = ({
                 disabled={
                   !categoryArray.some((item) => priorities.includes(item))
                 }
-                label="Clear all"
+                label={t("clear")}
                 sx={{
                   fontSize: "1.5rem",
                   marginBottom: 1,
@@ -44,7 +47,7 @@ const Category = ({
                 icon={<HighlightOffIcon />}
               />
               <Chip
-                label="Select all"
+                label={t("select")}
                 disabled={categoryArray.every((item) =>
                   priorities.includes(item)
                 )}

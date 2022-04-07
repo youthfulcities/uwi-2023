@@ -65,7 +65,7 @@ const CityTemplate = ({
 
   const getResources = useCallback(() => {
     console.log("data api triggered");
-    const query = `/records?select=city,category_for_app,edited_title,topic_en,sheet_title,comment,value,measureable_value,url,measurement_en,noteen,indicator_en,suppname&refine=city:${cityname}&limit=100&offset=${offset}${
+    const query = `/records?select=city,category_for_app,edited_title,edited_title_fa,category_for_app_fa,topic_en,sheet_title,comment,value,measureable_value,url,measurement_en,noteen,indicator_en,suppname&refine=city:${cityname}&limit=100&offset=${offset}${
       searchStringQuery.length > 0 ? "&where='" + searchStringQuery + "'" : ""
     }`;
     let retrievedInfo = getData("refugee-data", query).then(
@@ -151,7 +151,11 @@ const CityTemplate = ({
                   spacing={2}
                   mt={1}
                 >
-                  <Grid item sx={{ height: "100%", width: "100%" }}>
+                  <Grid
+                    item
+                    sx={{ minHeight: "300px", height: "100%", width: "100%" }}
+                    xs={12}
+                  >
                     <Card
                       sx={{
                         position: "relative",
@@ -168,17 +172,11 @@ const CityTemplate = ({
                       />
                     </Card>
                   </Grid>
-                  <Grid
-                    item
-                    container
-                    flexWrap="nowrap"
-                    alignItems="stretch"
-                    spacing={2}
-                  >
-                    <Grid item flexGrow={2}>
+                  <Grid item container alignItems="stretch" spacing={2}>
+                    <Grid item lg={8} xs={12}>
                       <BookNow />
                     </Grid>
-                    <Grid item>
+                    <Grid item lg={4} xs={12}>
                       <Feedback />
                     </Grid>
                   </Grid>
@@ -193,6 +191,8 @@ const CityTemplate = ({
                   filteredCategories={filteredCategories}
                   setFilteredCategories={setFilteredCategories}
                   colours={colours}
+                  subResources={subResources}
+                  currentLangCode={currentLangCode}
                 />
               </Grid>
               {resources.length > 0 && (

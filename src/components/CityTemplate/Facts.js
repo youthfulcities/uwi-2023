@@ -1,27 +1,27 @@
+import CountertopsIcon from "@mui/icons-material/Countertops";
+import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
+import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
+import HelpIcon from "@mui/icons-material/Help";
+import HomeIcon from "@mui/icons-material/Home";
+import KitchenIcon from "@mui/icons-material/Kitchen";
+import MosqueIcon from "@mui/icons-material/Mosque";
+import PaidIcon from "@mui/icons-material/Paid";
+import PolicyIcon from "@mui/icons-material/Policy";
+import SchoolIcon from "@mui/icons-material/School";
+import StoreIcon from "@mui/icons-material/Store";
+import ThermostatIcon from "@mui/icons-material/Thermostat";
+import WorkIcon from "@mui/icons-material/Work";
+import { Grid, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Typography, Grid } from "@mui/material";
-import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
-import PaidIcon from "@mui/icons-material/Paid";
-import HelpIcon from "@mui/icons-material/Help";
-import WorkIcon from "@mui/icons-material/Work";
-import SchoolIcon from "@mui/icons-material/School";
-import KitchenIcon from "@mui/icons-material/Kitchen";
-import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
-import ThermostatIcon from "@mui/icons-material/Thermostat";
-import StoreIcon from "@mui/icons-material/Store";
-import CountertopsIcon from "@mui/icons-material/Countertops";
-import MosqueIcon from "@mui/icons-material/Mosque";
-import PolicyIcon from "@mui/icons-material/Policy";
-import HomeIcon from "@mui/icons-material/Home";
-
-import FactCard from "../FactCard";
 import Loading from "../../pages/Loading.js";
+import FactCard from "../FactCard";
 
 const Facts = ({
   resources,
   categories,
   subResources,
+  currentLangCode,
   colours,
   filteredCategories,
 }) => {
@@ -83,7 +83,9 @@ const Facts = ({
                         variant="h5"
                         align="center"
                       >
-                        {resource.record.fields.edited_title ||
+                        {(currentLangCode === "fa"
+                          ? resource.record.fields.edited_title_fa
+                          : resource.record.fields.edited_title) ||
                           resource.record.fields.measurement_en}
                       </Typography>
                       {(resource.record.fields.comment ||

@@ -365,6 +365,24 @@ const additionalInfo = [
     lowerIsBetter: false,
     demographic: ["18-35", "36-65", "65+"],
   },
+  {
+    name: "RainDays",
+    measurement_en: "Number of rainy days",
+    measurement_fa: "تعداد روزهای بارانی",
+    category_en: "Weather",
+    category_fa: "اوضاع جوی",
+    lowerIsBetter: true,
+    demographic: ["65+"],
+  },
+  {
+    name: "TempWinter",
+    measurement_en: "Average winter temperature",
+    measurement_fa: "هوای زمستانی",
+    category_en: "Weather",
+    category_fa: "اوضاع جوی",
+    lowerIsBetter: false,
+    demographic: ["65+"],
+  },
 ];
 
 export default additionalInfo;

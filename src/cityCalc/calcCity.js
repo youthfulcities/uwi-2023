@@ -1,5 +1,5 @@
-import values from "./values.json";
 import _ from "lodash";
+import values from "./values.json";
 
 const topMeasurements = (measurements, cities, n) => {
   const allScores = getCitiesWithScores(measurements);
@@ -79,23 +79,38 @@ const calcCity = (measurements) => {
   const flattenedScores = getCitiesWithScores(measurements);
   const addedScores = getTotalScores(flattenedScores);
 
+  console.log(0 === 0.0);
   let sorted = _.orderBy(addedScores, "score", "desc");
   return sorted;
 };
+
+// valuenew=maxnew−minnewmaxold−minold×(valueold−maxold)+maxnew
 
 //If a higher Value is preferred, the formula (𝑥-𝑥_min)/(𝑥_max-𝑥_min) is applied
 const getScore = (array, value, perCapita) => {
   //if it's a "number of" type score calculate per capita
   if (array[0].measureableValue === "# of") {
     let x = perCapita;
-    //sort by smallest to largest
-    let sortedArray = _.sortBy(array, ["perCapita"]);
-    //get first item in array
-    let x_min = sortedArray[0].perCapita;
-    //get last item in array
-    let x_max = sortedArray[sortedArray.length - 1].perCapita;
-    let result = (x - x_min) / (x_max - x_min);
-    return !isNaN(result) ? result : 0;
+
+    if (x === 0 || x === null || x === undefined) {
+      return 0;
+    } else {
+      //sort by smallest to largest
+      let sortedArray = _.sortBy(array, ["perCapita"]);
+      //get first item in array
+      let x_min = sortedArray[0].perCapita;
+      //get last item in array
+      let x_max = sortedArray[sortedArray.length - 1].perCapita;
+
+      let result = (x - x_min) / (x_max - x_min);
+
+      //if the number of resources does not equal zero, adjust the score range from 0 - 1 to 0.3 - 1 so that the city is awarded 0.3 points for having at least one resource
+      let adjustedResult = !isNaN(result)
+        ? ((1 - 0.3) / (1 - 0)) * (result - 1) + 1
+        : 0;
+
+      return adjustedResult;
+    }
   } else {
     let x = value;
     let sortedArray = _.sortBy(array, ["Value"]);

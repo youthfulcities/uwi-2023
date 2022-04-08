@@ -1,20 +1,18 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
-
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import {
   Container,
-  Grid,
   Fab,
-  Typography,
-  Paper,
+  Grid,
   LinearProgress,
+  Paper,
+  Typography,
 } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-
-import Socials from "../Socials";
-import Decoration from "../Decoration";
+import React from "react";
+import { useTranslation } from "react-i18next";
 import Back from "../Back";
 import ChangeLang from "../ChangeLang";
+import Decoration from "../Decoration";
+import Socials from "../Socials";
 
 const FormContainer = ({
   children,
@@ -78,6 +76,7 @@ const FormContainer = ({
               color="primary"
               size="medium"
               className="backButton"
+              sx={{ height: "58px", width: "58px" }}
             >
               <ArrowBackIcon fontSize="large" />
             </Fab>

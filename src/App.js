@@ -10,21 +10,12 @@ import "./App.css";
 import Footer from "./components/Footer";
 import CityTemplate from "./pages/CityTemplate";
 import CreateProfile from "./pages/CreateProfile";
-import Dashboard from "./pages/Dashboard";
 import ExploreAll from "./pages/ExploreAll";
 import Home from "./pages/Home";
 import Intro from "./pages/Intro";
-import Map from "./pages/Map";
 import SuggestedCities from "./pages/SuggestedCities";
 
 function App() {
-  //because ODS controls the search params via angular we can't use react-router-dom to do so
-  //instead we'll just keep track of the url statefully
-  const [url, setUrl] = useState({
-    full: window.location.href,
-    query: window.location.search,
-  });
-
   const [currentLangCode, setCurrentLangCode] = useState(
     window.localStorage.i18nextLng || "en"
   );
@@ -340,12 +331,6 @@ function App() {
                     setTextSize={setTextSize}
                   />
                 }
-              />
-              <Route path="/map/:cityname" element={<Map />} />
-              <Route path="/map" element={<Map />} />
-              <Route
-                path="/dashboard"
-                element={<Dashboard url={url} setUrl={setUrl} />}
               />
             </Routes>
           </div>

@@ -1,29 +1,24 @@
-import React, { useState, useEffect } from "react";
-import { v4 as uuidv4 } from "uuid";
-import { Link } from "react-router-dom";
-
-import { useTranslation } from "react-i18next";
-
-import {
-  Typography,
-  Grid,
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Button,
-} from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-
-import cities from "../data/cities.json";
-
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Button,
+  Grid,
+  Typography,
+} from "@mui/material";
+import React, { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { v4 as uuidv4 } from "uuid";
 import BasicContainer from "../components/BasicContainer";
-import PhotoCard from "../components/PhotoCard";
 import BookNow from "../components/BookNow";
 import Decoration from "../components/Decoration";
 import FactCard from "../components/FactCard";
+import PhotoCard from "../components/PhotoCard";
+import cities from "../data/cities.json";
+import { calcCity, topMeasurements } from "../helpers/calcCity";
 import Loading from "../pages/Loading";
-
-import { calcCity, topMeasurements } from "../cityCalc/calcCity";
 
 const SuggestedCities = ({
   form,

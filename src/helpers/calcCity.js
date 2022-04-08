@@ -1,5 +1,5 @@
 import _ from "lodash";
-import values from "./values.json";
+import values from "../data/values.json";
 
 const topMeasurements = (measurements, cities, n) => {
   const allScores = getCitiesWithScores(measurements);
@@ -78,8 +78,6 @@ const getTotalScores = (flattenedScores) => {
 const calcCity = (measurements) => {
   const flattenedScores = getCitiesWithScores(measurements);
   const addedScores = getTotalScores(flattenedScores);
-
-  console.log(0 === 0.0);
   let sorted = _.orderBy(addedScores, "score", "desc");
   return sorted;
 };

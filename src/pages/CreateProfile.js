@@ -5,7 +5,7 @@ import FormContainer from "../components/Form/FormContainer";
 import FamilyMembers from "../components/Form/FamilyMembers";
 import Priorities from "../components/Form/Priorities";
 
-import additionalInfo from "../cityCalc/additionalInfo.js";
+import additionalInfo from "../data/additionalInfo.js";
 
 const CreateProfile = ({
   form,

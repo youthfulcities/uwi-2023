@@ -2,10 +2,16 @@ import _ from "lodash";
 import values from "../data/values.json";
 
 const topMeasurements = (measurements, cities, n) => {
+  //get the flattened array with all measurement scores
   const allScores = getCitiesWithScores(measurements);
+
+  //get an array of measurement arrays, one for each city we're interested in
   const selectScores = cities.map((city) => {
+    //filter the array to include only the current city
     const filtered = allScores.filter((score) => score.City === city);
+    //order measurements from highest to lowest
     const ordered = _.orderBy(filtered, "score", "desc");
+    //only take the top highest measurements
     const truncated = ordered.slice(0, n);
     return truncated;
   });
@@ -142,4 +148,11 @@ const getInvertedScore = (array, value, perCapita) => {
   }
 };
 
-export { calcCity, topMeasurements };
+export {
+  calcCity,
+  topMeasurements,
+  getScore,
+  getInvertedScore,
+  getCitiesWithScores,
+  getTotalScores,
+};

@@ -1,6 +1,7 @@
-import { Card, CardMedia, Container, Grid } from "@mui/material";
+import { Card, CardMedia, Container, Grid, Typography } from "@mui/material";
 import _ from "lodash";
 import React, { useCallback, useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import Back from "../components/Back";
 import BookNow from "../components/BookNow";
@@ -35,6 +36,7 @@ const CityTemplate = ({
   textSize,
   setTextSize,
 }) => {
+  const { t } = useTranslation();
   const { cityname } = useParams();
 
   const getCityData = () => {
@@ -185,27 +187,33 @@ const CityTemplate = ({
               <Grid item mb={1} mt={3} width="100%">
                 <Search setSearchStringQuery={setSearchStringQuery} />
               </Grid>
-              <Grid item mb={3} width="100%">
-                <Filter
-                  categories={categories}
-                  filteredCategories={filteredCategories}
-                  setFilteredCategories={setFilteredCategories}
-                  colours={colours}
-                  subResources={subResources}
-                  currentLangCode={currentLangCode}
-                />
-              </Grid>
-              {resources.length > 0 && (
-                <Facts
-                  cityname={cityname}
-                  currentLangCode={currentLangCode}
-                  searchStringQuery={searchStringQuery}
-                  colours={colours}
-                  subResources={subResources}
-                  resources={resources}
-                  categories={categories}
-                  filteredCategories={filteredCategories}
-                />
+              {resources.length > 0 ? (
+                <>
+                  <Grid item mb={3} width="100%">
+                    <Filter
+                      categories={categories}
+                      filteredCategories={filteredCategories}
+                      setFilteredCategories={setFilteredCategories}
+                      colours={colours}
+                      subResources={subResources}
+                      currentLangCode={currentLangCode}
+                    />
+                  </Grid>
+                  <Facts
+                    cityname={cityname}
+                    currentLangCode={currentLangCode}
+                    searchStringQuery={searchStringQuery}
+                    colours={colours}
+                    subResources={subResources}
+                    resources={resources}
+                    categories={categories}
+                    filteredCategories={filteredCategories}
+                  />
+                </>
+              ) : (
+                <Grid item className="accordianContainer">
+                  <Typography variant="body1">{t("noneFound")}</Typography>
+                </Grid>
               )}
             </Grid>
             <Back />

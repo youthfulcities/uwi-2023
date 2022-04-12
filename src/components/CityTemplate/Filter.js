@@ -112,7 +112,7 @@ const Filter = ({
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography variant="h4">Categories</Typography>
+          <Typography variant="h4">{t("categories")}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Grid item>

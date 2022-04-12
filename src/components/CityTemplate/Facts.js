@@ -60,21 +60,26 @@ const Facts = ({
 
   return (
     <>
-      {(resources.length === 0 ||
-        categories.length === 0 ||
-        subResources.length === 0) && <Loading />}
-      {categories && categories.length === 0 ? (
-        <Grid item className="accordianContainer">
-          <Typography variant="body1">{t("noneFound")}</Typography>
-        </Grid>
-      ) : (
+      {(resources.length === 0 || categories.length === 0) && <Loading />}
+      {
         <>
           <Grid container direction="row" spacing={2} alignItems="stretch">
             {categories.map(
               (category, i) =>
                 filteredCategories.some((e) => e === category) &&
                 subResources[category].map((resource, index) => (
-                  <Grid item lg={3} md={4} sm={6} xs={12} key={"card-" + index}>
+                  <Grid
+                    item
+                    lg={3}
+                    md={4}
+                    sm={6}
+                    xs={12}
+                    sx={{
+                      display:
+                        resource.record.fields.value === 0 ? "none" : "block",
+                    }}
+                    key={"card-" + index}
+                  >
                     <FactCard colour={colours[i]}>
                       {getIcon(category)}
                       <Typography
@@ -144,7 +149,7 @@ const Facts = ({
                           }}
                           color={colours[i].text}
                         >
-                          (More information)
+                          ({t("moreInfo")})
                         </Typography>
                       </a>
                     </FactCard>
@@ -153,7 +158,7 @@ const Facts = ({
             )}
           </Grid>
         </>
-      )}
+      }
     </>
   );
 };

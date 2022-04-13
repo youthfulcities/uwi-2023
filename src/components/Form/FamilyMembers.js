@@ -17,7 +17,6 @@ import {
 const FamilyMembers = ({
   handleAgesChange,
   handleChange,
-  nextStep,
   form,
   setPriorities,
 }) => {

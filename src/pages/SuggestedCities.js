@@ -32,23 +32,31 @@ const SuggestedCities = ({
   const { priorities } = form;
   const measure = `measurement_${currentLangCode}`;
 
+  //only take top 3 cities
   const topCities = calcCity(priorities).slice(0, 3);
 
+  //separate out just the city names
   const [cityNames] = useState(topCities.map((e) => e.city));
+
+  //separate out just the city scores
   const [cityScores] = useState(topCities.map((e) => e.score));
+
   const outOf = priorities.length;
 
+  //since the top cities calculation combines all the scores we need to go back and get the separate scores for each measurement for just the top 3 cities
   const resources = topMeasurements(priorities, cityNames, 3);
 
   const [cityData, setCityData] = useState(undefined);
 
   useEffect(() => {
+    //get the city data objects from cities.json for the matching top 3 cities
     const data = cityNames.flatMap((city) =>
       cities.filter((e) => e.city_name === city)
     );
     setCityData(data);
   }, [cityNames]);
 
+  //this manually formats the number if current language is Dari, although if the user has their browser UI language set to Dari/Farsi then this should happen automatically so this isn't technically needed
   const formattedNumber = (number) => {
     if (currentLangCode === "fa") {
       const newNum = Number(number).toLocaleString("fa-AF");

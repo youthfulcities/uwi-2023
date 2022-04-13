@@ -14,6 +14,8 @@ const cleanSearch = (s) => {
 
 const Search = ({ setSearchStringQuery }) => {
   const { t } = useTranslation();
+
+  //searchString stores the value as input by the user; searchStringQuery is used to create the ODS API query.
   const [searchString, setSearchString] = useState("");
   const [searched, setSearched] = useState(false);
 

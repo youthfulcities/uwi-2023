@@ -18,6 +18,10 @@ const CreateProfile = ({
 }) => {
   const { priorities, step } = form;
 
+  //take language into account
+  let cat = `category_${currentLangCode}`;
+  let measure = `measurement_${currentLangCode}`;
+
   const handleChange = (input, value) => {
     setForm({ ...form, [input]: value });
   };
@@ -47,33 +51,39 @@ const CreateProfile = ({
       setForm({ ...form, ages });
     }
 
+    //automatically update # of people if more age groups are selected than the # of people
     if (ages.length > form.numberOfPeople) {
       setForm({ ...form, numberOfPeople: ages.length });
     }
   };
 
-  let cat = `category_${currentLangCode}`;
-  let measure = `measurement_${currentLangCode}`;
-
-  //all the categories
+  //return an array of all the category names
   const groupedPrioritiesArray = Object.values(
     _.groupBy(additionalInfo, (item) => item[cat])
   );
 
-  //all the entries in the current category
+  //return an array of all the entries in the current category
   const categoryArray = groupedPrioritiesArray[step - 2];
 
+  //determine which measurements match which people
+  //will have to be updated if structure of demongraphics in additionalInfo.js is updated
+  //measurements should be either for specific age ranges, for everyone, or for a specific # of people, not a combination of those options
   const getDemographicMeasurements = useCallback(() => {
     const { numberOfPeople, ages } = form;
 
-    //return array of matching measurement objects
+    //return array of matching measurement objects from additionalInfo.js
     let ageMeasurements = additionalInfo.map((measurement) => {
       if (Array.isArray(measurement.demographic)) {
+        //include measurment if there is any intersection betwen the demographic info in additionalInfo.js and the ages as per the form. Multiple ages ranges are possible for each measurement; just checking whether intersection is true/false ensures the measurement is only added once regardless of how many age groups it matches
         if (_.intersection(measurement.demographic, ages).length > 0) {
           return measurement;
         }
+
+        //include measurement if the measurement applies to everyone as per additionalInfo.js
       } else if (measurement.demographic === "all") {
         return measurement;
+
+        //include measurement if the # of people falls in between the range in additionalInfo.js
       } else if (
         typeof measurement.demographic === "object" &&
         numberOfPeople >= measurement.demographic.minNumberOfPeople &&

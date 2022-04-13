@@ -49,6 +49,7 @@ function App() {
 
   const currentLanguage = languages.find((l) => l.code === currentLangCode);
 
+  //sets language direction in html
   useEffect(() => {
     document
       .getElementsByTagName("html")[0]

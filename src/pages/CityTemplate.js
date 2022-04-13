@@ -17,11 +17,13 @@ import cities from "../data/cities.json";
 import getData from "../helpers/odsClientV2.js";
 import Loading from "../pages/Loading";
 
+//returns an object where the each key is a category name and each value is an array of all the records that belong to that category
 const groupedArray = async (array) => {
   let grouped = _.groupBy(array, (item) => item.record.fields.category_for_app);
   return grouped;
 };
 
+//returns an array of just the cateogry names
 const groupedArrayNames = async (array) => {
   let names = Object.keys(
     _.groupBy(array, (item) => item.record.fields.category_for_app)
@@ -39,16 +41,27 @@ const CityTemplate = ({
   const { t } = useTranslation();
   const { cityname } = useParams();
 
+  //finds information in cities.json matching current city as per url params
   const getCityData = () => {
     return cities.find((e) => e.city_name === cityname);
   };
 
   const [city] = useState(getCityData());
+
+  //search bar value formatted to work in ODS query (see Search.js)
   const [searchStringQuery, setSearchStringQuery] = useState("");
   const [offset, setOffset] = useState(0);
+
+  //raw response from API call
   const [resources, setResources] = useState([]);
+
+  //an object where the each key is a category name and each value is an array of all the records that belong to that category
   const [subResources, setSubResources] = useState([]);
+
+  //an array of all category names
   const [categories, setCategories] = useState([]);
+
+  //an array of all category names selected, used to determined which fact cards are shown
   const [filteredCategories, setFilteredCategories] = useState([]);
 
   const colours = [
@@ -67,9 +80,17 @@ const CityTemplate = ({
 
   const getResources = useCallback(() => {
     console.log("data api triggered");
+
+    //build the query
+    //specify all the columns we need
+    //get only current city
+    //add search query if applicable
+    //more information on the ODS query language can be found here:
+    //https://help.opendatasoft.com/apis/ods-search-v2/#search-api-v2
     const query = `/records?select=city,category_for_app,edited_title,edited_title_fa,category_for_app_fa,topic_en,sheet_title,comment,value,measureable_value,url,measurement_en,noteen,indicator_en,suppname&refine=city:${cityname}&limit=100&offset=${offset}${
       searchStringQuery.length > 0 ? "&where='" + searchStringQuery + "'" : ""
     }`;
+
     let retrievedInfo = getData("refugee-data", query).then(
       (res) => res.records
     );
@@ -77,6 +98,8 @@ const CityTemplate = ({
     const setRes = async () => {
       let newResources = await retrievedInfo;
       setResources((prev) => [...prev, ...newResources]);
+
+      //api only returns 100 records at a time, see if we need to use pagination and if so increase offset
       if (newResources.length === 100) {
         setOffset((prev) => prev + 100);
       }
@@ -90,17 +113,25 @@ const CityTemplate = ({
 
   useEffect(() => {
     console.log("values subcategory effect triggered");
+
     const createSubCategories = () => {
+      //returns an object where the each key is a category name and each value is an array of all the records that belong to that category
       groupedArray(resources).then((res) => setSubResources(res));
+
+      //returns an array of just the cateogry names
       groupedArrayNames(resources).then((res) => {
         setCategories(res);
+
+        //only filteredCategories are displayed; default to having only the first category selected
         res.length !== 0 && setFilteredCategories([res[0]]);
       });
     };
+
     createSubCategories();
   }, [resources]);
 
   useEffect(() => {
+    //reset offset & resources when the searchStringQuery changes
     setOffset(0);
     setResources([]);
   }, [searchStringQuery]);
@@ -191,18 +222,17 @@ const CityTemplate = ({
                 <>
                   <Grid item mb={3} width="100%">
                     <Filter
+                      subResources={subResources}
                       categories={categories}
                       filteredCategories={filteredCategories}
                       setFilteredCategories={setFilteredCategories}
                       colours={colours}
-                      subResources={subResources}
                       currentLangCode={currentLangCode}
                     />
                   </Grid>
                   <Facts
                     cityname={cityname}
                     currentLangCode={currentLangCode}
-                    searchStringQuery={searchStringQuery}
                     colours={colours}
                     subResources={subResources}
                     resources={resources}

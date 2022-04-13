@@ -58,6 +58,15 @@ const Facts = ({
     }
   };
 
+  //this manually formats the number if current language is Dari, although if the user has their browser UI language set to Dari/Farsi then this should happen automatically so this isn't technically needed
+  const formattedNumber = (number) => {
+    if (currentLangCode === "fa") {
+      const newNum = Number(number).toLocaleString("fa-AF");
+      return newNum;
+    }
+    return Number(number).toLocaleString();
+  };
+
   return (
     <>
       {(resources.length === 0 || categories.length === 0) && <Loading />}
@@ -125,8 +134,8 @@ const Facts = ({
                       >
                         {resource.record.fields.measureable_value ===
                         "dollar value"
-                          ? `$${resource.record.fields.value.toLocaleString()}`
-                          : resource.record.fields.value.toLocaleString()}
+                          ? `$${formattedNumber(resource.record.fields.value)}`
+                          : formattedNumber(resource.record.fields.value)}
                       </Typography>
 
                       <a

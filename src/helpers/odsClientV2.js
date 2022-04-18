@@ -15,7 +15,6 @@ const getData = async (dataset, query) => {
 
     /* (Optional) Allow you to update the request before it is send. */
     // interceptRequest: async (request) => {
-    //       console.log(request);
     //       request.headers.append('x-custom', 'custom');
     //       return request;
     // },
@@ -31,8 +30,8 @@ const getData = async (dataset, query) => {
   // Create the query to run.
   const fullQuery = `https://pivothub.youthfulcities.com/api/v2/catalog/datasets/${dataset}/${query}`;
 
-  // console.log(fullQuery);
   // Now, run the query.
+  //TODO: Add better error handling
   return client
     .get(fullQuery)
     .then((response) => response)

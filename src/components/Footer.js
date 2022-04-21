@@ -1,5 +1,5 @@
-import React from "react";
 import { Container, Grid } from "@mui/material";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -53,19 +53,6 @@ const Footer = () => {
                 </Typography>
               </Grid> */}
             </Grid>
-          </Grid>
-          <Grid item mt="1vh">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.therefugeecentre.org/"
-            >
-              <img
-                src={"./assets/images/trc-logo.png"}
-                height="60vh"
-                alt="The Refugee Centre / Le Centre de Réfugiés logo"
-              />
-            </a>
           </Grid>
         </Grid>
       </Container>

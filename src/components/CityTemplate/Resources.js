@@ -13,7 +13,6 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import getData from "../../helpers/odsClientV2.js";
 import Loading from "../../pages/Loading.js";
-// import FactCard from "../FactCard";
 import ResourceCard from "./ResourceCard";
 import Search from "./Search";
 

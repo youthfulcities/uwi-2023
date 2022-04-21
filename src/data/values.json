@@ -4,14 +4,14 @@
         "JSONNames": "Libraries",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "TaxServices",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2.9615e-05
+        "perCapita": 2.42234e-05
     },
     {
         "City": "Lethbridge",
@@ -25,84 +25,84 @@
         "JSONNames": "EslClasses",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "ComputerClasses",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2.9615e-05
+        "perCapita": 2.42234e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "FoodBanks",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 5.923e-05
+        "perCapita": 4.84469e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "ClothingBanks",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "BridgingPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "SkilledTraining",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2.9615e-05
+        "perCapita": 2.42234e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "FinancialLit",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2.9615e-05
+        "perCapita": 2.42234e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "PrivateCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "PublicUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "EmploymentServices",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 4.93583e-05
+        "perCapita": 4.03724e-05
     },
     {
         "City": "Lethbridge",
@@ -144,28 +144,28 @@
         "JSONNames": "FamilyShelter",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "TeenRecPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 5.923e-05
+        "perCapita": 4.84469e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "SeniorRecPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 5.923e-05
+        "perCapita": 4.84469e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "AdultRecPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 4.93583e-05
+        "perCapita": 4.03724e-05
     },
     {
         "City": "Lethbridge",
@@ -186,42 +186,42 @@
         "JSONNames": "FurnitureBank",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "Startup",
         "Value": 8.0,
         "measureableValue": "# of",
-        "perCapita": 7.89733e-05
+        "perCapita": 6.45958e-05
     },
     {
         "City": "Calgary",
         "JSONNames": "Libraries",
         "Value": 21.0,
         "measureableValue": "# of",
-        "perCapita": 1.4e-05
+        "perCapita": 1.41719e-05
     },
     {
         "City": "Calgary",
         "JSONNames": "TaxServices",
         "Value": 38.0,
         "measureableValue": "# of",
-        "perCapita": 2.53333e-05
+        "perCapita": 2.56444e-05
     },
     {
         "City": "Calgary",
         "JSONNames": "FoodBanks",
         "Value": 12.0,
         "measureableValue": "# of",
-        "perCapita": 8e-06
+        "perCapita": 8.0982e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "EslClasses",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 4.6667e-06
+        "perCapita": 4.724e-06
     },
     {
         "City": "Calgary",
@@ -235,42 +235,42 @@
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 2.6667e-06
+        "perCapita": 2.6994e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "FinancialLit",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 2.0246e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "ComputerClasses",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 2.6667e-06
+        "perCapita": 2.6994e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "BridgingPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 3.3333e-06
+        "perCapita": 3.3743e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "SkilledTraining",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 4.0491e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "EmploymentServices",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 2.0246e-06
     },
     {
         "City": "Calgary",
@@ -305,49 +305,49 @@
         "JSONNames": "ClothingBanks",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 3.3333e-06
+        "perCapita": 3.3743e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "FamilyShelter",
         "Value": 12.0,
         "measureableValue": "# of",
-        "perCapita": 8e-06
+        "perCapita": 8.0982e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "PolytechCollege",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 1.3333e-06
+        "perCapita": 1.3497e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "PrivateCollege",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 4.0491e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "PrivateUni",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 2.0246e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "PublicCollege",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 1.3333e-06
+        "perCapita": 1.3497e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "PublicUni",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 2.0246e-06
     },
     {
         "City": "Calgary",
@@ -361,7 +361,7 @@
         "JSONNames": "FurnitureBank",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 3.3333e-06
+        "perCapita": 3.3743e-06
     },
     {
         "City": "Calgary",
@@ -382,49 +382,49 @@
         "JSONNames": "AdultRecPrograms",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 6.6667e-06
+        "perCapita": 6.7485e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "TeenRecPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 4.0491e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "SeniorRecPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 2.0246e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "Startup",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 4.0491e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "Libraries",
         "Value": 9.0,
         "measureableValue": "# of",
-        "perCapita": 4.05405e-05
+        "perCapita": 4.0511e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "TaxServices",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 3.15315e-05
+        "perCapita": 3.15085e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "FinancialLit",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.35135e-05
+        "perCapita": 1.35037e-05
     },
     {
         "City": "Kelowna",
@@ -438,7 +438,7 @@
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 9.009e-06
+        "perCapita": 9.0024e-06
     },
     {
         "City": "Kelowna",
@@ -473,28 +473,28 @@
         "JSONNames": "FamilyShelter",
         "Value": 8.0,
         "measureableValue": "# of",
-        "perCapita": 3.6036e-05
+        "perCapita": 3.60098e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "FurnitureBank",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.8018e-05
+        "perCapita": 1.80049e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "BridgingPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.8018e-05
+        "perCapita": 1.80049e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "SkilledTraining",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.35135e-05
+        "perCapita": 1.35037e-05
     },
     {
         "City": "Kelowna",
@@ -508,112 +508,112 @@
         "JSONNames": "PrivateCollege",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 2.25225e-05
+        "perCapita": 2.25061e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 4.5045e-06
+        "perCapita": 4.5012e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 9.009e-06
+        "perCapita": 9.0024e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "Startup",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 2.7027e-05
+        "perCapita": 2.70073e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "ParentingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.35135e-05
+        "perCapita": 1.35037e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "SeniorRecPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 9.009e-06
+        "perCapita": 9.0024e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "AdultRecPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 2.25225e-05
+        "perCapita": 2.25061e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "TeenRecPrograms",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 3.15315e-05
+        "perCapita": 3.15085e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "Libraries",
         "Value": 9.0,
         "measureableValue": "# of",
-        "perCapita": 2.67857e-05
+        "perCapita": 2.83482e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "TaxServices",
         "Value": 8.0,
         "measureableValue": "# of",
-        "perCapita": 2.38095e-05
+        "perCapita": 2.51984e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "FinancialLit",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 8.9286e-06
+        "perCapita": 9.4494e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.9524e-06
+        "perCapita": 6.2996e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.9524e-06
+        "perCapita": 6.2996e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.9762e-06
+        "perCapita": 3.1498e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "PrivateCollege",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.4881e-05
+        "perCapita": 1.5749e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "FurnitureBank",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.9762e-06
+        "perCapita": 3.1498e-06
     },
     {
         "City": "Saskatoon",
@@ -627,70 +627,70 @@
         "JSONNames": "ClothingBanks",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 8.9286e-06
+        "perCapita": 9.4494e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "PublicUni",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.9524e-06
+        "perCapita": 6.2996e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.9762e-06
+        "perCapita": 3.1498e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "BridgingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 8.9286e-06
+        "perCapita": 9.4494e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "SkilledTraining",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.19048e-05
+        "perCapita": 1.25992e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "FoodBanks",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.78571e-05
+        "perCapita": 1.88988e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "FamilyShelter",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.78571e-05
+        "perCapita": 1.88988e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "TeenRecPrograms",
         "Value": 12.0,
         "measureableValue": "# of",
-        "perCapita": 3.57143e-05
+        "perCapita": 3.77977e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "SeniorRecPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.4881e-05
+        "perCapita": 1.5749e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "AdultRecPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.19048e-05
+        "perCapita": 1.25992e-05
     },
     {
         "City": "Saskatoon",
@@ -725,7 +725,7 @@
         "JSONNames": "ParentingPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.4881e-05
+        "perCapita": 1.5749e-05
     },
     {
         "City": "Saskatoon",
@@ -760,49 +760,49 @@
         "JSONNames": "Startup",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.78571e-05
+        "perCapita": 1.88988e-05
     },
     {
         "City": "Winnipeg",
         "JSONNames": "Libraries",
         "Value": 37.0,
         "measureableValue": "# of",
-        "perCapita": 4.35294e-05
+        "perCapita": 4.43285e-05
     },
     {
         "City": "Winnipeg",
         "JSONNames": "TaxServices",
         "Value": 28.0,
         "measureableValue": "# of",
-        "perCapita": 3.29412e-05
+        "perCapita": 3.35459e-05
     },
     {
         "City": "Winnipeg",
         "JSONNames": "FinancialLit",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.3529e-06
+        "perCapita": 2.3961e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "EslClasses",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.0588e-06
+        "perCapita": 7.1884e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.3529e-06
+        "perCapita": 2.3961e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "EmploymentServices",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.5294e-06
+        "perCapita": 3.5942e-06
     },
     {
         "City": "Winnipeg",
@@ -816,56 +816,56 @@
         "JSONNames": "ClothingBanks",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 5.8824e-06
+        "perCapita": 5.9903e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "FurnitureBank",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 4.7059e-06
+        "perCapita": 4.7923e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "SeniorRecPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 4.7059e-06
+        "perCapita": 4.7923e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "ParentingPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.0588e-06
+        "perCapita": 7.1884e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "FamilyShelter",
         "Value": 8.0,
         "measureableValue": "# of",
-        "perCapita": 9.4118e-06
+        "perCapita": 9.5845e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "FoodBanks",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.0588e-06
+        "perCapita": 7.1884e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "AdultRecPrograms",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 8.2353e-06
+        "perCapita": 8.3865e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "TeenRecPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.0588e-06
+        "perCapita": 7.1884e-06
     },
     {
         "City": "Winnipeg",
@@ -914,63 +914,63 @@
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.1765e-06
+        "perCapita": 1.1981e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "PrivateCollege",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 5.8824e-06
+        "perCapita": 5.9903e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.1765e-06
+        "perCapita": 1.1981e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "PublicUni",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.3529e-06
+        "perCapita": 2.3961e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "Startup",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.0588e-06
+        "perCapita": 7.1884e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "BridgingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.5294e-06
+        "perCapita": 3.5942e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "SkilledTraining",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 5.8824e-06
+        "perCapita": 5.9903e-06
     },
     {
         "City": "London",
         "JSONNames": "Libraries",
         "Value": 16.0,
         "measureableValue": "# of",
-        "perCapita": 3.2e-05
+        "perCapita": 2.94361e-05
     },
     {
         "City": "London",
         "JSONNames": "TaxServices",
         "Value": 20.0,
         "measureableValue": "# of",
-        "perCapita": 4e-05
+        "perCapita": 3.67951e-05
     },
     {
         "City": "London",
@@ -984,7 +984,7 @@
         "JSONNames": "EslClasses",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 8e-06
+        "perCapita": 7.359e-06
     },
     {
         "City": "London",
@@ -998,14 +998,14 @@
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 3.6795e-06
     },
     {
         "City": "London",
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 3.6795e-06
     },
     {
         "City": "London",
@@ -1040,7 +1040,7 @@
         "JSONNames": "FamilyShelter",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.2e-05
+        "perCapita": 1.10385e-05
     },
     {
         "City": "London",
@@ -1054,7 +1054,7 @@
         "JSONNames": "FurnitureBank",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1e-05
+        "perCapita": 9.1988e-06
     },
     {
         "City": "London",
@@ -1068,49 +1068,49 @@
         "JSONNames": "ClothingBanks",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 6e-06
+        "perCapita": 5.5193e-06
     },
     {
         "City": "London",
         "JSONNames": "TeenRecPrograms",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.2e-05
+        "perCapita": 1.10385e-05
     },
     {
         "City": "London",
         "JSONNames": "AdultRecPrograms",
         "Value": 15.0,
         "measureableValue": "# of",
-        "perCapita": 3e-05
+        "perCapita": 2.75963e-05
     },
     {
         "City": "London",
         "JSONNames": "ParentingPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 3.6795e-06
     },
     {
         "City": "London",
         "JSONNames": "SeniorRecPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 3.6795e-06
     },
     {
         "City": "London",
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 1.8398e-06
     },
     {
         "City": "London",
         "JSONNames": "PrivateCollege",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 1.4e-05
+        "perCapita": 1.28783e-05
     },
     {
         "City": "London",
@@ -1124,56 +1124,56 @@
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 1.8398e-06
     },
     {
         "City": "London",
         "JSONNames": "PublicUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 1.8398e-06
     },
     {
         "City": "London",
         "JSONNames": "Startup",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1e-05
+        "perCapita": 9.1988e-06
     },
     {
         "City": "London",
         "JSONNames": "BridgingPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4e-06
+        "perCapita": 3.6795e-06
     },
     {
         "City": "London",
         "JSONNames": "SkilledTraining",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 6e-06
+        "perCapita": 5.5193e-06
     },
     {
         "City": "Moncton",
         "JSONNames": "Libraries",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.75e-05
+        "perCapita": 1.90214e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "TaxServices",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 6.25e-05
+        "perCapita": 3.17024e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "FinancialLit",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 5e-05
+        "perCapita": 2.53619e-05
     },
     {
         "City": "Moncton",
@@ -1187,7 +1187,7 @@
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.5e-05
+        "perCapita": 1.26809e-05
     },
     {
         "City": "Moncton",
@@ -1215,98 +1215,98 @@
         "JSONNames": "TeenRecPrograms",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 0.000125
+        "perCapita": 6.34047e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "FurnitureBank",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.75e-05
+        "perCapita": 1.90214e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "EslClasses",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.75e-05
+        "perCapita": 1.90214e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.25e-05
+        "perCapita": 6.3405e-06
     },
     {
         "City": "Moncton",
         "JSONNames": "PrivateCollege",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.5e-05
+        "perCapita": 3.80428e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "PrivateUni",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.5e-05
+        "perCapita": 1.26809e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.25e-05
+        "perCapita": 6.3405e-06
     },
     {
         "City": "Moncton",
         "JSONNames": "PublicUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.25e-05
+        "perCapita": 6.3405e-06
     },
     {
         "City": "Moncton",
         "JSONNames": "Startup",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 6.25e-05
+        "perCapita": 3.17024e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.5e-05
+        "perCapita": 1.26809e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "ParentingPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 5e-05
+        "perCapita": 2.53619e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "SeniorRecPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 5e-05
+        "perCapita": 2.53619e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "AdultRecPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 6.25e-05
+        "perCapita": 3.17024e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "SkilledTraining",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 2.5e-05
+        "perCapita": 1.26809e-05
     },
     {
         "City": "Moncton",
@@ -1320,35 +1320,35 @@
         "JSONNames": "Libraries",
         "Value": 11.0,
         "measureableValue": "# of",
-        "perCapita": 2.45252e-05
+        "perCapita": 2.36202e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "TaxServices",
         "Value": 15.0,
         "measureableValue": "# of",
-        "perCapita": 3.34435e-05
+        "perCapita": 3.22094e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "EslClasses",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4.4591e-06
+        "perCapita": 4.2946e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "FoodBanks",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 1.5607e-05
+        "perCapita": 1.5031e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "FamilyShelter",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 2.22956e-05
+        "perCapita": 2.14729e-05
     },
     {
         "City": "Halifax",
@@ -1376,14 +1376,14 @@
         "JSONNames": "FurnitureBank",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 6.6887e-06
+        "perCapita": 6.4419e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "ClothingBanks",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 8.9183e-06
+        "perCapita": 8.5892e-06
     },
     {
         "City": "Halifax",
@@ -1411,119 +1411,119 @@
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "PrivateCollege",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 1.33774e-05
+        "perCapita": 1.28837e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "PrivateUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "PublicUni",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.11478e-05
+        "perCapita": 1.07365e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "TeenRecPrograms",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 2.22956e-05
+        "perCapita": 2.14729e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "SeniorRecPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 4.4591e-06
+        "perCapita": 4.2946e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "AdultRecPrograms",
         "Value": 9.0,
         "measureableValue": "# of",
-        "perCapita": 2.00661e-05
+        "perCapita": 1.93256e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "ParentingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 6.6887e-06
+        "perCapita": 6.4419e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "Startup",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.11478e-05
+        "perCapita": 1.07365e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "SkilledTraining",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 8.9183e-06
+        "perCapita": 8.5892e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "BridgingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 6.6887e-06
+        "perCapita": 6.4419e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "Libraries",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 7.5522e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "FinancialLit",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.02564e-05
+        "perCapita": 1.00696e-05
     },
     {
         "City": "Victoria",
         "JSONNames": "EslClasses",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.1282e-06
+        "perCapita": 5.0348e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 7.5522e-06
     },
     {
         "City": "Victoria",
@@ -1537,35 +1537,35 @@
         "JSONNames": "ClothingBanks",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.02564e-05
+        "perCapita": 1.00696e-05
     },
     {
         "City": "Victoria",
         "JSONNames": "FurnitureBank",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 7.5522e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "SeniorRecPrograms",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.28205e-05
+        "perCapita": 1.25869e-05
     },
     {
         "City": "Victoria",
         "JSONNames": "FoodBanks",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-05
+        "perCapita": 2.51739e-05
     },
     {
         "City": "Victoria",
         "JSONNames": "FamilyShelter",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-05
+        "perCapita": 2.51739e-05
     },
     {
         "City": "Victoria",
@@ -1600,7 +1600,7 @@
         "JSONNames": "PrivateCollege",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.02564e-05
+        "perCapita": 1.00696e-05
     },
     {
         "City": "Victoria",
@@ -1614,14 +1614,14 @@
         "JSONNames": "PublicCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-06
+        "perCapita": 2.5174e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "PublicUni",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.1282e-06
+        "perCapita": 5.0348e-06
     },
     {
         "City": "Victoria",
@@ -1656,63 +1656,63 @@
         "JSONNames": "Startup",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.28205e-05
+        "perCapita": 1.25869e-05
     },
     {
         "City": "Victoria",
         "JSONNames": "SkilledTraining",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-06
+        "perCapita": 2.5174e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "BridgingPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.02564e-05
+        "perCapita": 1.00696e-05
     },
     {
         "City": "Regina",
         "JSONNames": "Libraries",
         "Value": 15.0,
         "measureableValue": "# of",
-        "perCapita": 5.76923e-05
+        "perCapita": 6.01885e-05
     },
     {
         "City": "Regina",
         "JSONNames": "TaxServices",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 2.69231e-05
+        "perCapita": 2.8088e-05
     },
     {
         "City": "Regina",
         "JSONNames": "FinancialLit",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 8.0251e-06
     },
     {
         "City": "Regina",
         "JSONNames": "EslClasses",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 8.0251e-06
     },
     {
         "City": "Regina",
         "JSONNames": "SeniorLiteracyPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 8.0251e-06
     },
     {
         "City": "Regina",
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 8.0251e-06
     },
     {
         "City": "Regina",
@@ -1726,42 +1726,42 @@
         "JSONNames": "FurnitureBank",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.15385e-05
+        "perCapita": 1.20377e-05
     },
     {
         "City": "Regina",
         "JSONNames": "ClothingBanks",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.92308e-05
+        "perCapita": 2.00628e-05
     },
     {
         "City": "Regina",
         "JSONNames": "FamilyShelter",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 2.30769e-05
+        "perCapita": 2.40754e-05
     },
     {
         "City": "Regina",
         "JSONNames": "FoodBanks",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Regina",
         "JSONNames": "AdultRecPrograms",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 3.84615e-05
+        "perCapita": 4.01257e-05
     },
     {
         "City": "Regina",
         "JSONNames": "SeniorRecPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Regina",
@@ -1817,49 +1817,49 @@
         "JSONNames": "Startup",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 2.30769e-05
+        "perCapita": 2.40754e-05
     },
     {
         "City": "Regina",
         "JSONNames": "ParentingPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Regina",
         "JSONNames": "TeenRecPrograms",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Regina",
         "JSONNames": "PolytechCollege",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 3.8462e-06
+        "perCapita": 4.0126e-06
     },
     {
         "City": "Regina",
         "JSONNames": "PrivateCollege",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Regina",
         "JSONNames": "SkilledTraining",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.15385e-05
+        "perCapita": 1.20377e-05
     },
     {
         "City": "Regina",
         "JSONNames": "BridgingPrograms",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 8.0251e-06
     },
     {
         "City": "Calgary",
@@ -2566,147 +2566,147 @@
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 6.667e-07
+        "perCapita": 6.749e-07
     },
     {
         "City": "Halifax",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 4.5045e-06
+        "perCapita": 4.5012e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 9.8717e-06
+        "perCapita": 8.0745e-06
     },
     {
         "City": "London",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2e-06
+        "perCapita": 1.8398e-06
     },
     {
         "City": "Moncton",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.25e-05
+        "perCapita": 6.3405e-06
     },
     {
         "City": "Regina",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 3.8462e-06
+        "perCapita": 4.0126e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.9762e-06
+        "perCapita": 3.1498e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-06
+        "perCapita": 2.5174e-06
     },
     {
         "City": "Winnipeg",
         "JSONNames": "LegalAid",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.1765e-06
+        "perCapita": 1.1981e-06
     },
     {
         "City": "Calgary",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 6.667e-07
+        "perCapita": 6.749e-07
     },
     {
         "City": "Halifax",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 7.0,
         "measureableValue": "# of",
-        "perCapita": 1.5607e-05
+        "perCapita": 1.5031e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 2.25225e-05
+        "perCapita": 2.25061e-05
     },
     {
         "City": "Lethbridge",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 3.94867e-05
+        "perCapita": 3.22979e-05
     },
     {
         "City": "London",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 8.0,
         "measureableValue": "# of",
-        "perCapita": 1.6e-05
+        "perCapita": 1.4718e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 3.75e-05
+        "perCapita": 1.90214e-05
     },
     {
         "City": "Regina",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 1.53846e-05
+        "perCapita": 1.60503e-05
     },
     {
         "City": "Saskatoon",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.9524e-06
+        "perCapita": 6.2996e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.28205e-05
+        "perCapita": 1.25869e-05
     },
     {
         "City": "Winnipeg",
         "JSONNames": "YouthEmploymentCentre",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.1765e-06
+        "perCapita": 1.1981e-06
     },
     {
         "City": "Lethbridge",
         "JSONNames": "ParentingPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 2.9615e-05
+        "perCapita": 2.42234e-05
     },
     {
         "City": "Lethbridge",
@@ -2741,21 +2741,21 @@
         "JSONNames": "ClothingBanks",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 1.35135e-05
+        "perCapita": 1.35037e-05
     },
     {
         "City": "Kelowna",
         "JSONNames": "PublicUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 4.5045e-06
+        "perCapita": 4.5012e-06
     },
     {
         "City": "Kelowna",
         "JSONNames": "FoodBanks",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 2.7027e-05
+        "perCapita": 2.70073e-05
     },
     {
         "City": "Kelowna",
@@ -2769,28 +2769,28 @@
         "JSONNames": "EslClasses",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 4.5045e-06
+        "perCapita": 4.5012e-06
     },
     {
         "City": "Saskatoon",
         "JSONNames": "EslClasses",
         "Value": 5.0,
         "measureableValue": "# of",
-        "perCapita": 1.4881e-05
+        "perCapita": 1.5749e-05
     },
     {
         "City": "Winnipeg",
         "JSONNames": "PrivateUni",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 1.1765e-06
+        "perCapita": 1.1981e-06
     },
     {
         "City": "London",
         "JSONNames": "FoodBanks",
         "Value": 10.0,
         "measureableValue": "# of",
-        "perCapita": 2e-05
+        "perCapita": 1.83975e-05
     },
     {
         "City": "Moncton",
@@ -2804,14 +2804,14 @@
         "JSONNames": "FamilyShelter",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.5e-05
+        "perCapita": 3.80428e-05
     },
     {
         "City": "Moncton",
         "JSONNames": "FoodBanks",
         "Value": 6.0,
         "measureableValue": "# of",
-        "perCapita": 7.5e-05
+        "perCapita": 3.80428e-05
     },
     {
         "City": "Moncton",
@@ -2839,21 +2839,21 @@
         "JSONNames": "ClothingBanks",
         "Value": 4.0,
         "measureableValue": "# of",
-        "perCapita": 5e-05
+        "perCapita": 2.53619e-05
     },
     {
         "City": "Halifax",
         "JSONNames": "FinancialLit",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
         "JSONNames": "EmploymentServices",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.2296e-06
+        "perCapita": 2.1473e-06
     },
     {
         "City": "Halifax",
@@ -2874,27 +2874,27 @@
         "JSONNames": "TaxServices",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 7.5522e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "EmploymentServices",
         "Value": 2.0,
         "measureableValue": "# of",
-        "perCapita": 5.1282e-06
+        "perCapita": 5.0348e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "TeenRecPrograms",
         "Value": 3.0,
         "measureableValue": "# of",
-        "perCapita": 7.6923e-06
+        "perCapita": 7.5522e-06
     },
     {
         "City": "Victoria",
         "JSONNames": "AdultRecPrograms",
         "Value": 1.0,
         "measureableValue": "# of",
-        "perCapita": 2.5641e-06
+        "perCapita": 2.5174e-06
     }
 ]

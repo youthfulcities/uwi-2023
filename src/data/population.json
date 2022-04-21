@@ -1,42 +1,42 @@
 [
-  {
-      "City": "Calgary",
-      "Population": 1500000
-  },
-  {
-      "City": "Halifax",
-      "Population": 448518
-  },
-  {
-      "City": "Kelowna",
-      "Population": 222000
-  },
-  {
-      "City": "Lethbridge",
-      "Population": 101300
-  },
-  {
-      "City": "London",
-      "Population": 500000
-  },
-  {
-      "City": "Moncton",
-      "Population": 80000
-  },
-  {
-      "City": "Regina",
-      "Population": 260000
-  },
-  {
-      "City": "Saskatoon",
-      "Population": 336000
-  },
-  {
-      "City": "Victoria",
-      "Population": 390000
-  },
-  {
-      "City": "Winnipeg",
-      "Population": 850000
-  }
+    {
+        "City": "Calgary",
+        "Population": 1481806
+    },
+    {
+        "City": "Halifax",
+        "Population": 465703
+    },
+    {
+        "City": "Kelowna",
+        "Population": 222162
+    },
+    {
+        "City": "Lethbridge",
+        "Population": 123847
+    },
+    {
+        "City": "London",
+        "Population": 543551
+    },
+    {
+        "City": "Moncton",
+        "Population": 157717
+    },
+    {
+        "City": "Regina",
+        "Population": 249217
+    },
+    {
+        "City": "Saskatoon",
+        "Population": 317480
+    },
+    {
+        "City": "Victoria",
+        "Population": 397237
+    },
+    {
+        "City": "Winnipeg",
+        "Population": 834678
+    }
 ]

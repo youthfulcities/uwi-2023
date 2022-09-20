@@ -1,16 +1,16 @@
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Grid,
   Typography,
-} from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import React from "react";
-import Facts from "./Facts";
-import Filter from "./Filter";
-import Search from "./Search";
-import { useTranslation } from "react-i18next";
+} from '@mui/material';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import Facts from './Facts';
+import Filter from './Filter';
+import Search from './Search';
 
 const FactsSection = ({
   setSearchStringQuery,
@@ -28,40 +28,37 @@ const FactsSection = ({
   return (
     <Accordion
       sx={{
-        "&.Mui-expanded": {
-          background: "#F2695D",
+        '&.Mui-expanded': {
+          background: '#F2695D',
         },
-        "&:first-of-type": {
-          borderTopLeftRadius: 35,
-          borderTopRightRadius: 35,
+        '&:first-of-type': {
+          borderTopLeftRadius: 12,
+          borderTopRightRadius: 12,
         },
-      }}
-    >
+      }}>
       <AccordionSummary
-        expandIcon={<ExpandMoreIcon fontSize="large" />}
-        aria-controls="panel1a-content"
-        id="panel1a-header"
-      >
+        expandIcon={<ExpandMoreIcon fontSize='large' />}
+        aria-controls='panel1a-content'
+        id='panel1a-header'>
         <Grid
           container
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-          flexWrap="nowrap"
-        >
+          direction='row'
+          justifyContent='space-between'
+          alignItems='center'
+          flexWrap='nowrap'>
           <Grid item>
-            <Typography variant="h3">{t("facts")}</Typography>
+            <Typography variant='h3'>{t('facts')}</Typography>
           </Grid>
         </Grid>
       </AccordionSummary>
       <AccordionDetails>
-        <div className="accordianContainer">
-          <Grid item mb={1} mt={3} width="100%">
+        <div className='accordianContainer'>
+          <Grid item mb={1} mt={3} width='100%'>
             <Search setSearchStringQuery={setSearchStringQuery} />
           </Grid>
           {resources.length > 0 ? (
             <>
-              <Grid item width="100%" mb={2}>
+              <Grid item width='100%' mb={2}>
                 <Filter
                   subResources={subResources}
                   categories={categories}
@@ -82,8 +79,8 @@ const FactsSection = ({
               />
             </>
           ) : (
-            <Grid item className="accordianContainer">
-              <Typography variant="body1">{t("noneFound")}</Typography>
+            <Grid item className='accordianContainer'>
+              <Typography variant='body1'>{t('noneFound')}</Typography>
             </Grid>
           )}
         </div>

@@ -1,6 +1,4 @@
-# Kulba
-
-"Kulba" means "Home" in Dari. This app was developed by Genna Weber for [Youthful Cities](https://youthfulcities.com/) in a collaboration between Youthful Cities and [The Refugee Centre](https://www.therefugeecentre.org/). The purpose of the app is to get refugees to consider settling in secondary cities within Canada. It suggests possible matches and presents a dashboard of facts about each city. It's built using `create-react-app` and styled with Material UI.
+The purpose of the app is to get refugees to consider settling in secondary cities within Canada. It suggests possible matches and presents a dashboard of facts about each city. It's built using `create-react-app` and styled with Material UI.
 
 ## Adding new cities
 

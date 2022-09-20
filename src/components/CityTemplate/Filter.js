@@ -1,46 +1,25 @@
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import CountertopsIcon from "@mui/icons-material/Countertops";
-import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import FamilyRestroomIcon from "@mui/icons-material/FamilyRestroom";
-import HelpIcon from "@mui/icons-material/Help";
-import HighlightOffIcon from "@mui/icons-material/HighlightOff";
-import HomeIcon from "@mui/icons-material/Home";
-import KitchenIcon from "@mui/icons-material/Kitchen";
-import MosqueIcon from "@mui/icons-material/Mosque";
-import PaidIcon from "@mui/icons-material/Paid";
-import PolicyIcon from "@mui/icons-material/Policy";
-import SchoolIcon from "@mui/icons-material/School";
-import StoreIcon from "@mui/icons-material/Store";
-import ThermostatIcon from "@mui/icons-material/Thermostat";
-import WorkIcon from "@mui/icons-material/Work";
-import {
-  Accordion,
-  AccordionDetails,
-  AccordionSummary,
-  Checkbox,
-  Chip,
-  Grid,
-  List,
-  ListItem,
-  ListItemAvatar,
-  ListItemButton,
-  ListItemText,
-  Typography,
-} from "@mui/material";
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
+import CountertopsIcon from '@mui/icons-material/Countertops';
+import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom';
+import HelpIcon from '@mui/icons-material/Help';
+import HomeIcon from '@mui/icons-material/Home';
+import KitchenIcon from '@mui/icons-material/Kitchen';
+import MosqueIcon from '@mui/icons-material/Mosque';
+import PaidIcon from '@mui/icons-material/Paid';
+import PolicyIcon from '@mui/icons-material/Policy';
+import SchoolIcon from '@mui/icons-material/School';
+import StoreIcon from '@mui/icons-material/Store';
+import ThermostatIcon from '@mui/icons-material/Thermostat';
+import WorkIcon from '@mui/icons-material/Work';
+import { Chip, Grid, Typography } from '@mui/material';
+import React from 'react';
 
 const Filter = ({
   categories,
   filteredCategories,
   setFilteredCategories,
-  subResources,
-  currentLangCode,
+  colours,
 }) => {
-  const { t } = useTranslation();
-
-  const [expanded, setExpanded] = useState(false);
   const handleChange = (category) => {
     if (filteredCategories.indexOf(category) === -1) {
       //add category
@@ -61,135 +40,94 @@ const Filter = ({
     setFilteredCategories(categories);
   };
 
-  const handleExpand = () => {
-    setExpanded(!expanded);
-  };
-
-  const getIcon = (category, suppliedColor) => {
-    const color = suppliedColor || "#000";
+  const getIcon = (category) => {
     switch (category) {
-      case "Community, Family, Wellness":
-        return <FamilyRestroomIcon fontSize="large" sx={{ color: color }} />;
-      case "Personal Banking and Financial Services":
-        return <PaidIcon fontSize="large" sx={{ color: color }} />;
-      case "Employment Services":
-        return <WorkIcon fontSize="large" sx={{ color: color }} />;
-      case "Education and Language Services":
-        return <SchoolIcon fontSize="large" sx={{ color: color }} />;
-      case "Clothing, Furniture, Food Bank and Home Services":
-        return <KitchenIcon fontSize="large" sx={{ color: color }} />;
-      case "Public Transportation":
-        return <DirectionsBusIcon fontSize="large" sx={{ color: color }} />;
-      case "Weather":
-        return <ThermostatIcon fontSize="large" sx={{ color: color }} />;
-      case "Starting a Business":
-        return <StoreIcon fontSize="large" sx={{ color: color }} />;
-      case "Home and Living":
-        return <CountertopsIcon fontSize="large" sx={{ color: color }} />;
-      case "Cost of Housing":
-        return <HomeIcon fontSize="large" sx={{ color: color }} />;
-      case "Ethnic Foods, Places of Worship, and Cultural":
-        return <MosqueIcon fontSize="large" sx={{ color: color }} />;
-      case "Legal Services":
-        return <PolicyIcon fontSize="large" sx={{ color: color }} />;
+      case 'Community, Family, Wellness':
+        return <FamilyRestroomIcon fontSize='large' />;
+      case 'Personal Banking and Financial Services':
+        return <PaidIcon fontSize='large' />;
+      case 'Employment Services':
+        return <WorkIcon fontSize='large' />;
+      case 'Education and Language Services':
+        return <SchoolIcon fontSize='large' />;
+      case 'Clothing, Furniture, Food Bank and Home Services':
+        return <KitchenIcon fontSize='large' />;
+      case 'Public Transportation':
+        return <DirectionsBusIcon fontSize='large' />;
+      case 'Weather':
+        return <ThermostatIcon fontSize='large' />;
+      case 'Starting a Business':
+        return <StoreIcon fontSize='large' />;
+      case 'Home and Living':
+        return <CountertopsIcon fontSize='large' />;
+      case 'Cost of Housing':
+        return <HomeIcon fontSize='large' />;
+      case 'Ethnic Foods, Places of Worship, and Cultural':
+        return <MosqueIcon fontSize='large' />;
+      case 'Legal Services':
+        return <PolicyIcon fontSize='large' />;
       default:
-        return <HelpIcon fontSize="large" />;
+        return <HelpIcon fontSize='large' />;
     }
   };
 
   return (
     <>
-      <Accordion expanded={expanded} onChange={() => handleExpand()}>
-        <AccordionSummary
+      <Grid item>
+        <Typography variant='h4' mt={4} mb={1} mx={2}>
+          Click the categories to filter the fact cards
+        </Typography>
+        <Chip
+          onClick={() => handleClearAll()}
+          label='Clear all'
           sx={{
-            minHeight: 0,
-            maxHeight: "35px",
-            "&.Mui-expanded": {
-              minHeight: 0,
-            },
+            fontSize: '1.5rem',
+            marginLeft: 1,
+            marginBottom: 1,
           }}
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography variant="h4">{t("categories")}</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Grid item>
-            <Typography variant="h5" mt={2} mb={1} mx={2}>
-              {t("filterTip")}
-            </Typography>
-            <Grid container mx={1} mb={1} spacing={1}>
-              <Grid item>
-                <Chip
-                  onClick={() => handleClearAll()}
-                  label={t("clear")}
-                  sx={{
-                    fontSize: "1.5rem",
-                  }}
-                  disabled={filteredCategories.length === 0}
-                  icon={<HighlightOffIcon />}
-                />
-              </Grid>
-              <Grid item>
-                <Chip
-                  label={t("select")}
-                  onClick={() => handleSelectAll()}
-                  sx={{
-                    fontSize: "1.5rem",
-                  }}
-                  disabled={filteredCategories.length === categories.length}
-                  icon={<CheckCircleIcon />}
-                />
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item>
-            <List
-              sx={{
-                width: "100%",
-                bgcolor: "background.paper",
-                borderBottomRightRadius: "35px",
-                borderBottomLeftRadius: "35px",
-              }}
-            >
-              {categories.map((category, i) => {
-                const labelId = category;
-                return (
-                  <ListItem
-                    key={i}
-                    dense
-                    onClick={() => handleChange(category)}
-                    secondaryAction={
-                      <Checkbox
-                        edge="end"
-                        size="medium"
-                        inputProps={{ "aria-labelledby": labelId }}
-                        onChange={() => handleChange(category)}
-                        checked={filteredCategories.indexOf(category) !== -1}
-                      />
-                    }
-                    disablePadding
-                  >
-                    <ListItemButton sx={{ borderRadius: "35px" }}>
-                      <ListItemAvatar>{getIcon(category)}</ListItemAvatar>
-                      <ListItemText
-                        id={labelId}
-                        primary={
-                          currentLangCode === "fa"
-                            ? subResources[category][0].record.fields
-                                .category_for_app_fa
-                            : category
-                        }
-                      />
-                    </ListItemButton>
-                  </ListItem>
-                );
-              })}
-            </List>
-          </Grid>
-        </AccordionDetails>
-      </Accordion>
+          disabled={filteredCategories.length === 0}
+        />
+        <Chip
+          label='Select all'
+          onClick={() => handleSelectAll()}
+          sx={{
+            fontSize: '1.5rem',
+            marginLeft: 1,
+            marginBottom: 1,
+          }}
+          disabled={filteredCategories.length === categories.length}
+        />
+      </Grid>
+      <div>
+        {categories.map((category, i) => (
+          <Chip
+            key={i}
+            sx={{
+              fontSize: '1.5rem',
+              marginLeft: 1,
+              marginBottom: 1,
+              backgroundColor:
+                filteredCategories.indexOf(category) !== -1
+                  ? colours[i].background
+                  : 'grey',
+              color:
+                filteredCategories.indexOf(category) !== -1
+                  ? colours[i].text
+                  : '#000',
+              '&:hover': {
+                backgroundColor:
+                  filteredCategories.indexOf(category) !== -1
+                    ? colours[i].background
+                    : 'grey',
+              },
+            }}
+            onClick={(e) => handleChange(e.target.innerText)}
+            component='button'
+            label={category}
+            icon={getIcon(category)}
+          />
+        ))}
+      </div>
     </>
   );
 };

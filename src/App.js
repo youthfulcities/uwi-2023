@@ -1,24 +1,24 @@
-import { createTheme, ThemeProvider } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import { createTheme, ThemeProvider } from '@mui/material';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Navigate,
   Route,
   Routes,
-} from "react-router-dom";
-import "./App.css";
-import Footer from "./components/Footer";
-import CityTemplate from "./pages/CityTemplate";
-import CreateProfile from "./pages/CreateProfile";
-import ExploreAll from "./pages/ExploreAll";
-import Home from "./pages/Home";
-import Intro from "./pages/Intro";
-import Map from "./pages/Map";
-import SuggestedCities from "./pages/SuggestedCities";
+} from 'react-router-dom';
+import './App.css';
+import Footer from './components/Footer';
+import CityTemplate from './pages/CityTemplate';
+import CreateProfile from './pages/CreateProfile';
+import ExploreAll from './pages/ExploreAll';
+import Home from './pages/Home';
+import Intro from './pages/Intro';
+import Map from './pages/Map';
+import SuggestedCities from './pages/SuggestedCities';
 
 function App() {
   const [currentLangCode, setCurrentLangCode] = useState(
-    window.localStorage.i18nextLng || "en"
+    window.localStorage.i18nextLng || 'en'
   );
 
   const [textSize, setTextSize] = useState(0);
@@ -32,14 +32,14 @@ function App() {
 
   const languages = [
     {
-      code: "en",
-      language: "English",
-      dir: "ltr",
+      code: 'en',
+      language: 'English',
+      dir: 'ltr',
     },
     {
-      code: "fa",
-      language: "دری",
-      dir: "rtl",
+      code: 'fa',
+      language: 'دری',
+      dir: 'rtl',
     },
     // {
     //   code: "ps",
@@ -53,85 +53,85 @@ function App() {
   //sets language direction in html
   useEffect(() => {
     document
-      .getElementsByTagName("html")[0]
-      .setAttribute("dir", currentLanguage.dir);
+      .getElementsByTagName('html')[0]
+      .setAttribute('dir', currentLanguage.dir);
   }, [currentLanguage]);
 
   const theme = createTheme({
     palette: {
       primary: {
-        dark: "#1e316d",
-        main: "#253D88",
-        light: "#5164a0",
+        dark: '#1e316d',
+        main: '#253D88',
+        light: '#5164a0',
       },
       secondary: {
-        light: "#fcdf94",
-        main: "#FBD166",
-        dark: "#c9a752",
+        light: '#fcdf94',
+        main: '#FBD166',
+        dark: '#c9a752',
       },
       error: {
-        dark: "#c2544a",
-        main: "#F2695D",
-        light: "#f5877d",
+        dark: '#c2544a',
+        main: '#F2695D',
+        light: '#f5877d',
       },
       warning: {
-        light: "#fae8e7",
-        main: "#F6D9D7",
-        dark: "#ddc3c2",
+        light: '#fae8e7',
+        main: '#F6D9D7',
+        dark: '#ddc3c2',
       },
       success: {
-        light: "#cde4af",
-        main: "#B8D98D",
-        dark: "#93ae71",
+        light: '#cde4af',
+        main: '#B8D98D',
+        dark: '#93ae71',
       },
       info: {
-        main: "#FFFFFF",
+        main: '#FFFFFF',
       },
     },
     typography: {
-      fontFamily: "Gotham Narrow Book",
+      fontFamily: 'Gotham Narrow Book',
       fontSize: 14 + textSize,
       h1: {
-        fontFamily: "Gotham Narrow Black",
+        fontFamily: 'Gotham Narrow Black',
       },
       h2: {
-        fontFamily: "Gotham Narrow Medium",
+        fontFamily: 'Gotham Narrow Medium',
       },
       h3: {
-        fontFamily: "Gotham Narrow Medium",
+        fontFamily: 'Gotham Narrow Medium',
       },
       h4: {
-        fontFamily: "Gotham Narrow Light",
+        fontFamily: 'Gotham Narrow Light',
       },
       h5: {
-        fontFamily: "Gotham Narrow Medium",
+        fontFamily: 'Gotham Narrow Medium',
       },
       body1: {
-        fontFamily: "Gotham Narrow Book",
+        fontFamily: 'Gotham Narrow Book',
         fontSize: 14 + textSize,
       },
       body2: {
-        fontFamily: "Gotham Narrow Book",
+        fontFamily: 'Gotham Narrow Book',
         fontSize: 10 + textSize,
       },
     },
     shape: {
-      borderRadius: 35,
+      borderRadius: 12,
     },
     components: {
       MuiButton: {
         styleOverrides: {
           root: {
-            minWidth: "200px",
+            minWidth: '200px',
           },
         },
       },
       MuiChip: {
         styleOverrides: {
           icon: {
-            color: "inherit",
-            marginLeft: "8px",
-            marginRight: "8px",
+            color: 'inherit',
+            marginLeft: '8px',
+            marginRight: '8px',
           },
         },
       },
@@ -142,13 +142,13 @@ function App() {
             paddingTop: 5,
             paddingRight: 0,
             paddingBottom: 0,
-            borderBottomRightRadius: "inherit",
-            borderBottomLeftRadius: "inherit",
-            background: "#FAFAFA",
-            color: "#000",
-            "&.Mui-expanded": {
-              background: "#F6D9D7",
-              color: "#000",
+            borderBottomRightRadius: 'inherit',
+            borderBottomLeftRadius: 'inherit',
+            background: '#FAFAFA',
+            color: '#000',
+            '&.Mui-expanded': {
+              background: '#F6D9D7',
+              color: '#000',
             },
           },
         },
@@ -156,11 +156,11 @@ function App() {
       MuiCollapse: {
         styleOverrides: {
           root: {
-            background: "#FAFAFA",
+            background: '#FAFAFA',
             borderTopLeftRadius: 0,
             borderTopRightRadius: 0,
-            borderBottomRightRadius: "inherit",
-            borderBottomLeftRadius: "inherit",
+            borderBottomRightRadius: 'inherit',
+            borderBottomLeftRadius: 'inherit',
           },
         },
       },
@@ -187,23 +187,23 @@ function App() {
       MuiFab: {
         styleOverrides: {
           root: {
-            position: "fixed",
+            position: 'fixed',
           },
         },
       },
       MuiContainer: {
         styleOverrides: {
           root: {
-            position: "relative",
+            position: 'relative',
           },
         },
       },
       MuiFormLabel: {
         styleOverrides: {
           root: {
-            fontSize: "1.75rem",
-            "&.MuiInputLabel-root": {
-              whiteSpace: "normal",
+            fontSize: '1.75rem',
+            '&.MuiInputLabel-root': {
+              whiteSpace: 'normal',
             },
           },
         },
@@ -214,9 +214,9 @@ function App() {
             paddingLeft: 20,
           },
           root: {
-            background: "#fff",
-            fontFamily: "Gotham Narrow Book",
-            fontSize: "1.75rem",
+            background: '#fff',
+            fontFamily: 'Gotham Narrow Book',
+            fontSize: '1.75rem',
           },
         },
       },
@@ -224,22 +224,22 @@ function App() {
         styleOverrides: {
           input: {
             padding: 10,
-            backgroundColor: "#fff",
-            borderRadius: 35,
-            border: "2px",
-            borderStyle: "solid",
-            borderColor: "#253D88",
+            backgroundColor: '#fff',
+            borderRadius: 12,
+            border: '2px',
+            borderStyle: 'solid',
+            borderColor: '#253D88',
             minHeight: 28,
-            boxSizing: "border-box",
-            position: "relative",
+            boxSizing: 'border-box',
+            position: 'relative',
           },
           root: {
-            backgroundColor: "transparent",
-            "&.Mui-focused": {
-              backgroundColor: "transparent",
+            backgroundColor: 'transparent',
+            '&.Mui-focused': {
+              backgroundColor: 'transparent',
             },
-            "&:hover": {
-              backgroundColor: "transparent",
+            '&:hover': {
+              backgroundColor: 'transparent',
             },
           },
         },
@@ -250,11 +250,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
-        <div className="flexWrapper">
-          <div className="flexGrow">
+        <div className='flexWrapper'>
+          <div className='flexGrow'>
             <Routes>
               <Route
-                path="/"
+                path='/'
                 element={
                   <Home
                     languages={languages}
@@ -266,7 +266,7 @@ function App() {
                 }
               />
               <Route
-                path="/intro"
+                path='/intro'
                 element={
                   <Intro
                     form={form}
@@ -277,10 +277,9 @@ function App() {
                     textSize={textSize}
                     setTextSize={setTextSize}
                   />
-                }
-              ></Route>
+                }></Route>
               <Route
-                path="/explore-all"
+                path='/explore-all'
                 element={
                   <ExploreAll
                     languages={languages}
@@ -292,7 +291,7 @@ function App() {
                 }
               />
               <Route
-                path="create-profile"
+                path='create-profile'
                 element={
                   <CreateProfile
                     languages={languages}
@@ -306,7 +305,7 @@ function App() {
                 }
               />
               <Route
-                path="/suggested-cities"
+                path='/suggested-cities'
                 element={
                   form.priorities.length > 0 ? (
                     <SuggestedCities
@@ -318,12 +317,12 @@ function App() {
                       setTextSize={setTextSize}
                     />
                   ) : (
-                    <Navigate replace to="/create-profile" />
+                    <Navigate replace to='/create-profile' />
                   )
                 }
               />
               <Route
-                path="/about/:cityname"
+                path='/about/:cityname'
                 element={
                   <CityTemplate
                     languages={languages}
@@ -334,8 +333,8 @@ function App() {
                   />
                 }
               />
-              <Route path="/map/:cityname" element={<Map />} />
-              <Route path="/map" element={<Map />} />
+              <Route path='/map/:cityname' element={<Map />} />
+              <Route path='/map' element={<Map />} />
             </Routes>
           </div>
           <Footer />

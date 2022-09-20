@@ -1,4 +1,4 @@
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
   AccordionDetails,
@@ -6,19 +6,19 @@ import {
   Button,
   Grid,
   Typography,
-} from "@mui/material";
-import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { v4 as uuidv4 } from "uuid";
-import BasicContainer from "../components/BasicContainer";
-import BookNow from "../components/BookNow";
-import Decoration from "../components/Decoration";
-import FactCard from "../components/FactCard";
-import PhotoCard from "../components/PhotoCard";
-import cities from "../data/cities.json";
-import { calcCity, topMeasurements } from "../helpers/calcCity";
-import Loading from "../pages/Loading";
+} from '@mui/material';
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
+import BasicContainer from '../components/BasicContainer';
+import BookNow from '../components/BookNow';
+import Decoration from '../components/Decoration';
+import FactCard from '../components/FactCard';
+import PhotoCard from '../components/PhotoCard';
+import cities from '../data/cities.json';
+import { calcCity, topMeasurements } from '../helpers/calcCity';
+import Loading from '../pages/Loading';
 
 const SuggestedCities = ({
   form,
@@ -58,8 +58,8 @@ const SuggestedCities = ({
 
   //this manually formats the number if current language is Dari, although if the user has their browser UI language set to Dari/Farsi then this should happen automatically so this isn't technically needed
   const formattedNumber = (number) => {
-    if (currentLangCode === "fa") {
-      const newNum = Number(number).toLocaleString("fa-AF");
+    if (currentLangCode === 'fa') {
+      const newNum = Number(number).toLocaleString('fa-AF');
       return newNum;
     }
     return Number(number).toLocaleString();
@@ -69,33 +69,31 @@ const SuggestedCities = ({
     <>
       <Decoration />
       <BasicContainer
-        width="lg"
+        width='lg'
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}
         textSize={textSize}
-        setTextSize={setTextSize}
-      >
+        setTextSize={setTextSize}>
         {cityData !== undefined ? (
           <>
             <Grid mb={2} item>
-              <Typography align="center" variant="h1">
-                {t("suggestedCitiesHeading")}
+              <Typography align='center' variant='h1'>
+                {t('suggestedCitiesHeading')}
               </Typography>
             </Grid>
             <Grid mt={2} item>
               <BookNow />
             </Grid>
-            <Grid container justifyContent="space-between" spacing={2}>
+            <Grid container justifyContent='space-between' spacing={2}>
               {cityData.map((city, i) => (
                 <Grid
                   container
                   item
                   lg={4}
                   sm={12}
-                  direction="column"
-                  key={uuidv4()}
-                >
+                  direction='column'
+                  key={uuidv4()}>
                   <Grid mt={6} item>
                     <PhotoCard
                       score={cityScores[i]}
@@ -105,32 +103,29 @@ const SuggestedCities = ({
                       src={city.main_img}
                       province={city.province}
                       currentLangCode={currentLangCode}
-                      factoid={city.population}
-                    >
+                      factoid={city.population}>
                       {`#${i + 1} ${city.city_name}`}
                     </PhotoCard>
                   </Grid>
                   <Grid mt={1} item>
                     <Accordion
                       sx={{
-                        width: "100%",
-                        borderRadius: "35px",
-                        "&.Mui-expanded": {
-                          background: "#FBD166",
+                        width: '100%',
+                        borderRadius: '12px',
+                        '&.Mui-expanded': {
+                          background: '#FBD166',
                         },
-                      }}
-                    >
+                      }}>
                       <AccordionSummary
-                        expandIcon={<ExpandMoreIcon fontSize="large" />}
-                        aria-controls="panel1a-content"
-                        id="panel1a-header"
-                      >
-                        <Typography variant="h3">{t("facts")}</Typography>
+                        expandIcon={<ExpandMoreIcon fontSize='large' />}
+                        aria-controls='panel1a-content'
+                        id='panel1a-header'>
+                        <Typography variant='h3'>{t('facts')}</Typography>
                       </AccordionSummary>
                       <AccordionDetails>
-                        <div className="accordianContainer">
-                          <Typography variant="body1">
-                            {t("highestScoring")}
+                        <div className='accordianContainer'>
+                          <Typography variant='body1'>
+                            {t('highestScoring')}
                           </Typography>
                         </div>
                         {resources &&
@@ -138,16 +133,14 @@ const SuggestedCities = ({
                             <Grid
                               key={uuidv4()}
                               item
-                              sx={{ width: "100%" }}
-                              flexGrow="5"
-                            >
-                              <div className="accordianContainer">
+                              sx={{ width: '100%' }}
+                              flexGrow='5'>
+                              <div className='accordianContainer'>
                                 <FactCard>
                                   <Typography
-                                    variant="h5"
-                                    color="#000"
-                                    align="center"
-                                  >
+                                    variant='h5'
+                                    color='#000'
+                                    align='center'>
                                     {
                                       priorities.find(
                                         (priority) =>
@@ -157,17 +150,16 @@ const SuggestedCities = ({
                                   </Typography>
                                   <Typography
                                     mt={2}
-                                    variant="h2"
-                                    align="center"
-                                    color="#F2695D"
-                                  >
+                                    variant='h2'
+                                    align='center'
+                                    color='#F2695D'>
                                     {resource.measureableValue ===
-                                    "dollar value"
+                                    'dollar value'
                                       ? `$${formattedNumber(resource.Value)}`
                                       : formattedNumber(resource.Value)}
                                   </Typography>
-                                  <Typography variant="body1" mt={2}>
-                                    {`${t("score")}: ${
+                                  <Typography variant='body1' mt={2}>
+                                    {`${t('score')}: ${
                                       Math.round(resource.score * 100) / 100
                                     }/1`}
                                   </Typography>
@@ -175,16 +167,15 @@ const SuggestedCities = ({
                               </div>
                             </Grid>
                           ))}
-                        <div className="accordianContainer">
+                        <div className='accordianContainer'>
                           <Link to={`/about/${city.city_name}`}>
-                            <Grid mt={1} item flexGrow="1">
+                            <Grid mt={1} item flexGrow='1'>
                               <Button
-                                variant="contained"
-                                size="large"
-                                fullWidth={true}
-                              >
-                                <Typography variant="h5">
-                                  {t("more")}
+                                variant='contained'
+                                size='large'
+                                fullWidth={true}>
+                                <Typography variant='h5'>
+                                  {t('more')}
                                 </Typography>
                               </Button>
                             </Grid>

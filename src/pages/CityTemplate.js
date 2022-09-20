@@ -1,19 +1,17 @@
-import { Card, CardMedia, Container, Grid } from "@mui/material";
-import _ from "lodash";
-import React, { useCallback, useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import Back from "../components/Back";
-import BookNow from "../components/BookNow";
-import ChangeLang from "../components/ChangeLang";
-import CityInfo from "../components/CityTemplate/CityInfo";
-import FactsSection from "../components/CityTemplate/FactsSection";
-import PhotoHeader from "../components/CityTemplate/PhotoHeader";
-import Resources from "../components/CityTemplate/Resources";
-import Feedback from "../components/Feedback";
-import Socials from "../components/Socials";
-import cities from "../data/cities.json";
-import getData from "../helpers/odsClientV2.js";
-import Loading from "../pages/Loading";
+import { Card, CardMedia, Container, Grid } from '@mui/material';
+import _ from 'lodash';
+import React, { useCallback, useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import Back from '../components/Back';
+import ChangeLang from '../components/ChangeLang';
+import CityInfo from '../components/CityTemplate/CityInfo';
+import FactsSection from '../components/CityTemplate/FactsSection';
+import PhotoHeader from '../components/CityTemplate/PhotoHeader';
+import Resources from '../components/CityTemplate/Resources';
+import Socials from '../components/Socials';
+import cities from '../data/cities.json';
+import getData from '../helpers/odsClientV2.js';
+import Loading from '../pages/Loading';
 
 //returns an object where the each key is a category name and each value is an array of all the records that belong to that category
 const groupedArray = async (array) => {
@@ -46,7 +44,7 @@ const CityTemplate = ({
   const [city] = useState(getCityData());
 
   //search bar value formatted to work in ODS query (see Search.js)
-  const [searchStringQuery, setSearchStringQuery] = useState("");
+  const [searchStringQuery, setSearchStringQuery] = useState('');
   const [offset, setOffset] = useState(0);
 
   //raw response from API call
@@ -62,21 +60,21 @@ const CityTemplate = ({
   const [filteredCategories, setFilteredCategories] = useState([]);
 
   const colours = [
-    { background: "#1e316d", text: "#fff" },
-    { background: "#253D88", text: "#fff" },
-    { background: "#5164a0", text: "#fff" },
-    { background: "#cde4af", text: "#000" },
-    { background: "#B8D98D", text: "#000" },
-    { background: "#FBD166", text: "#000" },
-    { background: "#fcdf94", text: "#000" },
-    { background: "#F2695D", text: "#000" },
-    { background: "#f5877d", text: "#000" },
-    { background: "#F6D9D7", text: "#000" },
-    { background: "#fae8e7", text: "#000" },
+    { background: '#1e316d', text: '#fff' },
+    { background: '#253D88', text: '#fff' },
+    { background: '#5164a0', text: '#fff' },
+    { background: '#cde4af', text: '#000' },
+    { background: '#B8D98D', text: '#000' },
+    { background: '#FBD166', text: '#000' },
+    { background: '#fcdf94', text: '#000' },
+    { background: '#F2695D', text: '#000' },
+    { background: '#f5877d', text: '#000' },
+    { background: '#F6D9D7', text: '#000' },
+    { background: '#fae8e7', text: '#000' },
   ];
 
   const getResources = useCallback(() => {
-    console.log("data api triggered");
+    console.log('data api triggered');
 
     //build the query
     //specify all the columns we need
@@ -85,10 +83,10 @@ const CityTemplate = ({
     //more information on the ODS query language can be found here:
     //https://help.opendatasoft.com/apis/ods-search-v2/#search-api-v2
     const query = `/records?select=city,category_for_app,edited_title,edited_title_fa,category_for_app_fa,topic_en,sheet_title,comment,value,measureable_value,url,measurement_en,noteen,indicator_en,suppname&refine=city:${cityname}&limit=100&offset=${offset}${
-      searchStringQuery.length > 0 ? "&where='" + searchStringQuery + "'" : ""
+      searchStringQuery.length > 0 ? "&where='" + searchStringQuery + "'" : ''
     }`;
 
-    let retrievedInfo = getData("refugee-data", query).then(
+    let retrievedInfo = getData('refugee-data', query).then(
       (res) => res.records
     );
 
@@ -109,7 +107,7 @@ const CityTemplate = ({
   }, [getResources]);
 
   useEffect(() => {
-    console.log("values subcategory effect triggered");
+    console.log('values subcategory effect triggered');
 
     const createSubCategories = () => {
       //returns an object where the each key is a category name and each value is an array of all the records that belong to that category
@@ -140,28 +138,26 @@ const CityTemplate = ({
           <PhotoHeader src={city.main_img} alt={city.main_img_alt}>
             {cityname}
           </PhotoHeader>
-          <Container maxWidth="lg">
+          <Container maxWidth='lg'>
             <Grid
-              sx={{ minHeight: "30vh", height: "100%" }}
+              sx={{ minHeight: '30vh', height: '100%' }}
               container
-              direction="column"
-              justifyContent="center"
-              alignItems="center"
+              direction='column'
+              justifyContent='center'
+              alignItems='center'
               pt={0}
               pb={10}
-              spacing={0}
-            >
+              spacing={0}>
               <Grid
                 container
-                direction="row"
+                direction='row'
                 spacing={2}
-                justifyContent="space-between"
-              >
+                justifyContent='space-between'>
                 <Grid item xs={12} md={6} lg={4}>
                   <CityInfo
                     description={
                       city.description_fa !== undefined &&
-                      currentLangCode === "fa"
+                      currentLangCode === 'fa'
                         ? city.description_fa
                         : city.description
                     }
@@ -175,44 +171,33 @@ const CityTemplate = ({
                   md={6}
                   lg={8}
                   container
-                  direction="column"
-                  flexWrap="nowrap"
-                  alignItems="center"
+                  direction='column'
+                  flexWrap='nowrap'
+                  alignItems='center'
                   spacing={2}
-                  mt={1}
-                >
+                  mt={1}>
                   <Grid
                     item
-                    sx={{ minHeight: "300px", height: "100%", width: "100%" }}
-                    xs={12}
-                  >
+                    sx={{ minHeight: '300px', height: '100%', width: '100%' }}
+                    xs={12}>
                     <Card
                       sx={{
-                        position: "relative",
-                        width: "100%",
-                        height: "100%",
-                      }}
-                    >
+                        position: 'relative',
+                        width: '100%',
+                        height: '100%',
+                      }}>
                       <CardMedia
-                        sx={{ zIndex: "1", position: "absolute" }}
-                        component="img"
-                        height="100%"
+                        sx={{ zIndex: '1', position: 'absolute' }}
+                        component='img'
+                        height='100%'
                         src={city.main_img}
                         alt={city.main_img_alt}
                       />
                     </Card>
                   </Grid>
-                  <Grid item container alignItems="stretch" spacing={2}>
-                    <Grid item lg={8} xs={12}>
-                      <BookNow />
-                    </Grid>
-                    <Grid item lg={4} xs={12}>
-                      <Feedback />
-                    </Grid>
-                  </Grid>
                 </Grid>
               </Grid>
-              <Grid container direction="column">
+              <Grid container direction='column'>
                 <Grid item mt={3} mb={1}>
                   <FactsSection
                     setSearchStringQuery={setSearchStringQuery}
@@ -235,7 +220,7 @@ const CityTemplate = ({
               </Grid>
             </Grid>
             <Back />
-            <Grid item mb={2} sx={{ maxHeight: "10vh" }}>
+            <Grid item mb={2} sx={{ maxHeight: '10vh' }}>
               <Socials />
             </Grid>
             <ChangeLang

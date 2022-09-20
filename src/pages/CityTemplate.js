@@ -1,4 +1,4 @@
-import { Card, CardMedia, Container, Grid } from '@mui/material';
+import { Card, CardMedia, Container, Grid, Typography } from '@mui/material';
 import _ from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
@@ -6,8 +6,8 @@ import Back from '../components/Back';
 import ChangeLang from '../components/ChangeLang';
 import CityInfo from '../components/CityTemplate/CityInfo';
 import FactsSection from '../components/CityTemplate/FactsSection';
-import PhotoHeader from '../components/CityTemplate/PhotoHeader';
 import Resources from '../components/CityTemplate/Resources';
+import Decoration from '../components/Decoration';
 import Socials from '../components/Socials';
 import cities from '../data/cities.json';
 import getData from '../helpers/odsClientV2.js';
@@ -117,8 +117,8 @@ const CityTemplate = ({
       groupedArrayNames(resources).then((res) => {
         setCategories(res);
 
-        //only filteredCategories are displayed; default to having only the first category selected
-        res.length !== 0 && setFilteredCategories([res[0]]);
+        //only filteredCategories are displayed; default to having only the 6th one selected, which is weather (deemed one of the most important things based on feedback)
+        res.length !== 0 && setFilteredCategories([res[6]]);
       });
     };
 
@@ -135,9 +135,10 @@ const CityTemplate = ({
     <>
       {city !== undefined || resources.length === 0 ? (
         <>
-          <PhotoHeader src={city.main_img} alt={city.main_img_alt}>
+          {/* <PhotoHeader src={city.main_img} alt={city.main_img_alt}>
             {cityname}
-          </PhotoHeader>
+          </PhotoHeader> */}
+          <Decoration />
           <Container maxWidth='lg'>
             <Grid
               sx={{ minHeight: '30vh', height: '100%' }}
@@ -148,6 +149,9 @@ const CityTemplate = ({
               pt={0}
               pb={10}
               spacing={0}>
+              <Typography variant='h1' my={3}>
+                {cityname}
+              </Typography>
               <Grid
                 container
                 direction='row'

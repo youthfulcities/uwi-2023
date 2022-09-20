@@ -1,46 +1,42 @@
-import { Container, Grid } from "@mui/material";
-import React from "react";
+import { Container, Grid } from '@mui/material';
+import React from 'react';
 
 const Footer = () => {
   return (
     <footer>
-      <Container maxWidth="lg">
+      <Container maxWidth='lg'>
         <Grid
-          sx={{ minHeight: "14vh", maxHeight: "14vh" }}
+          sx={{ minHeight: '14vh', maxHeight: '14vh' }}
           container
-          direction="row"
-          justifyContent="space-between"
-          alignItems="center"
-        >
+          direction='row'
+          justifyContent='center'
+          alignItems='center'>
           <Grid item>
-            <Grid container direction="row" alignItems="center">
-              <Grid item container spacing="1vh" direction="column">
+            <Grid container direction='row' alignItems='center'>
+              <Grid item container spacing='1vh' direction='column'>
                 <Grid item>
                   <a
-                    target="_blank"
-                    rel="noreferrer"
-                    href="https://youthfulcities.com/"
-                  >
+                    target='_blank'
+                    rel='noreferrer'
+                    href='https://youthfulcities.com/'>
                     <img
-                      src={"./assets/images/yc-logo.png"}
-                      height="60vh"
-                      alt="Youthful Cities logo"
+                      src={'./assets/images/yc-logo.png'}
+                      height='60vh'
+                      alt='Youthful Cities logo'
                     />
                   </a>
-                  <Grid item className="attributionLink" mx="1vh">
+                  <Grid item className='attributionLink' mx='1vh'>
                     <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://icons8.com/icon/6EivusYGgM4h/home"
-                    >
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://icons8.com/icon/6EivusYGgM4h/home'>
                       Home
                     </a>
                     icon by
                     <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://icons8.com"
-                    >
+                      target='_blank'
+                      rel='noreferrer'
+                      href='https://icons8.com'>
                       Icons8
                     </a>
                   </Grid>

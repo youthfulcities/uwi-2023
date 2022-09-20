@@ -116,7 +116,7 @@ function App() {
       },
     },
     shape: {
-      borderRadius: 12,
+      borderRadius: 35,
     },
     components: {
       MuiButton: {
@@ -225,7 +225,7 @@ function App() {
           input: {
             padding: 10,
             backgroundColor: '#fff',
-            borderRadius: 12,
+            borderRadius: 35,
             border: '2px',
             borderStyle: 'solid',
             borderColor: '#253D88',

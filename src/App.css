@@ -5,7 +5,7 @@
   --green: #b8d98d;
   --indigo: #253d88;
   --red: #f2695d;
-  --chestnuts: #884c41;
+  --chestnuts: #673934;
 
   --font_heading: font(normal normal normal 45px/1.4em arial + black);
 }
@@ -13,50 +13,50 @@
 /* Fonts
    ========================================================================== */
 @font-face {
-  font-family: "Gotham Narrow Black";
-  src: url("../public/assets/theme_font/GothamNarrow-Black.eot");
-  src: url("../public/assets/theme_font/GothamNarrow-Black.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/theme_font/GothamNarrow-Black.woff2") format("woff2"),
-    url("../public/assets/theme_font/GothamNarrow-Black.woff") format("woff"),
-    url("../public/assets/theme_font/GothamNarrow-Black.ttf") format("truetype");
+  font-family: 'Gotham Narrow Black';
+  src: url('../public/assets/theme_font/GothamNarrow-Black.eot');
+  src: url('../public/assets/theme_font/GothamNarrow-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/theme_font/GothamNarrow-Black.woff2') format('woff2'),
+    url('../public/assets/theme_font/GothamNarrow-Black.woff') format('woff'),
+    url('../public/assets/theme_font/GothamNarrow-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham Narrow Medium";
-  src: url("../public/assets/theme_font/GothamNarrow-Medium.eot");
-  src: url("../public/assets/theme_font/GothamNarrow-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/theme_font/GothamNarrow-Medium.woff2") format("woff2"),
-    url("../public/assets/theme_font/GothamNarrow-Medium.woff") format("woff"),
-    url("../public/assets/theme_font/GothamNarrow-Medium.ttf")
-      format("truetype");
+  font-family: 'Gotham Narrow Medium';
+  src: url('../public/assets/theme_font/GothamNarrow-Medium.eot');
+  src: url('../public/assets/theme_font/GothamNarrow-Medium.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/theme_font/GothamNarrow-Medium.woff2') format('woff2'),
+    url('../public/assets/theme_font/GothamNarrow-Medium.woff') format('woff'),
+    url('../public/assets/theme_font/GothamNarrow-Medium.ttf')
+      format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham Narrow Light";
-  src: url("../public/assets/theme_font/GothamNarrow-Light.eot");
-  src: url("../public/assets/theme_font/GothamNarrow-Light.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/theme_font/GothamNarrow-Light.woff2") format("woff2"),
-    url("../public/assets/theme_font/GothamNarrow-Light.woff") format("woff"),
-    url("../public/assets/theme_font/GothamNarrow-Light.ttf") format("truetype");
+  font-family: 'Gotham Narrow Light';
+  src: url('../public/assets/theme_font/GothamNarrow-Light.eot');
+  src: url('../public/assets/theme_font/GothamNarrow-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/theme_font/GothamNarrow-Light.woff2') format('woff2'),
+    url('../public/assets/theme_font/GothamNarrow-Light.woff') format('woff'),
+    url('../public/assets/theme_font/GothamNarrow-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gotham Narrow Book";
-  src: url("../public/assets/theme_font/GothamNarrow-Book.eot");
-  src: url("../public/assets/theme_font/GothamNarrow-Book.eot?#iefix")
-      format("embedded-opentype"),
-    url("../public/assets/theme_font/GothamNarrow-Book.woff2") format("woff2"),
-    url("../public/assets/theme_font/GothamNarrow-Book.woff") format("woff"),
-    url("../public/assets/theme_font/GothamNarrow-Book.ttf") format("truetype");
+  font-family: 'Gotham Narrow Book';
+  src: url('../public/assets/theme_font/GothamNarrow-Book.eot');
+  src: url('../public/assets/theme_font/GothamNarrow-Book.eot?#iefix')
+      format('embedded-opentype'),
+    url('../public/assets/theme_font/GothamNarrow-Book.woff2') format('woff2'),
+    url('../public/assets/theme_font/GothamNarrow-Book.woff') format('woff'),
+    url('../public/assets/theme_font/GothamNarrow-Book.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -65,16 +65,16 @@
    ========================================================================== */
 
 h1 {
-  font-family: "Gotham Narrow Black", sans-serif;
+  font-family: 'Gotham Narrow Black', sans-serif;
 }
 h2 {
-  font-family: "Gotham Narrow Medium", sans-serif;
+  font-family: 'Gotham Narrow Medium', sans-serif;
 }
 h3 {
-  font-family: "Gotham Narrow Medium", sans-serif;
+  font-family: 'Gotham Narrow Medium', sans-serif;
 }
 p {
-  font-family: "Gotham Narrow Book", sans-serif;
+  font-family: 'Gotham Narrow Book', sans-serif;
 }
 
 a:hover {
@@ -88,7 +88,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Gotham Narrow Book", sans-serif;
+  font-family: 'Gotham Narrow Book', sans-serif;
   z-index: -100;
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 footer {
-  background-color: #000000;
+  background-color: #000;
   min-width: 100%;
 }
 
@@ -120,7 +120,7 @@ img {
 
 .smallText {
   font-size: 1rem;
-  font-family: "Gotham Narrow Book", sans-serif;
+  font-family: 'Gotham Narrow Book', sans-serif;
   line-height: 0;
 }
 
@@ -140,7 +140,7 @@ img {
    ========================================================================== */
 
 .background {
-  background-image: url("/public/assets/images/grid.png");
+  background-image: url('/public/assets/images/grid.png');
   background-size: cover;
   background-position: center bottom;
   width: 100%;
@@ -151,7 +151,7 @@ img {
 }
 
 .backgroundAbsolute {
-  background-image: url("/public/assets/images/grid.png");
+  background-image: url('/public/assets/images/grid.png');
   background-size: cover;
   background-position: center bottom;
   width: 100%;
@@ -172,7 +172,7 @@ img {
 }
 
 .photoBackground {
-  background-image: url("/public/assets/images/canada.jpg");
+  background-image: url('/public/assets/images/canada.jpg');
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -237,7 +237,7 @@ img {
    ========================================================================== */
 
 .backButton {
-  top: 5vh;
+  bottom: 5vh;
   left: 40px;
   z-index: 100;
 }
@@ -460,7 +460,7 @@ img {
   clip-path: inset(-100% 0);
 }
 .dots-bars-5:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 8px;
   height: 8px;

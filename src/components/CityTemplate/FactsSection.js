@@ -32,8 +32,8 @@ const FactsSection = ({
           background: '#F2695D',
         },
         '&:first-of-type': {
-          borderTopLeftRadius: 12,
-          borderTopRightRadius: 12,
+          borderTopLeftRadius: 35,
+          borderTopRightRadius: 35,
         },
       }}>
       <AccordionSummary

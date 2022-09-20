@@ -111,7 +111,7 @@ const SuggestedCities = ({
                     <Accordion
                       sx={{
                         width: '100%',
-                        borderRadius: '12px',
+                        borderRadius: '35px',
                         '&.Mui-expanded': {
                           background: '#FBD166',
                         },

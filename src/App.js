@@ -13,6 +13,7 @@ import CreateProfile from "./pages/CreateProfile";
 import ExploreAll from "./pages/ExploreAll";
 import Home from "./pages/Home";
 import Intro from "./pages/Intro";
+import Map from "./pages/Map";
 import SuggestedCities from "./pages/SuggestedCities";
 
 function App() {
@@ -333,6 +334,8 @@ function App() {
                   />
                 }
               />
+              <Route path="/map/:cityname" element={<Map />} />
+              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
           <Footer />

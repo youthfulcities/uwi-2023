@@ -1,16 +1,14 @@
-import { Card, CardMedia, Container, Grid, Typography } from "@mui/material";
+import { Card, CardMedia, Container, Grid } from "@mui/material";
 import _ from "lodash";
 import React, { useCallback, useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 import Back from "../components/Back";
 import BookNow from "../components/BookNow";
 import ChangeLang from "../components/ChangeLang";
 import CityInfo from "../components/CityTemplate/CityInfo";
-import Facts from "../components/CityTemplate/Facts";
-import Filter from "../components/CityTemplate/Filter";
+import FactsSection from "../components/CityTemplate/FactsSection";
 import PhotoHeader from "../components/CityTemplate/PhotoHeader";
-import Search from "../components/CityTemplate/Search";
+import Resources from "../components/CityTemplate/Resources";
 import Feedback from "../components/Feedback";
 import Socials from "../components/Socials";
 import cities from "../data/cities.json";
@@ -38,7 +36,6 @@ const CityTemplate = ({
   textSize,
   setTextSize,
 }) => {
-  const { t } = useTranslation();
   const { cityname } = useParams();
 
   //finds information in cities.json matching current city as per url params
@@ -138,7 +135,7 @@ const CityTemplate = ({
 
   return (
     <>
-      {city !== undefined ? (
+      {city !== undefined || resources.length === 0 ? (
         <>
           <PhotoHeader src={city.main_img} alt={city.main_img_alt}>
             {cityname}
@@ -215,36 +212,27 @@ const CityTemplate = ({
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item mb={1} mt={3} width="100%">
-                <Search setSearchStringQuery={setSearchStringQuery} />
-              </Grid>
-              {resources.length > 0 ? (
-                <>
-                  <Grid item mb={3} width="100%">
-                    <Filter
-                      subResources={subResources}
-                      categories={categories}
-                      filteredCategories={filteredCategories}
-                      setFilteredCategories={setFilteredCategories}
-                      colours={colours}
-                      currentLangCode={currentLangCode}
-                    />
-                  </Grid>
-                  <Facts
+              <Grid container direction="column">
+                <Grid item mt={3} mb={1}>
+                  <FactsSection
+                    setSearchStringQuery={setSearchStringQuery}
+                    resources={resources}
+                    subResources={subResources}
+                    filteredCategories={filteredCategories}
+                    categories={categories}
+                    setFilteredCategories={setFilteredCategories}
+                    colours={colours}
+                    currentLangCode={currentLangCode}
+                    cityname={cityname}
+                  />
+                </Grid>
+                <Grid item mb={3}>
+                  <Resources
                     cityname={cityname}
                     currentLangCode={currentLangCode}
-                    colours={colours}
-                    subResources={subResources}
-                    resources={resources}
-                    categories={categories}
-                    filteredCategories={filteredCategories}
                   />
-                </>
-              ) : (
-                <Grid item className="accordianContainer">
-                  <Typography variant="body1">{t("noneFound")}</Typography>
                 </Grid>
-              )}
+              </Grid>
             </Grid>
             <Back />
             <Grid item mb={2} sx={{ maxHeight: "10vh" }}>

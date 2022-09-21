@@ -25,21 +25,6 @@ const Footer = () => {
                       alt='Youthful Cities logo'
                     />
                   </a>
-                  <Grid item className='attributionLink' mx='1vh'>
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://icons8.com/icon/6EivusYGgM4h/home'>
-                      Home
-                    </a>
-                    icon by
-                    <a
-                      target='_blank'
-                      rel='noreferrer'
-                      href='https://icons8.com'>
-                      Icons8
-                    </a>
-                  </Grid>
                 </Grid>
               </Grid>
               {/* <Grid item sx={{ maxWidth: "50%" }}>

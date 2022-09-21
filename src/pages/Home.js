@@ -1,12 +1,12 @@
-import React from "react";
-import { Typography, Button, Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import BasicContainer from "../components/BasicContainer";
-import Decoration from "../components/Decoration";
-import PhotoBackground from "../components/PhotoBackground";
+import { Button, Grid, Typography } from '@mui/material';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import BasicContainer from '../components/BasicContainer';
+import Decoration from '../components/Decoration';
+import PhotoBackground from '../components/PhotoBackground';
 
-import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Home = ({
   languages,
@@ -20,55 +20,43 @@ const Home = ({
   return (
     <>
       <div>
-        <Decoration />
+        <Decoration hideText />
         <PhotoBackground />
         <BasicContainer
-          width="xs"
+          width='xs'
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}
           textSize={textSize}
-          setTextSize={setTextSize}
-        >
+          setTextSize={setTextSize}>
           <Grid
             item
             container
-            direction="row"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <img
-              alt="Home icon with a group of four houses"
-              src="/assets/images/home-white.png"
-            />
-            <Typography color="#FFF" variant="h1" align="center" mx="2vh">
-              KULBA
+            direction='row'
+            alignItems='center'
+            justifyContent='center'>
+            <Typography color='#FFF' variant='h1' align='center' mx='2vh'>
+              SettleIn
             </Typography>
           </Grid>
-          <Grid item mt="2vh" mb="5vh">
-            <Typography color="#FFF" variant="h4" align="center">
-              کلبه • Home
-            </Typography>
-          </Grid>
-          <Grid item mt="2vh" mb="5vh">
-            <Typography color="#FFF" variant="h5" align="center">
-              {t("welcomeMessage")}
+          <Grid item mt='2vh' mb='5vh'>
+            <Typography color='#FFF' variant='h5' align='center'>
+              {t('welcomeMessage')}
             </Typography>
           </Grid>
 
           {languages.map(({ code, language }) => (
-            <Grid key={code} item mt="1vh">
-              <Link to="/intro">
+            <Grid key={code} item mt='1vh'>
+              <Link to='/intro'>
                 <Button
-                  color="primary"
-                  variant="contained"
-                  size="large"
+                  color='primary'
+                  variant='contained'
+                  size='large'
                   onClick={() => {
                     i18next.changeLanguage(code);
                     setCurrentLangCode(code);
-                  }}
-                >
-                  <Typography variant="h5">{language}</Typography>
+                  }}>
+                  <Typography variant='h5'>{language}</Typography>
                 </Button>
               </Link>
             </Grid>

@@ -265,6 +265,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Router>
+        {/* <Header /> */}
         <div className='flexWrapper'>
           <div className='flexGrow'>
             <Routes>

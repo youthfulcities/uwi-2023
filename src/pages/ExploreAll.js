@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
-import { Grid, Typography } from '@mui/material';
+import { Button, Grid, Typography } from '@mui/material';
 
 import BasicContainer from '../components/BasicContainer';
 import Decoration from '../components/Decoration';
@@ -14,6 +15,8 @@ const ExploreAll = ({
   setCurrentLangCode,
   textSize,
   setTextSize,
+  form,
+  setForm,
 }) => {
   const { t } = useTranslation();
 
@@ -29,7 +32,18 @@ const ExploreAll = ({
         currentLangCode={currentLangCode}
         textSize={textSize}
         setTextSize={setTextSize}>
-        <Grid mb={2} item>
+        <Grid container spacing={2} justifyContent='center'>
+          <Grid item>
+            <Link to='/create-profile'>
+              <Button
+                variant='contained'
+                onClick={() => setForm({ ...form, step: 1 })}>
+                Find the best city for me
+              </Button>
+            </Link>
+          </Grid>
+        </Grid>
+        <Grid mb={2} mt={3} item>
           <Typography align='center' variant='h1'>
             {t('exploreHeading')}
           </Typography>

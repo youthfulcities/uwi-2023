@@ -21,6 +21,7 @@ import Loading from '../pages/Loading';
 
 const SuggestedCities = ({
   form,
+  setForm,
   currentLangCode,
   languages,
   setCurrentLangCode,
@@ -76,11 +77,28 @@ const SuggestedCities = ({
         setTextSize={setTextSize}>
         {cityData !== undefined ? (
           <>
-            <Grid mb={2} item>
+            <Grid container spacing={2} justifyContent='center'>
+              <Grid item>
+                <Link to='/create-profile'>
+                  <Button
+                    variant='contained'
+                    onClick={() => setForm({ ...form, step: 1 })}>
+                    Start Again
+                  </Button>
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link to='/explore-all'>
+                  <Button variant='contained'>Explore All Cities</Button>
+                </Link>
+              </Grid>
+            </Grid>
+            <Grid mt={3} item>
               <Typography align='center' variant='h1'>
                 {t('suggestedCitiesHeading')}
               </Typography>
             </Grid>
+
             <Grid container justifyContent='space-between' spacing={2}>
               {cityData.map((city, i) => (
                 <Grid

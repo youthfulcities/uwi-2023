@@ -111,7 +111,7 @@ function App() {
       },
       h5: {
         fontFamily: 'Gotham Narrow Medium',
-        fontSize: 18 + textSize,
+        fontSize: 16 + textSize,
       },
       h6: {
         fontFamily: 'Gotham Narrow Medium',
@@ -127,6 +127,7 @@ function App() {
       },
       button: {
         fontFamily: 'Gotham Narrow Medium',
+        fontSize: 14 + textSize,
         textTransform: 'uppercase',
       },
     },
@@ -298,6 +299,8 @@ function App() {
                 path='/explore-all'
                 element={
                   <ExploreAll
+                    form={form}
+                    setForm={setForm}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     textSize={textSize}
@@ -326,6 +329,7 @@ function App() {
                   form.priorities.length > 0 ? (
                     <SuggestedCities
                       form={form}
+                      setForm={setForm}
                       currentLangCode={currentLangCode}
                       languages={languages}
                       setCurrentLangCode={setCurrentLangCode}

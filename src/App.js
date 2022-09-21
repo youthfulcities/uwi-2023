@@ -90,29 +90,44 @@ function App() {
     },
     typography: {
       fontFamily: 'Gotham Narrow Book',
-      fontSize: 14 + textSize,
+      color: '#000',
       h1: {
         fontFamily: 'Gotham Narrow Black',
+        fontSize: 54 + textSize,
+        textTransform: 'capitalize',
       },
       h2: {
-        fontFamily: 'Gotham Narrow Medium',
+        fontFamily: 'Gotham Narrow Black',
+        fontSize: 54 + textSize,
       },
       h3: {
         fontFamily: 'Gotham Narrow Medium',
+        fontSize: 20 + textSize,
       },
       h4: {
         fontFamily: 'Gotham Narrow Light',
+        fontSize: 18 + textSize,
+        textTransform: 'uppercase',
       },
       h5: {
         fontFamily: 'Gotham Narrow Medium',
+        fontSize: 18 + textSize,
+      },
+      h6: {
+        fontFamily: 'Gotham Narrow Medium',
+        fontSize: 14 + textSize,
       },
       body1: {
         fontFamily: 'Gotham Narrow Book',
-        fontSize: 14 + textSize,
+        fontSize: 16 + textSize,
       },
       body2: {
         fontFamily: 'Gotham Narrow Book',
-        fontSize: 10 + textSize,
+        fontSize: 14 + textSize,
+      },
+      button: {
+        fontFamily: 'Gotham Narrow Medium',
+        textTransform: 'uppercase',
       },
     },
     shape: {

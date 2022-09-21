@@ -90,10 +90,11 @@ body {
   overflow-x: hidden;
   font-family: 'Gotham Narrow Book', sans-serif;
   z-index: -100;
+  color: #000;
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: var(--green);
 }
 
 footer {
@@ -172,7 +173,7 @@ img {
 }
 
 .photoBackground {
-  background-image: url('/public/assets/images/canada.jpg');
+  background-image: url('/public/assets/images/flag.jpg');
   background-size: cover;
   background-position: center;
   width: 100vw;
@@ -301,7 +302,7 @@ img {
 
 .cardOverlay {
   background-color: #000000;
-  opacity: 60%;
+  opacity: 75%;
   width: 100%;
   height: 100%;
   position: absolute;

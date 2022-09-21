@@ -12,7 +12,6 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import BasicContainer from '../components/BasicContainer';
-import BookNow from '../components/BookNow';
 import Decoration from '../components/Decoration';
 import FactCard from '../components/FactCard';
 import PhotoCard from '../components/PhotoCard';
@@ -81,9 +80,6 @@ const SuggestedCities = ({
               <Typography align='center' variant='h1'>
                 {t('suggestedCitiesHeading')}
               </Typography>
-            </Grid>
-            <Grid mt={2} item>
-              <BookNow />
             </Grid>
             <Grid container justifyContent='space-between' spacing={2}>
               {cityData.map((city, i) => (

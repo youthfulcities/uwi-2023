@@ -1,7 +1,14 @@
-import { Card, CardMedia, Container, Grid, Typography } from '@mui/material';
+import {
+  Button,
+  Card,
+  CardMedia,
+  Container,
+  Grid,
+  Typography,
+} from '@mui/material';
 import _ from 'lodash';
 import React, { useCallback, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Back from '../components/Back';
 import ChangeLang from '../components/ChangeLang';
 import CityInfo from '../components/CityTemplate/CityInfo';
@@ -28,6 +35,8 @@ const groupedArrayNames = async (array) => {
 };
 
 const CityTemplate = ({
+  form,
+  setForm,
   languages,
   setCurrentLangCode,
   currentLangCode,
@@ -152,6 +161,22 @@ const CityTemplate = ({
               <Typography variant='h1' my={3}>
                 {cityname}
               </Typography>
+              <Grid container spacing={2} justifyContent='center'>
+                <Grid item>
+                  <Link to='/create-profile'>
+                    <Button
+                      variant='contained'
+                      onClick={() => setForm({ ...form, step: 1 })}>
+                      Find the best city for me
+                    </Button>
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link to='/explore-all'>
+                    <Button variant='contained'>Explore All Cities</Button>
+                  </Link>
+                </Grid>
+              </Grid>
               <Grid
                 container
                 direction='row'

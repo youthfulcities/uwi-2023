@@ -345,6 +345,8 @@ function App() {
                 path='/about/:cityname'
                 element={
                   <CityTemplate
+                    form={form}
+                    setForm={setForm}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}

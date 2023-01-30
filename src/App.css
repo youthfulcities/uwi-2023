@@ -94,7 +94,7 @@ body {
 }
 
 body {
-  background-color: var(--green);
+  background-color: #fff;
 }
 
 footer {
@@ -103,7 +103,8 @@ footer {
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #root {
@@ -135,6 +136,29 @@ img {
 
 .flexGrow {
   flex-grow: 10;
+}
+
+.highlight {
+position:relative;
+}
+
+.highlight:after{
+  content:"";
+  background-color:#FFEE55;
+  opacity: 90%;
+  width:112%;
+  height:0.75em;
+  position:absolute;
+  z-index:-1;
+  -webkit-filter:url(#marker-shape);
+          filter:url(#marker-shape);
+  left:-6px;
+  top:30px;
+}
+
+.title {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
 }
 
 /* Backgrounds & containers
@@ -183,9 +207,10 @@ img {
 }
 
 .photoBackground {
-  background-image: url('/public/assets/images/flag.jpg');
-  background-size: cover;
+  background-image: url('/public/assets/images/grid-paper.png');
+  background-size: contain;
   background-position: center;
+  background-repeat: repeat;
   width: 100vw;
   height: 100%;
   position: absolute;
@@ -209,7 +234,8 @@ img {
 
 .photoHeaderImg {
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 100%;
   width: 100%;
   z-index: -5;
@@ -293,7 +319,8 @@ img {
 
 .photoButtonImg {
   position: absolute;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 80px;
   height: 100px;
   width: 100%;
@@ -468,7 +495,8 @@ img {
     var(--c) 100% 100%/8px 10px;
   background-repeat: no-repeat;
   position: relative;
-  clip-path: inset(-100% 0);
+  -webkit-clip-path: inset(-100% 0);
+          clip-path: inset(-100% 0);
 }
 .dots-bars-5:before {
   content: '';
@@ -479,8 +507,21 @@ img {
   background: currentColor;
   left: -16px;
   top: 0;
-  animation: db5-1 2s linear infinite,
+  -webkit-animation: db5-1 2s linear infinite,
     db5-2 0.5s cubic-bezier(0, 200, 0.8, 200) infinite;
+          animation: db5-1 2s linear infinite,
+    db5-2 0.5s cubic-bezier(0, 200, 0.8, 200) infinite;
+}
+
+@-webkit-keyframes db5-1 {
+  0% {
+    left: -16px;
+    transform: translateY(-8px);
+  }
+  100% {
+    left: calc(100% + 8px);
+    transform: translateY(22px);
+  }
 }
 
 @keyframes db5-1 {
@@ -491,6 +532,12 @@ img {
   100% {
     left: calc(100% + 8px);
     transform: translateY(22px);
+  }
+}
+
+@-webkit-keyframes db5-2 {
+  100% {
+    top: -0.1px;
   }
 }
 

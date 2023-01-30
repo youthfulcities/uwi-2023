@@ -2,10 +2,8 @@ import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import BasicContainer from '../components/BasicContainer';
-import Decoration from '../components/Decoration';
 import PhotoBackground from '../components/PhotoBackground';
 
-import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const Home = ({
@@ -20,7 +18,6 @@ const Home = ({
   return (
     <>
       <div>
-        <Decoration hideText />
         <PhotoBackground />
         <BasicContainer
           width='xs'
@@ -32,35 +29,24 @@ const Home = ({
           <Grid
             item
             container
-            direction='row'
-            alignItems='center'
+            direction='column'
+            alignItems='flex-start'
             justifyContent='center'>
-            <Typography color='#FFF' variant='h1' align='center' mx='2vh'>
-              SettleIn
+            <Typography variant='h1' align='left' className='title'>
+              Find my <span className='highlight'> best</span> city
             </Typography>
-          </Grid>
-          <Grid item mt='2vh' mb='5vh'>
-            <Typography color='#FFF' variant='h5' align='center'>
-              {t('welcomeMessage')}
-            </Typography>
-          </Grid>
-
-          {languages.map(({ code, language }) => (
-            <Grid key={code} item mt='1vh'>
-              <Link to='/intro'>
-                <Button
-                  color='primary'
-                  variant='contained'
-                  size='large'
-                  onClick={() => {
-                    i18next.changeLanguage(code);
-                    setCurrentLangCode(code);
-                  }}>
-                  <Typography variant='h5'>{language}</Typography>
-                </Button>
-              </Link>
+            <Grid item mt='2vh' mb='5vh'>
+              <Typography variant='h5' align='left'>
+                urban work index 2023
+              </Typography>
             </Grid>
-          ))}
+          </Grid>
+          <Link to='/'>
+            <Button variant='contained'>Take the Quiz</Button>
+          </Link>
+          <Link to='/'>
+            <Button variant='contained'>Explore All Cities</Button>
+          </Link>
         </BasicContainer>
       </div>
     </>

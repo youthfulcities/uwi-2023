@@ -4,7 +4,7 @@ import {
   BrowserRouter as Router,
   Navigate,
   Route,
-  Routes,
+  Routes
 } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
@@ -37,15 +37,10 @@ function App() {
       dir: 'ltr',
     },
     {
-      code: 'fa',
-      language: 'دری',
-      dir: 'rtl',
+      code: 'fr',
+      language: 'French',
+      dir: 'ltr',
     },
-    // {
-    //   code: "ps",
-    //   language: "پښتو",
-    //   dir: "rtl",
-    // },
   ];
 
   const currentLanguage = languages.find((l) => l.code === currentLangCode);
@@ -93,8 +88,7 @@ function App() {
       color: '#000',
       h1: {
         fontFamily: 'Gotham Narrow Black',
-        fontSize: 54 + textSize,
-        textTransform: 'capitalize',
+        fontSize: 81 + textSize,
       },
       h2: {
         fontFamily: 'Gotham Narrow Black',
@@ -110,8 +104,10 @@ function App() {
         textTransform: 'uppercase',
       },
       h5: {
-        fontFamily: 'Gotham Narrow Medium',
-        fontSize: 16 + textSize,
+        fontFamily: 'adelle',
+        fontWeight: 600,
+        fontStyle: 'normal',
+        fontSize: 24 + textSize,
       },
       h6: {
         fontFamily: 'Gotham Narrow Medium',

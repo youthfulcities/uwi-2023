@@ -1,23 +1,17 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import MailIcon from "@mui/icons-material/Mail";
+import PhoneIcon from "@mui/icons-material/Phone";
+import WebIcon from "@mui/icons-material/Web";
 import {
-  Card,
-  Typography,
-  Grid,
-  Divider,
-  List,
+  Card, Divider, Grid, List,
   ListItem,
   ListItemButton,
   ListItemIcon,
-  ListItemText,
+  ListItemText, Typography
 } from "@mui/material";
-import PhoneIcon from "@mui/icons-material/Phone";
-import WebIcon from "@mui/icons-material/Web";
-import MailIcon from "@mui/icons-material/Mail";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-
-import engToPersian from "../../helpers/persianNum";
 
 //use google map api to link to address. remove # as it's a special character and breaks the query
 const createQuery = (name, address) => {
@@ -92,9 +86,6 @@ const ResourceCard = ({
                       }
                       secondary={
                         <Typography variant="body1">
-                          {currentLangCode === "fa" || currentLangCode === "ps"
-                            ? engToPersian(phone)
-                            : phone}
                         </Typography>
                       }
                     />
@@ -168,9 +159,6 @@ const ResourceCard = ({
                           sx={{ wordBreak: "break-word" }}
                           variant="body1"
                         >
-                          {currentLangCode === "fa" || currentLangCode === "ps"
-                            ? engToPersian(address)
-                            : address}
                         </Typography>
                       }
                     />

@@ -14,7 +14,7 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs: ["en", "fa", "ps"],
+    supportedLngs: ["en", "fr"],
     fallbackLng: "en",
     detection: {
       // order and from where user language should be detected

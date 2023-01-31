@@ -1,6 +1,6 @@
-import { ApiClient } from "@opendatasoft/api-client";
+import { ApiClient } from '@opendatasoft/api-client';
 
-//this is for the V1 API
+// this is for the V1 API
 const getData = async (dataset, query) => {
   const client = new ApiClient({
     /* (Optional) authenticate through an api key */
@@ -8,7 +8,7 @@ const getData = async (dataset, query) => {
 
     /* (Optional) The Opendatasoft domain identifier or url.
        If missing, in the browser, the client will use the current host. */
-    domain: "pivot-data-hub" || "https://pivot-data-hub.opendatasoft.com/",
+    domain: 'pivot-data-hub' || 'https://pivot-data-hub.opendatasoft.com/',
 
     /* (Optional) A fetch-compatible API for making a request. */
     fetch: window.fetch,
@@ -37,7 +37,7 @@ const getData = async (dataset, query) => {
     .catch((error) => console.error(error));
 };
 
-//example query:
+// example query:
 // "catalog/datasets/index-2020-full/aggregates?select=avg(value) as y,city as x&group_by=city"
 
 export default getData;

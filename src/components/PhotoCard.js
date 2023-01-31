@@ -25,74 +25,72 @@ const PhotoButton = ({
   };
 
   return (
-    <>
-      <Link to={`/about/${city}`}>
-        <Card
-          sx={{
-            position: 'relative',
-            width: '100%',
-            '&:hover': {
-              cursor: 'pointer',
-            },
-          }}>
-          <Grid
-            container
-            direction='row'
-            justifyContent='space-between'
-            alignItems='center'
-            flexWrap='none'>
-            <Grid item sx={{ zIndex: 100 }} p={2}>
-              <Typography
-                p={3}
-                pb={1}
-                color='#FFF'
-                className='photoButtonText'
-                variant='h2'>
-                {children}
-              </Typography>
-              <Typography
-                p={3}
-                pt={0}
-                color='#FFF'
-                className='photoButtonText'
-                variant='h4'>
-                {province}
-              </Typography>
-            </Grid>
-            {score && (
-              <Grid item p={2}>
-                <Typography
-                  px={3}
-                  py={0}
-                  color='#FFF'
-                  className='photoButtonText'
-                  variant='h3'>
-                  {`${t('score')}: ${Math.round(score * 10) / 10}/${outOf}`}
-                </Typography>
-              </Grid>
-            )}
+    <Link to={`/about/${city}`}>
+      <Card
+        sx={{
+          position: 'relative',
+          width: '100%',
+          '&:hover': {
+            cursor: 'pointer',
+          },
+        }}>
+        <Grid
+          container
+          direction="row"
+          justifyContent="space-between"
+          alignItems="center"
+          flexWrap="none">
+          <Grid item sx={{ zIndex: 100 }} p={2}>
+            <Typography
+              p={3}
+              pb={1}
+              color="#FFF"
+              className="photoButtonText"
+              variant="h2">
+              {children}
+            </Typography>
+            <Typography
+              p={3}
+              pt={0}
+              color="#FFF"
+              className="photoButtonText"
+              variant="h4">
+              {province}
+            </Typography>
+          </Grid>
+          {score && (
             <Grid item p={2}>
               <Typography
-                p={3}
-                align='right'
-                color='#FFF'
-                className='smallPhotoButtonText'
-                variant='body1'>
-                {t('population')}: {formattedNumber(factoid)}
+                px={3}
+                py={0}
+                color="#FFF"
+                className="photoButtonText"
+                variant="h3">
+                {`${t('score')}: ${Math.round(score * 10) / 10}/${outOf}`}
               </Typography>
             </Grid>
-            <CardMedia
-              sx={{ zIndex: '1', position: 'absolute' }}
-              component='img'
-              height='100%'
-              src={src}
-              alt={alt}
-            />
+          )}
+          <Grid item p={2}>
+            <Typography
+              p={3}
+              align="right"
+              color="#FFF"
+              className="smallPhotoButtonText"
+              variant="body1">
+              {t('population')}: {formattedNumber(factoid)}
+            </Typography>
           </Grid>
-          <div className='cardOverlay'></div>
-        </Card>
-      </Link>
-    </>
+          <CardMedia
+            sx={{ zIndex: '1', position: 'absolute' }}
+            component="img"
+            height="100%"
+            src={src}
+            alt={alt}
+          />
+        </Grid>
+        <div className="cardOverlay" />
+      </Card>
+    </Link>
   );
 };
 

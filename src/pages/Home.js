@@ -20,7 +20,8 @@ const Home = ({
       <BasicContainer
         width="xs"
         spacing={1}
-        px={2}
+        px={3}
+        py={8}
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}

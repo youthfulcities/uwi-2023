@@ -41,7 +41,7 @@ const ChangeLang = ({
             <Button
               sx={{ minWidth: 0, boxShadow: 6 }}
               variant="contained"
-              color="secondary"
+              color="primary"
               onClick={handleClick}
               className="roundButton"
               aria-controls={open ? 'language-menu' : undefined}
@@ -67,7 +67,7 @@ const ChangeLang = ({
                         : 'langMenuItemWrapper'
                     }>
                     <Typography
-                      variant="h5"
+                      variant="h6"
                       className={
                         currentLangCode === code
                           ? 'langMenuItemDisabled'
@@ -81,7 +81,7 @@ const ChangeLang = ({
               <Fab
                 sx={{ position: 'absolute' }}
                 color="primary"
-                size="medium"
+                size="small"
                 className="textSizeButtonDecrease"
                 onClick={() => setTextSize(textSize - 1)}
                 disabled={textSize === 0}>
@@ -89,7 +89,7 @@ const ChangeLang = ({
               </Fab>
               <Fab
                 color="primary"
-                size="medium"
+                size="small"
                 sx={{ position: 'absolute' }}
                 className="textSizeButtonIncrease"
                 onClick={() => setTextSize(textSize + 1)}

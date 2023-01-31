@@ -1,6 +1,6 @@
-import React from "react";
-import { Fab } from "@mui/material";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { Fab } from '@mui/material';
+import React from 'react';
 
 const Back = () => {
   const goBack = () => {
@@ -12,8 +12,7 @@ const Back = () => {
       color="primary"
       size="medium"
       className="backButton"
-      sx={{ height: "58px", width: "58px" }}
-    >
+      sx={{ height: '58px', width: '58px' }}>
       <ArrowBackIcon fontSize="large" />
     </Fab>
   );

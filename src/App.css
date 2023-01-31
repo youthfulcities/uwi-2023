@@ -386,8 +386,8 @@ position:relative;
 
 .changeLang {
   position: fixed;
-  right: 40px;
-  top: 5vh;
+  right: 2vh;
+  top: 2vh;
   z-index: 100;
 }
 

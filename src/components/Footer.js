@@ -1,44 +1,42 @@
 import { Container, Grid } from '@mui/material';
 import React from 'react';
 
-const Footer = () => {
-  return (
-    <footer>
-      <Container maxWidth='lg'>
-        <Grid
-          sx={{ minHeight: '14vh', maxHeight: '14vh' }}
-          container
-          direction='row'
-          justifyContent='center'
-          alignItems='center'>
-          <Grid item>
-            <Grid container direction='row' alignItems='center'>
-              <Grid item container spacing='1vh' direction='column'>
-                <Grid item>
-                  <a
-                    target='_blank'
-                    rel='noreferrer'
-                    href='https://youthfulcities.com/'>
-                    <img
-                      src={'./assets/images/yc-logo.png'}
-                      height='60vh'
-                      alt='Youthful Cities logo'
-                    />
-                  </a>
-                </Grid>
-              </Grid>
-              {/* <Grid item sx={{ maxWidth: "50%" }}>
-                <Typography color="#fff" variant="body1" className="smallText">
-                  Youthful Cities is a not-for-profit determined to make cities
-                  better places to work, live, and play for everyone.
-                </Typography>
-              </Grid> */}
-            </Grid>
-          </Grid>
+const Footer = () => (
+  <footer>
+    <Container maxWidth="lg">
+      <Grid
+        sx={{ minHeight: '10vh', maxHeight: '10vh' }}
+        container
+        direction="row"
+        justifyContent="space-between"
+        alignItems="center">
+        <Grid item>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://youthfulcities.com/">
+            <img
+              src="./assets/images/yc-logo.png"
+              height="50px"
+              alt="Youthful Cities logo"
+            />
+          </a>
         </Grid>
-      </Container>
-    </footer>
-  );
-};
+        <Grid item>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.rbc.com/dms/enterprise/futurelaunch/">
+            <img
+              src="./assets/images/fl.png"
+              height="40px"
+              alt="RBC Future Launch logo"
+            />
+          </a>
+        </Grid>
+      </Grid>
+    </Container>
+  </footer>
+);
 
 export default Footer;

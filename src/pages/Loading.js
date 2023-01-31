@@ -1,5 +1,5 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Loading = () => {
   const { t } = useTranslation();
@@ -7,10 +7,10 @@ const Loading = () => {
   return (
     <>
       <div className="centered">
-        <h2 className="loadingText">{t("loading")}</h2>
-        <img src="/assets/images/Rhombus.gif" alt="loading animation"></img>
+        <h2 className="loadingText">{t('loading')}</h2>
+        <img src="/assets/images/Rhombus.gif" alt="loading animation" />
       </div>
-      <div className="loading"></div>
+      <div className="loading" />
     </>
   );
 };

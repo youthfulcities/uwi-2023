@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Button, Grid, Typography } from '@mui/material';
 
@@ -26,17 +27,17 @@ const ExploreAll = ({
     <>
       <Decoration />
       <BasicContainer
-        width='lg'
+        width="lg"
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}
         textSize={textSize}
         setTextSize={setTextSize}>
-        <Grid container spacing={2} justifyContent='center'>
+        <Grid container spacing={2} justifyContent="center">
           <Grid item>
-            <Link to='/create-profile'>
+            <Link to="/create-profile">
               <Button
-                variant='contained'
+                variant="contained"
                 onClick={() => setForm({ ...form, step: 1 })}>
                 Find the best city for me
               </Button>
@@ -44,13 +45,13 @@ const ExploreAll = ({
           </Grid>
         </Grid>
         <Grid mb={2} mt={3} item>
-          <Typography align='center' variant='h1'>
+          <Typography align="center" variant="h1">
             {t('exploreHeading')}
           </Typography>
         </Grid>
-        <Grid container direction='row' spacing={2}>
-          {recs.map((city, i) => (
-            <Grid key={i} item lg={4} md={6} xs={12}>
+        <Grid container direction="row" spacing={2}>
+          {recs.map((city) => (
+            <Grid key={uuidv4()} item lg={4} md={6} xs={12}>
               <PhotoCard
                 city={city.city_name}
                 alt={city.main_img_alt}

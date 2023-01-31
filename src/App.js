@@ -16,7 +16,7 @@ import Intro from './pages/Intro';
 import Map from './pages/Map';
 import SuggestedCities from './pages/SuggestedCities';
 
-function App() {
+const App = () => {
   const [currentLangCode, setCurrentLangCode] = useState(
     window.localStorage.i18nextLng || 'en'
   );
@@ -45,7 +45,7 @@ function App() {
 
   const currentLanguage = languages.find((l) => l.code === currentLangCode);
 
-  //sets language direction in html
+  // sets language direction in html
   useEffect(() => {
     document
       .getElementsByTagName('html')[0]
@@ -89,6 +89,7 @@ function App() {
       h1: {
         fontFamily: 'Gotham Narrow Black',
         fontSize: 81 + textSize,
+        lineHeight: '88px',
       },
       h2: {
         fontFamily: 'Gotham Narrow Black',
@@ -263,11 +264,11 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         {/* <Header /> */}
-        <div className='flexWrapper'>
-          <div className='flexGrow'>
+        <div className="flexWrapper">
+          <div className="flexGrow">
             <Routes>
               <Route
-                path='/'
+                path="/"
                 element={
                   <Home
                     languages={languages}
@@ -279,7 +280,7 @@ function App() {
                 }
               />
               <Route
-                path='/intro'
+                path="/intro"
                 element={
                   <Intro
                     form={form}
@@ -290,9 +291,10 @@ function App() {
                     textSize={textSize}
                     setTextSize={setTextSize}
                   />
-                }></Route>
+                }
+              />
               <Route
-                path='/explore-all'
+                path="/explore-all"
                 element={
                   <ExploreAll
                     form={form}
@@ -306,7 +308,7 @@ function App() {
                 }
               />
               <Route
-                path='create-profile'
+                path="create-profile"
                 element={
                   <CreateProfile
                     languages={languages}
@@ -320,7 +322,7 @@ function App() {
                 }
               />
               <Route
-                path='/suggested-cities'
+                path="/suggested-cities"
                 element={
                   form.priorities.length > 0 ? (
                     <SuggestedCities
@@ -333,12 +335,12 @@ function App() {
                       setTextSize={setTextSize}
                     />
                   ) : (
-                    <Navigate replace to='/create-profile' />
+                    <Navigate replace to="/create-profile" />
                   )
                 }
               />
               <Route
-                path='/about/:cityname'
+                path="/about/:cityname"
                 element={
                   <CityTemplate
                     form={form}
@@ -351,8 +353,8 @@ function App() {
                   />
                 }
               />
-              <Route path='/map/:cityname' element={<Map />} />
-              <Route path='/map' element={<Map />} />
+              <Route path="/map/:cityname" element={<Map />} />
+              <Route path="/map" element={<Map />} />
             </Routes>
           </div>
           <Footer />
@@ -360,6 +362,6 @@ function App() {
       </Router>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

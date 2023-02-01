@@ -150,14 +150,32 @@ position:relative;
   content:"";
   background-color:#FFEE55;
   opacity: 90%;
-  width:112%;
-  height:0.75em;
+  width:105%;
+  height:0.85em;
   position:absolute;
   z-index:-1;
   -webkit-filter:url(#marker-shape);
           filter:url(#marker-shape);
-  left:-6px;
-  top:30px;
+  left:-5px;
+  top:0.75rem;
+}
+
+.highlight-title {
+position:relative;
+}
+
+.highlight-title:after{
+  content:"";
+  background-color:#FFEE55;
+  opacity: 90%;
+  width:110%;
+  height:8rem;
+  position:absolute;
+  z-index:-1;
+  -webkit-filter:url(#marker-shape);
+          filter:url(#marker-shape);
+  left:-7px;
+  top:0.75rem;
 }
 
 .title {

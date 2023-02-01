@@ -2,6 +2,7 @@ import { Container, Grid } from '@mui/material';
 import React, { forwardRef } from 'react';
 import ChangeLang from './ChangeLang';
 import FadeInUp from './FadeInUp';
+import PhotoBackground from './PhotoBackground';
 
 const BasicContainer = (
   {
@@ -19,28 +20,23 @@ const BasicContainer = (
   },
   ref
 ) => (
-  <Container ref={ref} maxWidth={width}>
-    <FadeInUp inView={inView}>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        px={px}
-        py={py}
-        spacing={spacing}>
-        {children}
-      </Grid>
-      {/* {document.location.pathname !== "/" && <Back />} */}
-      <ChangeLang
-        languages={languages}
-        setCurrentLangCode={setCurrentLangCode}
-        currentLangCode={currentLangCode}
-        textSize={textSize}
-        setTextSize={setTextSize}
-      />
-    </FadeInUp>
-  </Container>
+  <>
+    <PhotoBackground />
+    <Container ref={ref} maxWidth={width}>
+      <FadeInUp inView={inView}>
+        <Grid
+          container
+          direction="column"
+          justifyContent="center"
+          alignItems="center"
+          px={px}
+          py={py}
+          spacing={spacing}>
+          {children}
+        </Grid>
+      </FadeInUp>
+    </Container>
+  </>
 );
 
 export default forwardRef(BasicContainer);

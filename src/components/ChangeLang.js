@@ -1,26 +1,18 @@
-import AddIcon from '@mui/icons-material/Add';
-import RemoveIcon from '@mui/icons-material/Remove';
 import TranslateIcon from '@mui/icons-material/Translate';
 import {
   Box,
   Button,
   ClickAwayListener,
-  Fab,
   Paper,
   Tooltip,
   Typography
 } from '@mui/material';
+import { motion } from 'framer-motion';
 import i18next from 'i18next';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const ChangeLang = ({
-  languages,
-  setCurrentLangCode,
-  currentLangCode,
-  textSize,
-  setTextSize,
-}) => {
+const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
   const [open, setOpen] = useState(false);
   const { t } = useTranslation();
 
@@ -41,6 +33,8 @@ const ChangeLang = ({
             <Button
               sx={{ minWidth: 0, boxShadow: 6 }}
               variant="contained"
+              component={motion.button}
+              layout
               color="primary"
               onClick={handleClick}
               className="roundButton"
@@ -51,54 +45,31 @@ const ChangeLang = ({
             </Button>
           </Tooltip>
           {open && (
-            <>
-              <Paper className="langMenu" id="language-menu" elevation={6}>
-                {languages.map(({ code, language }) => (
-                  <Box
-                    key={code}
-                    onClick={() => {
-                      i18next.changeLanguage(code);
-                      setCurrentLangCode(code);
-                      setTextSize(0);
-                    }}
+            <Paper className="langMenu" id="language-menu" elevation={6}>
+              {languages.map(({ code, language }) => (
+                <Box
+                  key={code}
+                  onClick={() => {
+                    i18next.changeLanguage(code);
+                    setCurrentLangCode(code);
+                  }}
+                  className={
+                    currentLangCode === code
+                      ? 'langMenuItemWrapperDisabled'
+                      : 'langMenuItemWrapper'
+                  }>
+                  <Typography
+                    variant="h6"
                     className={
                       currentLangCode === code
-                        ? 'langMenuItemWrapperDisabled'
-                        : 'langMenuItemWrapper'
+                        ? 'langMenuItemDisabled'
+                        : 'langMenuItem'
                     }>
-                    <Typography
-                      variant="h6"
-                      className={
-                        currentLangCode === code
-                          ? 'langMenuItemDisabled'
-                          : 'langMenuItem'
-                      }>
-                      {language}
-                    </Typography>
-                  </Box>
-                ))}
-              </Paper>
-              <Fab
-                sx={{ position: 'absolute' }}
-                color="primary"
-                size="small"
-                className="textSizeButtonDecrease"
-                onClick={() => setTextSize(textSize - 1)}
-                disabled={textSize === 0}>
-                <RemoveIcon fontSize="large" />
-              </Fab>
-              <Fab
-                color="primary"
-                size="small"
-                sx={{ position: 'absolute' }}
-                className="textSizeButtonIncrease"
-                onClick={() => setTextSize(textSize + 1)}
-                disabled={
-                  currentLangCode === 'en' ? textSize === 6 : textSize === 8
-                }>
-                <AddIcon fontSize="large" />
-              </Fab>
-            </>
+                    {language}
+                  </Typography>
+                </Box>
+              ))}
+            </Paper>
           )}
         </Box>
       </ClickAwayListener>

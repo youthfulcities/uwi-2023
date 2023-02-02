@@ -1,0 +1,39 @@
+[{
+  "name": "City Economy",
+  "key":"economy"
+}, 
+{ "name": "Cost of Living",
+"key":"cost"
+
+}, {
+  "name":"Digital Access",
+  "key":"digital"
+},
+{
+  "name":"Diveristy",
+  "key":"diversity"
+},
+{
+  "name":"Education + Training",
+  "key":"education"
+},
+{
+  "name":"Entrepreneurial Spirit",
+  "key":"business"
+},
+{
+  "name":"Good Youth Jobs",
+  "key":"jobs"
+},
+{
+  "name":"Health",
+  "key":"health"
+},
+{
+  "name":"Sustainability",
+  "key":"sustainability"
+},
+{
+  "name":"Transportation",
+  "key":"transport"
+}]

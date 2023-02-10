@@ -47,7 +47,7 @@ const theme = () =>
       },
       h3: {
         fontFamily: 'Gotham Narrow Medium',
-        fontSize: 20,
+        fontSize: 18,
       },
       h4: {
         fontFamily: 'Gotham Narrow Light',

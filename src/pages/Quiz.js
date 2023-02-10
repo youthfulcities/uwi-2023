@@ -5,18 +5,30 @@ import BasicContainer from '../components/BasicContainer';
 import RoundSymbolButton from '../components/RoundSymbolButton';
 import topics from '../data/topics.json';
 
-const Quiz = ({ languages, setCurrentLangCode, currentLangCode }) => (
+const Quiz = ({
+  languages,
+  setCurrentLangCode,
+  currentLangCode,
+  priorities,
+  setPriorities,
+}) => (
   <BasicContainer
     languages={languages}
     setCurrentLangCode={setCurrentLangCode}
     currentLangCode={currentLangCode}>
-    <Typography variant="h5">
+    <Typography variant="h5" mb={4}>
       Select the aspects of a city that are{' '}
       <span className="highlight">important to you.</span> Tap again to
       deselect.
     </Typography>
     {topics.map((topic) => (
-      <RoundSymbolButton key={uuidv4} topic={topic.key} name={topic.name} />
+      <RoundSymbolButton
+        priorities={priorities}
+        setPriorities={setPriorities}
+        key={uuidv4}
+        topic={topic.key}
+        name={topic.name}
+      />
     ))}
   </BasicContainer>
 );

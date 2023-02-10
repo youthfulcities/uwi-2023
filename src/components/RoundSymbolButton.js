@@ -1,4 +1,5 @@
 import BalanceIcon from '@mui/icons-material/Balance';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import CircleIcon from '@mui/icons-material/Circle';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import HealingIcon from '@mui/icons-material/Healing';
@@ -13,7 +14,7 @@ import { Button, Typography } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
-const RoundSymbolButton = ({ topic, name }) => {
+const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
   const { t } = useTranslation();
 
   const getIcon = (iconTopic) => {
@@ -23,7 +24,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <TrendingUpIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -34,7 +35,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <LunchDiningIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -45,7 +46,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <WifiIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -56,7 +57,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <BalanceIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -67,7 +68,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <SchoolIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -78,7 +79,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <LightbulbIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -89,7 +90,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <PaymentsIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -100,7 +101,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <HealingIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -111,7 +112,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <ParkIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -122,7 +123,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <DirectionsBusIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -133,7 +134,7 @@ const RoundSymbolButton = ({ topic, name }) => {
           <CircleIcon
             sx={{
               color: '#373737',
-              fontSize: '100px',
+              fontSize: '130px',
               position: 'absolute',
               zIndex: 0,
             }}
@@ -142,7 +143,24 @@ const RoundSymbolButton = ({ topic, name }) => {
     }
   };
 
-  const handleClick = () => {};
+  const getCheckIcon = () => (
+    <CheckCircleIcon
+      sx={{
+        color: '#B8D98D',
+        fontSize: '130px',
+        position: 'absolute',
+        zIndex: 0,
+      }}
+    />
+  );
+
+  const handleClick = () => {
+    if (priorities.includes(name)) {
+      setPriorities((prev) => prev.filter((priority) => priority !== name));
+    } else {
+      setPriorities((prev) => [...prev, name]);
+    }
+  };
 
   return (
     <Button
@@ -156,9 +174,9 @@ const RoundSymbolButton = ({ topic, name }) => {
       }}
       variant="contained"
       color="secondary"
-      onClick={handleClick}
+      onClick={() => handleClick()}
       className="roundSymbolButton">
-      {getIcon(topic)}
+      {priorities.includes(name) ? getCheckIcon() : getIcon(topic)}
       <Typography variant="h3" sx={{ zIndex: 10 }} align="center">
         {name}
       </Typography>

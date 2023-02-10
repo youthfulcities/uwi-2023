@@ -1,9 +1,7 @@
 import { ThemeProvider } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 import {
-  BrowserRouter as Router,
-  Navigate,
-  Route,
+  BrowserRouter as Router, Route,
   Routes
 } from 'react-router-dom';
 import './App.css';
@@ -17,7 +15,6 @@ import ExploreAll from './pages/ExploreAll';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Quiz from './pages/Quiz';
-import SuggestedCities from './pages/SuggestedCities';
 
 const App = () => {
   const [currentLangCode, setCurrentLangCode] = useState(
@@ -26,9 +23,7 @@ const App = () => {
 
   const theme = muiTheme();
 
-  const [form, setForm] = useState({
-    priorities: [],
-  });
+  const [priorities, setPriorities] = useState([]);
 
   const languages = [
     {
@@ -80,8 +75,8 @@ const App = () => {
                 path="/quiz"
                 element={
                   <Quiz
-                    form={form}
-                    setForm={setForm}
+                    priorities={priorities}
+                    setPriorities={setPriorities}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}
@@ -92,8 +87,8 @@ const App = () => {
                 path="/explore-all"
                 element={
                   <ExploreAll
-                    form={form}
-                    setForm={setForm}
+                    priorities={priorities}
+                    setPriorities={setPriorities}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}
@@ -107,33 +102,17 @@ const App = () => {
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}
-                    form={form}
-                    setForm={setForm}
+                    priorities={priorities}
+                    setPriorities={setPriorities}
                   />
-                }
-              />
-              <Route
-                path="/suggested-cities"
-                element={
-                  form.priorities.length > 0 ? (
-                    <SuggestedCities
-                      form={form}
-                      setForm={setForm}
-                      currentLangCode={currentLangCode}
-                      languages={languages}
-                      setCurrentLangCode={setCurrentLangCode}
-                    />
-                  ) : (
-                    <Navigate replace to="/create-profile" />
-                  )
                 }
               />
               <Route
                 path="/about/:cityname"
                 element={
                   <CityTemplate
-                    form={form}
-                    setForm={setForm}
+                    priorities={priorities}
+                    setPriorities={setPriorities}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}

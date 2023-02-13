@@ -1,6 +1,5 @@
 import { Container, Grid } from '@mui/material';
 import React, { forwardRef } from 'react';
-import ChangeLang from './ChangeLang';
 import FadeInUp from './FadeInUp';
 import PhotoBackground from './PhotoBackground';
 
@@ -11,7 +10,7 @@ const BasicContainer = (
     width = 'xs',
     spacing = 0,
     px = 0,
-    py = '5vh',
+    py = '10vh',
     languages,
     setCurrentLangCode,
     currentLangCode,

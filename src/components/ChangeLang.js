@@ -35,7 +35,7 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
               variant="contained"
               component={motion.button}
               layout
-              color="primary"
+              color="info"
               onClick={handleClick}
               className="roundButton"
               aria-controls={open ? 'language-menu' : undefined}

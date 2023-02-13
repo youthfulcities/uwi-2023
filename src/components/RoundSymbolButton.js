@@ -163,6 +163,8 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
   return priorities.includes(name) ? (
     <Button
       sx={{
+        boxShadow:
+          'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)',
         minWidth: 0,
         width: '50%',
         height: 'auto',
@@ -170,14 +172,12 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
         borderRadius: '100px',
         padding: '50px',
         '&:hover': {
-          backgroundColor: lightColour,
-          boxShadow: 'none',
+          backgroundColor: '#36529B',
         },
         '&:active': {
-          boxShadow: 'none',
-          backgroundColor: lightColour,
+          backgroundColor: '#36529B',
         },
-        backgroundColor: lightColour,
+        backgroundColor: '#36529B',
       }}
       variant="contained"
       color="secondary"
@@ -185,25 +185,35 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
       className="roundSymbolButton">
       <CheckIcon
         sx={{
-          color: darkColour,
+          color: '#253D88',
           fontSize: '150px',
           position: 'absolute',
           zIndex: 0,
         }}
       />
-      <Typography variant="h3" sx={{ zIndex: 10 }} align="center">
+      <Typography
+        variant="h3"
+        sx={{
+          zIndex: 10,
+        }}
+        align="center">
         {name}
       </Typography>
     </Button>
   ) : (
     <Button
       sx={{
+        boxShadow:
+          'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
         minWidth: 0,
         width: '50%',
         height: 'auto',
         aspectRatio: '1/1',
         borderRadius: '100px',
         padding: '50px',
+        '&:hover': {
+          backgroundColor: '#515151',
+        },
       }}
       variant="contained"
       color="secondary"

@@ -10,7 +10,7 @@ const theme = () =>
       },
       secondary: {
         light: '#CBCBCB',
-        main: '#6F6F6F',
+        main: '#515151',
         dark: '#373737',
       },
       error: {

@@ -1,5 +1,5 @@
 import BalanceIcon from '@mui/icons-material/Balance';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import CheckIcon from '@mui/icons-material/Check';
 import CircleIcon from '@mui/icons-material/Circle';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import HealingIcon from '@mui/icons-material/Healing';
@@ -11,11 +11,19 @@ import SchoolIcon from '@mui/icons-material/School';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import WifiIcon from '@mui/icons-material/Wifi';
 import { Button, Typography } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+
+const darkColours = ['#F2695D', '#253D88', '#D69F21', '#97BC5C', '#673934'];
+const lightColours = ['#FFA8A4', '#36529B', '#FBD166', '#B8D98D', '#896F6E'];
+const getRandomColour = () => Math.floor(Math.random() * 5);
 
 const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
   const { t } = useTranslation();
+
+  const [colourIndex, setColourIndex] = useState(getRandomColour());
+  const darkColour = darkColours[colourIndex];
+  const lightColour = lightColours[colourIndex];
 
   const getIcon = (iconTopic) => {
     switch (iconTopic) {
@@ -143,26 +151,51 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
     }
   };
 
-  const getCheckIcon = () => (
-    <CheckCircleIcon
-      sx={{
-        color: '#B8D98D',
-        fontSize: '130px',
-        position: 'absolute',
-        zIndex: 0,
-      }}
-    />
-  );
-
   const handleClick = () => {
     if (priorities.includes(name)) {
+      setColourIndex(getRandomColour());
       setPriorities((prev) => prev.filter((priority) => priority !== name));
     } else {
       setPriorities((prev) => [...prev, name]);
     }
   };
 
-  return (
+  return priorities.includes(name) ? (
+    <Button
+      sx={{
+        minWidth: 0,
+        width: '50%',
+        height: 'auto',
+        aspectRatio: '1/1',
+        borderRadius: '100px',
+        padding: '50px',
+        '&:hover': {
+          backgroundColor: lightColour,
+          boxShadow: 'none',
+        },
+        '&:active': {
+          boxShadow: 'none',
+          backgroundColor: lightColour,
+        },
+        backgroundColor: lightColour,
+      }}
+      variant="contained"
+      color="secondary"
+      onClick={() => handleClick()}
+      className="roundSymbolButton">
+      <CheckIcon
+        sx={{
+          color: darkColour,
+          fontSize: '150px',
+          position: 'absolute',
+          zIndex: 0,
+        }}
+      />
+      <Typography variant="h3" sx={{ zIndex: 10 }} align="center">
+        {name}
+      </Typography>
+    </Button>
+  ) : (
     <Button
       sx={{
         minWidth: 0,
@@ -176,7 +209,7 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
       color="secondary"
       onClick={() => handleClick()}
       className="roundSymbolButton">
-      {priorities.includes(name) ? getCheckIcon() : getIcon(topic)}
+      {getIcon(topic)}
       <Typography variant="h3" sx={{ zIndex: 10 }} align="center">
         {name}
       </Typography>

@@ -25,7 +25,7 @@ const Quiz = ({
       <RoundSymbolButton
         priorities={priorities}
         setPriorities={setPriorities}
-        key={uuidv4}
+        key={uuidv4()}
         topic={topic.key}
         name={topic.name}
       />

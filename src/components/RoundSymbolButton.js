@@ -152,15 +152,15 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities }) => {
   };
 
   const handleClick = () => {
-    if (priorities.includes(name)) {
+    if (priorities.includes(topic)) {
       setColourIndex(getRandomColour());
-      setPriorities((prev) => prev.filter((priority) => priority !== name));
+      setPriorities((prev) => prev.filter((priority) => priority !== topic));
     } else {
-      setPriorities((prev) => [...prev, name]);
+      setPriorities((prev) => [...prev, topic]);
     }
   };
 
-  return priorities.includes(name) ? (
+  return priorities.includes(topic) ? (
     <Button
       sx={{
         boxShadow:

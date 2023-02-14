@@ -1,16 +1,11 @@
 import { ThemeProvider } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import {
-  BrowserRouter as Router, Route,
-  Routes
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import ChangeLang from './components/ChangeLang';
 import FadeInUp from './components/FadeInUp';
 import Footer from './components/Footer';
 import muiTheme from './muiTheme';
-import CityTemplate from './pages/CityTemplate';
-import CreateProfile from './pages/CreateProfile';
 import ExploreAll from './pages/ExploreAll';
 import Home from './pages/Home';
 import Map from './pages/Map';
@@ -87,30 +82,6 @@ const App = () => {
                 path="/explore-all"
                 element={
                   <ExploreAll
-                    priorities={priorities}
-                    setPriorities={setPriorities}
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                  />
-                }
-              />
-              <Route
-                path="create-profile"
-                element={
-                  <CreateProfile
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                    priorities={priorities}
-                    setPriorities={setPriorities}
-                  />
-                }
-              />
-              <Route
-                path="/about/:cityname"
-                element={
-                  <CityTemplate
                     priorities={priorities}
                     setPriorities={setPriorities}
                     languages={languages}

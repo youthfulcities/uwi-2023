@@ -1,13 +1,11 @@
-import React, { Suspense } from 'react';
-import ReactDOM from 'react-dom';
-
 import i18n from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpApi from 'i18next-http-backend';
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 import { initReactI18next } from 'react-i18next';
-import reportWebVitals from './reportWebVitals';
-
 import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 i18n
   .use(initReactI18next) // passes i18n down to react-i18next
@@ -47,21 +45,16 @@ i18n
     },
   });
 
-const LoadingMarkup = () => (
-  <div className="centered">
-    <h2 className="loadingText">Loading...</h2>
-    <img src="/assets/images/Rhombus.gif" alt="loading animation" />
-  </div>
-);
+// const LoadingMarkup = () => (
+//   <div className="centered">
+//     <h2 className="loadingText">Loading...</h2>
+//     <img src="/assets/images/Rhombus.gif" alt="loading animation" />
+//   </div>
+// );
 
-ReactDOM.render(
-  <Suspense fallback={<LoadingMarkup />}>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </Suspense>,
-  document.getElementById('root')
-);
+const container = document.getElementById('app');
+const root = createRoot(container);
+root.render(<App tab="home" />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

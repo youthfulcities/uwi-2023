@@ -197,7 +197,7 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
       className="roundSymbolButton"
       component={motion.button}
       whileHover={{
-        scale: 1.2,
+        scale: 1.1,
         transition: { duration: 0.3 },
       }}
       whileTap={{ scale: 0.9 }}>

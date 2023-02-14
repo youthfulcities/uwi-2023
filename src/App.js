@@ -10,6 +10,7 @@ import ExploreAll from './pages/ExploreAll';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Quiz from './pages/Quiz';
+import Results from './pages/Results';
 
 const App = () => {
   const [currentLangCode, setCurrentLangCode] = useState(
@@ -18,7 +19,7 @@ const App = () => {
 
   const theme = muiTheme();
 
-  const [priorities, setPriorities] = useState([]);
+  const [priorities, setPriorities] = useState(['cost']);
 
   const languages = [
     {
@@ -72,6 +73,17 @@ const App = () => {
                   <Quiz
                     priorities={priorities}
                     setPriorities={setPriorities}
+                    languages={languages}
+                    setCurrentLangCode={setCurrentLangCode}
+                    currentLangCode={currentLangCode}
+                  />
+                }
+              />
+              <Route
+                path="/results"
+                element={
+                  <Results
+                    priorities={priorities}
                     languages={languages}
                     setCurrentLangCode={setCurrentLangCode}
                     currentLangCode={currentLangCode}

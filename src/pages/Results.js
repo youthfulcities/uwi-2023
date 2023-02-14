@@ -1,19 +1,32 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import _ from 'lodash';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import BasicContainer from '../components/BasicContainer';
-import RoundSymbolButton from '../components/RoundSymbolButton';
-import topics from '../data/topics.json';
+import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
-const Quiz = ({
+const Results = ({
   languages,
   setCurrentLangCode,
   currentLangCode,
   priorities,
-  setPriorities,
 }) => {
-  console.log('quiz rerender');
+  const bestCities = getTotalScores(priorities).slice(0, 5);
+  const bestCity = bestCities[0];
+  const { city, score } = bestCity;
+
+  const citiesObject = getCitiesObject(priorities);
+
+  const getBestPriority = (currentCity) => {
+    const topCityStats = citiesObject[currentCity];
+    const sortedTopCityStats = _.sortBy(topCityStats, ['score']);
+    const highestToLowest = _.reverse(sortedTopCityStats);
+    return highestToLowest[0].topic_en;
+  };
+
+  const getPercent = (currentScore) =>
+    Math.round((currentScore * 100) / priorities.length);
+
   return (
     <>
       <BasicContainer
@@ -21,20 +34,11 @@ const Quiz = ({
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}>
         <Typography variant="h5" mb={4}>
-          Select the aspects of a city that are{' '}
-          <span className="highlight">important to you.</span> Tap again to
-          deselect.
+          Your best city is <span className="highlight">{city}</span> with a{' '}
+          <span className="highlight">{getPercent(score)}% match.</span> {city}
+          &apos;s best attribute is{' '}
+          <span className="highlight">{getBestPriority(city)}</span>.
         </Typography>
-        {topics.map((topic, i) => (
-          <RoundSymbolButton
-            i={i}
-            key={uuidv4()}
-            topic={topic.key}
-            priorities={priorities}
-            setPriorities={setPriorities}
-            name={topic.name}
-          />
-        ))}
       </BasicContainer>
       <Box
         sx={{
@@ -53,16 +57,6 @@ const Quiz = ({
             justifyContent="center"
             alignItems="center">
             <Grid item mx={1}>
-              <Link to="/results">
-                <Button
-                  variant="contained"
-                  color="info"
-                  disabled={priorities.length === 0}>
-                  Show me my results
-                </Button>
-              </Link>
-            </Grid>
-            <Grid item mx={1}>
               <Link to="/">
                 <Button variant="contained" color="primary">
                   Home
@@ -76,4 +70,4 @@ const Quiz = ({
   );
 };
 
-export default Quiz;
+export default Results;

@@ -10,7 +10,8 @@ const BasicContainer = (
     width = 'xs',
     spacing = 0,
     px = 0,
-    py = '10vh',
+    pt = '10vh',
+    pb = '3vh',
     languages,
     setCurrentLangCode,
     currentLangCode,
@@ -29,7 +30,8 @@ const BasicContainer = (
           justifyContent="center"
           alignItems="center"
           px={px}
-          py={py}
+          pt={pt}
+          pb={pb}
           spacing={spacing}>
           {children}
         </Grid>

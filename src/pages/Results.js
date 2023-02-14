@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import _ from 'lodash';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
@@ -30,15 +31,21 @@ const Results = ({
   return (
     <>
       <BasicContainer
+        width="md"
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}>
-        <Typography variant="h5" mb={4}>
-          Your best city is <span className="highlight">{city}</span> with a{' '}
-          <span className="highlight">{getPercent(score)}% match.</span> {city}
-          &apos;s best attribute is{' '}
-          <span className="highlight">{getBestPriority(city)}</span>.
-        </Typography>
+        <Grid item>
+          <Typography variant="h5" mb={4}>
+            Your best city is <span className="highlight">{city}</span> with a{' '}
+            <span className="highlight">{getPercent(score)}% match.</span>{' '}
+            {city}
+            &apos;s best attribute is{' '}
+            <span className="highlight">{getBestPriority(city)}</span>.
+          </Typography>
+        </Grid>
+        <Typography variant="h3">Top 5 Cities</Typography>
+        <BarGraph parentData={bestCities} max={priorities.length} />
       </BasicContainer>
       <Box
         sx={{

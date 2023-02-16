@@ -44,7 +44,7 @@ const Quiz = ({
           bottom: 0,
           width: '100vw',
         }}
-        py={2}>
+        py={4}>
         <Container maxWidth="lg">
           <Grid
             sx={{ minHeight: '10vh', maxHeight: '10vh' }}
@@ -52,7 +52,7 @@ const Quiz = ({
             direction="row"
             justifyContent="center"
             alignItems="center">
-            <Grid item mx={1}>
+            <Grid item mx={1} mb={1}>
               <Link to="/results">
                 <Button
                   variant="contained"
@@ -62,7 +62,7 @@ const Quiz = ({
                 </Button>
               </Link>
             </Grid>
-            <Grid item mx={1}>
+            <Grid item mx={1} mb={1}>
               <Link to="/">
                 <Button variant="contained" color="primary">
                   Home

@@ -216,7 +216,7 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
       <Typography
         variant="h3"
         sx={{
-          zIndex: 10,
+          zIndex: 0,
         }}
         align="center">
         {name}

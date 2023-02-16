@@ -2,8 +2,10 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import _ from 'lodash';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { v4 as uuidv4 } from 'uuid';
 import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
+import DonutGraph from '../components/DonutGraph';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
 const Results = ({
@@ -18,8 +20,9 @@ const Results = ({
 
   const citiesObject = getCitiesObject(priorities);
 
-  const getBestPriority = (currentCity) => {
-    const topCityStats = citiesObject[currentCity];
+  const topCityStats = citiesObject[city];
+
+  const getBestPriority = () => {
     const sortedTopCityStats = _.sortBy(topCityStats, ['score']);
     const highestToLowest = _.reverse(sortedTopCityStats);
     return highestToLowest[0].topic_en;
@@ -27,6 +30,8 @@ const Results = ({
 
   const getPercent = (currentScore) =>
     Math.round((currentScore * 100) / priorities.length);
+
+  console.log(topCityStats);
 
   return (
     <>
@@ -46,6 +51,16 @@ const Results = ({
         </Grid>
         <Typography variant="h3">Top 5 Cities</Typography>
         <BarGraph parentData={bestCities} max={priorities.length} />
+        <Grid container justifyContent="space-between">
+          {topCityStats.map((topic) => (
+            <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }}>
+              <Typography variant="h3" align="center" px={1}>
+                {topic.topic_en}
+              </Typography>
+              <DonutGraph parentData={topic} max={priorities.length} />
+            </Grid>
+          ))}
+        </Grid>
       </BasicContainer>
       <Box
         sx={{

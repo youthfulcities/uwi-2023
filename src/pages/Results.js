@@ -22,10 +22,10 @@ const Results = ({
 
   const topCityStats = citiesObject[city];
 
-  const getBestPriority = () => {
+  const getBestPriorities = () => {
     const sortedTopCityStats = _.sortBy(topCityStats, ['score']);
     const highestToLowest = _.reverse(sortedTopCityStats);
-    return highestToLowest[0].topic_en;
+    return highestToLowest;
   };
 
   const getPercent = (currentScore) =>
@@ -46,18 +46,29 @@ const Results = ({
             <span className="highlight">{getPercent(score)}% match.</span>{' '}
             {city}
             &apos;s best attribute is{' '}
-            <span className="highlight">{getBestPriority(city)}</span>.
+            <span className="highlight">
+              {getBestPriorities(city)[0].topic_en}
+            </span>
+            .
           </Typography>
         </Grid>
-        <Typography variant="h3">Top 5 Cities</Typography>
+        <Typography variant="h3">Your Top 5 Cities</Typography>
         <BarGraph parentData={bestCities} max={priorities.length} />
-        <Grid container justifyContent="space-between">
+        <Typography variant="h5" mt={4} align="center">
+          Score breakdown for {city}
+        </Typography>
+        <Grid container justifyContent="space-between" my={1}>
           {topCityStats.map((topic) => (
-            <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }}>
+            <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }} my={4}>
               <Typography variant="h3" align="center" px={1}>
                 {topic.topic_en}
               </Typography>
-              <DonutGraph parentData={topic} max={priorities.length} />
+              <Box sx={{ position: 'relative' }}>
+                <DonutGraph parentData={topic} max={priorities.length} />
+                <Typography variant="h3" className="centered">
+                  {topic.score}
+                </Typography>
+              </Box>
             </Grid>
           ))}
         </Grid>

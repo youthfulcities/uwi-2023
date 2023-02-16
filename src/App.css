@@ -112,12 +112,11 @@ img {
 }
 
 .centered {
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 30;
 }
 
 .smallText {

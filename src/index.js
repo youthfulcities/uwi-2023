@@ -6,7 +6,6 @@ import { createRoot } from 'react-dom/client';
 import { initReactI18next } from 'react-i18next';
 import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
-import ScrollToTop from './helpers/ScrollToTop';
 import reportWebVitals from './reportWebVitals';
 
 i18n
@@ -58,7 +57,6 @@ const container = document.getElementById('app');
 const root = createRoot(container);
 root.render(
   <Router>
-    <ScrollToTop />
     <App tab="home" />
   </Router>
 );

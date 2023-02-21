@@ -10,8 +10,8 @@ import {
   Tooltip
 } from 'chart.js';
 import ChartDeferred from 'chartjs-plugin-deferred';
-import React from 'react';
-import { Bar } from 'react-chartjs-2';
+import React, { useRef } from 'react';
+import { Bar, getElementAtEvent } from 'react-chartjs-2';
 
 ChartJS.register(
   ChartDeferred,
@@ -28,7 +28,9 @@ ChartJS.defaults.font.family = 'Gotham Narrow Book';
 
 const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
 
-const BarGraph = ({ parentData, max }) => {
+const BarGraph = ({ parentData, max, setCurrentCity }) => {
+  const chartRef = useRef();
+
   const options = {
     aspectRatio: 1.5,
     responsive: true,
@@ -108,17 +110,24 @@ const BarGraph = ({ parentData, max }) => {
   const cityLabels = parentData.map((item) => item.city);
   const labels = cityLabels;
 
+  const onClick = (event) => {
+    const el = getElementAtEvent(chartRef.current, event)[0];
+    const newCity = cityLabels[el.index];
+    setCurrentCity(newCity);
+  };
+
   const data = {
     labels,
     datasets: [
       {
         data: scoreData,
         backgroundColor: darkColours,
+        hoverBackgroundColor: darkColours,
       },
     ],
   };
 
-  return <Bar options={options} data={data} />;
+  return <Bar options={options} ref={chartRef} onClick={onClick} data={data} />;
 };
 
 export default BarGraph;

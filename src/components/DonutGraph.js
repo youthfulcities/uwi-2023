@@ -46,13 +46,17 @@ const DonutGraph = ({ parentData, max }) => {
   const labels = [parentData.topic_en, ''];
 
   const getRandomColour = () => darkColours[Math.floor(Math.random() * 5)];
+  const randomColor = getRandomColour();
 
   const data = {
     labels,
     datasets: [
       {
         data: scoreData,
-        backgroundColor: [getRandomColour(), '#CBCBCB'],
+        backgroundColor: [randomColor, '#CBCBCB'],
+        hoverBackgroundColor: [randomColor, '#CBCBCB'],
+        hoverBorderWidth: 0,
+        hoverOffset: 10,
       },
     ],
   };

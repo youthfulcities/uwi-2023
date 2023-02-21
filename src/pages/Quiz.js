@@ -56,19 +56,19 @@ const Quiz = ({
             justifyContent="center"
             alignItems="center">
             <Grid item mx={1} mb={1}>
+              <Link to="/">
+                <Button variant="contained" color="primary">
+                  Home
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item mx={1} mb={1}>
               <Link to="/results">
                 <Button
                   variant="contained"
                   color="info"
                   disabled={priorities.length === 0}>
                   Show me my results
-                </Button>
-              </Link>
-            </Grid>
-            <Grid item mx={1} mb={1}>
-              <Link to="/">
-                <Button variant="contained" color="primary">
-                  Home
                 </Button>
               </Link>
             </Grid>

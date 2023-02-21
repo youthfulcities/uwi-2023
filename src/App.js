@@ -85,6 +85,7 @@ const App = () => {
               element={
                 <Results
                   priorities={priorities}
+                  setPriorities={setPriorities}
                   languages={languages}
                   setCurrentLangCode={setCurrentLangCode}
                   currentLangCode={currentLangCode}

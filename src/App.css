@@ -93,6 +93,10 @@ body {
   color: #000;
 }
 
+#app {
+  height: 100%;
+}
+
 body {
   background-color: #fff;
 }
@@ -126,7 +130,8 @@ img {
 }
 
 .flexWrapper {
-  min-height: 100vh;
+  min-height: 100%;
+  height: 100%;
   min-width: 100%;
   display: flex;
   flex-direction: column;
@@ -190,7 +195,7 @@ position:relative;
   background-size: cover;
   background-position: center bottom;
   width: 100%;
-  height: 12vh;
+  height: 100%;
   position: relative;
   top: 0;
   z-index: 10;
@@ -201,7 +206,7 @@ position:relative;
   background-size: cover;
   background-position: center bottom;
   width: 100%;
-  height: 12vh;
+  height: 100%;
   left: 50px;
   position: absolute;
   top: 0;
@@ -242,15 +247,6 @@ position:relative;
 
 .photoBackgroundContainer {
   height: 100%;
-}
-
-.photoHeaderContainer {
-  height: 40vh;
-  width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: -10;
 }
 
 .photoHeaderImg {
@@ -403,8 +399,8 @@ position:relative;
 
 .changeLang {
   position: fixed;
-  right: 2vh;
-  top: 2vh;
+  right: 1rem;
+  top: 1rem;
   z-index: 100;
 }
 

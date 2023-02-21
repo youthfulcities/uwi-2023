@@ -11,8 +11,8 @@ import SchoolIcon from '@mui/icons-material/School';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import WifiIcon from '@mui/icons-material/Wifi';
 import { Button, Typography } from '@mui/material';
-import { motion } from 'framer-motion';
-import React from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 const darkColours = ['#F2695D', '#253D88', '#D69F21', '#97BC5C', '#673934'];
@@ -23,7 +23,9 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
   const { t } = useTranslation();
 
   const even = i % 2;
-  const included = priorities ? priorities.includes(topic) : false;
+  const [included, setIncluded] = useState(
+    priorities ? priorities.includes(topic) : false
+  );
 
   const getIcon = (iconTopic) => {
     switch (iconTopic) {
@@ -153,9 +155,15 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
 
   const handleClick = () => {
     if (included) {
-      setPriorities((prev) => prev.filter((priority) => priority !== topic));
+      setIncluded(!included);
+      setTimeout(() => {
+        setPriorities((prev) => prev.filter((priority) => priority !== topic));
+      }, 150);
     } else {
-      setPriorities((prev) => [...prev, topic]);
+      setIncluded(!included);
+      setTimeout(() => {
+        setPriorities((prev) => [...prev, topic]);
+      }, 150);
     }
   };
 
@@ -171,57 +179,59 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
   // };
 
   return (
-    <Button
-      sx={{
-        boxShadow: included
-          ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
-          : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
-        minWidth: 0,
-        width: '50%',
-        height: 'auto',
-        right: even ? '-24%' : '24%',
-        aspectRatio: '1/1',
-        borderRadius: '100px',
-        padding: '50px',
-        '&:hover': {
+    <AnimatePresence>
+      <Button
+        sx={{
+          boxShadow: included
+            ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
+            : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
+          minWidth: 0,
+          width: '50%',
+          height: 'auto',
+          right: even ? '-24%' : '24%',
+          aspectRatio: '1/1',
+          borderRadius: '100px',
+          padding: '50px',
+          '&:hover': {
+            backgroundColor: included ? '#36529B' : '#515151',
+          },
+          '&:active': {
+            backgroundColor: included ? '#36529B' : '#515151',
+          },
           backgroundColor: included ? '#36529B' : '#515151',
-        },
-        '&:active': {
-          backgroundColor: included ? '#36529B' : '#515151',
-        },
-        backgroundColor: included ? '#36529B' : '#515151',
-      }}
-      variant="contained"
-      color="secondary"
-      onClick={() => handleClick()}
-      className="roundSymbolButton"
-      component={motion.button}
-      whileHover={{
-        scale: 1.1,
-        transition: { duration: 0.3 },
-      }}
-      whileTap={{ scale: 0.9 }}>
-      {included ? (
-        <CheckIcon
+        }}
+        variant="contained"
+        color="secondary"
+        onClick={() => handleClick()}
+        className={`roundSymbolButton ${included ? 'active' : 'inactive'}`}
+        component={motion.button}
+        whileHover={{
+          scale: 1.1,
+          transition: { duration: 0.3 },
+        }}
+        whileTap={{ scale: 0.9 }}>
+        {included ? (
+          <CheckIcon
+            sx={{
+              color: '#253D88',
+              fontSize: '150px',
+              position: 'absolute',
+              zIndex: 0,
+            }}
+          />
+        ) : (
+          getIcon(topic)
+        )}
+        <Typography
+          variant="h3"
           sx={{
-            color: '#253D88',
-            fontSize: '150px',
-            position: 'absolute',
             zIndex: 0,
           }}
-        />
-      ) : (
-        getIcon(topic)
-      )}
-      <Typography
-        variant="h3"
-        sx={{
-          zIndex: 0,
-        }}
-        align="center">
-        {name}
-      </Typography>
-    </Button>
+          align="center">
+          {name}
+        </Typography>
+      </Button>
+    </AnimatePresence>
   );
 };
 

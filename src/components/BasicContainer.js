@@ -1,6 +1,5 @@
 import { Container, Grid } from '@mui/material';
 import React, { forwardRef } from 'react';
-import PhotoBackground from './PhotoBackground';
 
 const BasicContainer = (
   {
@@ -18,22 +17,19 @@ const BasicContainer = (
   },
   ref
 ) => (
-  <>
-    <PhotoBackground />
-    <Container ref={ref} maxWidth={width}>
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        px={px}
-        pt={pt}
-        pb={pb}
-        spacing={spacing}>
-        {children}
-      </Grid>
-    </Container>
-  </>
+  <Container ref={ref} maxWidth={width}>
+    <Grid
+      container
+      direction="column"
+      justifyContent="center"
+      alignItems="center"
+      px={px}
+      pt={pt}
+      pb={pb}
+      spacing={spacing}>
+      {children}
+    </Grid>
+  </Container>
 );
 
 export default forwardRef(BasicContainer);

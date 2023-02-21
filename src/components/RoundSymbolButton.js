@@ -19,13 +19,18 @@ const darkColours = ['#F2695D', '#253D88', '#D69F21', '#97BC5C', '#673934'];
 const lightColours = ['#FFA8A4', '#36529B', '#FBD166', '#B8D98D', '#896F6E'];
 const getRandomColour = () => Math.floor(Math.random() * 5);
 
-const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
+const RoundSymbolButton = ({
+  topic,
+  name,
+  priorities,
+  setPriorities,
+  i,
+  isIncluded,
+}) => {
   const { t } = useTranslation();
 
   const even = i % 2;
-  const [included, setIncluded] = useState(
-    priorities ? priorities.includes(topic) : false
-  );
+  const [included, setIncluded] = useState(isIncluded);
 
   const getIcon = (iconTopic) => {
     switch (iconTopic) {
@@ -158,12 +163,12 @@ const RoundSymbolButton = ({ topic, name, priorities, setPriorities, i }) => {
       setIncluded(!included);
       setTimeout(() => {
         setPriorities((prev) => prev.filter((priority) => priority !== topic));
-      }, 150);
+      }, 10);
     } else {
       setIncluded(!included);
       setTimeout(() => {
         setPriorities((prev) => [...prev, topic]);
-      }, 150);
+      }, 10);
     }
   };
 

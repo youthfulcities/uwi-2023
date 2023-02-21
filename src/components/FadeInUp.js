@@ -8,7 +8,7 @@ const FadeInUp = ({ inView = true, children, x = 0, y = 0 }) => {
   const yOffset = 24;
   const transition = {
     duration: 0.8,
-    delay: 1,
+    delay: 0.25,
     ease: easing,
   };
   const variants = {

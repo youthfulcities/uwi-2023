@@ -4,7 +4,9 @@ import HttpApi from 'i18next-http-backend';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { initReactI18next } from 'react-i18next';
+import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
+import ScrollToTop from './helpers/ScrollToTop';
 import reportWebVitals from './reportWebVitals';
 
 i18n
@@ -54,7 +56,12 @@ i18n
 
 const container = document.getElementById('app');
 const root = createRoot(container);
-root.render(<App tab="home" />);
+root.render(
+  <Router>
+    <ScrollToTop />
+    <App tab="home" />
+  </Router>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

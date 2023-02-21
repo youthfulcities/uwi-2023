@@ -1,10 +1,11 @@
 import { ThemeProvider } from '@mui/material';
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import ChangeLang from './components/ChangeLang';
 import FadeInUp from './components/FadeInUp';
 import Footer from './components/Footer';
+import ScrollToTop from './helpers/ScrollToTop';
 import muiTheme from './muiTheme';
 import ExploreAll from './pages/ExploreAll';
 import Home from './pages/Home';
@@ -45,70 +46,69 @@ const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        {/* <Header /> */}
-        <FadeInUp>
-          <ChangeLang
-            languages={languages}
-            setCurrentLangCode={setCurrentLangCode}
-            currentLangCode={currentLangCode}
-          />
-        </FadeInUp>
-        <div className="flexWrapper">
-          <div className="flexGrow">
-            <Routes>
-              <Route
-                path="/"
-                element={
-                  <Home
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                  />
-                }
-              />
-              <Route
-                path="/quiz"
-                element={
-                  <Quiz
-                    priorities={priorities}
-                    setPriorities={setPriorities}
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                  />
-                }
-              />
-              <Route
-                path="/results"
-                element={
-                  <Results
-                    priorities={priorities}
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                  />
-                }
-              />
-              <Route
-                path="/explore-all"
-                element={
-                  <ExploreAll
-                    priorities={priorities}
-                    setPriorities={setPriorities}
-                    languages={languages}
-                    setCurrentLangCode={setCurrentLangCode}
-                    currentLangCode={currentLangCode}
-                  />
-                }
-              />
-              <Route path="/map/:cityname" element={<Map />} />
-              <Route path="/map" element={<Map />} />
-            </Routes>
-          </div>
-          <Footer />
+      <ScrollToTop />
+      {/* <Header /> */}
+      <FadeInUp>
+        <ChangeLang
+          languages={languages}
+          setCurrentLangCode={setCurrentLangCode}
+          currentLangCode={currentLangCode}
+        />
+      </FadeInUp>
+      <div className="flexWrapper">
+        <div className="flexGrow">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  languages={languages}
+                  setCurrentLangCode={setCurrentLangCode}
+                  currentLangCode={currentLangCode}
+                />
+              }
+            />
+            <Route
+              path="/quiz"
+              element={
+                <Quiz
+                  priorities={priorities}
+                  setPriorities={setPriorities}
+                  languages={languages}
+                  setCurrentLangCode={setCurrentLangCode}
+                  currentLangCode={currentLangCode}
+                />
+              }
+            />
+            <Route
+              path="/results"
+              element={
+                <Results
+                  priorities={priorities}
+                  languages={languages}
+                  setCurrentLangCode={setCurrentLangCode}
+                  currentLangCode={currentLangCode}
+                />
+              }
+            />
+            <Route
+              path="/explore-all"
+              element={
+                <ExploreAll
+                  priorities={priorities}
+                  setPriorities={setPriorities}
+                  languages={languages}
+                  setCurrentLangCode={setCurrentLangCode}
+                  currentLangCode={currentLangCode}
+                />
+              }
+            />
+            <Route path="/map/:cityname" element={<Map />} />
+            <Route path="/map" element={<Map />} />
+          </Routes>
         </div>
-      </Router>
+        <Footer />
+      </div>
     </ThemeProvider>
   );
 };

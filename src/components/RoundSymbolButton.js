@@ -159,13 +159,12 @@ const RoundSymbolButton = ({
   };
 
   const handleClick = () => {
+    setIncluded(!included);
     if (included) {
-      setIncluded(!included);
       setTimeout(() => {
         setPriorities((prev) => prev.filter((priority) => priority !== topic));
       }, 10);
     } else {
-      setIncluded(!included);
       setTimeout(() => {
         setPriorities((prev) => [...prev, topic]);
       }, 10);

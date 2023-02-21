@@ -7,6 +7,7 @@ import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
 import DonutGraph from '../components/DonutGraph';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
+import ScrollToTop from '../helpers/ScrollToTop';
 
 const Results = ({
   languages,
@@ -35,6 +36,7 @@ const Results = ({
 
   return (
     <>
+      
       <BasicContainer
         width="md"
         languages={languages}

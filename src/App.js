@@ -20,7 +20,7 @@ const App = () => {
 
   const theme = muiTheme();
 
-  const [priorities, setPriorities] = useState(['cost']);
+  const [priorities, setPriorities] = useState([]);
 
   const languages = [
     {

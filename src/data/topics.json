@@ -1,39 +1,48 @@
 [{
   "name": "City Economy",
-  "key":"economy"
+  "key":"economy",
+  "desc":"Industries that create good jobs, increasing population, and attractiveness for employers."
 }, 
 { "name": "Cost of Living",
-"key":"cost"
-
+"key":"cost",
+"desc":"Opportunity to make a higher income combined with a lower cost of living (housing/rent, food, transportation, etc.)."
 }, {
   "name":"Digital Access",
-  "key":"digital"
+  "key":"digital",
+  "desc":"Access to broadband Internet services, availability of public Wi-Fi locations, cost of mobile plans and data plans in a city, etc."
 },
 {
-  "name":"Diveristy",
-  "key":"diversity"
+  "name":"Diveristy + Inclusion + Accessibility",
+  "key":"diversity",
+  "desc":"A city's population diversity (visible minorities, languages spoken), sense of belonging (including crime rates), and accessibility of public spaces for peoples with disabilities."
 },
 {
   "name":"Education + Training",
-  "key":"education"
+  "key":"education",
+  "desc":"Availability of post-secondary institutions, affordable tuition, scholarships, co-op and study abroad programs, and other work integrated learning opportunities etc."
 },
 {
   "name":"Entrepreneurial Spirit",
-  "key":"business"
+  "key":"business",
+  "desc":"Availability of funding for emerging startups and businesses, co-working spaces, innovation hubs to support entrepreneurs, startup courses and programs in a city, etc."
 },
 {
   "name":"Good Youth Jobs",
-  "key":"jobs"
+  "key":"jobs",
+  "desc":"Low unemployment, lots of full-time jobs; Internship and co-op opportunities for students, availability of remote work, and alumni career services."
 },
 {
-  "name":"Health",
-  "key":"health"
+  "name":"Public Health",
+  "key":"health",
+  "desc":"Access to health services (including mental health and family physicians), the city's built environment (walkability, air quality, tree canopy), etc."
 },
 {
   "name":"Sustainability",
-  "key":"sustainability"
+  "key":"sustainability",
+  "desc":"City-level data on urban density, electric vehicles infrastructure, waste/compost/recycling services, and renewable energy subsidies for residents."
 },
 {
-  "name":"Transportation",
-  "key":"transport"
+  "name":"Public Transportation",
+  "key":"transport",
+  "desc":"Access to public transit (cost, safety, availability, and technology), vehicle commute times, parking costs, and availability of alternatives transportation modes (bikes and scooters)."
 }]

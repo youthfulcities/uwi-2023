@@ -32,6 +32,7 @@ const Quiz = ({
             i={i}
             key={uuidv4()}
             topic={topic.key}
+            desc={topic.desc}
             priorities={priorities}
             setPriorities={setPriorities}
             isIncluded={priorities.includes(topic.key)}

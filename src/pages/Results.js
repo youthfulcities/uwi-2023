@@ -28,9 +28,10 @@ const Results = ({
 
   const citiesObject = getCitiesObject(priorities);
 
-  const topCityStats = citiesObject[currentCity];
+  const getTopCityStats = (city = currentCity) => citiesObject[city];
 
-  const getBestPriorities = () => {
+  const getBestPriorities = (city = currentCity) => {
+    const topCityStats = getTopCityStats(city);
     const sortedTopCityStats = _.sortBy(topCityStats, ['score']);
     const highestToLowest = _.reverse(sortedTopCityStats);
     return highestToLowest;
@@ -57,7 +58,10 @@ const Results = ({
               <span className="highlight">{getPercent(score)}% match.</span>{' '}
               {originalCity}
               &apos;s best attribute is{' '}
-              <span className="highlight">{sortedStats[0].topic_en}</span>.
+              <span className="highlight">
+                {getBestPriorities(originalCity)[0].topic_en}
+              </span>
+              .
             </Typography>
           </Grid>
           <Typography mb={1} variant="h3">

@@ -3,6 +3,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import CircleIcon from '@mui/icons-material/Circle';
 import DirectionsBusIcon from '@mui/icons-material/DirectionsBus';
 import HealingIcon from '@mui/icons-material/Healing';
+import InfoIcon from '@mui/icons-material/Info';
 import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import LunchDiningIcon from '@mui/icons-material/LunchDining';
 import ParkIcon from '@mui/icons-material/Park';
@@ -10,7 +11,7 @@ import PaymentsIcon from '@mui/icons-material/Payments';
 import SchoolIcon from '@mui/icons-material/School';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import WifiIcon from '@mui/icons-material/Wifi';
-import { Button, Typography } from '@mui/material';
+import { Button, Tooltip, Typography } from '@mui/material';
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -22,7 +23,7 @@ const getRandomColour = () => Math.floor(Math.random() * 5);
 const RoundSymbolButton = ({
   topic,
   name,
-  priorities,
+  desc,
   setPriorities,
   i,
   isIncluded,
@@ -171,17 +172,6 @@ const RoundSymbolButton = ({
     }
   };
 
-  // const variants = {
-  //   active: {
-  //     backgroundColor: ['#515151', '#36529B'],
-  //     transition: { duration: 1 },
-  //   },
-  //   inactive: {
-  //     backgroundColor: ['#36529B', '#515151'],
-  //     transition: { duration: 1 },
-  //   },
-  // };
-
   return (
     <AnimatePresence>
       <Button
@@ -234,6 +224,27 @@ const RoundSymbolButton = ({
           align="center">
           {name}
         </Typography>
+        <Tooltip
+          title={
+            <Typography variant="body1" p={1}>
+              {desc}
+            </Typography>
+          }
+          arrow
+          placement="top"
+          sx={{
+            position: 'absolute',
+            top: '20px',
+            fontSize: 24,
+            '&.MuiTooltip-popper': {
+              backgroundColor: '#fff',
+            },
+            '&.MuiTooltip-arrow': {
+              backgroundColor: '#fff',
+            },
+          }}>
+          <InfoIcon />
+        </Tooltip>
       </Button>
     </AnimatePresence>
   );

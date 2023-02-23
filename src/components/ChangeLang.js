@@ -25,7 +25,7 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
   };
 
   return (
-    <Box className="changeLang" sx={{ top: 10, right: 20 }}>
+    <Box className="changeLang" sx={{ top: 10, right: 25 }}>
       <ClickAwayListener onClickAway={handleClickAway}>
         <Box
           sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>

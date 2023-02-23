@@ -68,14 +68,17 @@ const Quiz = ({
               </Link>
             </Grid>
             <Grid item mx={1} mb={1}>
-              <Link to="/results">
-                <Button
-                  variant="contained"
-                  color="info"
-                  disabled={priorities.length === 0}>
+              {priorities.length === 0 ? (
+                <Button variant="contained" color="info" disabled>
                   Show me my results
                 </Button>
-              </Link>
+              ) : (
+                <Link to="/results">
+                  <Button variant="contained" color="info">
+                    Show me my results
+                  </Button>
+                </Link>
+              )}
             </Grid>
           </Grid>
         </Container>

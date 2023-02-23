@@ -234,7 +234,6 @@ const RoundSymbolButton = ({
             position: 'absolute',
             top: '20px',
             fontSize: 24,
-            zIndex: 10,
           }}
           componentsProps={{
             tooltip: {

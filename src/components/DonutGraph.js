@@ -43,7 +43,7 @@ const DonutGraph = ({ parentData, max }) => {
   };
 
   const scoreData = [parentData.score, 1 - parentData.score];
-  const labels = [parentData.topic_en, ''];
+  const labels = [parentData.topic_en, 'Remainder'];
 
   const getRandomColour = () => darkColours[Math.floor(Math.random() * 5)];
   const randomColor = getRandomColour();
@@ -53,8 +53,8 @@ const DonutGraph = ({ parentData, max }) => {
     datasets: [
       {
         data: scoreData,
-        backgroundColor: [randomColor, '#DAD6CF'],
-        hoverBackgroundColor: [randomColor, '#DAD6CF'],
+        backgroundColor: [randomColor, '#CBCBCB'],
+        hoverBackgroundColor: [randomColor, '#CBCBCB'],
         hoverBorderWidth: 0,
         hoverOffset: 10,
       },

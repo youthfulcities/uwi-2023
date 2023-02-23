@@ -32,6 +32,7 @@ const RoundSymbolButton = ({
 
   const even = i % 2;
   const [included, setIncluded] = useState(isIncluded);
+  const [open, setOpen] = useState(false);
 
   const getIcon = (iconTopic) => {
     switch (iconTopic) {
@@ -160,6 +161,8 @@ const RoundSymbolButton = ({
   };
 
   const handleClick = () => {
+    if (open) return;
+
     setIncluded(!included);
     if (included) {
       setTimeout(() => {
@@ -216,15 +219,10 @@ const RoundSymbolButton = ({
         ) : (
           getIcon(topic)
         )}
-        <Typography
-          variant="h3"
-          sx={{
-            zIndex: 0,
-          }}
-          align="center">
-          {name}
-        </Typography>
         <Tooltip
+          open={open}
+          onOpen={() => setOpen(true)}
+          onClose={() => setOpen(false)}
           title={
             <Typography variant="body1" p={1}>
               {desc}
@@ -236,15 +234,32 @@ const RoundSymbolButton = ({
             position: 'absolute',
             top: '20px',
             fontSize: 24,
-            '&.MuiTooltip-popper': {
-              backgroundColor: '#fff',
+            zIndex: 10,
+          }}
+          componentsProps={{
+            tooltip: {
+              sx: {
+                color: '#000',
+                backgroundColor: 'rgba(250, 250, 250, 0.95)',
+              },
             },
-            '&.MuiTooltip-arrow': {
-              backgroundColor: '#fff',
+            arrow: {
+              sx: {
+                color: '#fafafa',
+                opacity: 0.95,
+              },
             },
           }}>
           <InfoIcon />
         </Tooltip>
+        <Typography
+          variant="h3"
+          sx={{
+            zIndex: 0,
+          }}
+          align="center">
+          {name}
+        </Typography>
       </Button>
     </AnimatePresence>
   );

@@ -22,10 +22,14 @@ const Quiz = ({
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}
         currentLangCode={currentLangCode}>
-        <Typography variant="h5" mb={4}>
+        <Typography variant="h5" mb={2}>
           Select the aspects of a city that are{' '}
           <span className="highlight">important to you.</span> Tap again to
           deselect.
+        </Typography>
+        <Typography variant="body1" mb={4}>
+          Tap and hold on mobile to open the tooltip and learn more about each
+          topic.
         </Typography>
         {topics.map((topic, i) => (
           <RoundSymbolButton

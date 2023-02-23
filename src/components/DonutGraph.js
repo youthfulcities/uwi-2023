@@ -53,8 +53,8 @@ const DonutGraph = ({ parentData, max }) => {
     datasets: [
       {
         data: scoreData,
-        backgroundColor: [randomColor, '#CBCBCB'],
-        hoverBackgroundColor: [randomColor, '#CBCBCB'],
+        backgroundColor: [randomColor, '#DAD6CF'],
+        hoverBackgroundColor: [randomColor, '#DAD6CF'],
         hoverBorderWidth: 0,
         hoverOffset: 10,
       },

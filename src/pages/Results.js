@@ -42,6 +42,8 @@ const Results = ({
   const getPercent = (currentScore) =>
     Math.round(currentScore / priorities.length);
 
+  console.log(priorities);
+
   return (
     <>
       <PhotoBackground />
@@ -85,7 +87,7 @@ const Results = ({
                   {topic.topic_en}
                 </Typography>
                 <Box sx={{ position: 'relative' }}>
-                  <DonutGraph parentData={topic}/>
+                  <DonutGraph parentData={topic} />
                   <Typography variant="h3" className="centered">
                     {topic.score}
                   </Typography>

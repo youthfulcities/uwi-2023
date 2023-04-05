@@ -6,6 +6,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 36.94
       },
       {
@@ -13,6 +14,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 42.61
       },
       {
@@ -20,6 +22,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "East",
         "score": 65.71
       },
       {
@@ -27,6 +30,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 54.38
       },
       {
@@ -34,6 +38,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "East",
         "score": 64.93
       },
       {
@@ -41,6 +46,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 68.53
       },
       {
@@ -48,6 +54,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "East",
         "score": 48.37
       },
       {
@@ -55,6 +62,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 52.16
       },
       {
@@ -62,6 +70,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "West",
         "score": 48.27
       },
       {
@@ -69,6 +78,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 50.34
       },
       {
@@ -76,6 +86,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 85.75
       },
       {
@@ -83,6 +94,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 64.18
       },
       {
@@ -90,6 +102,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 53.47
       },
       {
@@ -97,6 +110,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 26.64
       },
       {
@@ -104,6 +118,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "East",
         "score": 67.27
       },
       {
@@ -111,6 +126,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 60.91
       },
       {
@@ -118,6 +134,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 43.12
       },
       {
@@ -125,6 +142,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario-Quebec",
         "score": 72.86
       },
       {
@@ -132,6 +150,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 81.13
       },
       {
@@ -139,6 +158,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 58.62
       },
       {
@@ -146,6 +166,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 53.64
       },
       {
@@ -153,6 +174,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 60.96
       },
       {
@@ -160,6 +182,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "East",
         "score": 62.43
       },
       {
@@ -167,6 +190,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 17.6
       },
       {
@@ -174,6 +198,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "West",
         "score": 36.08
       },
       {
@@ -181,6 +206,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "West",
         "score": 41.29
       },
       {
@@ -188,6 +214,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "West",
         "score": 63.96
       },
       {
@@ -195,6 +222,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 59.61
       },
       {
@@ -202,6 +230,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 65.94
       },
       {
@@ -209,6 +238,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 52.79
       }
     ],
@@ -223,6 +253,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 43.24
       },
       {
@@ -230,6 +261,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Alberta",
         "score": 45.49
       },
       {
@@ -237,6 +269,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "East",
         "score": 64.76
       },
       {
@@ -244,6 +277,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Alberta",
         "score": 43.32
       },
       {
@@ -251,6 +285,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "East",
         "score": 72.37
       },
       {
@@ -258,6 +293,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 47.64
       },
       {
@@ -265,6 +301,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "East",
         "score": 55.4
       },
       {
@@ -272,6 +309,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 51.39
       },
       {
@@ -279,6 +317,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "West",
         "score": 52.61
       },
       {
@@ -286,6 +325,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 59.45
       },
       {
@@ -293,6 +333,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Quebec",
         "score": 48.42
       },
       {
@@ -300,6 +341,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Alberta",
         "score": 43.04
       },
       {
@@ -307,6 +349,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 52.54
       },
       {
@@ -314,6 +357,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 55.42
       },
       {
@@ -321,6 +365,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "East",
         "score": 72.95
       },
       {
@@ -328,6 +373,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Quebec",
         "score": 55.86
       },
       {
@@ -335,6 +381,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 48.88
       },
       {
@@ -342,6 +389,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario-Quebec",
         "score": 55.71
       },
       {
@@ -349,6 +397,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Quebec",
         "score": 64.56
       },
       {
@@ -356,6 +405,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Prairies",
         "score": 58.04
       },
       {
@@ -363,6 +413,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Prairies",
         "score": 54.57
       },
       {
@@ -370,6 +421,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 54.48
       },
       {
@@ -377,6 +429,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "East",
         "score": 31.54
       },
       {
@@ -384,6 +437,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 63.42
       },
       {
@@ -391,6 +445,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "West",
         "score": 51.96
       },
       {
@@ -398,6 +453,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "West",
         "score": 53.63
       },
       {
@@ -405,6 +461,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "West",
         "score": 62.89
       },
       {
@@ -412,6 +469,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Ontario",
         "score": 45.72
       },
       {
@@ -419,6 +477,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Prairies",
         "score": 40.82
       },
       {
@@ -426,6 +485,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
+        "region": "Alberta",
         "score": 26.16
       }
     ],
@@ -440,6 +500,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 51
       },
       {
@@ -447,6 +508,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Alberta",
         "score": 42.87
       },
       {
@@ -454,6 +516,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "East",
         "score": 63.85
       },
       {
@@ -461,6 +524,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Alberta",
         "score": 39.15
       },
       {
@@ -468,6 +532,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "East",
         "score": 50.73
       },
       {
@@ -475,6 +540,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 16.39
       },
       {
@@ -482,6 +548,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "East",
         "score": 73.7
       },
       {
@@ -489,6 +556,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 35.85
       },
       {
@@ -496,6 +564,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "West",
         "score": 40.13
       },
       {
@@ -503,6 +572,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 57.14
       },
       {
@@ -510,6 +580,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Quebec",
         "score": 38.14
       },
       {
@@ -517,6 +588,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Alberta",
         "score": 35.49
       },
       {
@@ -524,6 +596,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 44.11
       },
       {
@@ -531,6 +604,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 47.98
       },
       {
@@ -538,6 +612,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "East",
         "score": 49.03
       },
       {
@@ -545,6 +620,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Quebec",
         "score": 41.55
       },
       {
@@ -552,6 +628,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 29.24
       },
       {
@@ -559,6 +636,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario-Quebec",
         "score": 47.36
       },
       {
@@ -566,6 +644,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Quebec",
         "score": 38.68
       },
       {
@@ -573,6 +652,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Prairies",
         "score": 43.87
       },
       {
@@ -580,6 +660,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Prairies",
         "score": 45.21
       },
       {
@@ -587,6 +668,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 23.31
       },
       {
@@ -594,6 +676,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "East",
         "score": 30.57
       },
       {
@@ -601,6 +684,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 48.16
       },
       {
@@ -608,6 +692,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "West",
         "score": 47.45
       },
       {
@@ -615,6 +700,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "West",
         "score": 36.87
       },
       {
@@ -622,6 +708,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "West",
         "score": 57.59
       },
       {
@@ -629,6 +716,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Ontario",
         "score": 29.24
       },
       {
@@ -636,6 +724,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Prairies",
         "score": 43.69
       },
       {
@@ -643,6 +732,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
+        "region": "Alberta",
         "score": 61.14
       }
     ],
@@ -657,6 +747,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 33.03
       },
       {
@@ -664,6 +755,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Alberta",
         "score": 54.14
       },
       {
@@ -671,6 +763,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "East",
         "score": 54.61
       },
       {
@@ -678,6 +771,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Alberta",
         "score": 55.16
       },
       {
@@ -685,6 +779,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "East",
         "score": 42.93
       },
       {
@@ -692,6 +787,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 41.45
       },
       {
@@ -699,6 +795,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "East",
         "score": 46.56
       },
       {
@@ -706,6 +803,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 55.44
       },
       {
@@ -713,6 +811,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "West",
         "score": 37.07
       },
       {
@@ -720,6 +819,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 52.57
       },
       {
@@ -727,6 +827,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Quebec",
         "score": 42.01
       },
       {
@@ -734,6 +835,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Alberta",
         "score": 36.56
       },
       {
@@ -741,6 +843,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 41.68
       },
       {
@@ -748,6 +851,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 51.9
       },
       {
@@ -755,6 +859,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "East",
         "score": 22.46
       },
       {
@@ -762,6 +867,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Quebec",
         "score": 61.25
       },
       {
@@ -769,6 +875,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 39.35
       },
       {
@@ -776,6 +883,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario-Quebec",
         "score": 44.69
       },
       {
@@ -783,6 +891,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Quebec",
         "score": 49.08
       },
       {
@@ -790,6 +899,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Prairies",
         "score": 41.66
       },
       {
@@ -797,6 +907,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Prairies",
         "score": 55.78
       },
       {
@@ -804,6 +915,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 40.33
       },
       {
@@ -811,6 +923,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "East",
         "score": 46.69
       },
       {
@@ -818,6 +931,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 64.42
       },
       {
@@ -825,6 +939,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "West",
         "score": 52.68
       },
       {
@@ -832,6 +947,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "West",
         "score": 39.06
       },
       {
@@ -839,6 +955,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "West",
         "score": 24.91
       },
       {
@@ -846,6 +963,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Ontario",
         "score": 44.81
       },
       {
@@ -853,6 +971,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Prairies",
         "score": 48.78
       },
       {
@@ -860,6 +979,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
+        "region": "Alberta",
         "score": 42.24
       }
     ],
@@ -874,6 +994,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 79.13
       },
       {
@@ -881,6 +1002,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 62.75
       },
       {
@@ -888,6 +1010,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "East",
         "score": 44.01
       },
       {
@@ -895,6 +1018,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 63.2
       },
       {
@@ -902,6 +1026,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "East",
         "score": 30.69
       },
       {
@@ -909,6 +1034,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 34.55
       },
       {
@@ -916,6 +1042,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "East",
         "score": 45.1
       },
       {
@@ -923,6 +1050,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 58.01
       },
       {
@@ -930,6 +1058,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "West",
         "score": 50.22
       },
       {
@@ -937,6 +1066,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 63.61
       },
       {
@@ -944,6 +1074,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 62.9
       },
       {
@@ -951,6 +1082,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 34
       },
       {
@@ -958,6 +1090,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 48.44
       },
       {
@@ -965,6 +1098,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 77.43
       },
       {
@@ -972,6 +1106,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "East",
         "score": 24.75
       },
       {
@@ -979,6 +1114,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 64.65
       },
       {
@@ -986,6 +1122,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 36.02
       },
       {
@@ -993,6 +1130,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario-Quebec",
         "score": 51.87
       },
       {
@@ -1000,6 +1138,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Quebec",
         "score": 41.16
       },
       {
@@ -1007,6 +1146,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 55.64
       },
       {
@@ -1014,6 +1154,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 49.99
       },
       {
@@ -1021,6 +1162,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 55.27
       },
       {
@@ -1028,6 +1170,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "East",
         "score": 34.23
       },
       {
@@ -1035,6 +1178,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 71.97
       },
       {
@@ -1042,6 +1186,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "West",
         "score": 68.62
       },
       {
@@ -1049,6 +1194,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "West",
         "score": 48.78
       },
       {
@@ -1056,6 +1202,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "West",
         "score": 22.5
       },
       {
@@ -1063,6 +1210,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Ontario",
         "score": 60.85
       },
       {
@@ -1070,6 +1218,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Prairies",
         "score": 60.06
       },
       {
@@ -1077,6 +1226,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
+        "region": "Alberta",
         "score": 18.94
       }
     ],
@@ -1091,6 +1241,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 37
       },
       {
@@ -1098,6 +1249,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Alberta",
         "score": 46.6
       },
       {
@@ -1105,6 +1257,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "East",
         "score": 33.6
       },
       {
@@ -1112,6 +1265,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Alberta",
         "score": 33.6
       },
       {
@@ -1119,6 +1273,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "East",
         "score": 25.3
       },
       {
@@ -1126,6 +1281,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 12.4
       },
       {
@@ -1133,6 +1289,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "East",
         "score": 27.9
       },
       {
@@ -1140,6 +1297,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 17.3
       },
       {
@@ -1147,6 +1305,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "West",
         "score": 33.3
       },
       {
@@ -1154,6 +1313,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 29.2
       },
       {
@@ -1161,6 +1321,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Quebec",
         "score": 17.3
       },
       {
@@ -1168,6 +1329,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Alberta",
         "score": 18.5
       },
       {
@@ -1175,6 +1337,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 17.3
       },
       {
@@ -1182,6 +1345,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 38.3
       },
       {
@@ -1189,6 +1353,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "East",
         "score": 13.6
       },
       {
@@ -1196,6 +1361,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Quebec",
         "score": 59.5
       },
       {
@@ -1203,6 +1369,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 14.3
       },
       {
@@ -1210,6 +1377,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario-Quebec",
         "score": 21.4
       },
       {
@@ -1217,6 +1385,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Quebec",
         "score": 12.4
       },
       {
@@ -1224,6 +1393,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Prairies",
         "score": 11.9
       },
       {
@@ -1231,6 +1401,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Prairies",
         "score": 24
       },
       {
@@ -1238,6 +1409,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 13.2
       },
       {
@@ -1245,6 +1417,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "East",
         "score": 15.2
       },
       {
@@ -1252,6 +1425,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 87.5
       },
       {
@@ -1259,6 +1433,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "West",
         "score": 58.6
       },
       {
@@ -1266,6 +1441,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "West",
         "score": 33.2
       },
       {
@@ -1273,6 +1449,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "West",
         "score": 29.8
       },
       {
@@ -1280,6 +1457,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Ontario",
         "score": 14
       },
       {
@@ -1287,6 +1465,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Prairies",
         "score": 23.4
       },
       {
@@ -1294,6 +1473,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
+        "region": "Alberta",
         "score": 50.6
       }
     ],
@@ -1308,6 +1488,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 61.44
       },
       {
@@ -1315,6 +1496,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Alberta",
         "score": 45.02
       },
       {
@@ -1322,6 +1504,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "East",
         "score": 34.05
       },
       {
@@ -1329,6 +1512,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Alberta",
         "score": 46.14
       },
       {
@@ -1336,6 +1520,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "East",
         "score": 43.74
       },
       {
@@ -1343,6 +1528,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 53.4
       },
       {
@@ -1350,6 +1536,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "East",
         "score": 56.24
       },
       {
@@ -1357,6 +1544,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 63.88
       },
       {
@@ -1364,6 +1552,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "West",
         "score": 50.89
       },
       {
@@ -1371,6 +1560,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 57.21
       },
       {
@@ -1378,6 +1568,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Quebec",
         "score": 61.08
       },
       {
@@ -1385,6 +1576,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Alberta",
         "score": 36.52
       },
       {
@@ -1392,6 +1584,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 65.29
       },
       {
@@ -1399,6 +1592,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 62.41
       },
       {
@@ -1406,6 +1600,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "East",
         "score": 38.59
       },
       {
@@ -1413,6 +1608,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Quebec",
         "score": 74.2
       },
       {
@@ -1420,6 +1616,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 52.47
       },
       {
@@ -1427,6 +1624,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario-Quebec",
         "score": 60.02
       },
       {
@@ -1434,6 +1632,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Quebec",
         "score": 71.47
       },
       {
@@ -1441,6 +1640,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Prairies",
         "score": 28.31
       },
       {
@@ -1448,6 +1648,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Prairies",
         "score": 25.15
       },
       {
@@ -1455,6 +1656,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 58.61
       },
       {
@@ -1462,6 +1664,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "East",
         "score": 37.46
       },
       {
@@ -1469,6 +1672,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 96.33
       },
       {
@@ -1476,6 +1680,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "West",
         "score": 65.47
       },
       {
@@ -1483,6 +1688,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "West",
         "score": 55.38
       },
       {
@@ -1490,6 +1696,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "West",
         "score": 8.45
       },
       {
@@ -1497,6 +1704,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Ontario",
         "score": 53.65
       },
       {
@@ -1504,6 +1712,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Prairies",
         "score": 39.9
       },
       {
@@ -1511,6 +1720,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
+        "region": "Alberta",
         "score": 10.76
       }
     ],
@@ -1525,6 +1735,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 56.24
       },
       {
@@ -1532,6 +1743,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Alberta",
         "score": 65.53
       },
       {
@@ -1539,6 +1751,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "East",
         "score": 56.46
       },
       {
@@ -1546,6 +1759,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Alberta",
         "score": 63.93
       },
       {
@@ -1553,6 +1767,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "East",
         "score": 42.67
       },
       {
@@ -1560,6 +1775,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 71.99
       },
       {
@@ -1567,6 +1783,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "East",
         "score": 63.26
       },
       {
@@ -1574,6 +1791,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 56.18
       },
       {
@@ -1581,6 +1799,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "West",
         "score": 67.55
       },
       {
@@ -1588,6 +1807,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 60.22
       },
       {
@@ -1595,6 +1815,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Quebec",
         "score": 52.52
       },
       {
@@ -1602,6 +1823,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Alberta",
         "score": 64.37
       },
       {
@@ -1609,6 +1831,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 65.84
       },
       {
@@ -1616,6 +1839,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 64.3
       },
       {
@@ -1623,6 +1847,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "East",
         "score": 52.16
       },
       {
@@ -1630,6 +1855,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Quebec",
         "score": 74.82
       },
       {
@@ -1637,6 +1863,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 33.34
       },
       {
@@ -1644,6 +1871,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario-Quebec",
         "score": 72.73
       },
       {
@@ -1651,6 +1879,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Quebec",
         "score": 71.08
       },
       {
@@ -1658,6 +1887,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Prairies",
         "score": 59.11
       },
       {
@@ -1665,6 +1895,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Prairies",
         "score": 49.26
       },
       {
@@ -1672,6 +1903,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 64.41
       },
       {
@@ -1679,6 +1911,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "East",
         "score": 54.23
       },
       {
@@ -1686,6 +1919,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 56.48
       },
       {
@@ -1693,6 +1927,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "West",
         "score": 71.64
       },
       {
@@ -1700,6 +1935,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "West",
         "score": 63.86
       },
       {
@@ -1707,6 +1943,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "West",
         "score": 52.9
       },
       {
@@ -1714,6 +1951,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Ontario",
         "score": 71.35
       },
       {
@@ -1721,6 +1959,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Prairies",
         "score": 70.51
       },
       {
@@ -1728,6 +1967,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
+        "region": "Alberta",
         "score": 48.61
       }
     ],
@@ -1742,6 +1982,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 24.96
       },
       {
@@ -1749,6 +1990,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Alberta",
         "score": 42.63
       },
       {
@@ -1756,6 +1998,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "East",
         "score": 61.28
       },
       {
@@ -1763,6 +2006,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Alberta",
         "score": 34.47
       },
       {
@@ -1770,6 +2014,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "East",
         "score": 51.98
       },
       {
@@ -1777,6 +2022,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 26.58
       },
       {
@@ -1784,6 +2030,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "East",
         "score": 24.66
       },
       {
@@ -1791,6 +2038,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 35.94
       },
       {
@@ -1798,6 +2046,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "West",
         "score": 44.25
       },
       {
@@ -1805,6 +2054,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 43.71
       },
       {
@@ -1812,6 +2062,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Quebec",
         "score": 22.65
       },
       {
@@ -1819,6 +2070,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Alberta",
         "score": 31.85
       },
       {
@@ -1826,6 +2078,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 38.5
       },
       {
@@ -1833,6 +2086,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 31.85
       },
       {
@@ -1840,6 +2094,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "East",
         "score": 51.32
       },
       {
@@ -1847,6 +2102,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Quebec",
         "score": 35.46
       },
       {
@@ -1854,6 +2110,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 40.65
       },
       {
@@ -1861,6 +2118,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario-Quebec",
         "score": 39.61
       },
       {
@@ -1868,6 +2126,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Quebec",
         "score": 22.44
       },
       {
@@ -1875,6 +2134,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Prairies",
         "score": 29.61
       },
       {
@@ -1882,6 +2142,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Prairies",
         "score": 39.06
       },
       {
@@ -1889,6 +2150,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 42.48
       },
       {
@@ -1896,6 +2158,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "East",
         "score": 56.75
       },
       {
@@ -1903,6 +2166,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 54.79
       },
       {
@@ -1910,6 +2174,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "West",
         "score": 45.22
       },
       {
@@ -1917,6 +2182,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "West",
         "score": 61.03
       },
       {
@@ -1924,6 +2190,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "West",
         "score": 53.96
       },
       {
@@ -1931,6 +2198,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Ontario",
         "score": 37.53
       },
       {
@@ -1938,6 +2206,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Prairies",
         "score": 35.78
       },
       {
@@ -1945,6 +2214,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
+        "region": "Alberta",
         "score": 40.29
       }
     ],
@@ -1959,6 +2229,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 42.39
       },
       {
@@ -1966,6 +2237,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Alberta",
         "score": 41.18
       },
       {
@@ -1973,6 +2245,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "East",
         "score": 66.28
       },
       {
@@ -1980,6 +2253,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Alberta",
         "score": 47.56
       },
       {
@@ -1987,6 +2261,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "East",
         "score": 28.28
       },
       {
@@ -1994,6 +2269,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 40.81
       },
       {
@@ -2001,6 +2277,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "East",
         "score": 55.17
       },
       {
@@ -2008,6 +2285,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 58.5
       },
       {
@@ -2015,6 +2293,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "West",
         "score": 43.18
       },
       {
@@ -2022,6 +2301,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 56.59
       },
       {
@@ -2029,6 +2309,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Quebec",
         "score": 57.45
       },
       {
@@ -2036,6 +2317,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Alberta",
         "score": 29.47
       },
       {
@@ -2043,6 +2325,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 44.61
       },
       {
@@ -2050,6 +2333,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 53.62
       },
       {
@@ -2057,6 +2341,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "East",
         "score": 37.55
       },
       {
@@ -2064,6 +2349,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Quebec",
         "score": 53.3
       },
       {
@@ -2071,6 +2357,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 50.62
       },
       {
@@ -2078,6 +2365,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario-Quebec",
         "score": 54.72
       },
       {
@@ -2085,6 +2373,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Quebec",
         "score": 48.71
       },
       {
@@ -2092,6 +2381,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Prairies",
         "score": 26.16
       },
       {
@@ -2099,6 +2389,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Prairies",
         "score": 31.13
       },
       {
@@ -2106,6 +2397,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 59.75
       },
       {
@@ -2113,6 +2405,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "East",
         "score": 17.5
       },
       {
@@ -2120,6 +2413,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 44.23
       },
       {
@@ -2127,6 +2421,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "West",
         "score": 70.84
       },
       {
@@ -2134,6 +2429,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "West",
         "score": 52.03
       },
       {
@@ -2141,6 +2437,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "West",
         "score": 34.56
       },
       {
@@ -2148,6 +2445,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Ontario",
         "score": 41.32
       },
       {
@@ -2155,6 +2453,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Prairies",
         "score": 28.75
       },
       {
@@ -2162,6 +2461,7 @@
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
+        "region": "Alberta",
         "score": 28.37
       }
     ],

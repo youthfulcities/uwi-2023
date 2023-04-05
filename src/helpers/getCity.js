@@ -29,8 +29,9 @@ const getTotalScores = (chosenValues) => {
       (prev, current) => ({
         city: current.city,
         score: prev.score + current.score,
+        region: current.region,
       }),
-      { city: '', score: 0 }
+      { city: '', score: 0, region: '' }
     )
   );
   const sortedScores = _.sortBy(reducedScores, ['score']);

@@ -42,7 +42,7 @@ const DonutGraph = ({ parentData, max }) => {
     },
   };
 
-  const scoreData = [parentData.score, 1 - parentData.score];
+  const scoreData = [parentData.score, 100 - parentData.score];
   const labels = [parentData.topic_en, 'Remainder'];
 
   const getRandomColour = () => darkColours[Math.floor(Math.random() * 5)];

@@ -40,7 +40,7 @@ const Results = ({
   const sortedStats = getBestPriorities();
 
   const getPercent = (currentScore) =>
-    Math.round((currentScore * 100) / priorities.length);
+    Math.round(currentScore / priorities.length);
 
   return (
     <>
@@ -72,7 +72,7 @@ const Results = ({
           </Typography>
           <BarGraph
             parentData={bestCities}
-            max={priorities.length}
+            max={Math.ceil(score)}
             setCurrentCity={setCurrentCity}
           />
           <Typography variant="h5" mt={4} align="center">
@@ -85,7 +85,7 @@ const Results = ({
                   {topic.topic_en}
                 </Typography>
                 <Box sx={{ position: 'relative' }}>
-                  <DonutGraph parentData={topic} max={priorities.length} />
+                  <DonutGraph parentData={topic}/>
                   <Typography variant="h3" className="centered">
                     {topic.score}
                   </Typography>

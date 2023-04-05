@@ -2,3281 +2,2171 @@
   {
     "children": [
       {
-        "city": "Vancouver",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.82
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.58
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.24
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.64
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.49
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.21
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.55
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.89
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.57
-      },
-      {
-        "city": "London",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.98
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.07
-      },
-      {
-        "city": "Québec",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.77
-      },
-      {
-        "city": "Laval",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.55
-      },
-      {
-        "city": "Regina",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.9
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.78
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.33
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.56
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.92
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.59
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.5
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.61
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.28
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.33
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.2
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.05
-      },
-      {
         "city": "Brampton",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.25
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.01
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.79
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.78
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.04
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.52
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.12
-      },
-      {
-        "city": "Welland",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.12
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.77
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.5
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.14
-      },
-      {
-        "city": "Delta",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.92
-      },
-      {
-        "city": "Langley",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.86
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.48
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.88
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.1
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.61
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.25
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.81
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "sustainability",
-        "topic_en": "Climate Change",
-        "topic_fr": "Changement climatique",
-        "score": 0.82
-      }
-    ],
-    "topic_key": "sustainability",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.92
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.17
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.67
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.96
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.89
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.64
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.07
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.26
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.79
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.17
-      },
-      {
-        "city": "London",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.41
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.26
-      },
-      {
-        "city": "Québec",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.38
-      },
-      {
-        "city": "Laval",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.84
-      },
-      {
-        "city": "Regina",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.71
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.47
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.77
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.18
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.62
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.95
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.05
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 36.94
       },
       {
         "city": "Calgary",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.12
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 42.61
       },
       {
-        "city": "Toronto",
+        "city": "Charlottetown",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.47
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 65.71
       },
       {
-        "city": "Ottawa",
+        "city": "Edmonton",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.4
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 54.38
       },
       {
-        "city": "Montreal",
+        "city": "Fredericton",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.78
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 64.93
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 68.53
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 48.37
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 52.16
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 48.27
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 50.34
+      },
+      {
+        "city": "Laval",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 85.75
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 64.18
+      },
+      {
+        "city": "London",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 53.47
       },
       {
         "city": "Mississauga",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.74
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 26.64
       },
       {
-        "city": "Brampton",
+        "city": "Moncton",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.63
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 67.27
       },
       {
-        "city": "Windsor",
+        "city": "Montréal",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.47
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 60.91
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 43.12
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 72.86
+      },
+      {
+        "city": "Québec",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 81.13
+      },
+      {
+        "city": "Regina",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 58.62
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 53.64
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 60.96
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 62.43
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 17.6
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 36.08
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "cost",
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 41.29
       },
       {
         "city": "Whitehorse",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.97
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 63.96
       },
       {
-        "city": "St. Catharines",
+        "city": "Windsor",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.4
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 59.61
       },
       {
-        "city": "Cambridge",
+        "city": "Winnipeg",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.31
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 65.94
       },
       {
-        "city": "Waterloo",
+        "city": "Yellowknife",
         "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.22
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.46
-      },
-      {
-        "city": "Welland",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.83
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.18
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.72
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.17
-      },
-      {
-        "city": "Delta",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.8
-      },
-      {
-        "city": "Langley",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.6
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.06
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.97
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.04
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.67
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.97
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.27
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "cost",
-        "topic_en": "Cost Of Living",
-        "topic_fr": "Coût de la vie",
-        "score": 0.06
+        "topic_en": "Affordability",
+        "topic_fr": null,
+        "score": 52.79
       }
     ],
     "topic_key": "cost",
-    "count": 46
+    "average": 55.349666666666664,
+    "count": 30
   },
   {
     "children": [
       {
-        "city": "Vancouver",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.85
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.88
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.63
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.67
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.59
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.84
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.9
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.31
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.35
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.91
-      },
-      {
-        "city": "London",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.65
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.98
-      },
-      {
-        "city": "Québec",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 1
-      },
-      {
-        "city": "Laval",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.79
-      },
-      {
-        "city": "Regina",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.46
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.51
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.87
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.12
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.18
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.26
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.96
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.82
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.65
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.39
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.5
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.66
-      },
-      {
         "city": "Brampton",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.76
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.63
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.3
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.36
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.58
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.89
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.95
-      },
-      {
-        "city": "Welland",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.21
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.8
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.7
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.23
-      },
-      {
-        "city": "Delta",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.48
-      },
-      {
-        "city": "Langley",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.82
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.33
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.14
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.66
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.54
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.39
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.57
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "digital",
-        "topic_en": "Digital Access",
-        "topic_fr": "Accès numérique",
-        "score": 0.87
-      }
-    ],
-    "topic_key": "digital",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.39
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.82
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.82
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.6
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.88
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.66
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.62
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.34
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.55
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.75
-      },
-      {
-        "city": "London",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.58
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.53
-      },
-      {
-        "city": "Québec",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.8
-      },
-      {
-        "city": "Laval",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.86
-      },
-      {
-        "city": "Regina",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.71
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.11
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.17
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.38
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.74
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.36
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.09
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.99
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.33
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.46
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.51
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.58
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.32
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.49
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.64
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.06
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.62
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.46
-      },
-      {
-        "city": "Welland",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.06
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.08
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.71
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.07
-      },
-      {
-        "city": "Delta",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.4
-      },
-      {
-        "city": "Langley",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.81
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.42
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.09
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.94
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.03
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.73
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.95
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "diversity",
-        "topic_en": "Diversity + Inclusion + Accessibility",
-        "topic_fr": "Diversité + Inclusion + Accessibilité",
-        "score": 0.93
-      }
-    ],
-    "topic_key": "diversity",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.39
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.97
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.45
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.61
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.18
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.13
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.98
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.44
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.11
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.75
-      },
-      {
-        "city": "London",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.31
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.15
-      },
-      {
-        "city": "Québec",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.89
-      },
-      {
-        "city": "Laval",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.86
-      },
-      {
-        "city": "Regina",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.24
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.03
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.93
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.72
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.59
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.85
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.39
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.87
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.86
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.79
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.89
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.51
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.32
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.77
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.68
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.97
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.29
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.61
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.77
-      },
-      {
-        "city": "Welland",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.55
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.87
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.42
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.38
-      },
-      {
-        "city": "Delta",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.03
-      },
-      {
-        "city": "Langley",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.92
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.98
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.55
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.4
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.73
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.66
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.15
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "education",
-        "topic_en": "Education + Training",
-        "topic_fr": "Études + Formation",
-        "score": 0.77
-      }
-    ],
-    "topic_key": "education",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.2
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.94
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.32
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.6
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.98
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.45
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.71
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.68
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.93
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0
-      },
-      {
-        "city": "London",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.89
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.87
-      },
-      {
-        "city": "Québec",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.2
-      },
-      {
-        "city": "Laval",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.1
-      },
-      {
-        "city": "Regina",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.51
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.84
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.19
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.81
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.16
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.44
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.53
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.15
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.55
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.93
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.16
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.68
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 1
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.85
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.14
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.96
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.9
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.43
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.79
-      },
-      {
-        "city": "Welland",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.48
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.19
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.61
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.36
-      },
-      {
-        "city": "Delta",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.69
-      },
-      {
-        "city": "Langley",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.92
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.79
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.93
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.38
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.74
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.34
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.99
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "business",
-        "topic_en": "Entrepreneurial Spirit",
-        "topic_fr": "Esprit d’initiative",
-        "score": 0.32
-      }
-    ],
-    "topic_key": "business",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.35
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.41
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.69
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.33
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.55
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.45
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.86
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.72
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.62
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.26
-      },
-      {
-        "city": "London",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.9
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.59
-      },
-      {
-        "city": "Québec",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.23
-      },
-      {
-        "city": "Laval",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.45
-      },
-      {
-        "city": "Regina",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.53
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.09
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.02
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.75
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.85
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.44
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.71
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.44
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.52
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.18
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.75
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.22
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.01
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.85
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.73
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.33
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.82
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.11
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.92
-      },
-      {
-        "city": "Welland",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.95
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.17
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.96
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.44
-      },
-      {
-        "city": "Delta",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.84
-      },
-      {
-        "city": "Langley",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.26
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.79
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.92
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.7
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.2
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.49
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.71
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "health",
-        "topic_en": "Health Services",
-        "topic_fr": "Services de santé",
-        "score": 0.48
-      }
-    ],
-    "topic_key": "health",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.14
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.15
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.86
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.13
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.5
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.43
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.91
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.85
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.17
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.77
-      },
-      {
-        "city": "London",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.96
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.75
-      },
-      {
-        "city": "Québec",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.67
-      },
-      {
-        "city": "Laval",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.73
-      },
-      {
-        "city": "Regina",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.22
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.06
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.56
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.5
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.02
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.02
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.21
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.76
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.63
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.09
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.97
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.31
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.47
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.82
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.7
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.42
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.49
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.49
-      },
-      {
-        "city": "Welland",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.41
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.58
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.59
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.06
-      },
-      {
-        "city": "Delta",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.32
-      },
-      {
-        "city": "Langley",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.6
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.58
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.89
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.24
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.75
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.68
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.81
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "economy",
-        "topic_en": "Local Economic Growth",
-        "topic_fr": "Croissance économique locale",
-        "score": 0.67
-      }
-    ],
-    "topic_key": "economy",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.57
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.07
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.92
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.11
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.08
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.68
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.71
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.59
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.22
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.98
-      },
-      {
-        "city": "London",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.27
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.4
-      },
-      {
-        "city": "Québec",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.6
-      },
-      {
-        "city": "Laval",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.89
-      },
-      {
-        "city": "Regina",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.25
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.24
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.95
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.95
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.58
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.7
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.81
-      },
-      {
-        "city": "Calgary",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.16
-      },
-      {
-        "city": "Toronto",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.38
-      },
-      {
-        "city": "Ottawa",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.92
-      },
-      {
-        "city": "Montreal",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.48
-      },
-      {
-        "city": "Mississauga",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.51
-      },
-      {
-        "city": "Brampton",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.51
-      },
-      {
-        "city": "Windsor",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.27
-      },
-      {
-        "city": "Whitehorse",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.49
-      },
-      {
-        "city": "St. Catharines",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.79
-      },
-      {
-        "city": "Cambridge",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.04
-      },
-      {
-        "city": "Waterloo",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.87
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.41
-      },
-      {
-        "city": "Welland",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 1
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.8
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.64
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.88
-      },
-      {
-        "city": "Delta",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.11
-      },
-      {
-        "city": "Langley",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.32
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.92
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.87
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.91
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.88
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.35
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0.66
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "transport",
-        "topic_en": "Public Transportation",
-        "topic_fr": "Transport public",
-        "score": 0
-      }
-    ],
-    "topic_key": "transport",
-    "count": 46
-  },
-  {
-    "children": [
-      {
-        "city": "Vancouver",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.38
-      },
-      {
-        "city": "St. John's",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.17
-      },
-      {
-        "city": "Victoria",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.81
-      },
-      {
-        "city": "Lethbridge",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.13
-      },
-      {
-        "city": "Saskatoon",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.36
-      },
-      {
-        "city": "Fredericton",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.07
-      },
-      {
-        "city": "Oshawa",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.45
-      },
-      {
-        "city": "Hamilton",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.57
-      },
-      {
-        "city": "Kitchener",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.31
-      },
-      {
-        "city": "Halifax",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.9
-      },
-      {
-        "city": "London",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.58
-      },
-      {
-        "city": "Yellowknife",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.19
-      },
-      {
-        "city": "Québec",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.57
-      },
-      {
-        "city": "Laval",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.64
-      },
-      {
-        "city": "Regina",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.57
-      },
-      {
-        "city": "Sudbury",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.56
-      },
-      {
-        "city": "Charlottetown",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.3
-      },
-      {
-        "city": "Kelowna",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.62
-      },
-      {
-        "city": "Moncton",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.05
-      },
-      {
-        "city": "Edmonton",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.52
-      },
-      {
-        "city": "Winnipeg",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.9
+        "score": 43.24
       },
       {
         "city": "Calgary",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.7
+        "score": 45.49
       },
       {
-        "city": "Toronto",
+        "city": "Charlottetown",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.51
+        "score": 64.76
       },
       {
-        "city": "Ottawa",
+        "city": "Edmonton",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.31
+        "score": 43.32
       },
       {
-        "city": "Montreal",
+        "city": "Fredericton",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.02
+        "score": 72.37
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 47.64
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 55.4
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 51.39
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 52.61
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 59.45
+      },
+      {
+        "city": "Laval",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 48.42
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 43.04
+      },
+      {
+        "city": "London",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 52.54
       },
       {
         "city": "Mississauga",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.9
+        "score": 55.42
       },
       {
-        "city": "Brampton",
+        "city": "Moncton",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.39
+        "score": 72.95
       },
       {
-        "city": "Windsor",
+        "city": "Montréal",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.45
+        "score": 55.86
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 48.88
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 55.71
+      },
+      {
+        "city": "Québec",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 64.56
+      },
+      {
+        "city": "Regina",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 58.04
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 54.57
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 54.48
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 31.54
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 63.42
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 51.96
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "jobs",
+        "topic_en": "Good Youth Jobs",
+        "topic_fr": "Emploi des jeunes",
+        "score": 53.63
       },
       {
         "city": "Whitehorse",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.63
+        "score": 62.89
       },
       {
-        "city": "St. Catharines",
+        "city": "Windsor",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.01
+        "score": 45.72
       },
       {
-        "city": "Cambridge",
+        "city": "Winnipeg",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.18
+        "score": 40.82
       },
       {
-        "city": "Waterloo",
+        "city": "Yellowknife",
         "topic_key": "jobs",
-        "topic_en": "Youth Employment",
+        "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "score": 0.4
-      },
-      {
-        "city": "Niagara Falls",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.01
-      },
-      {
-        "city": "Welland",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.16
-      },
-      {
-        "city": "Gatineau",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.05
-      },
-      {
-        "city": "Burnaby",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.21
-      },
-      {
-        "city": "Coquitlam",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.48
-      },
-      {
-        "city": "Delta",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.66
-      },
-      {
-        "city": "Langley",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.86
-      },
-      {
-        "city": "Maple Ridge",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.13
-      },
-      {
-        "city": "New Westminster",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.44
-      },
-      {
-        "city": "North Vancouver",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.93
-      },
-      {
-        "city": "Port Coquitlam",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.89
-      },
-      {
-        "city": "Richmond",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.42
-      },
-      {
-        "city": "Saanich",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.16
-      },
-      {
-        "city": "Surrey",
-        "topic_key": "jobs",
-        "topic_en": "Youth Employment",
-        "topic_fr": "Emploi des jeunes",
-        "score": 0.66
+        "score": 26.16
       }
     ],
     "topic_key": "jobs",
-    "count": 46
+    "average": 52.542666666666676,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 51
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 42.87
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 63.85
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 39.15
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 50.73
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 16.39
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 73.7
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 35.85
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 40.13
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 57.14
+      },
+      {
+        "city": "Laval",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 38.14
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 35.49
+      },
+      {
+        "city": "London",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 44.11
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 47.98
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 49.03
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 41.55
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 29.24
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 47.36
+      },
+      {
+        "city": "Québec",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 38.68
+      },
+      {
+        "city": "Regina",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 43.87
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 45.21
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 23.31
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 30.57
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 48.16
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 47.45
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 36.87
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 57.59
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 29.24
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 43.69
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "economy",
+        "topic_en": "City Economy",
+        "topic_fr": "Croissance économique locale",
+        "score": 61.14
+      }
+    ],
+    "topic_key": "economy",
+    "average": 43.64966666666667,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 33.03
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 54.14
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 54.61
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 55.16
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 42.93
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 41.45
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 46.56
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 55.44
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 37.07
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 52.57
+      },
+      {
+        "city": "Laval",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 42.01
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 36.56
+      },
+      {
+        "city": "London",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 41.68
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 51.9
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 22.46
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 61.25
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 39.35
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 44.69
+      },
+      {
+        "city": "Québec",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 49.08
+      },
+      {
+        "city": "Regina",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 41.66
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 55.78
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 40.33
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 46.69
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 64.42
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 52.68
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 39.06
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 24.91
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 44.81
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 48.78
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "education",
+        "topic_en": "Education + Training",
+        "topic_fr": "Études + Formation",
+        "score": 42.24
+      }
+    ],
+    "topic_key": "education",
+    "average": 45.443333333333335,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 79.13
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 62.75
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 44.01
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 63.2
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 30.69
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 34.55
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 45.1
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 58.01
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 50.22
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 63.61
+      },
+      {
+        "city": "Laval",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 62.9
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 34
+      },
+      {
+        "city": "London",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 48.44
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 77.43
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 24.75
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 64.65
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 36.02
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 51.87
+      },
+      {
+        "city": "Québec",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 41.16
+      },
+      {
+        "city": "Regina",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 55.64
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 49.99
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 55.27
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 34.23
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 71.97
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 68.62
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 48.78
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 22.5
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 60.85
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 60.06
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "diversity",
+        "topic_en": "Equity, Diversity, and Inclusion",
+        "topic_fr": null,
+        "score": 18.94
+      }
+    ],
+    "topic_key": "diversity",
+    "average": 50.644666666666666,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 37
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 46.6
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 33.6
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 33.6
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 25.3
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 12.4
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 27.9
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 17.3
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 33.3
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 29.2
+      },
+      {
+        "city": "Laval",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 17.3
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 18.5
+      },
+      {
+        "city": "London",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 17.3
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 38.3
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 13.6
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 59.5
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 14.3
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 21.4
+      },
+      {
+        "city": "Québec",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 12.4
+      },
+      {
+        "city": "Regina",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 11.9
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 24
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 13.2
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 15.2
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 87.5
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 58.6
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 33.2
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 29.8
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 14
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 23.4
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "business",
+        "topic_en": "Entrepreneurial Spirit",
+        "topic_fr": "Esprit d’initiative",
+        "score": 50.6
+      }
+    ],
+    "topic_key": "business",
+    "average": 29.00666666666667,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 61.44
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 45.02
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 34.05
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 46.14
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 43.74
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 53.4
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 56.24
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 63.88
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 50.89
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 57.21
+      },
+      {
+        "city": "Laval",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 61.08
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 36.52
+      },
+      {
+        "city": "London",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 65.29
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 62.41
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 38.59
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 74.2
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 52.47
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 60.02
+      },
+      {
+        "city": "Québec",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 71.47
+      },
+      {
+        "city": "Regina",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 28.31
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 25.15
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 58.61
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 37.46
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 96.33
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 65.47
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 55.38
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 8.45
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 53.65
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 39.9
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "digital",
+        "topic_en": "Digital Access",
+        "topic_fr": "Accès numérique",
+        "score": 10.76
+      }
+    ],
+    "topic_key": "digital",
+    "average": 50.45100000000001,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 56.24
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 65.53
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 56.46
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 63.93
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 42.67
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 71.99
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 63.26
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 56.18
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 67.55
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 60.22
+      },
+      {
+        "city": "Laval",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 52.52
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 64.37
+      },
+      {
+        "city": "London",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 65.84
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 64.3
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 52.16
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 74.82
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 33.34
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 72.73
+      },
+      {
+        "city": "Québec",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 71.08
+      },
+      {
+        "city": "Regina",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 59.11
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 49.26
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 64.41
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 54.23
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 56.48
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 71.64
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 63.86
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 52.9
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 71.35
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 70.51
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "transport",
+        "topic_en": "Transportation",
+        "topic_fr": "Transport",
+        "score": 48.61
+      }
+    ],
+    "topic_key": "transport",
+    "average": 60.584999999999994,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 24.96
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 42.63
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 61.28
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 34.47
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 51.98
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 26.58
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 24.66
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 35.94
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 44.25
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 43.71
+      },
+      {
+        "city": "Laval",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 22.65
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 31.85
+      },
+      {
+        "city": "London",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 38.5
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 31.85
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 51.32
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 35.46
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 40.65
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 39.61
+      },
+      {
+        "city": "Québec",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 22.44
+      },
+      {
+        "city": "Regina",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 29.61
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 39.06
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 42.48
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 56.75
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 54.79
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 45.22
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 61.03
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 53.96
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 37.53
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 35.78
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "health",
+        "topic_en": "Health",
+        "topic_fr": "Services de santé",
+        "score": 40.29
+      }
+    ],
+    "topic_key": "health",
+    "average": 40.043,
+    "count": 30
+  },
+  {
+    "children": [
+      {
+        "city": "Brampton",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 42.39
+      },
+      {
+        "city": "Calgary",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 41.18
+      },
+      {
+        "city": "Charlottetown",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 66.28
+      },
+      {
+        "city": "Edmonton",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 47.56
+      },
+      {
+        "city": "Fredericton",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 28.28
+      },
+      {
+        "city": "Greater Sudbury / Grand Sudbury",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 40.81
+      },
+      {
+        "city": "Halifax",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 55.17
+      },
+      {
+        "city": "Hamilton",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 58.5
+      },
+      {
+        "city": "Kelowna",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 43.18
+      },
+      {
+        "city": "Kitchener - Cambridge - Waterloo",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 56.59
+      },
+      {
+        "city": "Laval",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 57.45
+      },
+      {
+        "city": "Lethbridge",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 29.47
+      },
+      {
+        "city": "London",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 44.61
+      },
+      {
+        "city": "Mississauga",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 53.62
+      },
+      {
+        "city": "Moncton",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 37.55
+      },
+      {
+        "city": "Montréal",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 53.3
+      },
+      {
+        "city": "Oshawa",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 50.62
+      },
+      {
+        "city": "Ottawa-Gatineau",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 54.72
+      },
+      {
+        "city": "Québec",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 48.71
+      },
+      {
+        "city": "Regina",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 26.16
+      },
+      {
+        "city": "Saskatoon",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 31.13
+      },
+      {
+        "city": "St. Catharines - Niagara",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 59.75
+      },
+      {
+        "city": "St. John's",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 17.5
+      },
+      {
+        "city": "Toronto",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 44.23
+      },
+      {
+        "city": "Vancouver",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 70.84
+      },
+      {
+        "city": "Victoria",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 52.03
+      },
+      {
+        "city": "Whitehorse",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 34.56
+      },
+      {
+        "city": "Windsor",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 41.32
+      },
+      {
+        "city": "Winnipeg",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 28.75
+      },
+      {
+        "city": "Yellowknife",
+        "topic_key": "sustainability",
+        "topic_en": "Climate Action",
+        "topic_fr": "Changement climatique",
+        "score": 28.37
+      }
+    ],
+    "topic_key": "sustainability",
+    "average": 44.821,
+    "count": 30
   }
 ]

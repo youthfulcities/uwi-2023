@@ -24,14 +24,14 @@ const RoundSymbolButton = ({
   topic,
   name,
   desc,
-  setPriorities,
-  i,
-  isIncluded,
+  handleClick,
+  index,
+  included,
 }) => {
   const { t } = useTranslation();
 
-  const even = i % 2;
-  const [included, setIncluded] = useState(isIncluded);
+  const even = index % 2;
+  // const [included, setIncluded] = useState(isIncluded);
   const [open, setOpen] = useState(false);
 
   const getIcon = (iconTopic) => {
@@ -160,19 +160,9 @@ const RoundSymbolButton = ({
     }
   };
 
-  const handleClick = () => {
+  const preHandleClick = () => {
     if (open) return;
-
-    setIncluded(!included);
-    if (included) {
-      setTimeout(() => {
-        setPriorities((prev) => prev.filter((priority) => priority !== topic));
-      }, 10);
-    } else {
-      setTimeout(() => {
-        setPriorities((prev) => [...prev, topic]);
-      }, 10);
-    }
+    handleClick(index);
   };
 
   return (
@@ -199,7 +189,7 @@ const RoundSymbolButton = ({
         }}
         variant="contained"
         color="secondary"
-        onClick={() => handleClick()}
+        onClick={() => preHandleClick(index)}
         className={`roundSymbolButton ${included ? 'active' : 'inactive'}`}
         component={motion.button}
         whileHover={{
@@ -264,4 +254,4 @@ const RoundSymbolButton = ({
   );
 };
 
-export default RoundSymbolButton;
+export default React.memo(RoundSymbolButton);

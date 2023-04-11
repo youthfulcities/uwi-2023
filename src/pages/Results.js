@@ -42,8 +42,6 @@ const Results = ({
   const getPercent = (currentScore) =>
     Math.round(currentScore / priorities.length);
 
-  console.log(priorities);
-
   return (
     <>
       <PhotoBackground />

@@ -7,7 +7,6 @@ import FadeInUp from './components/FadeInUp';
 import Footer from './components/Footer';
 import ScrollToTop from './helpers/ScrollToTop';
 import muiTheme from './muiTheme';
-import ExploreAll from './pages/ExploreAll';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Quiz from './pages/Quiz';
@@ -21,6 +20,7 @@ const App = () => {
   const theme = muiTheme();
 
   const [priorities, setPriorities] = useState([]);
+  console.log(priorities);
 
   const languages = [
     {
@@ -84,18 +84,6 @@ const App = () => {
               path="/results"
               element={
                 <Results
-                  priorities={priorities}
-                  setPriorities={setPriorities}
-                  languages={languages}
-                  setCurrentLangCode={setCurrentLangCode}
-                  currentLangCode={currentLangCode}
-                />
-              }
-            />
-            <Route
-              path="/explore-all"
-              element={
-                <ExploreAll
                   priorities={priorities}
                   setPriorities={setPriorities}
                   languages={languages}

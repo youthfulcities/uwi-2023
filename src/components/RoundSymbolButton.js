@@ -181,6 +181,9 @@ const RoundSymbolButton = ({
           padding: '50px',
           '&:hover': {
             backgroundColor: included ? '#36529B' : '#515151',
+            boxShadow: included
+              ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
+              : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
           },
           '&:active': {
             backgroundColor: included ? '#36529B' : '#515151',
@@ -193,7 +196,7 @@ const RoundSymbolButton = ({
         className={`roundSymbolButton ${included ? 'active' : 'inactive'}`}
         component={motion.button}
         whileHover={{
-          scale: 1.1,
+          scale: 1.025,
           transition: { duration: 0.3 },
         }}
         whileTap={{ scale: 0.9 }}>

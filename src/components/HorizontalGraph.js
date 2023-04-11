@@ -39,6 +39,17 @@ const colours = {
 const BarGraph = ({ parentData, max, setCurrentCity }) => {
   const chartRef = useRef();
 
+  const scoreData = parentData.map((item) => item.score);
+  const cityLabels = parentData.map((item) => item.city);
+  const regionsColours = parentData.map((item) => colours[item.region]);
+  const labels = cityLabels;
+
+  const onClick = (event) => {
+    const el = getElementAtEvent(chartRef.current, event)[0];
+    const newCity = cityLabels[el.index];
+    setCurrentCity(newCity);
+  };
+
   const options = {
     indexAxis: 'y',
     aspectRatio: 0.75,
@@ -76,6 +87,12 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         ticks: {
           color: '#000',
           autoSkip: false,
+          callback(index) {
+            if (labels[index].length > 10) {
+              return `${labels[index].substring(0, 10)}...`;
+            }
+            return labels[index];
+          },
         },
         title: {
           display: true,
@@ -114,22 +131,6 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         yOffset: '300px',
       },
     },
-  };
-
-  const scoreData = parentData.map((item) => item.score);
-  const cityLabels = parentData.map((item) => {
-    if (item.city.length > 9) {
-      return `${item.city.substring(0, 10)}...`;
-    }
-    return item.city;
-  });
-  const regionsColours = parentData.map((item) => colours[item.region]);
-  const labels = cityLabels;
-
-  const onClick = (event) => {
-    const el = getElementAtEvent(chartRef.current, event)[0];
-    const newCity = cityLabels[el.index];
-    setCurrentCity(newCity);
   };
 
   const data = {

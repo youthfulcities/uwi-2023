@@ -89,15 +89,15 @@ const Quiz = ({
                 </Link>
               </Grid>
               <Grid item mx={1} mb={1}>
-                {!items ? (
-                  <Button variant="contained" color="info" disabled>
-                    Show me my results
-                  </Button>
-                ) : (
+                {items.some((e) => e.included === true) ? (
                   <Button
                     variant="contained"
                     color="info"
                     onClick={(e) => handleSubmit(e)}>
+                    Show me my results
+                  </Button>
+                ) : (
+                  <Button variant="contained" color="info" disabled>
                     Show me my results
                   </Button>
                 )}

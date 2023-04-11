@@ -37,7 +37,7 @@ const Home = ({ languages, setCurrentLangCode, currentLangCode }) => {
             </Link>
           </Grid>
           <Grid item>
-            <Link to="/explore">
+            <Link to="/all">
               <Button variant="contained">Explore All Cities</Button>
             </Link>
           </Grid>

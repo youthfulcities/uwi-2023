@@ -2,7 +2,9 @@ import _ from 'lodash';
 import scores from '../data/scores.json';
 
 const getSubsetOfValues = (chosenValues) =>
-  scores.filter((item) => chosenValues.includes(item.topic_key));
+  chosenValues
+    ? scores.filter((item) => chosenValues.includes(item.topic_key))
+    : scores;
 
 const getChildren = (chosenValues) => {
   const subset = getSubsetOfValues(chosenValues);

@@ -146,7 +146,13 @@
     "city":"Québec",
     "img":"quebec-1.jpg",
     "quote": "The iconic Château Frontenac in Old Québec.",
-    "author": ""
+    "author": ""  
   }
-]
+],
+"Mississauga": [{
+  "city":"Mississauga",
+  "img":"mississauga-1.jpg",
+  "quote":"Mississauga is well-known for the Toronto Pearson Internation Airport. Seeing the city from the air is always cool!",
+  "author":""
+}]
 }

@@ -596,3 +596,39 @@ position:relative;
 .roundSymbolButton:last-child {
   margin-bottom: 0;
 }
+
+/* Polaroid design
+   ========================================================================== */
+
+ .polaroid {
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 0.2rem 1.2rem rgba(0,0,0,0.2);
+  
+}
+.polaroid > img{
+  max-width: 100%;
+  height: auto;
+}
+.caption {
+  font-size: 1.8rem;
+  text-align: left;
+  padding: 10px;
+}
+.item {
+  width: 90%;
+  display: inline-block;
+  margin-top: 2rem;
+  transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+}
+.item .polaroid:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  transition: all 0.35s;
+  
+}  

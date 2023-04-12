@@ -42,13 +42,24 @@ const Results = ({
   const getPhoto = () => {
     if (images[currentCity]) {
       const random = Math.floor(Math.random() * images[currentCity].length);
+      const current = images[currentCity][random];
 
       return (
-        <img
-          src={`./assets/images/${images[currentCity][random].img}`}
-          alt={images[currentCity][random].city}
-          width="100%"
-        />
+        <div className="item">
+          <div className="polaroid">
+            <img
+              src={`./assets/images/${current.img}`}
+              alt={current.city}
+              width="100%"
+            />
+            <div className="caption">
+              <Typography variant="h6">“{current.quote}”</Typography>
+              <Typography mt={1} variant="body2" sx={{ fontStyle: 'italic' }}>
+                — {current.author.length > 0 ? current.author : 'Anonymous'}
+              </Typography>
+            </div>
+          </div>
+        </div>
       );
     }
   };

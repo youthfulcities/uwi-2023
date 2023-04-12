@@ -1,0 +1,152 @@
+{"Vancouver": [
+  {
+    "city": "Vancouver",
+    "img": "vancouver-1.jpeg",
+    "quote": "Courtney on the island: The most peaceful place to come to after a long day of work! Where dogs and people can adventure and burn off some steam. It is my favourite spot to be!",
+    "author": ""
+  },
+  {
+    "city": "Vancouver",
+    "img": "vancouver-2.jpg",
+    "quote": "This photo was taken at Spanish Banks dog beach in Vancouver, BC. I love taking my dog on a walk here, swimming in the summer, and just generally enjoying the beaches and forest around. It's a space that's free and accessible to most people!",
+    "author": ""
+  },
+  {
+    "city": "Vancouver",
+    "img": "vancouver-3.jpeg",
+    "quote": "This photo was taken at the free public rose garden in Queens Park in New Westminster. It sparks joy and tranquility for me because it is a beautiful, relaxing gathering spot for people of all backgrounds to come and enjoy.",
+    "author": "Alicia She"
+  },
+  {
+    "city": "Vancouver",
+    "img": "vancouver-4.jpg",
+    "quote": "Vancouver - access to blue space, transportation, and affordable services in the city all in one picture!",
+    "author": "Linxi Mytkolli"
+  },
+  {
+    "city": "Vancouver",
+    "img": "vancouver-5.jpg",
+    "quote": "I've taken this picture from the top of the Vancouver tower, it highlights the city liveliness at night, makes it super attractive for young people as many young people love night city live. Many building are commercial and you notice people working even at night, makes it welcoming for young people who are dedicated and working hard.",
+    "author": "Azuz Al-Rubaye"
+  },
+  {
+    "city": "Vancouver",
+    "img": "vancouver-5.jpg",
+    "quote": "This is the view from my home office when remote work was in full-swing. I love the peace of the empty roads, a subtle reminder of the environmental benefits of WFH.",
+    "author": ""
+  },
+    {
+      "city": "Vancouver",
+      "img": "vancouver-6.jpg",
+      "quote": "This is the view from my home office when remote work was in full-swing. I love the peace of the empty roads, a subtle reminder of the environmental benefits of WFH.",
+      "author": ""
+    }
+],
+"Toronto":[
+      {
+        "city": "Toronto",
+        "img": "toronto-1.jpg",
+        "quote": "I took this photo during one of my afternoon walks. Going on walks through this park has always been my way of decompressing after work. Although it's my routine walk and I've seen the scenery many times before, it never fails to brighten my day.",
+        "author": "Tannia Vijeyenthiran"
+      },
+            {
+              "city": "Toronto",
+              "img": "toronto-2.jpg",
+              "quote": "A photo representing high-rise buildings, greens, and waters that symbolize some of the city infrastructures and nature that can exist side by side, but maybe at the cost of each other. Who are the beneficiaries? We, the people. We have to pay back the debt in order to sustain ourselves.",
+              "author": "Mehedi H. Rasel"
+            }
+            
+],
+"Ottawa-Gatineau": [
+  {
+    "city": "Ottawa-Gatineau",
+    "img": "ottawa-1.jpg",
+    "quote": "This photo shows Ottawa at night in the dead of winter (this past early February). Even though this is often thought of as a miserable time of year to many Ottawans, the city remains beautiful and vibrant. This city has a lot to offer young workers.",
+    "author": ""
+  }
+],
+"Victoria": [
+  {
+    "city": "Victoria",
+    "img": "victoria-1.jpeg",
+    "quote": "Being involved in the design and dialogue around the newest Neighbour Hub in Victoria was awesome! To me, the Hub shows an example of people coming together who care about their community and are happy to collaborate and shape the future, even in a small way.",
+    "author": "Leah Karlberg",
+    "link": "https://www.neighbourlab.com/"
+  }
+],
+"Halifax": [
+    {
+      "city": "Halifax",
+      "img": "halifax-1.jpeg",
+      "quote": "Halifax has many unique homes and places that people call home. One day I saw this sign and was struck that to many these houses are no longer homes but income.",
+      "author": "Emily Paterson"
+    }
+],
+"Calgary": [
+      {
+        "city": "Calgary",
+        "img": "calgary-1.jpeg",
+        "quote": "This picture represents playfulness and openness. Also, it represents vibrancy between nature and the built in environment, as it is overlooking a view of the city featuring downtown, one of the places youth work.",
+        "author": "Khush"
+      }
+],
+"Kelowna":[
+        {
+          "city": "Kelowna",
+          "img": "kelowna-1.jpeg",
+          "quote": "Myra Canyon is one of the prettiest places in Kelowna, it’s the best place to get a beautiful view of the lake and Okanagan Valley. ",
+          "author": "Jasmin Gill"
+        }
+],
+"Edmonton":[
+          {
+            "city": "Edmonton",
+            "img": "edmonton-1.jpeg",
+            "quote": "University, train station, youthful people (and mind), green and clean fresh air. All of them are essential to shape a sustainable community.",
+            "author": "Hymns Chu"
+          }
+],
+"Montréal":[
+          {
+            "city": "Montréal",
+            "img": "montreal-1.jpg",
+            "quote": "My favourite thing about Montréal — the botanical gardens.",
+            "author": ""
+          },
+                    {
+                      "city": "Montréal",
+                      "img": "montreal-2.jpg",
+                      "quote": "A view of Montréal from Mount Royal Park",
+                      "author": ""
+                    }
+],
+"Saskatoon":[
+  {
+    "city": "Saskatoon",
+    "img": "saskatoon-1.jpg",
+    "quote": "Photo is of downtown Saskatoon. The rocks were painted by youth arts studio as a tribute to residential school survivors and missing children. It is the main area for both business and arts in the downtown.",
+    "author": ""
+  }
+],
+"Hamilton": [{
+  "city": "Burlington",
+  "img":"hamilton-1.jpg",
+  "quote": "View from Mount Nemo in Burlington. Hamliton and surrounding area is well known for its beautiful trails.",
+  "author":""
+}
+],
+"St. Catharines - Niagara": [{
+  "city": "Niagara",
+  "img":"niagara-1.jpg",
+  "quote":"A quiet beach near Niagara-on-the-Lake.",
+  "author": ""
+}],
+"Québec": [
+  {
+    "city":"Québec",
+    "img":"quebec-1.jpg",
+    "quote": "The iconic Château Frontenac in Old Québec.",
+    "author": ""
+  }
+]
+}

@@ -8,6 +8,7 @@ import DonutGraph from '../components/DonutGraph';
 import FadeInUp from '../components/FadeInUp';
 import HorizontalGraph from '../components/HorizontalGraph';
 import PhotoBackground from '../components/PhotoBackground';
+import images from '../data/images.json';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
 const Results = ({
@@ -37,6 +38,20 @@ const Results = ({
   };
 
   const sortedStats = getBestPriorities();
+
+  const getPhoto = () => {
+    if (images[currentCity]) {
+      const random = Math.floor(Math.random() * images[currentCity].length);
+
+      return (
+        <img
+          src={`./assets/images/${images[currentCity][random].img}`}
+          alt={images[currentCity][random].city}
+          width="100%"
+        />
+      );
+    }
+  };
 
   return (
     <>
@@ -79,6 +94,7 @@ const Results = ({
               </Grid>
             ))}
           </Grid>
+          {getPhoto()}
         </BasicContainer>
         <Box
           sx={{

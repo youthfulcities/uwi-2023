@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 import BasicContainer from '../components/BasicContainer';
 import DonutGraph from '../components/DonutGraph';
 import FadeInUp from '../components/FadeInUp';
+import FlipCard from '../components/FlipCard';
 import HorizontalGraph from '../components/HorizontalGraph';
 import PhotoBackground from '../components/PhotoBackground';
 import images from '../data/images.json';
@@ -90,18 +91,20 @@ const Results = ({
           <Typography variant="h5" mt={4} align="center">
             Score breakdown for <span className="highlight">{currentCity}</span>
           </Typography>
-          <Grid container justifyContent="space-between" my={1}>
+          <Grid container justifyContent="space-between" my={4}>
             {sortedStats.map((topic) => (
-              <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }} my={4}>
-                <Typography variant="h3" align="center" px={1}>
-                  {topic.topic_en}
-                </Typography>
-                <Box sx={{ position: 'relative' }}>
-                  <DonutGraph parentData={topic} />
-                  <Typography variant="h3" className="centered">
-                    {topic.score}
+              <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }} p={2}>
+                <FlipCard>
+                  <Typography variant="h3" align="center" px={1}>
+                    {topic.topic_en}
                   </Typography>
-                </Box>
+                  <Box sx={{ position: 'relative' }}>
+                    <DonutGraph parentData={topic} />
+                    <Typography variant="h3" className="centered">
+                      {topic.score}
+                    </Typography>
+                  </Box>
+                </FlipCard>
               </Grid>
             ))}
           </Grid>

@@ -14,10 +14,7 @@ const DonutGraph = ({ parentData, max }) => {
     aspectRatio: 1,
     responsive: true,
     layout: {
-      padding: {
-        top: 20,
-        bottom: 20,
-      },
+      padding: {},
     },
     animation: {
       delay: (context) => {

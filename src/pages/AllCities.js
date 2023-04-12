@@ -1,8 +1,7 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
-import _ from 'lodash';
+import { Box, Button, Grid, Typography } from '@mui/material';
+import _, { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import BasicContainer from '../components/BasicContainer';
 import DonutGraph from '../components/DonutGraph';
 import FadeInUp from '../components/FadeInUp';
@@ -93,19 +92,45 @@ const Results = ({
           </Typography>
           <Grid container justifyContent="space-between" my={4}>
             {sortedStats.map((topic) => (
-              <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }} p={2}>
-                <FlipCard>
-                  <Typography variant="h3" align="center" px={1}>
+              <FlipCard key={uniqueId()}>
+                <>
+                  <Typography variant="h3" align="center" px={1} mb={3}>
                     {topic.topic_en}
                   </Typography>
-                  <Box sx={{ position: 'relative' }}>
+                  <Box
+                    sx={{
+                      position: 'relative',
+                      width: '100%',
+                    }}>
                     <DonutGraph parentData={topic} />
                     <Typography variant="h3" className="centered">
                       {topic.score}
                     </Typography>
                   </Box>
-                </FlipCard>
-              </Grid>
+                  <Typography variant="body2" mt={3} align="center">
+                    Click for resources →
+                  </Typography>
+                </>
+                <>
+                  <img
+                    src="https://www.futurpreneur.ca/wp-content/uploads/2021/02/futurpreneur_main_logo_web_color@2x.png"
+                    alt="futurpreneur logo"
+                    width="100%"
+                  />
+                  <Typography variant="body2" my={2}>
+                    Futurpreneur provides national ﬁnancing, mentoring and
+                    support tools to aspiring business owners aged 18-39.
+                  </Typography>
+                  <a
+                    href="https://www.futurpreneur.ca/en/"
+                    target="_blank"
+                    rel="noreferrer">
+                    <Button variant="contained" sx={{ minWidth: 0 }}>
+                      Go to Website
+                    </Button>
+                  </a>
+                </>
+              </FlipCard>
             ))}
           </Grid>
           {getPhoto()}
@@ -116,28 +141,25 @@ const Results = ({
               'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
             position: 'sticky',
             bottom: 0,
-            width: '100vw',
           }}
           py={2}>
-          <Container maxWidth="lg">
-            <Grid
-              sx={{ minHeight: '10vh', maxHeight: '10vh' }}
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center">
-              <Grid item mx={1}>
-                <Link to="/">
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => setPriorities([])}>
-                    Home
-                  </Button>
-                </Link>
-              </Grid>
+          <Grid
+            sx={{ minHeight: '10vh', maxHeight: '10vh', minWidth: '100vw' }}
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center">
+            <Grid item mx={1}>
+              <Link to="/">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setPriorities([])}>
+                  Home
+                </Button>
+              </Link>
             </Grid>
-          </Container>
+          </Grid>
         </Box>
       </FadeInUp>
     </>

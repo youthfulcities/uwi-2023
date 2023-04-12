@@ -632,3 +632,14 @@ position:relative;
   transition: all 0.35s;
   
 }  
+
+/* Flip card
+   ========================================================================== */
+
+   .react-card-flip {
+    height: 100%;
+   }
+
+      .react-card-back {
+    height: 100%;
+   }

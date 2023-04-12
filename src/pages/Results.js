@@ -1,4 +1,4 @@
-import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { Box, Button, Grid, Typography } from '@mui/material';
 import _ from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
@@ -41,7 +41,6 @@ const Results = ({
 
   const getPercent = (currentScore) =>
     Math.round(currentScore / priorities.length);
-
 
   return (
     <>
@@ -101,28 +100,25 @@ const Results = ({
               'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
             position: 'sticky',
             bottom: 0,
-            width: '100vw',
           }}
           py={2}>
-          <Container maxWidth="lg">
-            <Grid
-              sx={{ minHeight: '10vh', maxHeight: '10vh' }}
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center">
-              <Grid item mx={1}>
-                <Link to="/">
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    onClick={() => setPriorities([])}>
-                    Home
-                  </Button>
-                </Link>
-              </Grid>
+          <Grid
+            sx={{ minHeight: '10vh', maxHeight: '10vh', minWidth: '100vw' }}
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center">
+            <Grid item mx={1}>
+              <Link to="/">
+                <Button
+                  variant="contained"
+                  color="primary"
+                  onClick={() => setPriorities([])}>
+                  Home
+                </Button>
+              </Link>
             </Grid>
-          </Container>
+          </Grid>
         </Box>
       </FadeInUp>
     </>

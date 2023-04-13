@@ -142,7 +142,7 @@
         "topic_key": "cost",
         "topic_en": "Affordability",
         "topic_fr": null,
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 72.86
       },
       {
@@ -243,6 +243,7 @@
       }
     ],
     "topic_key": "cost",
+    "sum": 1660.49,
     "average": 55.349666666666664,
     "count": 30
   },
@@ -389,7 +390,7 @@
         "topic_key": "jobs",
         "topic_en": "Good Youth Jobs",
         "topic_fr": "Emploi des jeunes",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 55.71
       },
       {
@@ -490,6 +491,7 @@
       }
     ],
     "topic_key": "jobs",
+    "sum": 1576.2800000000002,
     "average": 52.542666666666676,
     "count": 30
   },
@@ -636,7 +638,7 @@
         "topic_key": "economy",
         "topic_en": "City Economy",
         "topic_fr": "Croissance économique locale",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 47.36
       },
       {
@@ -737,6 +739,7 @@
       }
     ],
     "topic_key": "economy",
+    "sum": 1309.49,
     "average": 43.64966666666667,
     "count": 30
   },
@@ -883,7 +886,7 @@
         "topic_key": "education",
         "topic_en": "Education + Training",
         "topic_fr": "Études + Formation",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 44.69
       },
       {
@@ -984,6 +987,7 @@
       }
     ],
     "topic_key": "education",
+    "sum": 1363.3,
     "average": 45.443333333333335,
     "count": 30
   },
@@ -1130,7 +1134,7 @@
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
         "topic_fr": null,
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 51.87
       },
       {
@@ -1231,6 +1235,7 @@
       }
     ],
     "topic_key": "diversity",
+    "sum": 1519.34,
     "average": 50.644666666666666,
     "count": 30
   },
@@ -1377,7 +1382,7 @@
         "topic_key": "business",
         "topic_en": "Entrepreneurial Spirit",
         "topic_fr": "Esprit d’initiative",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 21.4
       },
       {
@@ -1478,6 +1483,7 @@
       }
     ],
     "topic_key": "business",
+    "sum": 870.2000000000002,
     "average": 29.00666666666667,
     "count": 30
   },
@@ -1624,7 +1630,7 @@
         "topic_key": "digital",
         "topic_en": "Digital Access",
         "topic_fr": "Accès numérique",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 60.02
       },
       {
@@ -1725,6 +1731,7 @@
       }
     ],
     "topic_key": "digital",
+    "sum": 1513.5300000000002,
     "average": 50.45100000000001,
     "count": 30
   },
@@ -1871,7 +1878,7 @@
         "topic_key": "transport",
         "topic_en": "Transportation",
         "topic_fr": "Transport",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 72.73
       },
       {
@@ -1972,6 +1979,7 @@
       }
     ],
     "topic_key": "transport",
+    "sum": 1817.5499999999997,
     "average": 60.584999999999994,
     "count": 30
   },
@@ -2118,7 +2126,7 @@
         "topic_key": "health",
         "topic_en": "Health",
         "topic_fr": "Services de santé",
-        "region": "Ontario-Quebec",
+        "region": "OntarioQuebec",
         "score": 39.61
       },
       {
@@ -2219,6 +2227,7 @@
       }
     ],
     "topic_key": "health",
+    "sum": 1201.29,
     "average": 40.043,
     "count": 30
   },
@@ -2230,7 +2239,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 42.39
+        "score": 46.56
       },
       {
         "city": "Calgary",
@@ -2238,7 +2247,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Alberta",
-        "score": 41.18
+        "score": 40.28
       },
       {
         "city": "Charlottetown",
@@ -2246,7 +2255,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "East",
-        "score": 66.28
+        "score": 55.97
       },
       {
         "city": "Edmonton",
@@ -2254,7 +2263,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Alberta",
-        "score": 47.56
+        "score": 44.21
       },
       {
         "city": "Fredericton",
@@ -2262,7 +2271,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "East",
-        "score": 28.28
+        "score": 15.52
       },
       {
         "city": "Greater Sudbury / Grand Sudbury",
@@ -2270,7 +2279,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 40.81
+        "score": 33.42
       },
       {
         "city": "Halifax",
@@ -2278,7 +2287,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "East",
-        "score": 55.17
+        "score": 45.53
       },
       {
         "city": "Hamilton",
@@ -2286,7 +2295,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 58.5
+        "score": 53.75
       },
       {
         "city": "Kelowna",
@@ -2294,7 +2303,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "West",
-        "score": 43.18
+        "score": 33.2
       },
       {
         "city": "Kitchener - Cambridge - Waterloo",
@@ -2302,7 +2311,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 56.59
+        "score": 50.6
       },
       {
         "city": "Laval",
@@ -2310,7 +2319,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Quebec",
-        "score": 57.45
+        "score": 55.28
       },
       {
         "city": "Lethbridge",
@@ -2318,7 +2327,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Alberta",
-        "score": 29.47
+        "score": 22.13
       },
       {
         "city": "London",
@@ -2326,7 +2335,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 44.61
+        "score": 39.57
       },
       {
         "city": "Mississauga",
@@ -2334,7 +2343,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 53.62
+        "score": 57.65
       },
       {
         "city": "Moncton",
@@ -2342,7 +2351,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "East",
-        "score": 37.55
+        "score": 27.23
       },
       {
         "city": "Montréal",
@@ -2350,7 +2359,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Quebec",
-        "score": 53.3
+        "score": 63.7
       },
       {
         "city": "Oshawa",
@@ -2358,15 +2367,15 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 50.62
+        "score": 48.46
       },
       {
         "city": "Ottawa-Gatineau",
         "topic_key": "sustainability",
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
-        "region": "Ontario-Quebec",
-        "score": 54.72
+        "region": "OntarioQuebec",
+        "score": 49.67
       },
       {
         "city": "Québec",
@@ -2374,7 +2383,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Quebec",
-        "score": 48.71
+        "score": 43.93
       },
       {
         "city": "Regina",
@@ -2382,7 +2391,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Prairies",
-        "score": 26.16
+        "score": 24.37
       },
       {
         "city": "Saskatoon",
@@ -2390,7 +2399,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Prairies",
-        "score": 31.13
+        "score": 28.06
       },
       {
         "city": "St. Catharines - Niagara",
@@ -2398,7 +2407,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 59.75
+        "score": 53.18
       },
       {
         "city": "St. John's",
@@ -2406,7 +2415,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "East",
-        "score": 17.5
+        "score": 5.91
       },
       {
         "city": "Toronto",
@@ -2414,7 +2423,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 44.23
+        "score": 58.51
       },
       {
         "city": "Vancouver",
@@ -2422,7 +2431,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "West",
-        "score": 70.84
+        "score": 72.88
       },
       {
         "city": "Victoria",
@@ -2430,7 +2439,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "West",
-        "score": 52.03
+        "score": 51.28
       },
       {
         "city": "Whitehorse",
@@ -2438,7 +2447,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "West",
-        "score": 34.56
+        "score": 22.25
       },
       {
         "city": "Windsor",
@@ -2446,7 +2455,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Ontario",
-        "score": 41.32
+        "score": 37.23
       },
       {
         "city": "Winnipeg",
@@ -2454,7 +2463,7 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Prairies",
-        "score": 28.75
+        "score": 28.1
       },
       {
         "city": "Yellowknife",
@@ -2462,11 +2471,12 @@
         "topic_en": "Climate Action",
         "topic_fr": "Changement climatique",
         "region": "Alberta",
-        "score": 28.37
+        "score": 16.87
       }
     ],
     "topic_key": "sustainability",
-    "average": 44.821,
+    "sum": 1225.2999999999997,
+    "average": 40.84333333333333,
     "count": 30
   }
 ]

@@ -39,73 +39,75 @@ const Quiz = ({
   return (
     <>
       <PhotoBackground />
-      <FadeInUp>
-        <BasicContainer
-          languages={languages}
-          setCurrentLangCode={setCurrentLangCode}
-          currentLangCode={currentLangCode}>
-          <Typography variant="h5" mb={2}>
-            Select the aspects of a city that are{' '}
-            <span className="highlight">important to you.</span> Tap again to
-            deselect.
-          </Typography>
-          <Typography variant="body1" mb={4}>
-            Tap and hold on mobile to open the tooltip and learn more about each
-            topic.
-          </Typography>
-          {items.map((item) => (
-            <RoundSymbolButton
-              index={item.id}
-              key={item.key}
-              topic={item.key}
-              desc={item.desc}
-              included={item.included}
-              name={item.name}
-              handleClick={handleClick}
-            />
-          ))}
-        </BasicContainer>
-        <Box
-          sx={{
-            background:
-              'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
-            position: 'sticky',
-            bottom: 0,
-            width: '100vw',
-          }}
-          py={4}>
-          <Container maxWidth="lg">
-            <Grid
-              sx={{ minHeight: '10vh', maxHeight: '10vh' }}
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center">
-              <Grid item mx={1} mb={1}>
-                <Link to="/">
-                  <Button variant="contained" color="primary">
-                    Home
-                  </Button>
-                </Link>
+      {items && (
+        <FadeInUp>
+          <BasicContainer
+            languages={languages}
+            setCurrentLangCode={setCurrentLangCode}
+            currentLangCode={currentLangCode}>
+            <Typography variant="h5" mb={2}>
+              Select the aspects of a city that are{' '}
+              <span className="highlight">important to you.</span> Tap again to
+              deselect.
+            </Typography>
+            <Typography variant="body1" mb={4}>
+              Tap and hold on mobile to open the tooltip and learn more about
+              each topic.
+            </Typography>
+            {items.map((item) => (
+              <RoundSymbolButton
+                index={item.id}
+                key={item.key}
+                topic={item.key}
+                desc={item.desc}
+                included={item.included}
+                name={item.name}
+                handleClick={handleClick}
+              />
+            ))}
+          </BasicContainer>
+          <Box
+            sx={{
+              background:
+                'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
+              position: 'sticky',
+              bottom: 0,
+              width: '100vw',
+            }}
+            py={4}>
+            <Container maxWidth="lg">
+              <Grid
+                sx={{ minHeight: '10vh', maxHeight: '10vh' }}
+                container
+                direction="row"
+                justifyContent="center"
+                alignItems="center">
+                <Grid item mx={1} mb={1}>
+                  <Link to="/">
+                    <Button variant="contained" color="primary">
+                      Home
+                    </Button>
+                  </Link>
+                </Grid>
+                <Grid item mx={1} mb={1}>
+                  {items.some((e) => e.included === true) ? (
+                    <Button
+                      variant="contained"
+                      color="info"
+                      onClick={(e) => handleSubmit(e)}>
+                      Show me my results
+                    </Button>
+                  ) : (
+                    <Button variant="contained" color="info" disabled>
+                      Show me my results
+                    </Button>
+                  )}
+                </Grid>
               </Grid>
-              <Grid item mx={1} mb={1}>
-                {items.some((e) => e.included === true) ? (
-                  <Button
-                    variant="contained"
-                    color="info"
-                    onClick={(e) => handleSubmit(e)}>
-                    Show me my results
-                  </Button>
-                ) : (
-                  <Button variant="contained" color="info" disabled>
-                    Show me my results
-                  </Button>
-                )}
-              </Grid>
-            </Grid>
-          </Container>
-        </Box>
-      </FadeInUp>
+            </Container>
+          </Box>
+        </FadeInUp>
+      )}
     </>
   );
 };

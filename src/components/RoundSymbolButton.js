@@ -168,6 +168,7 @@ const RoundSymbolButton = ({
   return (
     <AnimatePresence>
       <Button
+        disableRipple
         sx={{
           boxShadow: included
             ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
@@ -199,7 +200,7 @@ const RoundSymbolButton = ({
           scale: 1.025,
           transition: { duration: 0.3 },
         }}
-        whileTap={{ scale: 0.9 }}>
+        whileTap={{ scale: 0.95 }}>
         {included ? (
           <CheckIcon
             sx={{

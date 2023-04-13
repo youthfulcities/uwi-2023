@@ -12,7 +12,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import WifiIcon from '@mui/icons-material/Wifi';
 import { Button, Tooltip, Typography } from '@mui/material';
-import { AnimatePresence, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -166,95 +166,94 @@ const RoundSymbolButton = ({
   };
 
   return (
-    <AnimatePresence>
-      <Button
-        disableRipple
-        sx={{
+    <Button
+      disableRipple
+      sx={{
+        boxShadow: included
+          ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
+          : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
+        minWidth: 0,
+        width: '50%',
+        height: 'auto',
+        right: even ? '-24%' : '24%',
+        aspectRatio: '1/1',
+        borderRadius: '100px',
+        padding: '50px',
+        '&:hover': {
+          backgroundColor: included ? '#36529B' : '#515151',
           boxShadow: included
             ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
             : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
-          minWidth: 0,
-          width: '50%',
-          height: 'auto',
-          right: even ? '-24%' : '24%',
-          aspectRatio: '1/1',
-          borderRadius: '100px',
-          padding: '50px',
-          '&:hover': {
-            backgroundColor: included ? '#36529B' : '#515151',
-            boxShadow: included
-              ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
-              : 'inset -14px -22px 10px rgba(0, 0, 0, 0.01), inset -8px -12px 9px rgba(0, 0, 0, 0.05), inset -3px -5px 6px rgba(0, 0, 0, 0.09), inset -1px -1px 4px rgba(0, 0, 0, 0.1)',
-          },
-          '&:active': {
-            backgroundColor: included ? '#36529B' : '#515151',
-          },
+        },
+        '&:active': {
           backgroundColor: included ? '#36529B' : '#515151',
-        }}
-        variant="contained"
-        color="secondary"
-        onClick={() => preHandleClick(index)}
-        className={`roundSymbolButton ${included ? 'active' : 'inactive'}`}
-        component={motion.button}
-        whileHover={{
-          scale: 1.025,
-          transition: { duration: 0.3 },
-        }}
-        whileTap={{ scale: 0.95 }}>
-        {included ? (
-          <CheckIcon
-            sx={{
-              color: '#253D88',
-              fontSize: '150px',
-              position: 'absolute',
-              zIndex: 0,
-            }}
-          />
-        ) : (
-          getIcon(topic)
-        )}
-        <Tooltip
-          open={open}
-          onOpen={() => setOpen(true)}
-          onClose={() => setOpen(false)}
-          title={
-            <Typography variant="body1" p={1}>
-              {desc}
-            </Typography>
-          }
-          arrow
-          placement="top"
+        },
+        backgroundColor: included ? '#36529B' : '#515151',
+      }}
+      variant="contained"
+      color="secondary"
+      onClick={() => preHandleClick(index)}
+      className={`roundSymbolButton ${included ? 'active' : 'inactive'}`}
+      component={motion.button}
+      whileHover={{
+        scale: 1.025,
+        transition: { duration: 0.3 },
+      }}
+      whileTap={{ scale: 0.95 }}
+      transition={{ delay: 0 }}>
+      {included ? (
+        <CheckIcon
           sx={{
+            color: '#253D88',
+            fontSize: '150px',
             position: 'absolute',
-            top: '20px',
-            fontSize: 24,
-          }}
-          componentsProps={{
-            tooltip: {
-              sx: {
-                color: '#000',
-                backgroundColor: 'rgba(250, 250, 250, 0.95)',
-              },
-            },
-            arrow: {
-              sx: {
-                color: '#fafafa',
-                opacity: 0.95,
-              },
-            },
-          }}>
-          <InfoIcon />
-        </Tooltip>
-        <Typography
-          variant="h3"
-          sx={{
             zIndex: 0,
           }}
-          align="center">
-          {name}
-        </Typography>
-      </Button>
-    </AnimatePresence>
+        />
+      ) : (
+        getIcon(topic)
+      )}
+      <Tooltip
+        open={open}
+        onOpen={() => setOpen(true)}
+        onClose={() => setOpen(false)}
+        title={
+          <Typography variant="body1" p={1}>
+            {desc}
+          </Typography>
+        }
+        arrow
+        placement="top"
+        sx={{
+          position: 'absolute',
+          top: '20px',
+          fontSize: 24,
+        }}
+        componentsProps={{
+          tooltip: {
+            sx: {
+              color: '#000',
+              backgroundColor: 'rgba(250, 250, 250, 0.95)',
+            },
+          },
+          arrow: {
+            sx: {
+              color: '#fafafa',
+              opacity: 0.95,
+            },
+          },
+        }}>
+        <InfoIcon />
+      </Tooltip>
+      <Typography
+        variant="h3"
+        sx={{
+          zIndex: 0,
+        }}
+        align="center">
+        {name}
+      </Typography>
+    </Button>
   );
 };
 

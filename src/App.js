@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import ChangeLang from './components/ChangeLang';
-import FadeInUp from './components/FadeInUp';
 import Footer from './components/Footer';
 import ScrollToTop from './helpers/ScrollToTop';
 import muiTheme from './muiTheme';
@@ -47,13 +46,11 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <ScrollToTop />
       {/* <Header /> */}
-      <FadeInUp>
-        <ChangeLang
-          languages={languages}
-          setCurrentLangCode={setCurrentLangCode}
-          currentLangCode={currentLangCode}
-        />
-      </FadeInUp>
+      <ChangeLang
+        languages={languages}
+        setCurrentLangCode={setCurrentLangCode}
+        currentLangCode={currentLangCode}
+      />
       <div className="flexWrapper">
         <div className="flexGrow">
           <Routes>

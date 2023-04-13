@@ -40,7 +40,7 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
   const chartRef = useRef();
 
   const options = {
-    aspectRatio: 1.5,
+    aspectRatio: 0.95,
     responsive: true,
     layout: {
       padding: {
@@ -132,6 +132,7 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         data: scoreData,
         backgroundColor: regionsColours,
         hoverBackgroundColor: regionsColours,
+        borderRadius: 35,
       },
     ],
   };

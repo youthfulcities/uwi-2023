@@ -140,6 +140,7 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         data: scoreData,
         backgroundColor: regionsColours,
         hoverBackgroundColor: regionsColours,
+        borderRadius: 15,
       },
     ],
   };

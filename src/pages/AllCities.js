@@ -21,6 +21,8 @@ const Results = ({
     document.querySelector('body').scrollTo(0, 0);
   }, []);
 
+  const [height, setHeight] = useState(0);
+
   const cities = getTotalScores();
   const bestCity = cities[0];
   const { city: originalCity, score } = bestCity;
@@ -92,7 +94,7 @@ const Results = ({
           </Typography>
           <Grid container justifyContent="space-between" my={4}>
             {sortedStats.map((topic) => (
-              <FlipCard key={uniqueId()}>
+              <FlipCard height={height} setHeight={setHeight} key={uniqueId()}>
                 <>
                   <Typography variant="h3" align="center" px={1} mb={3}>
                     {topic.topic_en}

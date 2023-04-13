@@ -3,7 +3,7 @@
   "key":"economy",
   "desc":"Industries that create good jobs, increasing population, and attractiveness for employers."
 }, 
-{ "name": "Cost of Living",
+{ "name": "Affordability",
 "key":"cost",
 "desc":"Opportunity to make a higher income combined with a lower cost of living (housing/rent, food, transportation, etc.)."
 }, {
@@ -37,7 +37,7 @@
   "desc":"Access to health services (including mental health and family physicians), the city's built environment (walkability, air quality, tree canopy), etc."
 },
 {
-  "name":"Sustainability",
+  "name":"Climate Action",
   "key":"sustainability",
   "desc":"City-level data on urban density, electric vehicles infrastructure, waste/compost/recycling services, and renewable energy subsidies for residents."
 },

@@ -76,22 +76,25 @@ const Results = ({
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}>
           <Grid item>
-            <Typography variant="h5" mb={4}>
+            <Typography variant="h5" mb={2} mx={1}>
               <span className="highlight">Click on the bar graph</span> to
               explore the score breakdown of each city.
             </Typography>
           </Grid>
-          <Typography mb={1} variant="h3">
+          {/* <Typography mb={1} variant="h3">
             All Cities
-          </Typography>
+          </Typography> */}
           <HorizontalGraph
             parentData={cities}
             max={Math.ceil(score)}
             setCurrentCity={setCurrentCity}
           />
-          <Typography variant="h5" mt={4} align="center">
-            Score breakdown for <span className="highlight">{currentCity}</span>
-          </Typography>
+          <Grid item sx={{ width: '100%' }}>
+            <Typography variant="h5" mt={4} mx={1} align="left">
+              Score breakdown for{' '}
+              <span className="highlight">{currentCity}</span>
+            </Typography>
+          </Grid>
           <Grid container justifyContent="space-between" my={4}>
             {sortedStats.map((topic) => (
               <FlipCard height={height} setHeight={setHeight} key={uniqueId()}>
@@ -109,7 +112,12 @@ const Results = ({
                       {topic.score}
                     </Typography>
                   </Box>
-                  <Typography variant="body2" mt={3} align="center">
+                  <Typography
+                    variant="body2"
+                    mt={3}
+                    align="center"
+                    color="primary"
+                    className="pointer">
                     Click for resources →
                   </Typography>
                 </>
@@ -131,6 +139,14 @@ const Results = ({
                       Go to Website
                     </Button>
                   </a>
+                  <Typography
+                    variant="body2"
+                    mt={3}
+                    align="center"
+                    color="primary"
+                    className="pointer">
+                    ← Go back
+                  </Typography>
                 </>
               </FlipCard>
             ))}

@@ -187,6 +187,10 @@ position:relative;
   -webkit-text-stroke: 2px;
 }
 
+.pointer:hover {
+  cursor: pointer;
+}
+
 /* Backgrounds & containers
    ========================================================================== */
 

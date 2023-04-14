@@ -20,6 +20,10 @@ Include wrapper? No
 Name value: None
 
 
+### Helpful references:
+[How to change bar chart cursor on hover](https://www.youtube.com/watch?v=Uj_I2_7o0No)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

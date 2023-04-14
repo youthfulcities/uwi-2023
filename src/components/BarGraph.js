@@ -33,7 +33,7 @@ const colours = {
   West: '#F6D9D7',
   Prairies: '#FBD166',
   Quebec: '#253D88',
-  'Ontario-Quebec': '#7F3395',
+  OntarioQuebec: '#7F3395',
 };
 
 const BarGraph = ({ parentData, max, setCurrentCity }) => {

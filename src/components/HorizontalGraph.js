@@ -33,7 +33,7 @@ const colours = {
   West: '#F6D9D7',
   Prairies: '#FBD166',
   Quebec: '#253D88',
-  'Ontario-Quebec': '#7F3395',
+  OntarioQuebec: '#7F3395',
 };
 
 const BarGraph = ({ parentData, max, setCurrentCity }) => {
@@ -51,6 +51,10 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
   };
 
   const options = {
+    onHover: (event, chartElement) => {
+      const el = event;
+      el.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
+    },
     indexAxis: 'y',
     aspectRatio: 0.75,
     responsive: true,

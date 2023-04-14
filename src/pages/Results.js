@@ -1,13 +1,12 @@
-import { Box, Button, Grid, Typography } from '@mui/material';
-import _ from 'lodash';
+import { Grid, Typography } from '@mui/material';
+import _, { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
 import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
-import DonutGraph from '../components/DonutGraph';
 import FadeInUp from '../components/FadeInUp';
+import FooterButtons from '../components/FooterButtons';
 import PhotoBackground from '../components/PhotoBackground';
+import ScoreCards from '../components/ScoreCards';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
 const Results = ({
@@ -20,6 +19,8 @@ const Results = ({
   useEffect(() => {
     document.querySelector('body').scrollTo(0, 0);
   }, []);
+
+  const [height, setHeight] = useState(0);
 
   const bestCities = getTotalScores(priorities).slice(0, 5);
   const bestCity = bestCities[0];
@@ -50,7 +51,8 @@ const Results = ({
           width="md"
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
-          currentLangCode={currentLangCode}>
+          currentLangCode={currentLangCode}
+          pb={0}>
           <Grid item>
             <Typography variant="h5" mb={4}>
               Your best city is{' '}
@@ -75,51 +77,26 @@ const Results = ({
             max={Math.ceil(score)}
             setCurrentCity={setCurrentCity}
           />
-          <Typography variant="h5" mt={4} align="center">
-            Score breakdown for {currentCity}
-          </Typography>
+          <Grid item sx={{ width: '100%' }}>
+            <Typography variant="h5" mt={4} align="left">
+              Score breakdown for{' '}
+              <span className="highlight">{currentCity}</span>
+            </Typography>
+          </Grid>
+        </BasicContainer>
+        <BasicContainer px={0} pt={0} width="md">
           <Grid container justifyContent="space-between" my={1}>
             {sortedStats.map((topic) => (
-              <Grid key={uuidv4()} sx={{ minWith: '50%', width: '50%' }} my={4}>
-                <Typography variant="h3" align="center" px={1}>
-                  {topic.topic_en}
-                </Typography>
-                <Box sx={{ position: 'relative' }}>
-                  <DonutGraph parentData={topic} />
-                  <Typography variant="h3" className="centered">
-                    {topic.score}
-                  </Typography>
-                </Box>
-              </Grid>
+              <ScoreCards
+                topic={topic}
+                height={height}
+                setHeight={setHeight}
+                key={uniqueId()}
+              />
             ))}
           </Grid>
         </BasicContainer>
-        <Box
-          sx={{
-            background:
-              'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
-            position: 'sticky',
-            bottom: 0,
-          }}
-          py={2}>
-          <Grid
-            sx={{ minHeight: '10vh', maxHeight: '10vh', minWidth: '100vw' }}
-            container
-            direction="row"
-            justifyContent="center"
-            alignItems="center">
-            <Grid item mx={1}>
-              <Link to="/">
-                <Button
-                  variant="contained"
-                  color="primary"
-                  onClick={() => setPriorities([])}>
-                  Home
-                </Button>
-              </Link>
-            </Grid>
-          </Grid>
-        </Box>
+        <FooterButtons setPriorities={setPriorities} />
       </FadeInUp>
     </>
   );

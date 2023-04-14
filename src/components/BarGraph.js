@@ -40,6 +40,10 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
   const chartRef = useRef();
 
   const options = {
+    onHover: (event, chartElement) => {
+      const el = event;
+      el.native.target.style.cursor = chartElement[0] ? 'pointer' : 'default';
+    },
     aspectRatio: 0.95,
     responsive: true,
     layout: {

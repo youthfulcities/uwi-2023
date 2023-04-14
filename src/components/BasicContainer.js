@@ -6,7 +6,7 @@ const BasicContainer = (
     children,
     width = 'xs',
     spacing = 0,
-    px = 0,
+    px = 1,
     pt = '11vh',
     pb = '3vh',
     languages,

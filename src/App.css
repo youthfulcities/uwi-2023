@@ -622,7 +622,8 @@ position:relative;
 .item {
   width: 90%;
   display: inline-block;
-  margin-top: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   transform: rotate(-2deg);
   -webkit-transform: rotate(-2deg);
   -moz-transform: rotate(-2deg);

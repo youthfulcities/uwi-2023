@@ -5,6 +5,7 @@ import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
 import FooterButtons from '../components/FooterButtons';
+import Photo from '../components/Photo';
 import PhotoBackground from '../components/PhotoBackground';
 import ScoreCards from '../components/ScoreCards';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
@@ -98,6 +99,7 @@ const Results = ({
               />
             ))}
           </Grid>
+          <Photo currentCity={currentCity} />
         </BasicContainer>
         <FooterButtons setPriorities={setPriorities} />
       </FadeInUp>

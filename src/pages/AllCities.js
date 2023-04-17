@@ -5,9 +5,9 @@ import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
 import FooterButtons from '../components/FooterButtons';
 import HorizontalGraph from '../components/HorizontalGraph';
+import Photo from '../components/Photo';
 import PhotoBackground from '../components/PhotoBackground';
 import ScoreCards from '../components/ScoreCards';
-import images from '../data/images.json';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
 const Results = ({
@@ -40,31 +40,6 @@ const Results = ({
 
   const sortedStats = getBestPriorities();
 
-  const getPhoto = () => {
-    if (images[currentCity]) {
-      const random = Math.floor(Math.random() * images[currentCity].length);
-      const current = images[currentCity][random];
-
-      return (
-        <div className="item">
-          <div className="polaroid">
-            <img
-              src={`./assets/images/${current.img}`}
-              alt={current.city}
-              width="100%"
-            />
-            <div className="caption">
-              <Typography variant="h6">“{current.quote}”</Typography>
-              <Typography mt={1} variant="body2" sx={{ fontStyle: 'italic' }}>
-                — {current.author.length > 0 ? current.author : 'Anonymous'}
-              </Typography>
-            </div>
-          </div>
-        </div>
-      );
-    }
-  };
-
   return (
     <>
       <PhotoBackground />
@@ -76,8 +51,8 @@ const Results = ({
           currentLangCode={currentLangCode}>
           <Grid item>
             <Typography variant="h5" mb={2} mx={1}>
-              <span className="highlight">Click on the bar graph</span> to
-              explore the score breakdown of each city.
+              <span className="highlight">Tap on the bar graph</span> to explore
+              the score breakdown of each city.
             </Typography>
           </Grid>
           {/* <Typography mb={1} variant="h3">
@@ -104,7 +79,7 @@ const Results = ({
               />
             ))}
           </Grid>
-          {getPhoto()}
+          <Photo currentCity={currentCity} />
         </BasicContainer>
         <FooterButtons setPriorities={setPriorities} />
       </FadeInUp>

@@ -72,12 +72,9 @@ const Quiz = ({
         </BasicContainer>
         <Box
           sx={{
-            // background:
-            //   'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%)',
-            // position: 'sticky',
             bottom: 0,
           }}
-          pb={2}>
+          pb={4}>
           <Container maxWidth="lg">
             <Grid
               sx={{ minHeight: '10vh', maxHeight: '10vh' }}

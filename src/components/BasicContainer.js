@@ -8,7 +8,7 @@ const BasicContainer = (
     spacing = 0,
     px = 1,
     pt = '11vh',
-    pb = '3vh',
+    pb = 4,
     languages,
     setCurrentLangCode,
     currentLangCode,

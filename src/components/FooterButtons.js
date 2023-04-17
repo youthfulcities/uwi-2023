@@ -9,7 +9,7 @@ const FooterButtons = ({ setPriorities }) => {
   };
 
   return (
-    <Box pb={2}>
+    <Box pb={4}>
       <Container maxWidth="lg">
         <Grid
           sx={{ minHeight: '10vh', maxHeight: '10vh' }}

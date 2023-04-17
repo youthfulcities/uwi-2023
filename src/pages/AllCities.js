@@ -89,7 +89,7 @@ const Results = ({
             setCurrentCity={setCurrentCity}
           />
           <Grid item sx={{ width: '100%' }}>
-            <Typography variant="h5" mt={4} mx={1} align="left">
+            <Typography variant="h5" mt={4} mx={1} align="center">
               Score breakdown for{' '}
               <span className="highlight">{currentCity}</span>
             </Typography>

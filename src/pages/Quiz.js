@@ -1,3 +1,4 @@
+import InfoIcon from '@mui/icons-material/Info';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import React, { useCallback, useState } from 'react';
@@ -54,9 +55,8 @@ const Quiz = ({
             <span className="highlight">important to you.</span> Tap again to
             deselect.
           </Typography>
-          <Typography variant="body1" mb={4}>
-            Tap and hold on mobile to open the tooltip and learn more about each
-            topic.
+          <Typography variant="body1" mb={4} sx={{ width: '100%' }}>
+            Tap and hold <InfoIcon /> to learn more about each topic.
           </Typography>
           {items.map((item) => (
             <RoundSymbolButton

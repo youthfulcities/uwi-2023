@@ -47,7 +47,6 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <ScrollToTop />
-      {/* <Header /> */}
       <ChangeLang
         languages={languages}
         setCurrentLangCode={setCurrentLangCode}

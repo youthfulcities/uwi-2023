@@ -58,12 +58,15 @@ const Results = ({
               Your best city is{' '}
               <span className="highlight">{originalCity}</span> with a{' '}
               <span className="highlight">{getPercent(score)}% match.</span>{' '}
-              {originalCity}
-              &apos;s best attribute is{' '}
-              <span className="highlight">
-                {getBestPriorities(originalCity)[0].topic_en}
-              </span>
-              .
+              {priorities.length > 1 && (
+                <>
+                  {originalCity}&apos;s best attribute is{' '}
+                  <span className="highlight">
+                    {getBestPriorities(originalCity)[0].topic_en}
+                  </span>
+                  .
+                </>
+              )}
             </Typography>
           </Grid>
           <Typography mb={1} variant="h3">
@@ -78,7 +81,7 @@ const Results = ({
             setCurrentCity={setCurrentCity}
           />
           <Grid item sx={{ width: '100%' }}>
-            <Typography variant="h5" mt={4} align="left">
+            <Typography variant="h5" mt={4} align="center">
               Score breakdown for{' '}
               <span className="highlight">{currentCity}</span>
             </Typography>

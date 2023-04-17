@@ -17,8 +17,6 @@ const FlipCard = ({ children, height, setHeight }) => {
     }
   }, [ref]);
 
-  console.log(height);
-
   return (
     <ReactCardFlip
       isFlipped={isFlipped}

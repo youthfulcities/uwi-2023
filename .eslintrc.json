@@ -25,7 +25,7 @@
   "rules": {
     "camelcase": "off",
     "jsx-a11y/anchor-is-valid": "warn",
-    "consistent-return": "warn",
+    "consistent-return": "off",
     "no-unused-vars": "warn",
     "arrow-body-style": "warn",
     "react/jsx-curly-brace-presence": "warn",

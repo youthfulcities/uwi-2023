@@ -34,7 +34,9 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
               sx={{ minWidth: 0, boxShadow: 6 }}
               variant="contained"
               component={motion.button}
-              layout
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.4 }}
               color="info"
               onClick={handleClick}
               className="roundButton"

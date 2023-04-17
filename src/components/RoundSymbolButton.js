@@ -14,11 +14,11 @@ import WifiIcon from '@mui/icons-material/Wifi';
 import { Button, Tooltip, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 
-const darkColours = ['#F2695D', '#253D88', '#D69F21', '#97BC5C', '#673934'];
-const lightColours = ['#FFA8A4', '#36529B', '#FBD166', '#B8D98D', '#896F6E'];
-const getRandomColour = () => Math.floor(Math.random() * 5);
+// const darkColours = ['#F2695D', '#253D88', '#D69F21', '#97BC5C', '#673934'];
+// const lightColours = ['#FFA8A4', '#36529B', '#FBD166', '#B8D98D', '#896F6E'];
+// const getRandomColour = () => Math.floor(Math.random() * 5);
 
 const RoundSymbolButton = ({
   topic,
@@ -28,7 +28,7 @@ const RoundSymbolButton = ({
   index,
   included,
 }) => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const even = index % 2;
   // const [included, setIncluded] = useState(isIncluded);

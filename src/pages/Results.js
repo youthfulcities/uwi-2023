@@ -74,7 +74,7 @@ const Results = ({
             Your Top 5 Cities
           </Typography>
           <Typography variant="body1">
-            Click on the bars to see the score breakdown
+            Tap on the bars to see the score breakdown
           </Typography>
           <BarGraph
             parentData={bestCities}

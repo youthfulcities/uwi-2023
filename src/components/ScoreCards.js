@@ -26,13 +26,13 @@ const ScoreCards = ({ height, setHeight, topic }) => (
         align="center"
         color="primary"
         className="pointer">
-        Click for resources →
+        Tap for resources →
       </Typography>
     </>
     <>
       <img
         src="https://www.futurpreneur.ca/wp-content/uploads/2021/02/futurpreneur_main_logo_web_color@2x.png"
-        alt="futurpreneur logo"
+        alt="Futurpreneur logo"
         width="100%"
       />
       <Typography variant="body2" my={2}>

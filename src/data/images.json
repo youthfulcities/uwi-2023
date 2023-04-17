@@ -29,12 +29,6 @@
     "quote": "I've taken this picture from the top of the Vancouver tower, it highlights the city liveliness at night, makes it super attractive for young people as many young people love night city live. Many building are commercial and you notice people working even at night, makes it welcoming for young people who are dedicated and working hard.",
     "author": "Azuz Al-Rubaye"
   },
-  {
-    "city": "Vancouver",
-    "img": "vancouver-5.jpg",
-    "quote": "This is the view from my home office when remote work was in full-swing. I love the peace of the empty roads, a subtle reminder of the environmental benefits of WFH.",
-    "author": ""
-  },
     {
       "city": "Vancouver",
       "img": "vancouver-6.jpg",
@@ -116,7 +110,7 @@
                     {
                       "city": "Montréal",
                       "img": "montreal-2.jpg",
-                      "quote": "A view of Montréal from Mount Royal Park",
+                      "quote": "A view of Montréal from Mount Royal Park.",
                       "author": ""
                     }
 ],
@@ -152,7 +146,7 @@
 "Mississauga": [{
   "city":"Mississauga",
   "img":"mississauga-1.jpg",
-  "quote":"Mississauga is well-known for the Toronto Pearson Internation Airport. Seeing the city from the air is always cool!",
+  "quote":"Mississauga is well-known for the Toronto Pearson Internation Airport, the largest in Canada.",
   "author":""
 }]
 }

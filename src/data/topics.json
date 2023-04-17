@@ -1,48 +1,68 @@
 [{
   "name": "City Economy",
+  "name_fr":"Croissance économique locale",
   "key":"economy",
-  "desc":"Industries that create good jobs, increasing population, and attractiveness for employers."
+  "desc":"Industries that create good jobs, increasing population, and attractiveness for employers.",
+  "desc_fr":"Secteurs créant de bons emplois, permettant d'attirer plus de résident‧e‧s et d'employeur‧se‧s."
 }, 
 { "name": "Affordability",
+"name_fr":"Abordabilité",
 "key":"cost",
-"desc":"Opportunity to make a higher income combined with a lower cost of living (housing/rent, food, transportation, etc.)."
+"desc":"Opportunity to make a higher income combined with a lower cost of living (housing/rent, food, transportation, etc.).",
+"desc_fr":"Possibilité de gagner un salaire plus élevé avec une baisse du coût de la vie (du logement, du loyer, de la nourriture, des transports, etc.)."
 }, {
   "name":"Digital Access",
+  "name_fr":"Accès numérique",
   "key":"digital",
-  "desc":"Access to broadband Internet services, availability of public Wi-Fi locations, cost of mobile plans and data plans in a city, etc."
+  "desc":"Access to broadband Internet services, availability of public Wi-Fi locations, cost of mobile plans and data plans in a city, etc.",
+  "desc_fr":"Accès aux services Internet à haut débit, disponibilité des lieux publics offrant du Wi-Fi, coût des forfaits mobiles et des forfaits de données dans une ville, etc."
 },
 {
   "name":"Equity, Diversity, Inclusion",
+  "name_fr":"Équité, diversité et inclusion",
   "key":"diversity",
-  "desc":"A city's population diversity (visible minorities, languages spoken), sense of belonging (including crime rates), and accessibility of public spaces for peoples with disabilities."
+  "desc":"A city's population diversity (visible minorities, languages spoken), sense of belonging (including crime rates), and accessibility of public spaces for peoples with disabilities.",
+  "desc_fr":"Diversité de la population d'une ville (minorités visibles, langues parlées), sentiment d'appartenance (y compris les taux de criminalité) et accessibilité des espaces publics pour les personnes vivant avec un handicap."
 },
 {
   "name":"Education + Training",
+  "name_fr":"Études + Formation",
   "key":"education",
-  "desc":"Availability of post-secondary institutions, affordable tuition, scholarships, co-op and study abroad programs, and other work integrated learning opportunities etc."
+  "desc":"Availability of post-secondary institutions, affordable tuition, scholarships, co-op and study abroad programs, and other work integrated learning opportunities etc.",
+  "desc_fr":"Disponibilité des établissements postsecondaires, des possibilités d'alternance et de stages et d'autres possibilités d'apprentissage intégrées."
 },
 {
   "name":"Entrepreneurial Spirit",
+  "name_fr":"Esprit d’initiative",
   "key":"business",
-  "desc":"Availability of funding for emerging startups and businesses, co-working spaces, innovation hubs to support entrepreneurs, startup courses and programs in a city, etc."
+  "desc":"Availability of funding for emerging startups and businesses, co-working spaces, innovation hubs to support entrepreneurs, startup courses and programs in a city, etc.",
+  "desc_fr":"Disponibilité du financement pour les jeunes pousses et entreprises émergentes, espaces de co-travail, centres d'innovation pour soutenir les entrepreneur‧se‧s, cours et programmes sur les jeunes pousses dans une ville, etc."
 },
 {
   "name":"Good Youth Jobs",
+  "name_fr":"Bons emplois pour les jeunes",
   "key":"jobs",
-  "desc":"Low unemployment, lots of full-time jobs; Internship and co-op opportunities for students, availability of remote work, and alumni career services."
+  "desc":"Low unemployment, lots of full-time jobs; Internship and co-op opportunities for students, availability of remote work, and alumni career services.",
+  "desc_fr":"Faible taux de chômage, taux d'emplois à temps plein élevé, possibilités de stage et d'alternance pour les étudiant‧e‧s, disponibilité du travail à distance et services d'orientation professionnelle pour les anciens élèves."
 },
 {
-  "name":"Public Health",
+  "name":"Health",
+  "name_fr":"Services de santé",
   "key":"health",
-  "desc":"Access to health services (including mental health and family physicians), the city's built environment (walkability, air quality, tree canopy), etc."
+  "desc":"Access to health services (including mental health and family physicians), the city's built environment (walkability, air quality, tree canopy), etc.",
+  "desc_fr":"Accès aux services de santé (y compris en matière de santé mentale et de médecine familiale), infrastructure (potentiel piétonnier, qualité de l'air, voûtes d'arbres), etc."
 },
 {
   "name":"Climate Action",
+  "name_fr":"Changement climatique",
   "key":"sustainability",
-  "desc":"City-level data on urban density, electric vehicles infrastructure, waste/compost/recycling services, and renewable energy subsidies for residents."
+  "desc":"City-level data on urban density, electric vehicles infrastructure, waste/compost/recycling services, and renewable energy subsidies for residents.",
+  "desc_fr":"Données de la ville sur la densité urbaine, infrastructure des véhicules électriques, services de déchets / compost / recyclage et subventions en faveur des énergies renouvelables pour les résident‧e‧s."
 },
 {
   "name":"Transportation",
+  "name_fr":"Transport",
   "key":"transport",
-  "desc":"Access to public transit (cost, safety, availability, and technology), vehicle commute times, parking costs, and availability of alternatives transportation modes (bikes and scooters)."
+  "desc":"Access to public transit (cost, safety, availability, and technology), vehicle commute times, parking costs, and availability of alternatives transportation modes (bikes and scooters).",
+  "desc_fr":"Accès aux transports en commun (coût, sécurité, disponibilité et technologie), heures de trajet, coûts de stationnement et disponibilité des modes alternatifs du transport (vélos et scooters)."
 }]

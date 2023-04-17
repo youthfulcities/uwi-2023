@@ -9,7 +9,7 @@ ChartJS.defaults.font.family = 'Gotham Narrow Book';
 
 const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
 
-const DonutGraph = ({ parentData, max }) => {
+const DonutGraph = ({ parentData }) => {
   const options = {
     aspectRatio: 1,
     responsive: true,

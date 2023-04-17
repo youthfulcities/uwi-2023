@@ -1,8 +1,8 @@
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
 import React, { useCallback, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import BasicContainer from '../components/BasicContainer';
-import FadeInUp from '../components/FadeInUp';
 import PhotoBackground from '../components/PhotoBackground';
 import RoundSymbolButton from '../components/RoundSymbolButton';
 import topics from '../data/topics.json';
@@ -31,7 +31,7 @@ const Quiz = ({
     e.preventDefault();
     const newPriorities = items
       .map((item) => (item.included ? item.key : undefined))
-      .filter((item) => item !== undefined);
+      .filter((current) => current !== undefined);
     setPriorities(newPriorities);
     const stringifiedPriorities = JSON.stringify(newPriorities);
     sessionStorage.setItem('priorities', stringifiedPriorities);
@@ -41,7 +41,10 @@ const Quiz = ({
   return (
     <>
       <PhotoBackground />
-      <FadeInUp>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}>
         <BasicContainer
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
@@ -106,7 +109,7 @@ const Quiz = ({
             </Grid>
           </Container>
         </Box>
-      </FadeInUp>
+      </motion.div>
     </>
   );
 };

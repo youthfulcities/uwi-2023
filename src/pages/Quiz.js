@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import React, { useCallback, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import BasicContainer from '../components/BasicContainer';
+import FadeInUp from '../components/FadeInUp';
 import PhotoBackground from '../components/PhotoBackground';
 import RoundSymbolButton from '../components/RoundSymbolButton';
 import topics from '../data/topics.json';
@@ -28,17 +29,19 @@ const Quiz = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const newPriorities = items.map((item) =>
-      item.included ? item.key : undefined
-    );
-    setPriorities(newPriorities.filter((item) => item !== undefined));
+    const newPriorities = items
+      .map((item) => (item.included ? item.key : undefined))
+      .filter((item) => item !== undefined);
+    setPriorities(newPriorities);
+    const stringifiedPriorities = JSON.stringify(newPriorities);
+    sessionStorage.setItem('priorities', stringifiedPriorities);
     navigate('/results');
   };
 
   return (
     <>
       <PhotoBackground />
-      <>
+      <FadeInUp>
         <BasicContainer
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
@@ -103,7 +106,7 @@ const Quiz = ({
             </Grid>
           </Container>
         </Box>
-      </>
+      </FadeInUp>
     </>
   );
 };

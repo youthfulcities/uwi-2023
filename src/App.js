@@ -18,7 +18,9 @@ const App = () => {
 
   const theme = muiTheme();
 
-  const [priorities, setPriorities] = useState([]);
+  const [priorities, setPriorities] = useState(
+    JSON.parse(sessionStorage.getItem('priorities')) || []
+  );
 
   const languages = [
     {

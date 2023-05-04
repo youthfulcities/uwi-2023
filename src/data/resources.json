@@ -1,0 +1,89 @@
+{
+  "education":[
+    {
+      "name": "RBC Future Launch Scholarship",
+      "desc": "The RBC Future Launch Scholarship is for anyone from 15 to 29 who wants to learn something new.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/future-launch-scholarship.html?utm_source=flpromotile&utm_medium=referral&utm_campaign=acct_flscholarship2020"
+    },
+    {
+      "name": "RBC Future Launch Scholarship for Indigenous Youth",
+      "desc": "The RBC Future Launch Scholarship for Indigenous Youth could help you achieve your post-secondary goals.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/indigenous-scholarship.html"
+    },
+    {
+      "name": "RBC Future Launch Scholarship for Black Youth",
+      "desc": "The RBC Future Launch Scholarship for Black Youth is an innovative program designed to empower and enable Black youth.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/black-scholarship.html"
+    },
+    {
+      "name": "LinkedIn Learning",
+      "desc": "LinkedIn Learning lets you learn at your own pace. You can select courses relevant to your current role and passions! You’ll be able to grow and develop in the areas you care about both at and outside work.",
+      "link": "https://vote.pollstream.com/PollPopupContent.php?short_link=SuEfM1G&popup_layout=800&cb=505d36d6ff33a3f9c91ef8fb75942acd"
+    },
+    {
+      "name": "University of Guelph Foundations in Agricultural Management",
+      "desc": "A free online course where you can gain the knowledge and confidence to make a lifetime of better informed decisions for yourself and your farming business.",
+      "link": "https://www.guelphagriculturalmanagement.com/"
+    }
+  ],
+  "affordability":[
+    {
+      "name": "McGill Personal Finance Essentials",
+      "desc": "A free online course designed to help youth gain the knowledge they need to make a lifetime of smart financial decisions.",
+      "link": "https://mcgillpersonalfinance.com/"
+    }
+  ],
+  "jobs":[
+    {
+      "name": "Riipen",
+      "desc": "Immersing students in industry projects equips them with work-ready skills. Riipen brings industry and academia together, with real company projects.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/experiential-learning-by-riipen-and-rbc-future-launch.html"
+    },
+    {
+      "name": "Ten Thousand Coffees",
+      "desc": "Join Ten Thousand Coffees to connect with like-minded professionals and build your network.",
+      "link": "https://www.rbc.com/en/future-launch/resource-type/tools/networking-by-ten-thousand-coffees/"
+    },
+    {
+      "name": "RBC Upskill Powered by FutureFit AI",
+      "desc": "RBC Upskill is a free career tool that gets to know your skills, education, interests and work experience so that it can help you get closer to the job you really want.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/rbc-upskill.html"
+    },
+    {
+      "name": "Magnet",
+      "desc": "A tool that sends users customized content to help them succeed in their careers, including job opportunities, information on skill building and job search strategies and career planning.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/magnet.html"
+    }
+  ],
+  "business":[
+    {
+      "name": "Western University The Founder's Journey Entrepreneurship",
+      "desc": "A free online course that shows you how to nurture and grow a new business and covers everything from early ideation to opportunity development.",
+      "link": "https://thefoundersjourney.ca/"
+    }
+  ],
+  "economy":[
+    {
+      "name": "Future Launch",
+      "desc": "RBC Future Launch, empowering the youth of today, for the jobs of tomorrow.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/"
+    }
+  ],
+  "health":[
+    {
+      "name": "Kids Help Phone",
+      "desc": "For over 30 years, Kids Help Phone has been Canada’s only 24/7, national support service for youth.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/support-for-anything-big-or-small.html"
+    },
+    {
+      "name": "jack.org Be There Certificate",
+      "desc": "A free, digital, self-paced learning experience designed to increase mental health literacy among youth.",
+      "link": "https://betherecertificate.org/"
+    },
+    {
+      "name": "Integrated Youth Services",
+      "desc": "Integrated Youth Services (IYS) is a Canadian and international movement that aims to promote the development of one-stop-shop hubs offering youth-focused and integrated services for mental health, substance use and related issues.",
+      "link": "https://www.rbc.com/dms/enterprise/futurelaunch/finding-your-resilience.html"
+    }
+  ]
+}

@@ -1,62 +1,106 @@
-import { Box, Button, Typography } from '@mui/material';
+import {
+  Box, Grid, ListItem,
+  ListItemText, Paper,
+  Typography
+} from '@mui/material';
 import { uniqueId } from 'lodash';
 import React from 'react';
+import resources from '../data/resources.json';
 import DonutGraph from './DonutGraph';
 import FlipCard from './FlipCard';
 
-const ScoreCards = ({ height, setHeight, topic }) => (
-  <FlipCard height={height} setHeight={setHeight} key={uniqueId()}>
-    <>
-      <Typography variant="h3" align="center" px={1} mb={3}>
-        {topic.topic_en}
-      </Typography>
-      <Box
-        sx={{
-          position: 'relative',
-          width: '100%',
-        }}>
-        <DonutGraph parentData={topic} />
-        <Typography variant="h3" className="centered">
-          {topic.score}
+const ScoreCards = ({ height, setHeight, topic }) => {
+  const resourceList = resources[topic.topic_key];
+  return resourceList ? (
+    <FlipCard height={height} setHeight={setHeight} key={uniqueId()}>
+      <>
+        <Typography variant="h3" align="center" px={1} mb={3}>
+          {topic.topic_en}
         </Typography>
-      </Box>
-      <Typography
-        variant="body2"
-        mt={3}
-        align="center"
-        color="primary"
-        className="pointer">
-        Tap for resources →
-      </Typography>
-    </>
-    <>
-      <img
-        src="https://www.futurpreneur.ca/wp-content/uploads/2021/02/futurpreneur_main_logo_web_color@2x.png"
-        alt="Futurpreneur logo"
-        width="100%"
-      />
-      <Typography variant="body2" my={2}>
-        Futurpreneur provides national ﬁnancing, mentoring and support tools to
-        aspiring business owners aged 18-39.
-      </Typography>
-      <a
-        href="https://www.futurpreneur.ca/en/"
-        target="_blank"
-        rel="noreferrer">
-        <Button variant="contained" sx={{ minWidth: 0 }}>
-          Go to Website
-        </Button>
-      </a>
-      <Typography
-        variant="body2"
-        mt={3}
-        align="center"
-        color="primary"
-        className="pointer">
-        ← Go back
-      </Typography>
-    </>
-  </FlipCard>
-);
+        <Box
+          sx={{
+            position: 'relative',
+            width: '100%',
+          }}>
+          <DonutGraph parentData={topic} />
+          <Typography variant="h3" className="centered">
+            {topic.score}
+          </Typography>
+        </Box>
+        <Typography
+          variant="body2"
+          mt={3}
+          align="center"
+          color="primary"
+          className="pointer">
+          Tap for resources →
+        </Typography>
+      </>
+      <>
+        {resourceList.map((resource) => (
+          <ListItem button divider key={uniqueId()}>
+            <ListItemText primary={resource.name} />
+          </ListItem>
+        ))}
+        <Typography
+          variant="body2"
+          mt={3}
+          align="center"
+          color="primary"
+          className="pointer">
+          ← Go back
+        </Typography>
+      </>
+    </FlipCard>
+  ) : (
+    <Box
+      sx={{
+        minWith: 'calc(50% - 10px)',
+        width: 'calc(50% - 10px)',
+        height: 'auto',
+        minHeight: `${height}px`,
+        margin: '5px',
+      }}>
+      <Paper
+        elevation={3}
+        sx={{
+          height: '100%',
+          borderRadius: '15px',
+        }}>
+        <Grid
+          container
+          p={3}
+          flexDirection="column"
+          justifyContent="space-around"
+          alignItems="center"
+          flexWrap="nowrap"
+          sx={{ height: '100%' }}>
+          <Typography variant="h3" align="center" px={1} mb={3}>
+            {topic.topic_en}
+          </Typography>
+          <Box
+            sx={{
+              position: 'relative',
+              width: '100%',
+            }}>
+            <DonutGraph parentData={topic} />
+            <Typography variant="h3" className="centered">
+              {topic.score}
+            </Typography>
+          </Box>
+          <Typography
+            variant="body2"
+            mt={3}
+            align="center"
+            color="primary"
+            className="pointer"
+            sx={{ visibility: 'hidden' }}>
+            ← Go back
+          </Typography>
+        </Grid>
+      </Paper>
+    </Box>
+  );
+};
 
 export default ScoreCards;

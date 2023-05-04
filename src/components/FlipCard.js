@@ -50,8 +50,9 @@ const FlipCard = ({ children, height, setHeight }) => {
         onClick={handleClick}
         elevation={3}
         sx={{
-          height: '100%',
+          height: { height },
           borderRadius: '15px',
+          overflowY: 'scroll',
         }}>
         <Grid
           container

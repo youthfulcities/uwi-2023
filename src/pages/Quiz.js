@@ -2,6 +2,7 @@ import InfoIcon from '@mui/icons-material/Info';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import React, { useCallback, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import { Link, useNavigate } from 'react-router-dom';
 import BasicContainer from '../components/BasicContainer';
 import PhotoBackground from '../components/PhotoBackground';
@@ -19,6 +20,7 @@ const Quiz = ({
 }) => {
   const [items, setItems] = useState(topicsToButtons);
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const handleClick = useCallback((index) => {
     setItems((prevItems) =>
@@ -51,12 +53,15 @@ const Quiz = ({
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}>
           <Typography variant="h5" mb={2}>
-            Select the aspects of a city that are{' '}
-            <span className="highlight">important to you.</span> Tap again to
-            deselect.
+            <Trans
+              i18nKey="quiz_title"
+              components={{ span: <span className="highlight" /> }}
+            />
           </Typography>
           <Typography variant="body1" mb={4} sx={{ width: '100%' }}>
-            Tap and hold <InfoIcon /> to learn more about each topic.
+            {t('quiz_subtitle1')}
+            <InfoIcon />
+            {t('quiz_subtitle2')}
           </Typography>
           {items.map((item) => (
             <RoundSymbolButton
@@ -85,7 +90,7 @@ const Quiz = ({
               <Grid item mx={1} mb={1}>
                 <Link to="/">
                   <Button variant="contained" color="primary">
-                    Home
+                    {t('button_home')}
                   </Button>
                 </Link>
               </Grid>
@@ -95,11 +100,11 @@ const Quiz = ({
                     variant="contained"
                     color="info"
                     onClick={(e) => handleSubmit(e)}>
-                    Show me my results
+                    {t('button_results')}
                   </Button>
                 ) : (
                   <Button variant="contained" color="info" disabled>
-                    Show me my results
+                    {t('button_results')}
                   </Button>
                 )}
               </Grid>

@@ -1,5 +1,6 @@
 import { ThemeProvider } from '@mui/material';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import ChangeLang from './components/ChangeLang';
@@ -12,6 +13,7 @@ import Quiz from './pages/Quiz';
 import Results from './pages/Results';
 
 const App = () => {
+  const { t } = useTranslation();
   const [currentLangCode, setCurrentLangCode] = useState(
     window.localStorage.i18nextLng || 'en'
   );
@@ -42,6 +44,7 @@ const App = () => {
     document
       .getElementsByTagName('html')[0]
       .setAttribute('dir', currentLanguage.dir);
+    document.title = t('title');
   }, [currentLanguage]);
 
   return (

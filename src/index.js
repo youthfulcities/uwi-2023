@@ -9,20 +9,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 i18n
+  .use(HttpApi)
   .use(initReactI18next) // passes i18n down to react-i18next
   .use(LanguageDetector)
-  .use(HttpApi)
   .init({
     supportedLngs: ['en', 'fr'],
     fallbackLng: 'en',
     detection: {
       // order and from where user language should be detected
       order: [
+        'querystring',
+        'path',
         'localStorage',
         'sessionStorage',
-        'querystring',
         'navigator',
-        'path',
         'subdomain',
         'cookie',
         'htmlTag',
@@ -37,7 +37,7 @@ i18n
       lookupFromSubdomainIndex: 0,
 
       // cache user language on
-      caches: ['localStorage', 'sessionStorage'],
+      caches: ['localStorage'],
     },
 
     backend: { loadPath: '/assets/locales/{{lng}}/translation.json' },

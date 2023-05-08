@@ -1,14 +1,18 @@
 import { Grid, Paper } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import React, { useEffect, useRef, useState } from 'react';
 import ReactCardFlip from 'react-card-flip';
 
 const FlipCard = ({ children, height, setHeight }) => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [heightBack, setHeightBack] = useState(0);
   const handleClick = () => {
     setIsFlipped(!isFlipped);
   };
 
   const ref = useRef(null);
+  const refBack = useRef(null);
 
   useEffect(() => {
     if (!children) return;
@@ -16,6 +20,14 @@ const FlipCard = ({ children, height, setHeight }) => {
       setHeight(ref.current.clientHeight);
     }
   }, [ref]);
+
+  useEffect(() => {
+    if (!children) return;
+    setHeightBack(refBack.current.scrollHeight);
+  }, [refBack]);
+
+  const theme = useTheme();
+  const bigScreen = useMediaQuery(theme.breakpoints.up('sm'), { noSsr: true });
 
   return (
     <ReactCardFlip
@@ -47,6 +59,7 @@ const FlipCard = ({ children, height, setHeight }) => {
         </Grid>
       </Paper>
       <Paper
+        ref={refBack}
         onClick={handleClick}
         elevation={3}
         sx={{
@@ -56,12 +69,9 @@ const FlipCard = ({ children, height, setHeight }) => {
         }}>
         <Grid
           container
-          p={3}
-          flexDirection="column"
-          justifyContent="space-around"
-          alignItems="center"
-          flexWrap="nowrap"
-          sx={{ height: '100%' }}>
+          px={bigScreen ? 3 : 1}
+          my={heightBack > height ? 3 : 0}
+          sx={{ height: '100%', display: 'inline-block' }}>
           {children[1]}
         </Grid>
       </Paper>

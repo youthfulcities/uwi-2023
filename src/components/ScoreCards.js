@@ -1,7 +1,10 @@
 import {
-  Box, Grid, ListItem,
-  ListItemText, Paper,
-  Typography
+  Box,
+  Grid,
+  ListItem,
+  ListItemText,
+  Paper,
+  Typography,
 } from '@mui/material';
 import { uniqueId } from 'lodash';
 import React from 'react';
@@ -38,7 +41,15 @@ const ScoreCards = ({ height, setHeight, topic }) => {
       </>
       <>
         {resourceList.map((resource) => (
-          <ListItem button divider key={uniqueId()}>
+          <ListItem
+            button
+            divider
+            component="a"
+            href={resource.link}
+            target="_blank"
+            m={0}
+            p={0}
+            key={uniqueId()}>
             <ListItemText primary={resource.name} />
           </ListItem>
         ))}
@@ -88,6 +99,7 @@ const ScoreCards = ({ height, setHeight, topic }) => {
               {topic.score}
             </Typography>
           </Box>
+          {/* hidden to maintain spacing */}
           <Typography
             variant="body2"
             mt={3}

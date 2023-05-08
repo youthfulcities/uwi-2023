@@ -55,9 +55,6 @@ const Results = ({
               the score breakdown of each city.
             </Typography>
           </Grid>
-          {/* <Typography mb={1} variant="h3">
-            All Cities
-          </Typography> */}
           <HorizontalGraph
             parentData={cities}
             max={Math.ceil(score)}

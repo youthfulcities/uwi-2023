@@ -1,22 +1,50 @@
+import LinkIcon from '@mui/icons-material/Link';
 import {
   Box,
-  Grid,
+  Button,
+  Card,
+  CardActions,
+  CardContent,
+  Collapse,
   ListItem,
+  ListItemIcon,
   ListItemText,
-  Paper,
-  Typography,
+  Typography
 } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { uniqueId } from 'lodash';
-import React from 'react';
+import React, { useState } from 'react';
 import resources from '../data/resources.json';
 import DonutGraph from './DonutGraph';
-import FlipCard from './FlipCard';
 
-const ScoreCards = ({ height, setHeight, topic }) => {
+const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
+
+const ScoreCards = ({ topic }) => {
+  const [expanded, setExpanded] = useState(false);
+
+  const theme = useTheme();
+  const bigScreen = useMediaQuery(theme.breakpoints.up('sm'), {
+    noSsr: true,
+  });
+  const handleExpandClick = () => {
+    setExpanded(!expanded);
+  };
+
+  const getRandomColour = () => darkColours[Math.floor(Math.random() * 5)];
+  const [color, setColor] = useState(getRandomColour());
+
   const resourceList = resources[topic.topic_key];
-  return resourceList ? (
-    <FlipCard height={height} setHeight={setHeight} key={uniqueId()}>
-      <>
+  return (
+    <Card
+      sx={{
+        alignSelf: 'flex-start',
+        minWith: bigScreen ? 'calc(50% - 10px)' : '100%',
+        width: bigScreen ? 'calc(50% - 10px)' : '100%',
+        margin: '5px',
+        borderRadius: '12px',
+      }}>
+      <CardContent sx={{ margin: '30px' }}>
         <Typography variant="h3" align="center" px={1} mb={3}>
           {topic.topic_en}
         </Typography>
@@ -25,93 +53,50 @@ const ScoreCards = ({ height, setHeight, topic }) => {
             position: 'relative',
             width: '100%',
           }}>
-          <DonutGraph parentData={topic} />
+          <DonutGraph parentData={topic} color={color} />
           <Typography variant="h3" className="centered">
             {topic.score}
           </Typography>
         </Box>
-        <Typography
-          variant="body2"
-          mt={3}
-          align="center"
-          color="primary"
-          className="pointer">
-          Tap for resources →
-        </Typography>
-      </>
-      <>
-        {resourceList.map((resource) => (
-          <ListItem
-            button
-            divider
-            component="a"
-            href={resource.link}
-            target="_blank"
-            m={0}
-            p={0}
-            key={uniqueId()}>
-            <ListItemText primary={resource.name} />
-          </ListItem>
-        ))}
-        <Typography
-          variant="body2"
-          mt={3}
-          align="center"
-          color="primary"
-          className="pointer">
-          ← Go back
-        </Typography>
-      </>
-    </FlipCard>
-  ) : (
-    <Box
-      sx={{
-        minWith: 'calc(50% - 10px)',
-        width: 'calc(50% - 10px)',
-        height: 'auto',
-        minHeight: `${height}px`,
-        margin: '5px',
-      }}>
-      <Paper
-        elevation={3}
+      </CardContent>
+      <CardActions
         sx={{
-          height: '100%',
-          borderRadius: '15px',
+          margin: '10px 10px 0 10px',
+          visibility: resourceList ? 'visible' : 'hidden',
         }}>
-        <Grid
-          container
-          p={3}
-          flexDirection="column"
-          justifyContent="space-around"
-          alignItems="center"
-          flexWrap="nowrap"
-          sx={{ height: '100%' }}>
-          <Typography variant="h3" align="center" px={1} mb={3}>
-            {topic.topic_en}
-          </Typography>
-          <Box
-            sx={{
-              position: 'relative',
-              width: '100%',
-            }}>
-            <DonutGraph parentData={topic} />
-            <Typography variant="h3" className="centered">
-              {topic.score}
-            </Typography>
-          </Box>
-          {/* hidden to maintain spacing */}
-          <Typography
-            variant="body2"
-            mt={3}
-            align="center"
-            color="primary"
-            className="pointer"
-            sx={{ visibility: 'hidden' }}>
-            ← Go back
-          </Typography>
-        </Grid>
-      </Paper>
-    </Box>
+        <Button
+          onClick={handleExpandClick}
+          disabled={!resourceList}
+          sx={{ minWidth: 0 }}>
+          {expanded ? 'Collapse' : 'Expand'} Resources
+        </Button>
+      </CardActions>
+      {resourceList && (
+        <Collapse in={expanded} timeout="auto" unmountOnExit>
+          <CardContent>
+            {resourceList.map((resource, i) => (
+              <ListItem
+                button
+                divider={!(i >= resourceList.length - 1)}
+                component="a"
+                href={resource.link}
+                target="_blank"
+                m={0}
+                p={0}
+                key={uniqueId()}>
+                <ListItemIcon>
+                  <LinkIcon fontSize="large" />
+                </ListItemIcon>
+                <ListItemText
+                  primary={resource.name}
+                  secondary={resource.desc}
+                />
+              </ListItem>
+            ))}
+          </CardContent>
+        </Collapse>
+      )}
+    </Card>
   );
 };
 

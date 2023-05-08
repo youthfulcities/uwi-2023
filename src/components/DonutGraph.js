@@ -7,9 +7,7 @@ ChartJS.register(ChartDeferred, Tooltip, Legend, ArcElement);
 
 ChartJS.defaults.font.family = 'Gotham Narrow Book';
 
-const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
-
-const DonutGraph = ({ parentData }) => {
+const DonutGraph = ({ parentData, color }) => {
   const options = {
     aspectRatio: 1,
     responsive: true,
@@ -42,16 +40,13 @@ const DonutGraph = ({ parentData }) => {
   const scoreData = [parentData.score, 100 - parentData.score];
   const labels = [parentData.topic_en, 'Remainder'];
 
-  const getRandomColour = () => darkColours[Math.floor(Math.random() * 5)];
-  const randomColor = getRandomColour();
-
   const data = {
     labels,
     datasets: [
       {
         data: scoreData,
-        backgroundColor: [randomColor, '#CBCBCB'],
-        hoverBackgroundColor: [randomColor, '#CBCBCB'],
+        backgroundColor: [color, '#CBCBCB'],
+        hoverBackgroundColor: [color, '#CBCBCB'],
         hoverBorderWidth: 0,
         hoverOffset: 10,
       },

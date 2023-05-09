@@ -20,7 +20,7 @@ import DonutGraph from './DonutGraph';
 
 const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
 
-const ScoreCards = ({ topic }) => {
+const ScoreCards = ({ topic, currentLangCode }) => {
   const [expanded, setExpanded] = useState(false);
 
   const theme = useTheme();
@@ -38,6 +38,8 @@ const ScoreCards = ({ topic }) => {
   return (
     <Card
       sx={{
+        backdropFilter: 'blur(2px)',
+        background: 'rgba(255, 255, 255, 0.1)',
         alignSelf: 'flex-start',
         minWith: bigScreen ? 'calc(50% - 10px)' : '100%',
         width: bigScreen ? 'calc(50% - 10px)' : '100%',
@@ -46,14 +48,18 @@ const ScoreCards = ({ topic }) => {
       }}>
       <CardContent sx={{ margin: '30px' }}>
         <Typography variant="h3" align="center" px={1} mb={3}>
-          {topic.topic_en}
+          {currentLangCode === 'en' ? topic.topic_en : topic.topic_fr}
         </Typography>
         <Box
           sx={{
             position: 'relative',
             width: '100%',
           }}>
-          <DonutGraph parentData={topic} color={color} />
+          <DonutGraph
+            parentData={topic}
+            color={color}
+            currentLangCode={currentLangCode}
+          />
           <Typography variant="h3" className="centered">
             {topic.score}
           </Typography>
@@ -68,6 +74,7 @@ const ScoreCards = ({ topic }) => {
           onClick={handleExpandClick}
           disabled={!resourceList}
           sx={{ minWidth: 0 }}>
+          {/* TODO: Update with translation */}
           {expanded ? 'Collapse' : 'Expand'} Resources
         </Button>
       </CardActions>

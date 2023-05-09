@@ -1,5 +1,6 @@
 {
   "title": "Find my <span> best</span> work city",
+  "webtitle":"Find my best work city",
   "subtitle": "urban work index 2023",
   "quiz_title": "Select the aspects of a city that are <span>important</span> to you. Tap again to deselect.",
   "quiz_subtitle1": "Tap and hold ",
@@ -9,12 +10,12 @@
   "button_home": "Home",
   "button_results": "Show me my results",
   "button_apply": "Apply for the Urban Work Summit Fall 2023",
-  "results_title": "Your best work city is {{city}} with a {{percent}}% match",
-  "results_best": "{{city}}'s best attritube is {{attribute}}",
+  "results_title": "Your best work city is <span>{{city}}</span> with a <span>{{percent}}% match</span>.",
+  "results_best": "{{city}}'s best attritube is <span>{{attribute}}</span>.",
   "graph_top5": "Your Top 5 Cities",
   "graph_tip": "Tap on the bars to see the score breakdown",
-  "breakdown_title": "Score breakdown for {{city}}",
-  "all_title": "Tap on the bar graph to explore the score breakdown of each city.",
+  "breakdown_title": "Score breakdown for <span>{{city}}</span>",
+  "all_title": "<span>Tap on the bar graph</span> to explore the score breakdown of each city.",
   "alt_yc": "Youthful Cities logo",
   "alt_rbc": "RBC Future Launch logo",
   "anon": "Anonymous",
@@ -23,5 +24,6 @@
   "card_website": "Go to Website",
   "card_futurpreneur": "Futurpreneur provides national ﬁnancing, mentoring and support tools to aspiring business owners aged 18-39.",
   "graph_score": "Overall score",
-  "remainder": "Remainder"
+  "remainder": "Remainder",
+  "city":"City"
 }

@@ -24,6 +24,8 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
     setOpen(false);
   };
 
+  console.log(languages);
+
   return (
     <Box className="changeLang" sx={{ top: 10, right: 25 }}>
       <ClickAwayListener onClickAway={handleClickAway}>
@@ -48,7 +50,7 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
           </Tooltip>
           {open && (
             <Paper className="langMenu" id="language-menu" elevation={6}>
-              {languages.map(({ code, language }) => (
+              {languages.map(({ code, language, language_fr }) => (
                 <Box
                   key={code}
                   onClick={() => {
@@ -67,7 +69,7 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
                         ? 'langMenuItemDisabled'
                         : 'langMenuItem'
                     }>
-                    {language}
+                    {currentLangCode === 'en' ? language : language_fr}
                   </Typography>
                 </Box>
               ))}

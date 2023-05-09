@@ -28,11 +28,13 @@ const App = () => {
     {
       code: 'en',
       language: 'English',
+      language_fr: 'Anglais',
       dir: 'ltr',
     },
     {
       code: 'fr',
       language: 'French',
+      language_fr:'Français',
       dir: 'ltr',
     },
   ];
@@ -44,7 +46,7 @@ const App = () => {
     document
       .getElementsByTagName('html')[0]
       .setAttribute('dir', currentLanguage.dir);
-    document.title = t('title');
+    document.title = t('webtitle');
   }, [currentLanguage]);
 
   return (

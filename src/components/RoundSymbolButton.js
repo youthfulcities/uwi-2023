@@ -23,10 +23,13 @@ import React, { useState } from 'react';
 const RoundSymbolButton = ({
   topic,
   name,
+  name_fr,
   desc,
+  desc_fr,
   handleClick,
   index,
   included,
+  currentLangCode,
 }) => {
   // const { t } = useTranslation();
 
@@ -167,7 +170,6 @@ const RoundSymbolButton = ({
 
   return (
     <Button
-      disableRipple
       sx={{
         // boxShadow: included
         //   ? 'inset 30px 43px 21px rgba(0, 0, 0, 0.01), inset 17px 24px 18px rgba(0, 0, 0, 0.05), inset 7px 11px 13px rgba(0, 0, 0, 0.09), inset 2px 3px 7px rgba(0, 0, 0, 0.1)'
@@ -220,7 +222,7 @@ const RoundSymbolButton = ({
         onClose={() => setOpen(false)}
         title={
           <Typography variant="body1" p={1}>
-            {desc}
+            {currentLangCode === 'en' ? desc : desc_fr}
           </Typography>
         }
         arrow
@@ -252,7 +254,7 @@ const RoundSymbolButton = ({
           zIndex: 0,
         }}
         align="center">
-        {name}
+        {currentLangCode === 'en' ? name : name_fr}
       </Typography>
     </Button>
   );

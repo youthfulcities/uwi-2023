@@ -5,7 +5,7 @@
         "city": "Brampton",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 36.94
       },
@@ -13,7 +13,7 @@
         "city": "Calgary",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Alberta",
         "score": 42.61
       },
@@ -21,7 +21,7 @@
         "city": "Charlottetown",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "East",
         "score": 65.71
       },
@@ -29,7 +29,7 @@
         "city": "Edmonton",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Alberta",
         "score": 54.38
       },
@@ -37,7 +37,7 @@
         "city": "Fredericton",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "East",
         "score": 64.93
       },
@@ -45,7 +45,7 @@
         "city": "Greater Sudbury / Grand Sudbury",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 68.53
       },
@@ -53,7 +53,7 @@
         "city": "Halifax",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "East",
         "score": 48.37
       },
@@ -61,7 +61,7 @@
         "city": "Hamilton",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 52.16
       },
@@ -69,7 +69,7 @@
         "city": "Kelowna",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "West",
         "score": 48.27
       },
@@ -77,7 +77,7 @@
         "city": "Kitchener - Cambridge - Waterloo",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 50.34
       },
@@ -85,7 +85,7 @@
         "city": "Laval",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Quebec",
         "score": 85.75
       },
@@ -93,7 +93,7 @@
         "city": "Lethbridge",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Alberta",
         "score": 64.18
       },
@@ -101,7 +101,7 @@
         "city": "London",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 53.47
       },
@@ -109,7 +109,7 @@
         "city": "Mississauga",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 26.64
       },
@@ -117,7 +117,7 @@
         "city": "Moncton",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "East",
         "score": 67.27
       },
@@ -125,7 +125,7 @@
         "city": "Montréal",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Quebec",
         "score": 60.91
       },
@@ -133,7 +133,7 @@
         "city": "Oshawa",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 43.12
       },
@@ -141,7 +141,7 @@
         "city": "Ottawa-Gatineau",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "OntarioQuebec",
         "score": 72.86
       },
@@ -149,7 +149,7 @@
         "city": "Québec",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Quebec",
         "score": 81.13
       },
@@ -157,7 +157,7 @@
         "city": "Regina",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Prairies",
         "score": 58.62
       },
@@ -165,7 +165,7 @@
         "city": "Saskatoon",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Prairies",
         "score": 53.64
       },
@@ -173,7 +173,7 @@
         "city": "St. Catharines - Niagara",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 60.96
       },
@@ -181,7 +181,7 @@
         "city": "St. John's",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "East",
         "score": 62.43
       },
@@ -189,7 +189,7 @@
         "city": "Toronto",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 17.6
       },
@@ -197,7 +197,7 @@
         "city": "Vancouver",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "West",
         "score": 36.08
       },
@@ -205,7 +205,7 @@
         "city": "Victoria",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "West",
         "score": 41.29
       },
@@ -213,7 +213,7 @@
         "city": "Whitehorse",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "West",
         "score": 63.96
       },
@@ -221,7 +221,7 @@
         "city": "Windsor",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Ontario",
         "score": 59.61
       },
@@ -229,7 +229,7 @@
         "city": "Winnipeg",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Prairies",
         "score": 65.94
       },
@@ -237,13 +237,12 @@
         "city": "Yellowknife",
         "topic_key": "cost",
         "topic_en": "Affordability",
-        "topic_fr": null,
+        "topic_fr": "Abordabilité",
         "region": "Alberta",
         "score": 52.79
       }
     ],
     "topic_key": "cost",
-    "sum": 1660.49,
     "average": 55.349666666666664,
     "count": 30
   },
@@ -491,7 +490,6 @@
       }
     ],
     "topic_key": "jobs",
-    "sum": 1576.2800000000002,
     "average": 52.542666666666676,
     "count": 30
   },
@@ -739,7 +737,6 @@
       }
     ],
     "topic_key": "economy",
-    "sum": 1309.49,
     "average": 43.64966666666667,
     "count": 30
   },
@@ -987,7 +984,6 @@
       }
     ],
     "topic_key": "education",
-    "sum": 1363.3,
     "average": 45.443333333333335,
     "count": 30
   },
@@ -997,7 +993,7 @@
         "city": "Brampton",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 79.13
       },
@@ -1005,7 +1001,7 @@
         "city": "Calgary",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Alberta",
         "score": 62.75
       },
@@ -1013,7 +1009,7 @@
         "city": "Charlottetown",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "East",
         "score": 44.01
       },
@@ -1021,7 +1017,7 @@
         "city": "Edmonton",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Alberta",
         "score": 63.2
       },
@@ -1029,7 +1025,7 @@
         "city": "Fredericton",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "East",
         "score": 30.69
       },
@@ -1037,7 +1033,7 @@
         "city": "Greater Sudbury / Grand Sudbury",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 34.55
       },
@@ -1045,7 +1041,7 @@
         "city": "Halifax",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "East",
         "score": 45.1
       },
@@ -1053,7 +1049,7 @@
         "city": "Hamilton",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 58.01
       },
@@ -1061,7 +1057,7 @@
         "city": "Kelowna",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "West",
         "score": 50.22
       },
@@ -1069,7 +1065,7 @@
         "city": "Kitchener - Cambridge - Waterloo",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 63.61
       },
@@ -1077,7 +1073,7 @@
         "city": "Laval",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Quebec",
         "score": 62.9
       },
@@ -1085,7 +1081,7 @@
         "city": "Lethbridge",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Alberta",
         "score": 34
       },
@@ -1093,7 +1089,7 @@
         "city": "London",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 48.44
       },
@@ -1101,7 +1097,7 @@
         "city": "Mississauga",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 77.43
       },
@@ -1109,7 +1105,7 @@
         "city": "Moncton",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "East",
         "score": 24.75
       },
@@ -1117,7 +1113,7 @@
         "city": "Montréal",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Quebec",
         "score": 64.65
       },
@@ -1125,7 +1121,7 @@
         "city": "Oshawa",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 36.02
       },
@@ -1133,7 +1129,7 @@
         "city": "Ottawa-Gatineau",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "OntarioQuebec",
         "score": 51.87
       },
@@ -1141,7 +1137,7 @@
         "city": "Québec",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Quebec",
         "score": 41.16
       },
@@ -1149,7 +1145,7 @@
         "city": "Regina",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Prairies",
         "score": 55.64
       },
@@ -1157,7 +1153,7 @@
         "city": "Saskatoon",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Prairies",
         "score": 49.99
       },
@@ -1165,7 +1161,7 @@
         "city": "St. Catharines - Niagara",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 55.27
       },
@@ -1173,7 +1169,7 @@
         "city": "St. John's",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "East",
         "score": 34.23
       },
@@ -1181,7 +1177,7 @@
         "city": "Toronto",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 71.97
       },
@@ -1189,7 +1185,7 @@
         "city": "Vancouver",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "West",
         "score": 68.62
       },
@@ -1197,7 +1193,7 @@
         "city": "Victoria",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "West",
         "score": 48.78
       },
@@ -1205,7 +1201,7 @@
         "city": "Whitehorse",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "West",
         "score": 22.5
       },
@@ -1213,7 +1209,7 @@
         "city": "Windsor",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Ontario",
         "score": 60.85
       },
@@ -1221,7 +1217,7 @@
         "city": "Winnipeg",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Prairies",
         "score": 60.06
       },
@@ -1229,13 +1225,12 @@
         "city": "Yellowknife",
         "topic_key": "diversity",
         "topic_en": "Equity, Diversity, and Inclusion",
-        "topic_fr": null,
+        "topic_fr": "Équité, diversité et inclusion",
         "region": "Alberta",
         "score": 18.94
       }
     ],
     "topic_key": "diversity",
-    "sum": 1519.34,
     "average": 50.644666666666666,
     "count": 30
   },
@@ -1483,7 +1478,6 @@
       }
     ],
     "topic_key": "business",
-    "sum": 870.2000000000002,
     "average": 29.00666666666667,
     "count": 30
   },
@@ -1731,7 +1725,6 @@
       }
     ],
     "topic_key": "digital",
-    "sum": 1513.5300000000002,
     "average": 50.45100000000001,
     "count": 30
   },
@@ -1979,7 +1972,6 @@
       }
     ],
     "topic_key": "transport",
-    "sum": 1817.5499999999997,
     "average": 60.584999999999994,
     "count": 30
   },
@@ -2227,7 +2219,6 @@
       }
     ],
     "topic_key": "health",
-    "sum": 1201.29,
     "average": 40.043,
     "count": 30
   },
@@ -2475,7 +2466,6 @@
       }
     ],
     "topic_key": "sustainability",
-    "sum": 1225.2999999999997,
     "average": 40.84333333333333,
     "count": 30
   }

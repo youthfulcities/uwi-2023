@@ -7,7 +7,7 @@ ChartJS.register(ChartDeferred, Tooltip, Legend, ArcElement);
 
 ChartJS.defaults.font.family = 'Gotham Narrow Book';
 
-const DonutGraph = ({ parentData, color }) => {
+const DonutGraph = ({ parentData, color, currentLangCode }) => {
   const options = {
     aspectRatio: 1,
     responsive: true,
@@ -38,7 +38,10 @@ const DonutGraph = ({ parentData, color }) => {
   };
 
   const scoreData = [parentData.score, 100 - parentData.score];
-  const labels = [parentData.topic_en, 'Remainder'];
+  const labels = [
+    currentLangCode === 'en' ? parentData.topic_en : parentData.topic_fr,
+    currentLangCode === 'en' ? 'Remainder' : 'Reste',
+  ];
 
   const data = {
     labels,

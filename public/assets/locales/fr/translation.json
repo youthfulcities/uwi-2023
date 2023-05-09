@@ -1,5 +1,6 @@
 {
   "title": "Trouver ma <span> meilleure</span> ville où travailler",
+  "webtitle":"Trouver ma meilleure ville où travailler",
   "subtitle": "indice du travail urbain 2023",
   "quiz_title": "Sélectionnez les aspects d’une ville qui <span>comptent le plus</span> à vos yeux. Appuyez une nouvelle fois pour retirer votre sélection.",
   "quiz_subtitle1": "Maintenez ",
@@ -9,12 +10,12 @@
   "button_home": "Accueil",
   "button_results": "Obtenir mes résultats",
   "button_apply": "Envoyer une demande pour participer au Sommet sur le travail urbain à l’automne 2023",
-  "results_title": "Votre meilleure ville où travailler est {{city}} avec une correspondance de {{percent}}%.",
-  "results_best": "Voici le meilleur attribut de {{city}} : {{attribute}}",
+  "results_title": "Votre meilleure ville où travailler est <span>{{city}}</span> avec une correspondance de <span>{{percent}}%.</span>",
+  "results_best": "Voici le meilleur attribut de {{city}} : <span>{{attribute}}</span>.",
   "graph_top5": "Vos cinq meilleures villes",
   "graph_tip": "Appuyez sur les barres de navigation pour obtenir la répartition des scores.",
-  "breakdown_title": "Répartition des scores pour {{city}}",
-  "all_title": "Appuyez sur le graphique à barres pour explorer la répartition des scores de chaque ville.",
+  "breakdown_title": "Répartition des scores pour <span>{{city}}</span>",
+  "all_title": "<span>Appuyez sur le graphique à barres</span> pour explorer la répartition des scores de chaque ville.",
   "alt_yc": "Logo de Youthful Cities",
   "alt_rbc": "Logo de RBC Objectif avenir",
   "anon": "Anonyme",
@@ -23,5 +24,6 @@
   "card_website": "Aller sur le site Web",
   "card_futurpreneur": "Futurpreneur fournit des outils nationaux de financement, de mentorat et de soutien pour les personnes de 18 à 39 ans qui souhaitent monter leur entreprise.",
   "graph_score": "Score global",
-  "remainder": "Reste"
+  "remainder": "Reste",
+  "city":"Ville"
 }

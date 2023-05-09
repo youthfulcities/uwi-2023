@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material';
 import _, { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
@@ -21,6 +22,7 @@ const Results = ({
     document.querySelector('body').scrollTo(0, 0);
   }, []);
 
+  const { t } = useTranslation();
   const [height, setHeight] = useState(0);
 
   const bestCities = getTotalScores(priorities).slice(0, 5);
@@ -29,7 +31,6 @@ const Results = ({
   const [currentCity, setCurrentCity] = useState(originalCity);
 
   const citiesObject = getCitiesObject(priorities);
-
   const getTopCityStats = (city = currentCity) => citiesObject[city];
 
   const getBestPriorities = (city = currentCity) => {
@@ -38,8 +39,14 @@ const Results = ({
     const highestToLowest = _.reverse(sortedTopCityStats);
     return highestToLowest;
   };
-
   const sortedStats = getBestPriorities();
+
+  console.log(sortedStats);
+
+  const attribute =
+    currentLangCode === 'en'
+      ? getBestPriorities(originalCity)[0].topic_en
+      : getBestPriorities(originalCity)[0].topic_fr;
 
   const getPercent = (currentScore) =>
     Math.round(currentScore / priorities.length);
@@ -56,35 +63,37 @@ const Results = ({
           pb={0}>
           <Grid item>
             <Typography variant="h5" mb={4}>
-              Your best city is{' '}
-              <span className="highlight">{originalCity}</span> with a{' '}
-              <span className="highlight">{getPercent(score)}% match.</span>{' '}
+              <Trans
+                i18nKey="results_title"
+                values={{ city: originalCity, percent: getPercent(score) }}
+                components={{ span: <span className="highlight" /> }}
+              />{' '}
               {priorities.length > 1 && (
-                <>
-                  {originalCity}&apos;s best attribute is{' '}
-                  <span className="highlight">
-                    {getBestPriorities(originalCity)[0].topic_en}
-                  </span>
-                  .
-                </>
+                <Trans
+                  i18nKey="results_best"
+                  values={{ city: originalCity, attribute }}
+                  components={{ span: <span className="highlight" /> }}
+                />
               )}
             </Typography>
           </Grid>
           <Typography mb={1} variant="h3">
-            Your Top 5 Cities
+            {t('graph_top5')}
           </Typography>
-          <Typography variant="body1">
-            Tap on the bars to see the score breakdown
-          </Typography>
+          <Typography variant="body1">{t('graph_tip')}</Typography>
           <BarGraph
+            currentLangCode={currentLangCode}
             parentData={bestCities}
             max={Math.ceil(score)}
             setCurrentCity={setCurrentCity}
           />
           <Grid item sx={{ width: '100%' }}>
             <Typography variant="h5" mt={4} align="center">
-              Score breakdown for{' '}
-              <span className="highlight">{currentCity}</span>
+              <Trans
+                i18nKey="breakdown_title"
+                values={{ city: currentCity }}
+                components={{ span: <span className="highlight" /> }}
+              />
             </Typography>
           </Grid>
         </BasicContainer>
@@ -92,6 +101,7 @@ const Results = ({
           <Grid container justifyContent="space-between" my={1}>
             {sortedStats.map((topic) => (
               <ScoreCards
+                currentLangCode={currentLangCode}
                 topic={topic}
                 height={height}
                 setHeight={setHeight}

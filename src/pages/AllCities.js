@@ -1,6 +1,7 @@
 import { Grid, Typography } from '@mui/material';
 import _, { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
 import FooterButtons from '../components/FooterButtons';
@@ -16,9 +17,7 @@ const Results = ({
   currentLangCode,
   setPriorities,
 }) => {
-  useEffect(() => {
-    document.querySelector('body').scrollTo(0, 0);
-  }, []);
+  const { t } = useTranslation();
 
   const [height, setHeight] = useState(0);
 
@@ -40,6 +39,10 @@ const Results = ({
 
   const sortedStats = getBestPriorities();
 
+  useEffect(() => {
+    document.querySelector('body').scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <PhotoBackground />
@@ -51,8 +54,10 @@ const Results = ({
           currentLangCode={currentLangCode}>
           <Grid item>
             <Typography variant="h5" mb={2} mx={1}>
-              <span className="highlight">Tap on the bar graph</span> to explore
-              the score breakdown of each city.
+              <Trans
+                i18nKey="all_title"
+                components={{ span: <span className="highlight" /> }}
+              />
             </Typography>
           </Grid>
           <HorizontalGraph
@@ -62,8 +67,11 @@ const Results = ({
           />
           <Grid item sx={{ width: '100%' }}>
             <Typography variant="h5" mt={4} mx={1} align="center">
-              Score breakdown for{' '}
-              <span className="highlight">{currentCity}</span>
+              <Trans
+                i18nKey="breakdown_title"
+                values={{ city: currentCity }}
+                components={{ span: <span className="highlight" /> }}
+              />
             </Typography>
           </Grid>
           <Grid container justifyContent="space-between" my={1}>

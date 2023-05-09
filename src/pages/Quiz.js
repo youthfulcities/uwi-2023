@@ -65,12 +65,15 @@ const Quiz = ({
           </Typography>
           {items.map((item) => (
             <RoundSymbolButton
+              currentLangCode={currentLangCode}
               index={item.id}
               key={item.key}
               topic={item.key}
               desc={item.desc}
+              desc_fr={item.desc_fr}
               included={item.included}
               name={item.name}
+              name_fr={item.name_fr}
               handleClick={handleClick}
             />
           ))}

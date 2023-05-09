@@ -12,6 +12,7 @@ import {
 import ChartDeferred from 'chartjs-plugin-deferred';
 import React, { useRef } from 'react';
 import { Bar, getElementAtEvent } from 'react-chartjs-2';
+import { useTranslation } from 'react-i18next';
 
 ChartJS.register(
   ChartDeferred,
@@ -36,7 +37,8 @@ const colours = {
   OntarioQuebec: '#7F3395',
 };
 
-const BarGraph = ({ parentData, max, setCurrentCity }) => {
+const HorizontalGraph = ({ parentData, max, setCurrentCity }) => {
+  const { t } = useTranslation();
   const chartRef = useRef();
 
   const scoreData = parentData.map((item) => item.score);
@@ -80,7 +82,7 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         },
         title: {
           display: true,
-          text: 'Overall score',
+          text: t('graph_score'),
         },
         grid: {
           display: false,
@@ -100,7 +102,7 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
         },
         title: {
           display: true,
-          text: 'City',
+          text: t('city'),
         },
         grid: {
           display: false,
@@ -152,4 +154,4 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
   return <Bar options={options} ref={chartRef} onClick={onClick} data={data} />;
 };
 
-export default BarGraph;
+export default HorizontalGraph;

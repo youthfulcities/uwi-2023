@@ -24,8 +24,6 @@ const ChangeLang = ({ languages, setCurrentLangCode, currentLangCode }) => {
     setOpen(false);
   };
 
-  console.log(languages);
-
   return (
     <Box className="changeLang" sx={{ top: 10, right: 25 }}>
       <ClickAwayListener onClickAway={handleClickAway}>

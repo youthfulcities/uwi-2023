@@ -2,37 +2,43 @@
   {
     "city": "Vancouver",
     "img": "vancouver-1.jpeg",
-    "quote": "Courtney on the island: The most peaceful place to come to after a long day of work! Where dogs and people can adventure and burn off some steam. It is my favourite spot to be!",
+    "quote": "Courtenay on the island: The most peaceful place to come to after a long day of work! Where dogs and people can adventure and burn off some steam. It is my favourite spot to be!",
+    "quote_fr":"Courtenay (Île de Vancouver) : L’endroit le plus paisible après une longue journée de travail! Les chiens et les gens peuvent s’amuser et se défouler. C’est mon endroit préféré!",
     "author": ""
   },
   {
     "city": "Vancouver",
     "img": "vancouver-2.jpg",
     "quote": "This photo was taken at Spanish Banks dog beach in Vancouver, BC. I love taking my dog on a walk here, swimming in the summer, and just generally enjoying the beaches and forest around. It's a space that's free and accessible to most people!",
+    "quote_fr":"Cette photo a été prise sur la plage pour chiens de Spanish Banks à Vancouver (C.-B.). J’adore y promener mon chien, me baigner l’été et, plus généralement, profiter des plages et de la forêt environnante. C’est un endroit gratuit et accessible au plus grand nombre!",
     "author": ""
   },
   {
     "city": "Vancouver",
     "img": "vancouver-3.jpeg",
     "quote": "This photo was taken at the free public rose garden in Queens Park in New Westminster. It sparks joy and tranquility for me because it is a beautiful, relaxing gathering spot for people of all backgrounds to come and enjoy.",
+    "quote_fr":"Cette photo a été prise à la roseraie gratuite du Queens Park à New Westminster. C’est un endroit qui suscite joie et tranquillité pour moi parce qu’il s’agit d’un lieu de rassemblement beau et apaisant où des personnes de tous horizons viennent se divertir.",
     "author": "Alicia She"
   },
   {
     "city": "Vancouver",
     "img": "vancouver-4.jpg",
     "quote": "Vancouver - access to blue space, transportation, and affordable services in the city all in one picture!",
+    "quote_fr":"Vancouver : un accès à l’eau, des transports et des services abordables, le tout dans une seule image!",
     "author": "Linxi Mytkolli"
   },
   {
     "city": "Vancouver",
     "img": "vancouver-5.jpg",
     "quote": "I've taken this picture from the top of the Vancouver tower, it highlights the city liveliness at night, makes it super attractive for young people as many young people love night city live. Many building are commercial and you notice people working even at night, makes it welcoming for young people who are dedicated and working hard.",
+    "quote_fr":"J’ai pris cette photo du haut de la tour de Vancouver. Elle souligne l’entrain de la ville la nuit, ce qui la rend très attirante aux yeux des jeunes puisque nombre d’entre eux‧elles aiment les activités nocturnes. De nombreux bâtiments sont commerciaux et on remarque que les gens travaillent même la nuit. C’est bon signe pour les jeunes dévoué‧e‧s qui travaillent fort.",
     "author": "Azuz Al-Rubaye"
   },
     {
       "city": "Vancouver",
       "img": "vancouver-6.jpg",
       "quote": "This is the view from my home office when remote work was in full-swing. I love the peace of the empty roads, a subtle reminder of the environmental benefits of WFH.",
+      "quote_fr":"Voici la vue de mon bureau à domicile où le travail à distance bat son plein. J’adore la tranquillité des routes désertes, un rappel subtil des avantages environnementaux du travail à domicile.",
       "author": ""
     }
 ],
@@ -41,14 +47,16 @@
         "city": "Toronto",
         "img": "toronto-1.jpg",
         "quote": "I took this photo during one of my afternoon walks. Going on walks through this park has always been my way of decompressing after work. Although it's my routine walk and I've seen the scenery many times before, it never fails to brighten my day.",
+        "quote_fr":"J’ai pris cette photo lors de l’une de mes promenades de l’après-midi. Marcher dans ce parc a toujours été ma façon de décompresser après le travail. C’est ma promenade habituelle et j’ai déjà vu ce paysage de nombreuses fois, mais il ne cesse d’éblouir ma journée.",
         "author": "Tannia Vijeyenthiran"
       },
-            {
-              "city": "Toronto",
-              "img": "toronto-2.jpg",
-              "quote": "A photo representing high-rise buildings, greens, and waters that symbolize some of the city infrastructures and nature that can exist side by side, but maybe at the cost of each other. Who are the beneficiaries? We, the people. We have to pay back the debt in order to sustain ourselves.",
-              "author": "Mehedi H. Rasel"
-            }
+      {
+        "city": "Toronto",
+        "img": "toronto-2.jpg",
+        "quote": "A photo representing high-rise buildings, greens, and waters that symbolize some the city infrastructures and nature that can exist side by side, but maybe at the cost of eaother. Who are the beneficiaries? We, the people. We have to pay back the debt in order sustain ourselves.",
+        "quote_fr":"Une photo avec de hauts bâtiments, de la verdure et de l’eau. Elle symbolise la coexistence de certaines des infrastructures de la ville et de la nature, peut-être à leur détriment. Qui en bénéficie? Nous, les gens. Nous devons rembourser la dette pour subvenir à nos besoins.",
+        "author": "Mehedi H. Rasel"
+      }
             
 ],
 "Ottawa-Gatineau": [
@@ -56,6 +64,7 @@
     "city": "Ottawa-Gatineau",
     "img": "ottawa-1.jpg",
     "quote": "This photo shows Ottawa at night in the dead of winter (this past early February). Even though this is often thought of as a miserable time of year to many Ottawans, the city remains beautiful and vibrant. This city has a lot to offer young workers.",
+    "quote_fr":"Cette photo montre Ottawa de nuit en plein cœur de l’hiver (au début du mois de février 2023). Même si cette période de l’année est souvent perçue comme misérable par de nombreux‧ses résident‧e‧s d’Ottawa, la ville reste belle et dynamique. La ville a beaucoup à offrir aux jeunes travailleur‧se‧s.",
     "author": ""
   }
 ],
@@ -64,6 +73,7 @@
     "city": "Victoria",
     "img": "victoria-1.jpeg",
     "quote": "Being involved in the design and dialogue around the newest Neighbour Hub in Victoria was awesome! To me, the Hub shows an example of people coming together who care about their community and are happy to collaborate and shape the future, even in a small way.",
+    "quote_fr":"S’impliquer dans la conception et le dialogue du récent Centre de voisinage (Neighbour Hub) à Victoria a été incroyable! Pour moi, le Centre est un exemple de rassemblement de personnes qui se soucient de leur communauté et sont heureuses de collaborer pour façonner l’avenir, même dans une moindre mesure.",
     "author": "Leah Karlberg",
     "link": "https://www.neighbourlab.com/"
   }
@@ -73,6 +83,7 @@
       "city": "Halifax",
       "img": "halifax-1.jpeg",
       "quote": "Halifax has many unique homes and places that people call home. One day I saw this sign and was struck that to many these houses are no longer homes but income.",
+      "quote_fr":"Halifax compte de nombreuses maisons et lieux uniques que les gens considèrent comme leur chez-soi. Un jour, j’ai vu ce signe et j’ai trouvé frappant de constater que pour de nombreuses personnes, ces maisons ne sont plus des logements, mais des sources de revenus.",
       "author": "Emily Paterson"
     }
 ],
@@ -81,6 +92,7 @@
         "city": "Calgary",
         "img": "calgary-1.jpeg",
         "quote": "This picture represents playfulness and openness. Also, it represents vibrancy between nature and the built in environment, as it is overlooking a view of the city featuring downtown, one of the places youth work.",
+        "quote_fr":"Cette photo représente l’enjouement et l’ouverture. Elle représente aussi l’équilibre entre la nature et l’infrastructure, car elle surplombe la vue du centre-ville, l’un des endroits où les jeunes travaillent.",
         "author": "Khush"
       }
 ],
@@ -89,6 +101,7 @@
           "city": "Kelowna",
           "img": "kelowna-1.jpeg",
           "quote": "Myra Canyon is one of the prettiest places in Kelowna, it’s the best place to get a beautiful view of the lake and Okanagan Valley. ",
+          "quote_fr":"Myra Canyon est l’un des endroits les plus jolis à Kelowna. C’est l’un des meilleurs endroits où s’émerveiller de la vue du lac et de la vallée de l’Okanagan.",
           "author": "Jasmin Gill"
         }
 ],
@@ -97,6 +110,7 @@
             "city": "Edmonton",
             "img": "edmonton-1.jpeg",
             "quote": "University, train station, youthful people (and mind), green and clean fresh air. All of them are essential to shape a sustainable community.",
+            "quote_fr":"L’université, la gare, les jeunes (et l’esprit jeune), la verdure et l’air frais et pur. Tous ces éléments sont essentiels à l’établissement d’une communauté durable.",
             "author": "Hymns Chu"
           }
 ],
@@ -105,12 +119,14 @@
             "city": "Montréal",
             "img": "montreal-1.jpg",
             "quote": "My favourite thing about Montréal — the botanical gardens.",
+            "quote_fr":"Ce que je préfère à Montréal : les jardins botaniques.",
             "author": ""
           },
                     {
                       "city": "Montréal",
                       "img": "montreal-2.jpg",
                       "quote": "A view of Montréal from Mount Royal Park.",
+                      "quote_fr":"Vue de Montréal depuis le parc du Mont-Royal.",
                       "author": ""
                     }
 ],
@@ -119,6 +135,7 @@
     "city": "Saskatoon",
     "img": "saskatoon-1.jpg",
     "quote": "Photo is of downtown Saskatoon. The rocks were painted by youth arts studio as a tribute to residential school survivors and missing children. It is the main area for both business and arts in the downtown.",
+    "quote_fr":"Photo du centre-ville de Saskatoon. Les pierres ont été peintes par un studio d’art composé de jeunes. Elles rendent hommage aux survivant‧e‧s des écoles résidentielles et aux enfants qui ont disparu. C’est l’endroit principal pour les affaires et les arts dans le centre-ville.",
     "author": ""
   }
 ],
@@ -126,6 +143,7 @@
   "city": "Burlington",
   "img":"hamilton-1.jpg",
   "quote": "View from Mount Nemo in Burlington. Hamliton and surrounding area is well known for its beautiful trails.",
+  "quote_fr":"Vue de Mount Nemo à Burlington. Hamilton et ses environs sont bien connus pour leurs beaux sentiers.",
   "author":""
 }
 ],
@@ -133,6 +151,7 @@
   "city": "Niagara",
   "img":"niagara-1.jpg",
   "quote":"A quiet beach near Niagara-on-the-Lake.",
+  "quote_fr":"Une plage paisible à proximité de Niagara-on-the-Lake.",
   "author": ""
 }],
 "Québec": [
@@ -140,6 +159,7 @@
     "city":"Québec",
     "img":"quebec-1.jpg",
     "quote": "The iconic Château Frontenac in Old Québec.",
+    "quote_fr":"L’emblématique Château Frontenac dans le Vieux-Québec.",
     "author": ""  
   }
 ],
@@ -147,6 +167,7 @@
   "city":"Mississauga",
   "img":"mississauga-1.jpg",
   "quote":"Mississauga is well-known for the Toronto Pearson Internation Airport, the largest in Canada.",
+  "quote_fr":"Mississauga est connue pour abriter l’aéroport international Pearson de Toronto, le plus grand au Canada.",
   "author":""
 }]
 }

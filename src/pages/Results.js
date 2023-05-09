@@ -109,7 +109,7 @@ const Results = ({
               />
             ))}
           </Grid>
-          <Photo currentCity={currentCity} />
+          <Photo currentCity={currentCity} currentLangCode={currentLangCode} />
         </BasicContainer>
         <FooterButtons setPriorities={setPriorities} />
       </FadeInUp>

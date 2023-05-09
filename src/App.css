@@ -187,6 +187,26 @@ position:relative;
   -webkit-text-stroke: 2px;
 }
 
+.smaller-title {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 2px;
+  font-size: 6rem !important;
+}
+
+.smaller-title .highlight-title:after{
+  content:"";
+  background-color:#FFEE55;
+  opacity: 90%;
+  width:110%;
+  height:6rem;
+  position:absolute;
+  z-index:-1;
+  -webkit-filter:url(#marker-shape);
+          filter:url(#marker-shape);
+  left:-7px;
+  top:0.75rem;
+}
+
 .pointer:hover {
   cursor: pointer;
 }

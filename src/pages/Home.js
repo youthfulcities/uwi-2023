@@ -21,7 +21,10 @@ const Home = ({ languages, setCurrentLangCode, currentLangCode }) => {
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}>
           <Grid item>
-            <Typography variant="h1" align="left" className="title">
+            <Typography
+              variant="h1"
+              align="left"
+              className={currentLangCode === 'en' ? 'title' : 'smaller-title'}>
               <Trans
                 i18nKey="title"
                 components={{ span: <span className="highlight-title" /> }}

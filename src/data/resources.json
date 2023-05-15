@@ -2,87 +2,117 @@
   "education":[
     {
       "name": "RBC Future Launch Scholarship",
+      "name_fr":"Bourse Objectif avenir RBC",
       "desc": "The RBC Future Launch Scholarship is for anyone from 15 to 29 who wants to learn something new.",
+      "desc_fr":"La bourse Objectif avenir RBC est destinée à toute personne entre 15 et 29 ans qui veut apprendre quelque chose de nouveau.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/future-launch-scholarship.html?utm_source=flpromotile&utm_medium=referral&utm_campaign=acct_flscholarship2020"
     },
     {
       "name": "RBC Future Launch Scholarship for Indigenous Youth",
+      "name_fr":"Bourse d’études Objectif avenir RBC pour jeunes Autochtones",
       "desc": "The RBC Future Launch Scholarship for Indigenous Youth could help you achieve your post-secondary goals.",
+      "desc_fr":"La bourse d’études Objectif avenir RBC pour jeunes Autochtones pourrait vous aider à atteindre vos objectifs en matière d’études supérieures.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/indigenous-scholarship.html"
     },
     {
       "name": "RBC Future Launch Scholarship for Black Youth",
+      "name_fr":"Bourse d’études Objectif avenir RBC pour jeunes Noirs",
       "desc": "The RBC Future Launch Scholarship for Black Youth is an innovative program designed to empower and enable Black youth.",
+      "desc_fr":"La bourse d’études Objectif avenir RBC pour jeunes Noirs est un programme novateur conçu pour outiller et responsabiliser les jeunes personnes noires.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/black-scholarship.html"
     },
     {
       "name": "LinkedIn Learning",
+      "name_fr":"LinkedIn Learning",
       "desc": "LinkedIn Learning lets you learn at your own pace. You can select courses relevant to your current role and passions! You’ll be able to grow and develop in the areas you care about both at and outside work.",
+      "desc_fr":"LinkedIn Learning vous permet d’apprendre à votre rythme. Vous pouvez sélectionner les cours qui correspondent à votre poste actuel et à vos passions! Vous pourrez vous épanouir dans les domaines qui vous tiennent à cœur, tant au travail qu’en dehors.",
       "link": "https://vote.pollstream.com/PollPopupContent.php?short_link=SuEfM1G&popup_layout=800&cb=505d36d6ff33a3f9c91ef8fb75942acd"
     },
     {
       "name": "University of Guelph Foundations in Agricultural Management",
+      "name_fr":"Université de Guelph - Fondements de la gestion agricole",
       "desc": "A free online course where you can gain the knowledge and confidence to make a lifetime of better informed decisions for yourself and your farming business.",
+      "desc_fr":"Un cours en ligne gratuit qui vous donnera les connaissances et la confiance nécessaires pour prendre des décisions éclairées pour vous-même et votre entreprise, votre vie durant.",
       "link": "https://www.guelphagriculturalmanagement.com/"
     }
   ],
   "cost":[
     {
       "name": "McGill Personal Finance Essentials",
+      "name_fr":"Finances personnelles pour tous par McGill",
       "desc": "A free online course designed to help youth gain the knowledge they need to make a lifetime of smart financial decisions.",
+      "desc_fr":"Un cours en ligne gratuit conçu pour aider les jeunes à acquérir les connaissances dont ils ont besoin pour prendre des décisions financières éclairées.",
       "link": "https://mcgillpersonalfinance.com/"
     }
   ],
   "jobs":[
     {
       "name": "Riipen",
+      "name_fr":"Riipen",
       "desc": "Immersing students in industry projects equips them with work-ready skills. Riipen brings industry and academia together, with real company projects.",
+      "desc_fr":"Immerger les étudiant‧e‧s dans des projets industriels leur permet d’acquérir des compétences susceptibles d’être employées. Riipen aide les éducateur‧rice‧s, les organisations et les apprenant‧e‧s à collaborer sur des projets réels.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/experiential-learning-by-riipen-and-rbc-future-launch.html"
     },
     {
       "name": "Ten Thousand Coffees",
+      "name_fr":"Ten Thousand Coffees",
       "desc": "Join Ten Thousand Coffees to connect with like-minded professionals and build your network.",
+      "desc_fr":"Joignez-vous à Ten Thousand Coffees pour entrer en contact avec des professionnel‧le‧s partageant les mêmes idées et développer votre réseau.",
       "link": "https://www.rbc.com/en/future-launch/resource-type/tools/networking-by-ten-thousand-coffees/"
     },
     {
       "name": "RBC Upskill Powered by FutureFit AI",
+      "name_fr":"Hopcarrière RBC, optimisée par FutureFit AI",
       "desc": "RBC Upskill is a free career tool that gets to know your skills, education, interests and work experience so that it can help you get closer to the job you really want.",
+      "desc_fr":"L’appli Hopcarrière RBC est un outil de gestion de carrière gratuit qui apprend à vous connaître – vos aptitudes professionnelles, vos intérêts, votre expérience de travail et vos antécédents scolaires – pour vous aider à découvrir l’emploi que vous souhaitez vraiment obtenir.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/rbc-upskill.html"
     },
     {
       "name": "Magnet",
+      "name_fr":"Magnet",
       "desc": "A tool that sends users customized content to help them succeed in their careers, including job opportunities, information on skill building and job search strategies and career planning.",
+      "desc_fr":"Un outil qui envoie aux utilisateur‧rice‧s du contenu personnalisé susceptible de favoriser leur succès professionnel. ll peut s’agir d’offres d’emploi, d’information sur le perfectionnement des aptitudes, de stratégies de recherche d’emploi et d’outils de planification de carrière.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/magnet.html"
     }
   ],
   "business":[
     {
       "name": "Western University The Founder's Journey Entrepreneurship",
+      "name_fr":"Western University - Le parcours du fondateur",
       "desc": "A free online course that shows you how to nurture and grow a new business and covers everything from early ideation to opportunity development.",
+      "desc_fr":"Un cours en ligne gratuit qui vous montre comment entretenir et faire grandir une nouvelle entreprise. Ce cours recouvre tout, de l’idéation aux perspectives d’avenir.",
       "link": "https://thefoundersjourney.ca/"
     }
   ],
   "economy":[
     {
       "name": "RBC Future Launch",
-      "desc": "RBC Future Launch, empowering the youth of today, for the jobs of tomorrow.",
+      "name_fr":"Objectif avenir RBC",
+      "desc": "BC Future Launch is proud to partner and provide resources in support of skills,  career development, work experience and mental well-being. ",
+      "desc_fr":"Objectif avenir RBC est fier de son partenariat et fournit des ressources en matière de compétences, de perfectionnement professionnel, d’expérience de travail et de bien-être mental.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/"
     }
   ],
   "health":[
     {
       "name": "Kids Help Phone",
+      "name_fr":"Jeunesse, j'écoute",
       "desc": "For over 30 years, Kids Help Phone has been Canada’s only 24/7, national support service for youth.",
+      "desc_fr":"Depuis plus de 30 ans, Jeunesse, j'écoute est le seul service national 24/7 qui offre des services de soutien aux jeunes.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/support-for-anything-big-or-small.html"
     },
     {
       "name": "jack.org Be There Certificate",
+      "name_fr":"jack.org Certificat Être là",
       "desc": "A free, digital, self-paced learning experience designed to increase mental health literacy among youth.",
+      "desc_fr":"L’expérience d’apprentissage gratuite, à suivre à son rythme, est conçue pour améliorer les connaissances des jeunes en matière de santé mentale.",
       "link": "https://betherecertificate.org/"
     },
     {
       "name": "Integrated Youth Services",
+      "name_fr":"Services intégrés pour les jeunes",
       "desc": "Integrated Youth Services (IYS) is a Canadian and international movement that aims to promote the development of one-stop-shop hubs offering youth-focused and integrated services for mental health, substance use and related issues.",
+      "desc_fr":"Services intégrés pour les jeunes (SIJ) est un mouvement canadien et international qui vise à promouvoir le développement de guichets uniques offrant des services intégrés destinés aux jeunes en matière de santé mentale, de toxicomanie et d’autres enjeux.",
       "link": "https://www.rbc.com/dms/enterprise/futurelaunch/finding-your-resilience.html"
     }
   ]

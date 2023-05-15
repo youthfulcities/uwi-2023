@@ -15,6 +15,7 @@ import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { uniqueId } from 'lodash';
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import resources from '../data/resources.json';
 import DonutGraph from './DonutGraph';
 
@@ -22,6 +23,7 @@ const darkColours = ['#F2695D', '#253D88', '#FBD166', '#B8D98D', '#673934'];
 
 const ScoreCards = ({ topic, currentLangCode }) => {
   const [expanded, setExpanded] = useState(false);
+  const { t } = useTranslation();
 
   const theme = useTheme();
   const bigScreen = useMediaQuery(theme.breakpoints.up('sm'), {
@@ -38,7 +40,7 @@ const ScoreCards = ({ topic, currentLangCode }) => {
   return (
     <Card
       sx={{
-        backdropFilter: 'blur(2px)',
+        backdropFilter: 'blur(3px)',
         background: 'rgba(255, 255, 255, 0.1)',
         alignSelf: 'flex-start',
         minWith: bigScreen ? 'calc(50% - 10px)' : '100%',
@@ -74,8 +76,7 @@ const ScoreCards = ({ topic, currentLangCode }) => {
           onClick={handleExpandClick}
           disabled={!resourceList}
           sx={{ minWidth: 0 }}>
-          {/* TODO: Update with translation */}
-          {expanded ? 'Collapse' : 'Expand'} Resources
+          {expanded ? t('collapse') : t('expand')} {t('resources2')}
         </Button>
       </CardActions>
       {resourceList && (
@@ -95,8 +96,12 @@ const ScoreCards = ({ topic, currentLangCode }) => {
                   <LinkIcon fontSize="large" />
                 </ListItemIcon>
                 <ListItemText
-                  primary={resource.name}
-                  secondary={resource.desc}
+                  primary={
+                    currentLangCode === 'en' ? resource.name : resource.name_fr
+                  }
+                  secondary={
+                    currentLangCode === 'en' ? resource.desc : resource.desc_fr
+                  }
                 />
               </ListItem>
             ))}

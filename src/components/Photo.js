@@ -21,11 +21,11 @@ const Photo = ({ currentCity, currentLangCode }) => {
     const random = Math.floor(Math.random() * quotes.length);
     return lang === 'en'
       ? `"${quotes[random].quote}"`
-      : `«${quotes[random].quote_fr}»`;
+      : `« ${quotes[random].quote_fr} »`;
   };
 
   const getCurrentQuote = (lang = 'en') =>
-    lang === 'en' ? `"${current.quote}"` : `«${current.quote_fr}»`;
+    lang === 'en' ? `"${current.quote}"` : `« ${current.quote_fr} »`;
 
   return (
     current && (

@@ -9,7 +9,7 @@
   "button_explore": "Explore All Cities",
   "button_home": "Home",
   "button_results": "Show me my results",
-  "button_apply": "Apply for the Urban Work Summit Fall 2023",
+  "button_apply": "Subscribe for updates",
   "results_title": "Your best work city is <span>{{city}}</span> with a <span>{{percent}}% match</span>.",
   "results_best": "{{city}}'s best attritube is <span>{{attribute}}</span>.",
   "graph_top5": "Your Top 5 Cities",
@@ -25,5 +25,8 @@
   "card_futurpreneur": "Futurpreneur provides national ﬁnancing, mentoring and support tools to aspiring business owners aged 18-39.",
   "graph_score": "Overall score",
   "remainder": "Remainder",
-  "city":"City"
+  "city":"City",
+  "expand": "Expand",
+  "collapse":"Collapse",
+  "resources2": "resources"
 }

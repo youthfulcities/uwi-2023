@@ -1,6 +1,6 @@
 {
   "title": "Trouver ma <span> meilleure</span> ville où travailler",
-  "webtitle":"Trouver ma meilleure ville où travailler",
+  "webtitle": "Trouver ma meilleure ville où travailler",
   "subtitle": "indice du travail urbain 2023",
   "quiz_title": "Sélectionnez les aspects d’une ville qui <span>comptent le plus</span> à vos yeux. Appuyez une nouvelle fois pour retirer votre sélection.",
   "quiz_subtitle1": "Maintenez ",
@@ -9,7 +9,7 @@
   "button_explore": "Explorer toutes les villes",
   "button_home": "Accueil",
   "button_results": "Obtenir mes résultats",
-  "button_apply": "Envoyer une demande pour participer au Sommet sur le travail urbain à l’automne 2023",
+  "button_apply": "Subscribe for updates",
   "results_title": "Votre meilleure ville où travailler est <span>{{city}}</span> avec une correspondance de <span>{{percent}}%.</span>",
   "results_best": "Voici le meilleur attribut de {{city}} : <span>{{attribute}}</span>.",
   "graph_top5": "Vos cinq meilleures villes",
@@ -25,5 +25,8 @@
   "card_futurpreneur": "Futurpreneur fournit des outils nationaux de financement, de mentorat et de soutien pour les personnes de 18 à 39 ans qui souhaitent monter leur entreprise.",
   "graph_score": "Score global",
   "remainder": "Reste",
-  "city":"Ville"
+  "city": "Ville",
+  "expand": "Agrandir",
+  "collapse": "Réduire",
+  "resources2": "les ressources"
 }

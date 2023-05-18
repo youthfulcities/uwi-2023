@@ -67,6 +67,12 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
       x: {
         ticks: {
           color: '#000',
+          font: {
+            weight: 'bold',
+          },
+        },
+        font: {
+          weight: 'bold',
         },
         title: {
           display: true,
@@ -79,6 +85,9 @@ const BarGraph = ({ parentData, max, setCurrentCity }) => {
       y: {
         ticks: {
           color: '#000',
+          font: {
+            weight: 'bold',
+          },
         },
         title: {
           display: true,

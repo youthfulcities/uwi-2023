@@ -79,6 +79,9 @@ const HorizontalGraph = ({ parentData, max, setCurrentCity }) => {
       x: {
         ticks: {
           color: '#000',
+          font: {
+            weight: 'bold',
+          },
         },
         title: {
           display: true,
@@ -92,6 +95,9 @@ const HorizontalGraph = ({ parentData, max, setCurrentCity }) => {
       y: {
         ticks: {
           color: '#000',
+          font: {
+            weight: 'bold',
+          },
           autoSkip: false,
           callback(index) {
             if (labels[index].length > 10) {

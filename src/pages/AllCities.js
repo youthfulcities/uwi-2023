@@ -77,6 +77,7 @@ const Results = ({
           <Grid container justifyContent="space-between" my={1}>
             {sortedStats.map((topic) => (
               <ScoreCards
+                currentLangCode={currentLangCode}
                 topic={topic}
                 height={height}
                 setHeight={setHeight}

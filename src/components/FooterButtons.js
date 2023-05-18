@@ -12,13 +12,9 @@ const FooterButtons = ({ setPriorities }) => {
 
   return (
     <Box py={4}>
-      <Container
-        maxWidth="md"
-        mx={1}
-        sx={{ minHeight: '10vh', maxHeight: '10vh' }}>
-        <Typography variant="body1" textAlign="center">
-          Did you know Youthful Cities is holding an Urban Work Summit in 2023?
-          Subscribe to our newsletter for updates.
+      <Container maxWidth="sm" mx={1}>
+        <Typography variant="h3" textAlign="left" mb={2}>
+          {t('upcoming')}
         </Typography>
         <Grid
           container
@@ -31,7 +27,7 @@ const FooterButtons = ({ setPriorities }) => {
                 variant="contained"
                 color="info"
                 onClick={() => setPriorities([])}>
-                {t('button_apply')}
+                {t('subscribe')}
               </Button>
             </Link>
           </Grid>

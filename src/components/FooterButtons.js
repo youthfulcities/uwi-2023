@@ -22,14 +22,17 @@ const FooterButtons = ({ setPriorities }) => {
           justifyContent="center"
           alignItems="center">
           <Grid item mx={1} my={1}>
-            <Link to="/">
+            <a
+              href="https://youthfulcities.us7.list-manage.com/subscribe?u=ad93cdfc178e6d9bc7646844f&id=453e06e908"
+              target="_blank"
+              rel="noreferrer">
               <Button
                 variant="contained"
                 color="info"
                 onClick={() => setPriorities([])}>
                 {t('subscribe')}
               </Button>
-            </Link>
+            </a>
           </Grid>
           <Grid item mx={1} my={1}>
             <Link to="/">

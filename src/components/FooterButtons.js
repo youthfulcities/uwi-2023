@@ -11,7 +11,7 @@ const FooterButtons = ({ setPriorities }) => {
   };
 
   return (
-    <Box py={4}>
+    <Box py={4} px={2}>
       <Container maxWidth="sm" mx={1}>
         <Typography variant="h3" textAlign="left" mb={2}>
           {t('upcoming')}

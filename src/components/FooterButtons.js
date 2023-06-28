@@ -2,6 +2,7 @@ import { Box, Button, Container, Grid } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import Socials from './Socials';
 
 const FooterButtons = ({ setPriorities }) => {
   const { t } = useTranslation();
@@ -13,35 +14,26 @@ const FooterButtons = ({ setPriorities }) => {
   return (
     <Box py={4} px={2}>
       <Container maxWidth="sm" mx={1}>
-        {/* <Typography variant="h3" textAlign="left" mb={2}>
-          {t('upcoming')}
-        </Typography>
         <Grid
           container
           direction="row"
           justifyContent="center"
-          alignItems="center">
+          alignItems="center"
+          mb={1}>
           <Grid item mx={1} my={1}>
-            <a
-              href="https://youthfulcities.us7.list-manage.com/subscribe?u=ad93cdfc178e6d9bc7646844f&id=453e06e908"
-              target="_blank"
-              rel="noreferrer">
-              <Button
-                variant="contained"
-                color="info"
-                onClick={() => setPriorities([])}>
-                {t('subscribe')}
+            <Link to="/">
+              <Button variant="contained" color="primary" onClick={handleHome}>
+                {t('button_home')}
               </Button>
-            </a>
-          </Grid> */}
-        <Grid item mx={1} my={1}>
-          <Link to="/">
-            <Button variant="contained" color="primary" onClick={handleHome}>
-              {t('button_home')}
+            </Link>
+          </Grid>
+          <Grid item mx={1} my={1}>
+            <Button variant="contained" color="info" onClick={handleHome}>
+              Share my results
             </Button>
-          </Link>
+          </Grid>
         </Grid>
-        {/* </Grid> */}
+        <Socials />
       </Container>
     </Box>
   );

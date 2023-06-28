@@ -10,7 +10,6 @@ import FooterButtons from '../components/FooterButtons';
 import Photo from '../components/Photo';
 import PhotoBackground from '../components/PhotoBackground';
 import ScoreCards from '../components/ScoreCards';
-import Socials from '../components/Socials';
 import { getCitiesObject, getTotalScores } from '../helpers/getCity';
 
 const Results = ({
@@ -132,7 +131,6 @@ const Results = ({
           </Grid>
           <Photo currentCity={currentCity} currentLangCode={currentLangCode} />
         </BasicContainer>
-        <Socials />
         <FooterButtons />
       </FadeInUp>
     </>

@@ -2,9 +2,10 @@ import { Box, Button, Container, Grid } from '@mui/material';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import ShareModal from './ShareModal';
 import Socials from './Socials';
 
-const FooterButtons = ({ setPriorities }) => {
+const FooterButtons = ({ setPriorities, results = false }) => {
   const { t } = useTranslation();
   const handleHome = () => {
     setPriorities([]);
@@ -27,11 +28,11 @@ const FooterButtons = ({ setPriorities }) => {
               </Button>
             </Link>
           </Grid>
-          <Grid item mx={1} my={1}>
-            <Button variant="contained" color="info" onClick={handleHome}>
-              Share my results
-            </Button>
-          </Grid>
+          {results && (
+            <Grid item mx={1} my={1}>
+              <ShareModal />
+            </Grid>
+          )}
         </Grid>
         <Socials />
       </Container>

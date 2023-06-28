@@ -131,7 +131,7 @@ const Results = ({
           </Grid>
           <Photo currentCity={currentCity} currentLangCode={currentLangCode} />
         </BasicContainer>
-        <FooterButtons />
+        <FooterButtons results />
       </FadeInUp>
     </>
   );

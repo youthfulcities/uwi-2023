@@ -81,7 +81,7 @@ const Results = ({
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}
           pb={0}>
-          <Grid item>
+          <Grid container item>
             <Typography variant="h5" mb={4}>
               <Trans
                 i18nKey="results_title"
@@ -97,17 +97,19 @@ const Results = ({
               )}
             </Typography>
           </Grid>
-          <Typography mb={1} variant="h3">
-            {t('graph_top5')}
-          </Typography>
-          <Typography variant="body1">{t('graph_tip')}</Typography>
-          <BarGraph
-            currentLangCode={currentLangCode}
-            parentData={bestCities}
-            max={Math.ceil(score)}
-            setCurrentCity={setCurrentCity}
-          />
-          <Grid item sx={{ width: '100%' }}>
+          <Grid container item justifyContent="center">
+            <Typography mb={1} variant="h3">
+              {t('graph_top5')}
+            </Typography>
+            <Typography variant="body1">{t('graph_tip')}</Typography>
+            <BarGraph
+              currentLangCode={currentLangCode}
+              parentData={bestCities}
+              max={Math.ceil(score)}
+              setCurrentCity={setCurrentCity}
+            />
+          </Grid>
+          <Grid container item sx={{ width: '100%' }}>
             <Typography variant="h5" mt={4} align="center">
               <Trans
                 i18nKey="breakdown_title"
@@ -116,9 +118,7 @@ const Results = ({
               />
             </Typography>
           </Grid>
-        </BasicContainer>
-        <BasicContainer px={0} pt={0} width="md">
-          <Grid container justifyContent="space-between" my={1}>
+          <Grid container item justifyContent="space-between" my={1}>
             {sortedStats.map((topic) => (
               <ScoreCards
                 currentLangCode={currentLangCode}

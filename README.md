@@ -1,5 +1,4 @@
-Reference variable names in the file [UWI 2023 Codebook](https://docs.google.com/spreadsheets/d/1F1vu3m7yUF4wge0M2x9X3t8zFeIeHKkgvrTMmERtxKo/edit?usp=sharing).kj
-
+Reference variable names in the file [UWI 2023 Codebook](https://docs.google.com/spreadsheets/d/1F1vu3m7yUF4wge0M2x9X3t8zFeIeHKkgvrTMmERtxKo/edit?usp=sharing).
 How to update the data:
 Create a spreadsheet with the same format as the firle [App data](https://docs.google.com/spreadsheets/d/1Upm-uEkrDNNfQFy6AQWZL8T_2LvNU7EfNoiryTeznvU/edit?usp=sharing)
 Go to https://jsonifyit.com/

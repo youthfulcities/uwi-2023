@@ -1,4 +1,5 @@
-import ShareIcon from '@mui/icons-material/Share';
+import CloseIcon from '@mui/icons-material/Close';
+import DownloadIcon from '@mui/icons-material/Download';
 import {
   Backdrop,
   Button,
@@ -13,6 +14,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { saveAs } from 'file-saver';
 import { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import ShareButton from './ShareButton';
 
 const ShareModal = () => {
   const theme = useTheme();
@@ -43,46 +45,8 @@ const ShareModal = () => {
     borderRadius: '12px',
   };
 
-  const url = window.location.origin;
-  const title = 'Title';
-  const text = 'Text';
-
   const handleDownload = () => {
     saveAs(`./assets/images/share/${city}.png`, `best-work-city-${city}.png`);
-  };
-
-  const handleSharing = async () => {
-    const response = await fetch(`./assets/images/share/${city}.png`);
-    const blob = await response.blob();
-
-    const filesArray = [
-      new File([blob], `${city}.png`, {
-        type: 'image/jpeg',
-        lastModified: new Date().getTime(),
-      }),
-    ];
-
-    const shareDetails = {
-      files: filesArray,
-      url,
-      title,
-      text,
-    };
-
-    if (navigator.share) {
-      try {
-        await navigator
-          .share(shareDetails)
-          .then(() =>
-            console.log('Hooray! Your content was shared to tha world')
-          );
-      } catch (error) {
-        console.log(`Oops! I couldn't share to the world because: ${error}`);
-      }
-    } else {
-      handleDownload();
-      console.log('Web share is currently not supported on this browser.');
-    }
   };
 
   return (
@@ -104,6 +68,13 @@ const ShareModal = () => {
         }}>
         <Fade in={open}>
           <Paper sx={style}>
+            <Grid container justifyContent="flex-end" mb={1}>
+              <Grid item mr={1}>
+                <IconButton onClick={handleClose}>
+                  <CloseIcon />
+                </IconButton>
+              </Grid>
+            </Grid>
             <img
               width="100%"
               src={`./assets/images/share/${city}.png`}
@@ -111,19 +82,14 @@ const ShareModal = () => {
             />
             <Grid mt={1} container>
               <Grid item mr={1}>
-                <IconButton
-                  onClick={handleSharing}
-                  size="large"
-                  sx={{ backgroundColor: '#fff' }}>
-                  <ShareIcon fontSize="large" />
-                </IconButton>
+                <ShareButton />
               </Grid>
               <Grid item>
                 <IconButton
                   onClick={handleDownload}
                   size="large"
-                  sx={{ backgroundColor: '#fff' }}>
-                  <ShareIcon fontSize="large" />
+                  sx={{ backgroundColor: '#f9f9f9' }}>
+                  <DownloadIcon fontSize="large" />
                 </IconButton>
               </Grid>
             </Grid>

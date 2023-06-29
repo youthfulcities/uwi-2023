@@ -12,6 +12,7 @@ import {
   WhatsappIcon,
   WhatsappShareButton
 } from 'react-share';
+import ShareButton from './ShareButton';
 
 const Socials = ({ url }) => {
   // let { full } = url;
@@ -30,9 +31,12 @@ const Socials = ({ url }) => {
       <Grid
         container
         justifyContent="center"
-        alignItems="center"
+        alignItems="stretch"
         direction="row"
         spacing="1vh">
+        <Grid item>
+          <ShareButton size="medium" />
+        </Grid>
         <Grid item>
           <EmailShareButton
             url={full}

@@ -2,6 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import _, { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
+import { createSearchParams, useNavigate } from 'react-router-dom';
 import BarGraph from '../components/BarGraph';
 import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
@@ -23,14 +24,18 @@ const Results = ({
   }, []);
 
   const { t } = useTranslation();
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(300);
 
   const bestCities = getTotalScores(priorities).slice(0, 5);
+
   const bestCity = bestCities[0];
+
   const { city: originalCity, score } = bestCity;
+
   const [currentCity, setCurrentCity] = useState(originalCity);
 
   const citiesObject = getCitiesObject(priorities);
+
   const getTopCityStats = (city = currentCity) => citiesObject[city];
 
   const getBestPriorities = (city = currentCity) => {
@@ -41,8 +46,6 @@ const Results = ({
   };
   const sortedStats = getBestPriorities();
 
-  console.log(sortedStats);
-
   const attribute =
     currentLangCode === 'en'
       ? getBestPriorities(originalCity)[0].topic_en
@@ -50,6 +53,23 @@ const Results = ({
 
   const getPercent = (currentScore) =>
     Math.round(currentScore / priorities.length);
+
+  // set url param equal to top city for sharing results
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = {
+      city: originalCity,
+    };
+
+    const options = {
+      pathname: '/results',
+      search: `?${createSearchParams(params)}`,
+    };
+
+    navigate(options, { replace: true });
+  }, [originalCity]);
 
   return (
     <>
@@ -111,7 +131,7 @@ const Results = ({
           </Grid>
           <Photo currentCity={currentCity} currentLangCode={currentLangCode} />
         </BasicContainer>
-        <FooterButtons setPriorities={setPriorities} />
+        <FooterButtons results />
       </FadeInUp>
     </>
   );

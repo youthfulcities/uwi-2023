@@ -34,7 +34,7 @@ const App = () => {
     {
       code: 'fr',
       language: 'French',
-      language_fr:'Français',
+      language_fr: 'Français',
       dir: 'ltr',
     },
   ];

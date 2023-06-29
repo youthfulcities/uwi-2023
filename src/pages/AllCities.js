@@ -1,6 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import _, { uniqueId } from 'lodash';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
 import BasicContainer from '../components/BasicContainer';
 import FadeInUp from '../components/FadeInUp';
@@ -39,9 +39,24 @@ const Results = ({
 
   const sortedStats = getBestPriorities();
 
-  useEffect(() => {
-    document.querySelector('body').scrollTo(0, 0);
-  }, []);
+  // const navigate = useNavigate();
+
+  // useEffect(() => {
+  //   document.querySelector('body').scrollTo(0, 0);
+  // }, []);
+
+  // useEffect(() => {
+  //   const params = {
+  //     city: currentCity,
+  //   };
+
+  //   const options = {
+  //     pathname: '/all',
+  //     search: `?${createSearchParams(params)}`,
+  //   };
+
+  //   navigate(options, { replace: true });
+  // }, [currentCity]);
 
   return (
     <>

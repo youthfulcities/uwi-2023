@@ -23,6 +23,7 @@ const FadeInUp = ({ inView = true, children, x = 0, y = 0 }) => {
 
   return (
     <motion.div
+      style={{ width: '100%' }}
       initial="hidden"
       animate={inView ? 'show' : 'hidden'}
       exit="hidden"

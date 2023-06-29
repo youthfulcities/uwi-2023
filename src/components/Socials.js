@@ -24,7 +24,7 @@ const Socials = ({ url }) => {
   const separator = ' | ';
   const additional =
     'Use this site to find out what the best city in Canada is for you based on the Youthful Cities Urban Work Index 2023!';
-  const source = 'Youthful Cities';
+  const source = 'YouthfulCities';
 
   return (
     <Grid container>

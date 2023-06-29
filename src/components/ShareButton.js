@@ -57,7 +57,11 @@ const ShareButton = ({ size = 'large' }) => {
     <IconButton
       onClick={handleSharing}
       size={size}
-      sx={{ backgroundColor: '#f9f9f9' }}>
+      sx={{
+        backgroundColor: '#f9f9f9',
+        width: size === 'medium' ? '32px' : 'inherit',
+        height: size === 'medium' ? '32px' : 'inherit',
+      }}>
       <ShareIcon fontSize={size} />
     </IconButton>
   );

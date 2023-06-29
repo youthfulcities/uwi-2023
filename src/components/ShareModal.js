@@ -32,11 +32,11 @@ const ShareModal = () => {
 
   const style = {
     position: 'absolute',
-    minWith: bigScreen ? 'calc(50% - 10px)' : '100%',
-    width: bigScreen ? 'calc(50% - 10px)' : '100%',
+    minWith: bigScreen ? 'calc(50% - 10px)' : '90%',
+    width: bigScreen ? 'calc(50% - 10px)' : '98%',
     top: '50%',
     left: '50%',
-    transform: 'translate(-50%, -50%)',
+    transform: 'translate(-51.25%, -50%)',
     backdropFilter: 'blur(3px)',
     background: 'rgba(255, 255, 255, 0.1)',
     alignSelf: 'flex-start',

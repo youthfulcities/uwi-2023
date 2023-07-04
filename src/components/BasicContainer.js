@@ -2,19 +2,7 @@ import { Container, Grid } from '@mui/material';
 import React, { forwardRef } from 'react';
 
 const BasicContainer = (
-  {
-    children,
-    width = 'xs',
-    spacing = 0,
-    px = 1,
-    pt = '11vh',
-    pb = 4,
-    languages,
-    setCurrentLangCode,
-    currentLangCode,
-    textSize,
-    setTextSize,
-  },
+  { children, width = 'xs', spacing = 0, px = 2, pt = '11vh', pb = 4 },
   ref
 ) => (
   <Container ref={ref} maxWidth={width}>

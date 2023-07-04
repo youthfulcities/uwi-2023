@@ -156,9 +156,7 @@ const theme = () =>
       },
       MuiContainer: {
         styleOverrides: {
-          root: {
-            position: 'relative',
-          },
+          root: {},
         },
       },
       MuiFormLabel: {

@@ -12,6 +12,7 @@ import {
   WhatsappIcon,
   WhatsappShareButton
 } from 'react-share';
+import ShareButton from './ShareButton';
 
 const Socials = ({ url }) => {
   // let { full } = url;
@@ -23,16 +24,19 @@ const Socials = ({ url }) => {
   const separator = ' | ';
   const additional =
     'Use this site to find out what the best city in Canada is for you based on the Youthful Cities Urban Work Index 2023!';
-  const source = 'Youthful Cities';
+  const source = 'YouthfulCities';
 
   return (
     <Grid container>
       <Grid
         container
         justifyContent="center"
-        alignItems="center"
+        alignItems="stretch"
         direction="row"
         spacing="1vh">
+        <Grid item>
+          <ShareButton size="medium" />
+        </Grid>
         <Grid item>
           <EmailShareButton
             url={full}

@@ -1,5 +1,7 @@
 import InfoIcon from '@mui/icons-material/Info';
 import { Box, Button, Container, Grid, Typography } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import { motion } from 'framer-motion';
 import React, { useCallback, useState } from 'react';
 import { Trans, useTranslation } from 'react-i18next';
@@ -21,6 +23,11 @@ const Quiz = ({
   const [items, setItems] = useState(topicsToButtons);
   const navigate = useNavigate();
   const { t } = useTranslation();
+
+  const theme = useTheme();
+  const bigScreen = useMediaQuery(theme.breakpoints.up('sm'), {
+    noSsr: true,
+  });
 
   const handleClick = useCallback((index) => {
     setItems((prevItems) =>
@@ -49,6 +56,7 @@ const Quiz = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.4 }}>
         <BasicContainer
+          width="lg"
           languages={languages}
           setCurrentLangCode={setCurrentLangCode}
           currentLangCode={currentLangCode}>
@@ -58,25 +66,44 @@ const Quiz = ({
               components={{ span: <span className="highlight" /> }}
             />
           </Typography>
-          <Typography variant="body1" mb={4} sx={{ width: '100%' }}>
+          <Typography variant="body1" mb={4}>
             {t('quiz_subtitle1')}
             <InfoIcon />
             {t('quiz_subtitle2')}
           </Typography>
-          {items.map((item) => (
-            <RoundSymbolButton
-              currentLangCode={currentLangCode}
-              index={item.id}
-              key={item.key}
-              topic={item.key}
-              desc={item.desc}
-              desc_fr={item.desc_fr}
-              included={item.included}
-              name={item.name}
-              name_fr={item.name_fr}
-              handleClick={handleClick}
-            />
-          ))}
+          {bigScreen ? (
+            <Grid item container justifyContent="center">
+              {items.map((item) => (
+                <RoundSymbolButton
+                  currentLangCode={currentLangCode}
+                  index={item.id}
+                  key={item.key}
+                  topic={item.key}
+                  desc={item.desc}
+                  desc_fr={item.desc_fr}
+                  included={item.included}
+                  name={item.name}
+                  name_fr={item.name_fr}
+                  handleClick={handleClick}
+                />
+              ))}
+            </Grid>
+          ) : (
+            items.map((item) => (
+              <RoundSymbolButton
+                currentLangCode={currentLangCode}
+                index={item.id}
+                key={item.key}
+                topic={item.key}
+                desc={item.desc}
+                desc_fr={item.desc_fr}
+                included={item.included}
+                name={item.name}
+                name_fr={item.name_fr}
+                handleClick={handleClick}
+              />
+            ))
+          )}
         </BasicContainer>
         <Box
           sx={{

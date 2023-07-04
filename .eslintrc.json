@@ -28,6 +28,7 @@
     "consistent-return": "off",
     "no-unused-vars": "warn",
     "arrow-body-style": "warn",
+    "no-nested-ternary": "off",
     "react/jsx-curly-brace-presence": "warn",
     "react/jsx-props-no-spreading":"warn",
     "react/react-in-jsx-scope": "off",

@@ -597,25 +597,7 @@ position:relative;
 }
 
 /* Circle buttons
-   ========================================================================== */
-
-.roundSymbolButton:nth-child(odd) {
-  /* transform: translate(50%);
-  -webkit-transform: translate(50%);
-  -moz-transform: translate(50%);
-  -ms-transform: translate(50%);
-  -o-transform: translate(50%); */
-  margin-bottom: -75px;
-}
-
-.roundSymbolButton:nth-child(even) {
-  margin-bottom: -75px;
-  /* transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%); */
-}
+   =================================================“========================= */
 
 .roundSymbolButton:last-child {
   margin-bottom: 0;

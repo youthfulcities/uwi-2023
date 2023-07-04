@@ -18,12 +18,21 @@ const ShareButton = ({ size = 'large' }) => {
   };
 
   const handleSharing = async () => {
-    const response = await fetch(`./assets/images/share/${city}.png`);
+    const response = await fetch(
+      `./assets/images/share/${city || 'bestworkcity'}.png`
+    );
     const blob = await response.blob();
 
     const filesArray = [
       new File([blob], `${city}.png`, {
-        type: 'image/jpeg',
+        type: 'image/png',
+        lastModified: new Date().getTime(),
+      }),
+    ];
+
+    const defaultFilesArray = [
+      new File([blob], 'bestworkcity.png', {
+        type: 'image/png',
         lastModified: new Date().getTime(),
       }),
     ];
@@ -35,7 +44,12 @@ const ShareButton = ({ size = 'large' }) => {
           title,
           text,
         }
-      : { url, title, text };
+      : {
+          files: defaultFilesArray,
+          url,
+          title,
+          text,
+        };
 
     if (navigator.share) {
       try {

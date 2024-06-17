@@ -1,39 +1,27 @@
 Reference variable names in the file [UWI 2023 Codebook](https://docs.google.com/spreadsheets/d/1F1vu3m7yUF4wge0M2x9X3t8zFeIeHKkgvrTMmERtxKo/edit?usp=sharing).
+
 How to update the data:
 
-Create a spreadsheet with the same format as the file [App data](https://docs.google.com/spreadsheets/d/1Upm-uEkrDNNfQFy6AQWZL8T_2LvNU7EfNoiryTeznvU/edit?usp=sharing)
-
-Go to https://jsonifyit.com/
-
-Copy data or upload a csv
+- Create a spreadsheet with the same format as the file [App data](https://docs.google.com/spreadsheets/d/1Upm-uEkrDNNfQFy6AQWZL8T_2LvNU7EfNoiryTeznvU/edit?usp=sharing)
+- Go to https://jsonifyit.com/
+- Copy data or upload a csv
 
 Set the following in "Set Output Options"
-
-Base Structure: Records
-
-Index: None
+- Base Structure: Records
+- Index: None
 
 **Nesting Options**
-
-Name Key: topic_key
-
-Add level: topic_key
-
-Children key: None
-
-Column to sum: None
-
-Field Name: None
-
-Average Field: score
-
-Field Name: None
+- Name Key: topic_key
+- Add level: topic_key
+- Children key: None
+- Column to sum: None
+- Field Name: None
+- Average Field: score
+- Field Name: None
 
 **Wrapper Options:**
-
-Include wrapper? No
-
-Name value: None
+- Include wrapper? No
+- Name value: None
 
 
 ### Helpful references:

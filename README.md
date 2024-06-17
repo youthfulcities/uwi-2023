@@ -10,7 +10,7 @@ Set the following in "Set Output Options"
 - Base Structure: Records
 - Index: None
 
-**Nesting Options**
+Nesting Options:
 - Name Key: topic_key
 - Add level: topic_key
 - Children key: None
@@ -19,7 +19,7 @@ Set the following in "Set Output Options"
 - Average Field: score
 - Field Name: None
 
-**Wrapper Options:**
+Wrapper Options:
 - Include wrapper? No
 - Name value: None
 
